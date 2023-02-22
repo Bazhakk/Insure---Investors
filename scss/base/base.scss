@@ -1,0 +1,24 @@
+@import "variables";
+@import "fonts";
+
+body {
+margin: 0;
+padding: 0;
+}
+
+main,
+section {
+overflow-x: hidden;
+}
+
+img {
+width: 100%;
+}
+
+a {
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
