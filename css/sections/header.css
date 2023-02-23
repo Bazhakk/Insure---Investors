@@ -1,3 +1,67 @@
-
+.header {
+  width: 100%;
+  padding: 50px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__login {
+  margin-left: auto;
+}
+.header .logo {
+  max-height: 42px;
+}
+.header .logo svg {
+  max-height: 23px;
+}
+.header .logo:hover {
+  transition: 0.8s;
+  transform: rotateX(360deg);
+}
+.header .main-menu {
+  width: 100%;
+  margin-left: 80px;
+  display: flex;
+  font-family: "GT Eesti Pro Display";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  color: #0A1C33;
+}
+.header .main-menu__link {
+  margin-right: 40px;
+}
+.header .login {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .login__link {
+  margin-left: 30px;
+}
+.header .login__link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.header .login-icon {
+  max-height: 32px;
+}
+.header .login-icon svg {
+  max-height: 32px;
+}
+.header .login-icon:hover {
+  transition: 0.8s;
+  transform: rotateX(360deg);
+}
 
 /*# sourceMappingURL=header.css.map */

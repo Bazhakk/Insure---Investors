@@ -1,2 +1,83 @@
 @import "../base/fonts";
 @import "../base/variables";
+
+.header {
+    width: 100%;
+    padding: 50px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__login {
+        margin-left: auto;
+    }
+
+    .logo {
+        max-height: 42px;
+
+        svg {
+            max-height: 23px;
+        }
+  
+          &:hover {
+            transition: .8s;
+            transform: rotateX(360deg);
+          }
+    }
+
+    .main-menu {
+        width: 100%;
+        margin-left: 80px;
+        // max-width: 645px;
+        display: flex;
+        font-family: 'GT Eesti Pro Display';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: right;
+        color: $Gray-100;
+
+        &__link {
+            margin-right: 40px;
+        }
+    }
+
+    .login {
+        width: 100%;
+        max-width: 412px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__link {
+            margin-left: 30px;
+
+            &:hover {
+                transition: all .4s;
+                color: $hover-color-teal;
+              }
+        }
+    }
+
+    .login-icon {
+        max-height: 32px;
+
+        svg {
+            max-height: 32px;
+        }
+  
+          &:hover {
+            transition: .8s;
+            transform: rotateX(360deg);
+          }
+    }
+}

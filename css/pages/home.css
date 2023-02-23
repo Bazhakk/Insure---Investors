@@ -20,4 +20,110 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.button_first {
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background: #00CCC2;
+  border-radius: 66px;
+}
+.button_first:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
+
+.link-anima {
+  position: relative;
+}
+.link-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #0EB7AE;
+  transition: width 0.4s;
+}
+.link-anima:hover::before {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 50px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__login {
+  margin-left: auto;
+}
+.header .logo {
+  max-height: 42px;
+}
+.header .logo svg {
+  max-height: 23px;
+}
+.header .logo:hover {
+  transition: 0.8s;
+  transform: rotateX(360deg);
+}
+.header .main-menu {
+  width: 100%;
+  margin-left: 80px;
+  display: flex;
+  font-family: "GT Eesti Pro Display";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  color: #0A1C33;
+}
+.header .main-menu__link {
+  margin-right: 40px;
+}
+.header .login {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .login__link {
+  margin-left: 30px;
+}
+.header .login__link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.header .login-icon {
+  max-height: 32px;
+}
+.header .login-icon svg {
+  max-height: 32px;
+}
+.header .login-icon:hover {
+  transition: 0.8s;
+  transform: rotateX(360deg);
+}
+
 /*# sourceMappingURL=home.css.map */
