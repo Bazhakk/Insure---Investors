@@ -25,7 +25,7 @@
         max-height: 42px;
 
         svg {
-            max-height: 23px;
+            max-height: 42px;
         }
   
           &:hover {
@@ -37,13 +37,12 @@
     .main-menu {
         width: 100%;
         margin-left: 80px;
-        // max-width: 645px;
+        max-width: 645px;
         display: flex;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
-        text-align: right;
         color: $Gray-100;
 
         &__link {

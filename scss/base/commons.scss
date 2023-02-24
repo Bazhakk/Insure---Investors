@@ -3,8 +3,8 @@
 
 .container {
     width: 100%;
-    max-width: 1530px;
-    // max-width: 1250px;
+    // max-width: 1530px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -24,7 +24,23 @@
         &:hover {
             transition: all .4s;
             background-color: $hover-color-teal;
-          }
+        }
+    }
+
+    &_second {
+      padding: 20px 40px;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      border-radius: 66px;
+      color: $white-color;
+      background: $main-color-pink;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
     }
 }
 

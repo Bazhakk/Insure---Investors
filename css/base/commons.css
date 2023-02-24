@@ -10,7 +10,7 @@
 }
 .container {
   width: 100%;
-  max-width: 1530px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -29,6 +29,20 @@
 .button_first:hover {
   transition: all 0.4s;
   background-color: #0EB7AE;
+}
+.button_second {
+  padding: 20px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  color: #fff;
+  background: #E91E63;
+}
+.button_second:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
 }
 
 .link-anima {

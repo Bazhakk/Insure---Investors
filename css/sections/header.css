@@ -29,7 +29,7 @@
   max-height: 42px;
 }
 .header .logo svg {
-  max-height: 23px;
+  max-height: 42px;
 }
 .header .logo:hover {
   transition: 0.8s;
@@ -38,12 +38,12 @@
 .header .main-menu {
   width: 100%;
   margin-left: 80px;
+  max-width: 645px;
   display: flex;
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  text-align: right;
   color: #0A1C33;
 }
 .header .main-menu__link {
