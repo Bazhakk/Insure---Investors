@@ -39,7 +39,7 @@
         margin-left: 80px;
         // max-width: 645px;
         display: flex;
-        font-family: 'GT Eesti Pro Display';
+        font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
@@ -57,6 +57,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $blue-deep;
 
         &__link {
             margin-left: 30px;
