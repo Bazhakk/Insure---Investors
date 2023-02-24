@@ -1,10 +1,23 @@
-//  - regular 400
+//  GT Eesti Pro - medium
 
-// @font-face {
-//     font-family: 'Lato';
-//     src: url('../../fonts/Lato-Regular.eot') format('embedded-opentype'),
-//          url('../../fonts/Lato-Regular.svg') format('svg'),
-//          url('../../fonts/Lato-Regular.woff') format('woff'),
-//          url('../../fonts/Lato-Regular.woff2') format('woff2');
-//     font-weight: 400;
-// }
+@font-face {
+    font-family: 'GT Eesti Pro';
+    src: url('../../fonts/gteestiprodisplaymedium.eot') format('embedded-opentype'),
+         url('../../fonts/gteestiprodisplaymedium.svg') format('svg'),
+         url('../../fonts/gteestiprodisplaymedium.woff') format('woff'),
+         url('../../fonts/gteestiprodisplaymedium.woff2') format('woff2'),
+         url('../../fonts/gteestiprodisplaymedium.otf') format('otf');
+    font-weight: 500;
+}
+
+//  GT Eesti Pro - bold
+
+@font-face {
+    font-family: 'GT Eesti Pro';
+    src: url('../../fonts/gteestiprodisplaybold.eot') format('embedded-opentype'),
+         url('../../fonts/gteestiprodisplaybold.svg') format('svg'),
+         url('../../fonts/gteestiprodisplaybold.woff') format('woff'),
+         url('../../fonts/gteestiprodisplaybold.woff2') format('woff2'),
+         url('../../fonts/gteestiprodisplaybold.otf') format('otf');
+    font-weight: 700;
+}
