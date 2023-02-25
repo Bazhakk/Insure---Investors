@@ -38,16 +38,16 @@
 .header .main-menu {
   width: 100%;
   margin-left: 80px;
-  max-width: 645px;
+  max-width: 655px;
   display: flex;
+  gap: 40px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  color: #0A1C33;
 }
 .header .main-menu__link {
-  margin-right: 40px;
+  color: #0A1C33;
 }
 .header .login {
   width: 100%;

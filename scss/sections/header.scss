@@ -31,22 +31,27 @@
           &:hover {
             transition: .8s;
             transform: rotateX(360deg);
-          }
+        }
     }
 
     .main-menu {
         width: 100%;
         margin-left: 80px;
-        max-width: 645px;
+        max-width: 655px;
         display: flex;
+        gap: 40px;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
-        color: $Gray-100;
 
         &__link {
-            margin-right: 40px;
+            // margin-right: 40px;
+            color: $Gray-100;
+
+            // &:last-child {
+            //     margin-right: 0;
+            // }
         }
     }
 
