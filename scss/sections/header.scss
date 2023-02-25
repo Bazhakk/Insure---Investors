@@ -9,6 +9,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto;
+        }
     }
 
     &__menu {
@@ -27,6 +31,10 @@
         svg {
             max-height: 42px;
         }
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 10px;
+        }
     }
 }
 
@@ -43,6 +51,10 @@
 
     &__link {
         color: $Gray-100;
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
 }
 
@@ -64,21 +76,29 @@
             line-height: 26px;
             color: $blue-deep;
 
-        &:hover {
-            transition: all .4s;
-            color: $hover-color-teal;
+            &:hover {
+                transition: all .4s;
+                color: $hover-color-teal;
+            }
         }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
         }
     }
 
     &__link {
+        max-height: 42px;
         gap: 30px;
-        max-height: 42px;
 
-    svg {
-        max-height: 42px;
-        margin-right: 45px;
-    }
+        svg {
+            max-height: 42px;
+            margin-right: 45px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 
 }
@@ -88,23 +108,38 @@
     display: none;
     z-index: 9;
     flex-direction: column;
-    align-items: center;
     position: fixed;
-    top: 0;
+    top: 150px;
     right: 0;
-    left: 0;
+    left: 20px;
     font-size: 24px;
     line-height: 28px;
-    background-color: red;
+    gap: 40px;
 
     &__menu,
     &__link {
-        margin: 0 auto;
-        margin: 20px;
+        color: $Gray-100;
+        // margin-right: 30px;
+    }
+
+    &__registration {
+        display: flex;
+        gap: 22px;
     }
 
     &__vector {
+        max-width: 345px;
         border: 1px solid $Gray-20;
+    }
+
+    // &__icon {
+    //     margin-left: 10ppx;
+    // }
+
+    &__fr {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
     }
 }
 
@@ -124,6 +159,6 @@
     }
     
     @media (max-width: 1024px) {
-    display: block;
+        display: block;
     }
 }
