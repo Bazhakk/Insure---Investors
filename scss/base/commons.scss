@@ -42,6 +42,22 @@
         background-color: $hover-color-pink;
       }
     }
+
+    &_third {
+      padding: 5px 15px;
+      font-family: 'GT Eesti Pro';
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: $white-color;
+      background: $main-color-teal;
+      border-radius: 66px;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-teal;
+      }
+    }
 }
 
 
