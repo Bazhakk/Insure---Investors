@@ -16,9 +16,9 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
-        color: $white-color;
-        background: #00CCC2;
         border-radius: 66px;
+        color: $white-color;
+        background: $main-color-teal;
 
         &:hover {
             transition: all .4s;

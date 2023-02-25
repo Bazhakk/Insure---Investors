@@ -18,7 +18,7 @@
     }
 
     &__login {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .logo {
@@ -27,67 +27,103 @@
         svg {
             max-height: 42px;
         }
-  
-          &:hover {
-            transition: .8s;
-            transform: rotateX(360deg);
-        }
     }
+}
 
-    .main-menu {
-        width: 100%;
-        margin-left: 80px;
-        max-width: 655px;
-        display: flex;
-        gap: 40px;
-        font-family: 'GT Eesti Pro';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
+.main-menu {
+    width: 100%;
+    margin-left: 80px;
+    max-width: 655px;
+    display: flex;
+    gap: 40px;
+    font-family: 'GT Eesti Pro';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
 
-        &__link {
-            // margin-right: 40px;
-            color: $Gray-100;
-
-            // &:last-child {
-            //     margin-right: 0;
-            // }
-        }
+    &__link {
+        color: $Gray-100;
     }
+}
 
-    .login {
-        width: 100%;
+.login {
+    display: flex;
+    align-items: center;
+
+    &__login-wrap {
+        // width: 100%;
         max-width: 412px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        gap: 40px;
 
-        font-family: 'GT Eesti Pro';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        color: $blue-deep;
+        &_link {
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: $blue-deep;
 
-        &__link {
-            margin-left: 30px;
-
-            &:hover {
-                transition: all .4s;
-                color: $hover-color-teal;
-              }
+        &:hover {
+            transition: all .4s;
+            color: $hover-color-teal;
+        }
         }
     }
 
-    .login-icon {
-        max-height: 32px;
+    &__link {
+        gap: 30px;
+        max-height: 42px;
 
-        svg {
-            max-height: 32px;
-        }
-  
-          &:hover {
-            transition: .8s;
-            transform: rotateX(360deg);
-          }
+    svg {
+        max-height: 42px;
+        margin-right: 45px;
+    }
+    }
+
+}
+
+.mobile-menu {
+    height: 100vh;
+    display: none;
+    z-index: 9;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: red;
+
+    &__menu,
+    &__link {
+        margin: 0 auto;
+        margin: 20px;
+    }
+
+    &__vector {
+        border: 1px solid $Gray-20;
+    }
+}
+
+.burger {
+    position: relative;
+    z-index: 9999;
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    background-image: url("../../img/burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &-active {
+        background-image: url("../../img/close.svg");
+    }
+    
+    @media (max-width: 1024px) {
+    display: block;
     }
 }

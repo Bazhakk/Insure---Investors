@@ -64,9 +64,9 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  border-radius: 66px;
   color: #fff;
   background: #00CCC2;
-  border-radius: 66px;
 }
 .button_first:hover {
   transition: all 0.4s;
@@ -143,7 +143,7 @@ ul {
   align-items: center;
 }
 .header__login {
-  margin-left: auto;
+  margin-right: auto;
 }
 .header .logo {
   max-height: 42px;
@@ -151,11 +151,8 @@ ul {
 .header .logo svg {
   max-height: 42px;
 }
-.header .logo:hover {
-  transition: 0.8s;
-  transform: rotateX(360deg);
-}
-.header .main-menu {
+
+.main-menu {
   width: 100%;
   margin-left: 80px;
   max-width: 655px;
@@ -166,37 +163,80 @@ ul {
   font-size: 20px;
   line-height: 26px;
 }
-.header .main-menu__link {
+.main-menu__link {
   color: #0A1C33;
 }
-.header .login {
-  width: 100%;
+
+.login {
+  display: flex;
+  align-items: center;
+}
+.login__login-wrap {
   max-width: 412px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 40px;
+}
+.login__login-wrap_link {
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #0D1958;
 }
-.header .login__link {
-  margin-left: 30px;
-}
-.header .login__link:hover {
+.login__login-wrap_link:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
-.header .login-icon {
-  max-height: 32px;
+.login__link {
+  gap: 30px;
+  max-height: 42px;
 }
-.header .login-icon svg {
-  max-height: 32px;
+.login__link svg {
+  max-height: 42px;
+  margin-right: 45px;
 }
-.header .login-icon:hover {
-  transition: 0.8s;
-  transform: rotateX(360deg);
+
+.mobile-menu {
+  height: 100vh;
+  display: none;
+  z-index: 9;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: red;
+}
+.mobile-menu__menu, .mobile-menu__link {
+  margin: 0 auto;
+  margin: 20px;
+}
+.mobile-menu__vector {
+  border: 1px solid #CED2D6;
+}
+
+.burger {
+  position: relative;
+  z-index: 9999;
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  background-image: url("../../img/burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.burger-active {
+  background-image: url("../../img/close.svg");
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
 }
 
 @font-face {

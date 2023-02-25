@@ -22,9 +22,9 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  border-radius: 66px;
   color: #fff;
   background: #00CCC2;
-  border-radius: 66px;
 }
 .button_first:hover {
   transition: all 0.4s;
