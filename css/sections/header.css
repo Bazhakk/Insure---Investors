@@ -115,8 +115,30 @@
   line-height: 28px;
   gap: 40px;
 }
-.mobile-menu__menu, .mobile-menu__link {
+.mobile-menu__menu, .mobile-menu__link, .mobile-menu__reference {
   color: #0A1C33;
+}
+.mobile-menu__menu::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background: #0A1C33;
+}
+.mobile-menu__reference::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  background: #0A1C33;
 }
 .mobile-menu__registration {
   display: flex;
@@ -125,11 +147,6 @@
 .mobile-menu__vector {
   max-width: 345px;
   border: 1px solid #CED2D6;
-}
-.mobile-menu__fr {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
 }
 
 .burger {

@@ -52,13 +52,13 @@
       background: $main-color-teal;
       border-radius: 66px;
 
-      @media screen and (max-width: 1024px) {
-        display: none;
-      }
-
       &:hover {
         transition: all .4s;
         background-color: $hover-color-teal;
+      }
+
+      @media screen and (max-width: 1024px) {
+        display: none;
       }
     }
 }

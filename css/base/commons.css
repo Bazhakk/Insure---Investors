@@ -54,14 +54,14 @@
   background: #00CCC2;
   border-radius: 66px;
 }
+.button_third:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
 @media screen and (max-width: 1024px) {
   .button_third {
     display: none;
   }
-}
-.button_third:hover {
-  transition: all 0.4s;
-  background-color: #0EB7AE;
 }
 
 .link-anima {

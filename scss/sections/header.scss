@@ -117,9 +117,33 @@
     gap: 40px;
 
     &__menu,
-    &__link {
+    &__link,
+    &__reference {
         color: $Gray-100;
-        // margin-right: 30px;
+    }
+
+    &__menu::after {
+        content: ">";
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        max-width: 0;
+        max-height: 0;
+        right: 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        background: $Gray-100;
+    }
+
+    &__reference::after {
+        content: ">";
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        max-width: 0;
+        max-height: 0;
+        right: 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        background: $Gray-100;
     }
 
     &__registration {
@@ -130,16 +154,6 @@
     &__vector {
         max-width: 345px;
         border: 1px solid $Gray-20;
-    }
-
-    // &__icon {
-    //     margin-left: 10ppx;
-    // }
-
-    &__fr {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
     }
 }
 
