@@ -41,27 +41,21 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
-  border-radius: 66px;
   color: #fff;
   background: #E91E63;
+  border-radius: 66px;
 }
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
 .button_third {
-  padding: 5px 15px;
-  font-family: "GT Eesti Pro";
+  font-family: "DM Sans";
   font-weight: 700;
-  font-size: 12px;
-  line-height: 24px;
-  color: #fff;
-  background: #00CCC2;
-  border-radius: 66px;
-}
-.button_third:hover {
-  transition: all 0.4s;
-  background-color: #0EB7AE;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: right;
+  color: #0A1C33;
 }
 
 .link-anima {
