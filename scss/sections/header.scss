@@ -106,7 +106,7 @@
 .mobile-menu {
     height: 100vh;
     display: none;
-    z-index: 9;
+    z-index: 999999;
     flex-direction: column;
     position: fixed;
     top: 150px;
@@ -148,12 +148,29 @@
 
     &__registration {
         display: flex;
+        align-items: center;
         gap: 22px;
+
+        @media screen and (max-width: 348px) {
+            flex-direction: column;
+        }
     }
 
     &__vector {
         max-width: 345px;
         border: 1px solid $Gray-20;
+    }
+
+    &__btn {
+        right: 0;
+        padding: 13px 40px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 66px;
+        color: $white-color;
+        background: $main-color-teal;
     }
 }
 

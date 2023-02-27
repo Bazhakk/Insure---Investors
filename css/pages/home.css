@@ -230,7 +230,7 @@ ul {
 .mobile-menu {
   height: 100vh;
   display: none;
-  z-index: 9;
+  z-index: 999999;
   flex-direction: column;
   position: fixed;
   top: 150px;
@@ -267,11 +267,28 @@ ul {
 }
 .mobile-menu__registration {
   display: flex;
+  align-items: center;
   gap: 22px;
+}
+@media screen and (max-width: 348px) {
+  .mobile-menu__registration {
+    flex-direction: column;
+  }
 }
 .mobile-menu__vector {
   max-width: 345px;
   border: 1px solid #CED2D6;
+}
+.mobile-menu__btn {
+  right: 0;
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 66px;
+  color: #fff;
+  background: #00CCC2;
 }
 
 .burger {
