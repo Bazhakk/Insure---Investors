@@ -72,6 +72,11 @@ ul {
   transition: all 0.4s;
   background-color: #0EB7AE;
 }
+@media screen and (max-width: 1024px) {
+  .button_first {
+    display: none;
+  }
+}
 .button_second {
   padding: 20px 40px;
   font-family: "DM Sans";
@@ -99,11 +104,6 @@ ul {
 .button_third:hover {
   transition: all 0.4s;
   background-color: #0EB7AE;
-}
-@media screen and (max-width: 1024px) {
-  .button_third {
-    display: none;
-  }
 }
 
 .link-anima {
