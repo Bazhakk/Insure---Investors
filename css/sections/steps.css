@@ -8,50 +8,35 @@
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
   font-weight: 700;
 }
-.hero {
-  background-image: url("../../img/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100em 100%;
-  background-position: center;
+.steps {
+  margin-top: 200px;
+  background: #000E50;
 }
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/mobile-bg.png");
-  }
+.steps__box {
+  max-width: 830px;
+  margin: 0 auto;
 }
-.hero__box {
-  max-width: 875px;
-  padding-top: 100px;
+.steps__namber {
+  padding-top: 150px;
+  position: absolute;
 }
-@media screen and (max-width: 1024px) {
-  .hero__box {
-    max-width: 745px;
-    margin: 0 auto;
-  }
-}
-.hero__title {
+.steps__title {
+  padding-top: 215px;
   font-family: "GT Eesti Pro";
   font-weight: 700;
-  font-size: 103px;
-  line-height: 114px;
-  color: #0A1C33;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
 }
-.hero__title_span {
-  color: #00CCC2;
-}
-.hero__button {
-  display: flex;
-  gap: 50px;
-}
-@media screen and (max-width: 1024px) {
-  .hero__button {
-    flex-direction: column;
-  }
-}
-.hero__watch {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.steps__subtitle {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
 }
 
-/*# sourceMappingURL=hero.css.map */
+/*# sourceMappingURL=steps.css.map */

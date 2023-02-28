@@ -1,0 +1,38 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.steps {
+    margin-top: 200px;
+    background: $blue-dark;
+
+    &__box {
+        max-width: 830px;
+        margin: 0 auto;
+    }
+
+    &__namber {
+        padding-top: 150px;
+        position: absolute;
+    }
+
+    &__title {
+        padding-top: 215px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $white-color;
+    }
+
+    &__subtitle {
+        // max-width: 525px;
+        margin: 0 auto;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-30;
+    }
+}
