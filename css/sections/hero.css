@@ -9,15 +9,26 @@
   font-weight: 700;
 }
 .hero {
-  height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100em 100%;
   background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("../../img/mobile-bg.png");
+  }
 }
 .hero__box {
   max-width: 875px;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 350px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__box {
+    max-width: 745px;
+    margin: 0 auto;
+  }
 }
 .hero__title {
   font-family: "GT Eesti Pro";
@@ -26,7 +37,7 @@
   line-height: 114px;
   color: #0A1C33;
 }
-.hero__title_text {
+.hero__title_span {
   color: #00CCC2;
 }
 .hero__button {

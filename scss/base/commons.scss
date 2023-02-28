@@ -40,6 +40,10 @@
       background: $main-color-pink;
       border-radius: 66px;
 
+      @media screen and (max-width: 1024px) {
+        max-width: 200px;
+      }
+
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;

@@ -140,7 +140,6 @@
         max-width: 0;
         max-height: 0;
         right: 20px;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
         background: $Gray-100;
     }
 
@@ -167,12 +166,11 @@
     }
 
     &__vector {
-        max-width: 345px;
         border: 1px solid $Gray-20;
     }
 
     &__btn {
-        right: 0;
+        margin-left: 66px;
         padding: 13px 40px;
         font-family: 'DM Sans';
         font-weight: 700;

@@ -87,6 +87,11 @@ ul {
   background: #E91E63;
   border-radius: 66px;
 }
+@media screen and (max-width: 1024px) {
+  .button_second {
+    max-width: 200px;
+  }
+}
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
@@ -256,7 +261,6 @@ ul {
   max-width: 0;
   max-height: 0;
   right: 20px;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
   background: #0A1C33;
 }
 .mobile-menu__reference::after {
@@ -281,11 +285,10 @@ ul {
   }
 }
 .mobile-menu__vector {
-  max-width: 345px;
   border: 1px solid #CED2D6;
 }
 .mobile-menu__btn {
-  right: 0;
+  margin-left: 66px;
   padding: 13px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -327,15 +330,26 @@ ul {
   font-weight: 700;
 }
 .hero {
-  height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100em 100%;
   background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("../../img/mobile-bg.png");
+  }
 }
 .hero__box {
   max-width: 875px;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 350px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__box {
+    max-width: 745px;
+    margin: 0 auto;
+  }
 }
 .hero__title {
   font-family: "GT Eesti Pro";
@@ -344,7 +358,7 @@ ul {
   line-height: 114px;
   color: #0A1C33;
 }
-.hero__title_text {
+.hero__title_span {
   color: #00CCC2;
 }
 .hero__button {
