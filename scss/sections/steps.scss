@@ -26,7 +26,6 @@
     }
 
     &__subtitle {
-        // max-width: 525px;
         margin: 0 auto;
         font-family: 'DM Sans';
         font-weight: 400;
@@ -35,4 +34,14 @@
         text-align: center;
         color: $Gray-30;
     }
+
+    .step {
+        &__item {
+            position: absolute;
+            max-width: 500px;
+            background: #0D1A59;
+            border-radius: 12px;
+        }
+    }
+    
 }
