@@ -17,6 +17,7 @@
 @media screen and (max-width: 1024px) {
   .hero {
     background-image: url("../../img/mobile-bg.png");
+    margin: 0 auto;
   }
 }
 .hero__box {
@@ -26,7 +27,6 @@
 @media screen and (max-width: 1024px) {
   .hero__box {
     max-width: 745px;
-    margin: 0 auto;
   }
 }
 .hero__title {
@@ -39,12 +39,17 @@
 .hero__title_span {
   color: #00CCC2;
 }
-.hero__button {
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-weight: 450;
+  }
+}
+.hero__but {
   display: flex;
   gap: 50px;
 }
 @media screen and (max-width: 1024px) {
-  .hero__button {
+  .hero__but {
     flex-direction: column;
   }
 }
@@ -52,6 +57,11 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__watch {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=hero.css.map */

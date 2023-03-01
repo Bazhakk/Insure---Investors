@@ -9,6 +9,7 @@
 
     @media screen and (max-width: 1024px) {
         background-image: url("../../img/mobile-bg.png");
+        margin: 0 auto;
     }
 
     &__box {
@@ -17,7 +18,7 @@
 
         @media screen and (max-width: 1024px) {
             max-width: 745px;
-            margin: 0 auto;
+            // margin: 0 auto;
         }
     }
 
@@ -31,9 +32,13 @@
         &_span {
             color: $main-color-teal;
         }
+
+        @media screen and (max-width: 1024px) {
+            font-weight: 450;
+        }
     }
 
-    &__button {
+    &__but {
         display: flex;
         gap: 50px;
 
@@ -46,5 +51,9 @@
         display: flex;
         align-items: center;
         gap: 15px;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto;
+        }
     }
 }

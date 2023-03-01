@@ -47,7 +47,8 @@
 }
 @media screen and (max-width: 1024px) {
   .button_second {
-    max-width: 200px;
+    padding: 20px 80px;
+    margin: 0 auto;
   }
 }
 .button_second:hover {
@@ -61,6 +62,20 @@
   line-height: 25px;
   text-align: right;
   color: #0A1C33;
+}
+.button_fourth {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_fourth:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
 }
 
 .link-anima {

@@ -5,9 +5,17 @@
     margin-top: 200px;
     background: $blue-dark;
 
+    @media screen and (max-width: 348px) {
+        margin: 100px auto 0;
+    }
+
     &__box {
         max-width: 830px;
         margin: 0 auto;
+
+        @media screen and (max-width: 348px) {
+           max-width: 415px;
+        }
     }
 
     &__namber {
@@ -17,11 +25,11 @@
 
     &__title {
         padding-top: 215px;
+        text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
-        text-align: center;
         color: $white-color;
 
         &_span {
@@ -39,17 +47,54 @@
         color: $Gray-30;
     }
 
+    &__span {
+        position: absolute;
+        max-width: 210px;
+        max-height: 21px;
+        margin-top: -130px;
+        margin-left: 50px;
+        background: $main-color-pink;
+    }
+
     .step {
+        // display: flex;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        gap: 30px;
+
+        @media screen and (max-width: 348px) {
+            flex-direction: column;
+        }
+
         &__item {
             max-width: 500px;
-            background: $step-namber;
             border-radius: 12px;
+            background: $step-namber;
+
+            padding: 70px 56px 40px;
+
+            @media screen and (max-width: 348px) {
+                margin: 0 auto;
+            }
         }
+
+        // &__point {
+        //     padding: 70px 56px 40px;
+
+        //     @media screen and (max-width: 348px) {
+        //         padding: 35px 28px 20px;
+        //     }
+        // }
 
         &__namber {
             display: flex;
-            padding: 70px 56px 40px;
-            gap: 230px;
+            justify-content: space-between;
+
+            @media screen and (max-width: 348px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        
         }
 
         &__title {
@@ -75,6 +120,25 @@
             line-height: 44px;
             color: $white-color;
         }
-    }
-    
+
+        &__vector {
+            max-width: 70px;
+            margin: 16px 0;
+            border: 2px solid $main-color-teal;
+        }
+
+        &__text {
+            margin: 0 auto;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+        }
+
+        &__img {
+            max-width: 740px;
+            padding-top: 100px;
+        }
+    } 
 }

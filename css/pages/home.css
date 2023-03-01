@@ -89,7 +89,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .button_second {
-    max-width: 200px;
+    padding: 20px 80px;
+    margin: 0 auto;
   }
 }
 .button_second:hover {
@@ -103,6 +104,20 @@ ul {
   line-height: 25px;
   text-align: right;
   color: #0A1C33;
+}
+.button_fourth {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_fourth:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
 }
 
 .link-anima {
@@ -338,6 +353,7 @@ ul {
 @media screen and (max-width: 1024px) {
   .hero {
     background-image: url("../../img/mobile-bg.png");
+    margin: 0 auto;
   }
 }
 .hero__box {
@@ -347,7 +363,6 @@ ul {
 @media screen and (max-width: 1024px) {
   .hero__box {
     max-width: 745px;
-    margin: 0 auto;
   }
 }
 .hero__title {
@@ -360,12 +375,17 @@ ul {
 .hero__title_span {
   color: #00CCC2;
 }
-.hero__button {
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-weight: 450;
+  }
+}
+.hero__but {
   display: flex;
   gap: 50px;
 }
 @media screen and (max-width: 1024px) {
-  .hero__button {
+  .hero__but {
     flex-direction: column;
   }
 }
@@ -373,6 +393,11 @@ ul {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__watch {
+    margin: 0 auto;
+  }
 }
 
 @font-face {
@@ -389,9 +414,19 @@ ul {
   margin-top: 200px;
   background: #000E50;
 }
+@media screen and (max-width: 348px) {
+  .steps {
+    margin: 100px auto 0;
+  }
+}
 .steps__box {
   max-width: 830px;
   margin: 0 auto;
+}
+@media screen and (max-width: 348px) {
+  .steps__box {
+    max-width: 415px;
+  }
 }
 .steps__namber {
   padding-top: 150px;
@@ -399,11 +434,11 @@ ul {
 }
 .steps__title {
   padding-top: 215px;
+  text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
   line-height: 100px;
-  text-align: center;
   color: #fff;
 }
 .steps__title_span {
@@ -418,15 +453,44 @@ ul {
   text-align: center;
   color: #B5BAC1;
 }
+.steps__span {
+  position: absolute;
+  max-width: 210px;
+  max-height: 21px;
+  margin-top: -130px;
+  margin-left: 50px;
+  background: #E91E63;
+}
+.steps .step {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 348px) {
+  .steps .step {
+    flex-direction: column;
+  }
+}
 .steps .step__item {
   max-width: 500px;
-  background: #0D1A59;
   border-radius: 12px;
+  background: #0D1A59;
+  padding: 70px 56px 40px;
+}
+@media screen and (max-width: 348px) {
+  .steps .step__item {
+    margin: 0 auto;
+  }
 }
 .steps .step__namber {
   display: flex;
-  padding: 70px 56px 40px;
-  gap: 230px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 348px) {
+  .steps .step__namber {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .steps .step__title {
   font-family: "GT Eesti Pro";
@@ -448,6 +512,23 @@ ul {
   font-size: 42px;
   line-height: 44px;
   color: #fff;
+}
+.steps .step__vector {
+  max-width: 70px;
+  margin: 16px 0;
+  border: 2px solid #00CCC2;
+}
+.steps .step__text {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.steps .step__img {
+  max-width: 740px;
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=home.css.map */
