@@ -29,6 +29,9 @@
   text-align: center;
   color: #fff;
 }
+.steps__title_span {
+  background: #E91E63;
+}
 .steps__subtitle {
   margin: 0 auto;
   font-family: "DM Sans";
@@ -37,6 +40,37 @@
   line-height: 32px;
   text-align: center;
   color: #B5BAC1;
+}
+.steps .step__item {
+  max-width: 500px;
+  background: #0D1A59;
+  border-radius: 12px;
+}
+.steps .step__namber {
+  display: flex;
+  padding: 70px 56px 40px;
+  gap: 230px;
+}
+.steps .step__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.steps .step__subtitle {
+  display: flex;
+  align-items: center;
+  padding: 4px 20px;
+  max-width: 82px;
+  max-height: 52px;
+  border: 2px solid #B5BAC1;
+  border-radius: 99px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=steps.css.map */
