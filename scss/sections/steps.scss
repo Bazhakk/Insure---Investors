@@ -25,6 +25,7 @@
 
     &__title {
         padding-top: 215px;
+        padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
@@ -32,9 +33,23 @@
         line-height: 100px;
         color: $white-color;
 
-        &_span {
-            background: $main-color-pink;
-        }
+        // &_span {
+        //     border: 6px solid $main-color-pink;
+        //     // position: absolute;
+        //     // max-width: 210px;
+        //     // max-height: 21px;
+
+
+        //     // border-radius: 12px;
+        //     // text-decoration: underline $main-color-pink;
+
+        //     // position: absolute;
+        //     // max-width: 210px;
+        //     // max-height: 21px;
+        //     // margin-top: -130px;
+        //     // margin-left: 50px;
+        //     // background: $main-color-pink;
+        // }
     }
 
     &__subtitle {
@@ -47,44 +62,40 @@
         color: $Gray-30;
     }
 
-    &__span {
-        position: absolute;
-        max-width: 210px;
-        max-height: 21px;
-        margin-top: -130px;
-        margin-left: 50px;
-        background: $main-color-pink;
-    }
-
     .step {
-        // display: flex;
-        margin-top: 80px;
-        margin-bottom: 100px;
+        display: flex;
+        padding: 80px 0 100px;
+        // justify-content: space-between;
         gap: 30px;
 
         @media screen and (max-width: 348px) {
             flex-direction: column;
         }
 
+        &__container {
+        
+            @media screen and (max-width: 1024px) {
+                margin: 0 auto;
+            }
+        }
+
         &__item {
-            max-width: 500px;
+            padding: 70px 56px 40px;
             border-radius: 12px;
             background: $step-namber;
-
-            padding: 70px 56px 40px;
 
             @media screen and (max-width: 348px) {
                 margin: 0 auto;
             }
         }
 
-        // &__point {
-        //     padding: 70px 56px 40px;
+        &__point {
+            max-width: 500px;
 
-        //     @media screen and (max-width: 348px) {
-        //         padding: 35px 28px 20px;
-        //     }
-        // }
+            @media screen and (max-width: 348px) {
+                margin: 0 auto;
+            }
+        }
 
         &__namber {
             display: flex;
@@ -138,7 +149,18 @@
 
         &__img {
             max-width: 740px;
-            padding-top: 100px;
+            
+            &_1 {
+                padding-top: 100px;
+            }
+
+            &_2 {
+                padding-top: 45px;
+            }
+
+            &_3 {
+                padding-top: 130px;
+            }
         }
     } 
 }
