@@ -7,26 +7,12 @@
     background-size: cover;
     background-position: center;
 
-    @media screen and (max-width: 1024px) {
-        // background-image: url("../../img/hero-mobile.png");
-        // background-size: contain;
-        // background-position: bottom;
-        // padding: 430px 0 30px;
-    }
-
-    &__container {
-        max-width: 875px;
-        padding: 0;
-        margin: 20px;
-    }
+    // @media screen and (max-width: 1024px) {
+    //     background-image: url("../../img/mobile-bg.png");
+    // }
 
     &__box {
         padding-top: 100px;
-
-        @media screen and (max-width: 1024px) {
-            max-width: 745px;
-            margin: 0 auto;
-        }
     }
 
     &__title {
@@ -38,6 +24,10 @@
 
         &_span {
             color: $main-color-teal;
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-weight: 450;
         }
     }
 
@@ -56,5 +46,9 @@
         display: flex;
         align-items: center;
         gap: 15px;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto;
+        }
     }
 }

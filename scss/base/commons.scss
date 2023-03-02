@@ -55,6 +55,25 @@
       color: $Gray-100;
     }
 
+    &_fourth {
+      padding: 20px 40px;
+      background: $main-color-pink;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $white-color;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+    }
+
+
+
 // Multi Family
     // &_second {
     //   padding: 20px 40px;
