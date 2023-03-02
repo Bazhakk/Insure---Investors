@@ -11,16 +11,15 @@
 .hero {
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: 100em 100%;
+  background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/mobile-bg.png");
-  }
+.hero__container {
+  max-width: 875px;
+  padding: 0;
+  margin: 20px;
 }
 .hero__box {
-  max-width: 875px;
   padding-top: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -46,6 +45,8 @@
 @media screen and (max-width: 1024px) {
   .hero__button {
     flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
   }
 }
 .hero__watch {

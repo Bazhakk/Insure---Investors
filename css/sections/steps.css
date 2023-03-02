@@ -38,5 +38,11 @@
   text-align: center;
   color: #B5BAC1;
 }
+.steps .step__item {
+  position: absolute;
+  max-width: 500px;
+  background: #0D1A59;
+  border-radius: 12px;
+}
 
 /*# sourceMappingURL=steps.css.map */

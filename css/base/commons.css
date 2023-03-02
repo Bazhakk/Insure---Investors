@@ -45,11 +45,6 @@
   background: #E91E63;
   border-radius: 66px;
 }
-@media screen and (max-width: 1024px) {
-  .button_second {
-    max-width: 200px;
-  }
-}
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;

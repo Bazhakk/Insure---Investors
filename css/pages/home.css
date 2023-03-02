@@ -87,11 +87,6 @@ ul {
   background: #E91E63;
   border-radius: 66px;
 }
-@media screen and (max-width: 1024px) {
-  .button_second {
-    max-width: 200px;
-  }
-}
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
@@ -332,16 +327,15 @@ ul {
 .hero {
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-size: 100em 100%;
+  background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/mobile-bg.png");
-  }
+.hero__container {
+  max-width: 875px;
+  padding: 0;
+  margin: 20px;
 }
 .hero__box {
-  max-width: 875px;
   padding-top: 100px;
 }
 @media screen and (max-width: 1024px) {
@@ -367,6 +361,8 @@ ul {
 @media screen and (max-width: 1024px) {
   .hero__button {
     flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
   }
 }
 .hero__watch {
@@ -414,6 +410,12 @@ ul {
   line-height: 32px;
   text-align: center;
   color: #B5BAC1;
+}
+.steps .step__item {
+  position: absolute;
+  max-width: 500px;
+  background: #0D1A59;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=home.css.map */
