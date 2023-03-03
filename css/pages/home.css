@@ -87,15 +87,6 @@ ul {
   background: #E91E63;
   border-radius: 66px;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .button_second {
-    padding: 20px 80px;
-    margin: 0 auto;
-  }
-}
->>>>>>> steps
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
@@ -353,26 +344,9 @@ ul {
   background-size: cover;
   background-position: center;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/mobile-bg.png");
-    margin: 0 auto;
-  }
-}
->>>>>>> steps
 .hero__box {
   padding-top: 100px;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .hero__box {
-    max-width: 745px;
-  }
-}
->>>>>>> steps
 .hero__title {
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -388,11 +362,7 @@ ul {
     font-weight: 450;
   }
 }
-<<<<<<< HEAD
-.hero__button {
-=======
 .hero__but {
->>>>>>> steps
   display: flex;
   gap: 50px;
 }
@@ -465,13 +435,6 @@ ul {
   text-align: center;
   color: #B5BAC1;
 }
-<<<<<<< HEAD
-.steps .step__item {
-  position: absolute;
-  max-width: 500px;
-  background: #0D1A59;
-  border-radius: 12px;
-=======
 .steps .step {
   display: flex;
   padding: 80px 0 100px;
@@ -560,7 +523,6 @@ ul {
 }
 .steps .step__img_3 {
   padding-top: 130px;
->>>>>>> steps
 }
 
 /*# sourceMappingURL=home.css.map */

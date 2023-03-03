@@ -14,26 +14,9 @@
   background-size: cover;
   background-position: center;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/mobile-bg.png");
-    margin: 0 auto;
-  }
-}
->>>>>>> steps
 .hero__box {
   padding-top: 100px;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .hero__box {
-    max-width: 745px;
-  }
-}
->>>>>>> steps
 .hero__title {
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -49,11 +32,7 @@
     font-weight: 450;
   }
 }
-<<<<<<< HEAD
-.hero__button {
-=======
 .hero__but {
->>>>>>> steps
   display: flex;
   gap: 50px;
 }

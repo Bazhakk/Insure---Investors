@@ -45,15 +45,6 @@
   background: #E91E63;
   border-radius: 66px;
 }
-<<<<<<< HEAD
-=======
-@media screen and (max-width: 1024px) {
-  .button_second {
-    padding: 20px 80px;
-    margin: 0 auto;
-  }
-}
->>>>>>> steps
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
