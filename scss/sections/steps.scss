@@ -5,9 +5,17 @@
     margin-top: 200px;
     background: $blue-dark;
 
+    @media screen and (max-width: 348px) {
+        margin: 100px auto 0;
+    }
+
     &__box {
         max-width: 830px;
         margin: 0 auto;
+
+        @media screen and (max-width: 348px) {
+           max-width: 415px;
+        }
     }
 
     &__namber {
@@ -17,12 +25,31 @@
 
     &__title {
         padding-top: 215px;
+        padding-bottom: 50px;
+        text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
-        text-align: center;
         color: $white-color;
+
+        // &_span {
+        //     border: 6px solid $main-color-pink;
+        //     // position: absolute;
+        //     // max-width: 210px;
+        //     // max-height: 21px;
+
+
+        //     // border-radius: 12px;
+        //     // text-decoration: underline $main-color-pink;
+
+        //     // position: absolute;
+        //     // max-width: 210px;
+        //     // max-height: 21px;
+        //     // margin-top: -130px;
+        //     // margin-left: 50px;
+        //     // background: $main-color-pink;
+        // }
     }
 
     &__subtitle {
@@ -36,12 +63,104 @@
     }
 
     .step {
-        &__item {
-            position: absolute;
-            max-width: 500px;
-            background: #0D1A59;
-            border-radius: 12px;
+        display: flex;
+        padding: 80px 0 100px;
+        // justify-content: space-between;
+        gap: 30px;
+
+        @media screen and (max-width: 348px) {
+            flex-direction: column;
         }
-    }
-    
+
+        &__container {
+        
+            @media screen and (max-width: 1024px) {
+                margin: 0 auto;
+            }
+        }
+
+        &__item {
+            padding: 70px 56px 40px;
+            border-radius: 12px;
+            background: $step-namber;
+
+            @media screen and (max-width: 348px) {
+                margin: 0 auto;
+            }
+        }
+
+        &__point {
+            max-width: 500px;
+
+            @media screen and (max-width: 348px) {
+                margin: 0 auto;
+            }
+        }
+
+        &__namber {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 348px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+        }
+
+        &__title {
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 58px;
+            color: $white-color;
+        }
+
+        &__subtitle {
+            display: flex;
+            align-items: center;
+            padding: 4px 20px;
+            max-width: 82px;
+            max-height: 52px;
+            border: 2px solid $Gray-30;
+            border-radius: 99px;
+
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 44px;
+            color: $white-color;
+        }
+
+        &__vector {
+            max-width: 70px;
+            margin: 16px 0;
+            border: 2px solid $main-color-teal;
+        }
+
+        &__text {
+            margin: 0 auto;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+        }
+
+        &__img {
+            max-width: 740px;
+            
+            &_1 {
+                padding-top: 100px;
+            }
+
+            &_2 {
+                padding-top: 45px;
+            }
+
+            &_3 {
+                padding-top: 130px;
+            }
+        }
+    } 
 }

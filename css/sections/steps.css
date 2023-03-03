@@ -12,9 +12,19 @@
   margin-top: 200px;
   background: #000E50;
 }
+@media screen and (max-width: 348px) {
+  .steps {
+    margin: 100px auto 0;
+  }
+}
 .steps__box {
   max-width: 830px;
   margin: 0 auto;
+}
+@media screen and (max-width: 348px) {
+  .steps__box {
+    max-width: 415px;
+  }
 }
 .steps__namber {
   padding-top: 150px;
@@ -22,11 +32,12 @@
 }
 .steps__title {
   padding-top: 215px;
+  padding-bottom: 50px;
+  text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
   line-height: 100px;
-  text-align: center;
   color: #fff;
 }
 .steps__subtitle {
@@ -38,11 +49,102 @@
   text-align: center;
   color: #B5BAC1;
 }
+<<<<<<< HEAD
 .steps .step__item {
   position: absolute;
   max-width: 500px;
   background: #0D1A59;
   border-radius: 12px;
+=======
+.steps .step {
+  display: flex;
+  padding: 80px 0 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 348px) {
+  .steps .step {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__container {
+    margin: 0 auto;
+  }
+}
+.steps .step__item {
+  padding: 70px 56px 40px;
+  border-radius: 12px;
+  background: #0D1A59;
+}
+@media screen and (max-width: 348px) {
+  .steps .step__item {
+    margin: 0 auto;
+  }
+}
+.steps .step__point {
+  max-width: 500px;
+}
+@media screen and (max-width: 348px) {
+  .steps .step__point {
+    margin: 0 auto;
+  }
+}
+.steps .step__namber {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 348px) {
+  .steps .step__namber {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.steps .step__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.steps .step__subtitle {
+  display: flex;
+  align-items: center;
+  padding: 4px 20px;
+  max-width: 82px;
+  max-height: 52px;
+  border: 2px solid #B5BAC1;
+  border-radius: 99px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fff;
+}
+.steps .step__vector {
+  max-width: 70px;
+  margin: 16px 0;
+  border: 2px solid #00CCC2;
+}
+.steps .step__text {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.steps .step__img {
+  max-width: 740px;
+}
+.steps .step__img_1 {
+  padding-top: 100px;
+}
+.steps .step__img_2 {
+  padding-top: 45px;
+}
+.steps .step__img_3 {
+  padding-top: 130px;
+>>>>>>> steps
 }
 
 /*# sourceMappingURL=steps.css.map */
