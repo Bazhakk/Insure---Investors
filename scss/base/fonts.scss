@@ -21,3 +21,36 @@
          url('../../fonts/gteestiprodisplaybold.otf') format('otf');
     font-weight: 700;
 }
+
+// DM Sans - Regular
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/DMSans-Regular\ \(convert.io\).eot') format('embedded-opentype'),
+         url('../../fonts/DMSans-Regular_1.svg') format('svg'),
+         url('../../fonts/DMSans-Regular\ \(convert.io\).woff') format('woff'),
+         url('../../fonts/DMSans-Regular.woff2') format('woff2'),
+         url('../../fonts/DMSans-Regular\ \(convert.io\).otf') format('otf');
+    font-weight: 400;
+}
+
+// DM Sans - Medium
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/DMSans-Medium\ \(convert.io\).eot') format('embedded-opentype'),
+         url('../../fonts/DMSans-Medium_1.svg') format('svg'),
+         url('../../fonts/DMSans-Medium\ \(convert.io\).woff') format('woff'),
+         url('../../fonts/DMSans-Medium.woff2') format('woff2'),
+         url('../../fonts/DMSans-Medium\ \(convert.io\).otf') format('otf');
+    font-weight: 500;
+}
+
+// DM Sans - Bold
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/DMSans-Bold\ \(convert.io\).eot') format('embedded-opentype'),
+         url('../../fonts/DMSans-Bold.svg') format('svg'),
+         url('../../fonts/DMSans-Bold\ \(convert.io\).woff') format('woff'),
+         url('../../fonts/DMSans-Bold.woff2'),
+         url('../../fonts/DMSans-Bold\ \(convert.io\).otf') format('otf');
+    font-weight: 700;
+}
