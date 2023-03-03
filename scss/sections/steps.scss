@@ -5,22 +5,22 @@
     margin-top: 200px;
     background: $blue-dark;
 
-    @media screen and (max-width: 348px) {
+    @media screen and (max-width: 1024px) {
         margin: 100px auto 0;
     }
 
     &__box {
         max-width: 830px;
         margin: 0 auto;
-
-        @media screen and (max-width: 348px) {
-           max-width: 415px;
-        }
     }
 
     &__namber {
         padding-top: 150px;
         position: absolute;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 50px;
+        }
     }
 
     &__title {
@@ -33,23 +33,9 @@
         line-height: 100px;
         color: $white-color;
 
-        // &_span {
-        //     border: 6px solid $main-color-pink;
-        //     // position: absolute;
-        //     // max-width: 210px;
-        //     // max-height: 21px;
-
-
-        //     // border-radius: 12px;
-        //     // text-decoration: underline $main-color-pink;
-
-        //     // position: absolute;
-        //     // max-width: 210px;
-        //     // max-height: 21px;
-        //     // margin-top: -130px;
-        //     // margin-left: 50px;
-        //     // background: $main-color-pink;
-        // }
+        @media screen and (max-width: 1024px) {
+            padding: 100px 0 25px;
+        }
     }
 
     &__subtitle {
@@ -65,10 +51,10 @@
     .step {
         display: flex;
         padding: 80px 0 100px;
-        // justify-content: space-between;
         gap: 30px;
 
-        @media screen and (max-width: 348px) {
+        @media screen and (max-width: 1024px) {
+            padding: 35px 0 55px;
             flex-direction: column;
         }
 
@@ -84,7 +70,7 @@
             border-radius: 12px;
             background: $step-namber;
 
-            @media screen and (max-width: 348px) {
+            @media screen and (max-width: 1024px) {
                 margin: 0 auto;
             }
         }
@@ -92,7 +78,7 @@
         &__point {
             max-width: 500px;
 
-            @media screen and (max-width: 348px) {
+            @media screen and (max-width: 1024px) {
                 margin: 0 auto;
             }
         }
@@ -101,9 +87,8 @@
             display: flex;
             justify-content: space-between;
 
-            @media screen and (max-width: 348px) {
-                display: flex;
-                justify-content: space-between;
+            @media screen and (max-width: 376px) {
+                flex-direction: column;
             }
         
         }

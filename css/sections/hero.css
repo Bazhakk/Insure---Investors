@@ -8,11 +8,40 @@
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
 .hero {
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("../../img/main_banner-Front_img 4.png");
+  }
+}
+.hero__container {
+  max-width: 875px;
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    margin: 0 auto;
+  }
 }
 .hero__box {
   padding-top: 100px;
@@ -26,11 +55,6 @@
 }
 .hero__title_span {
   color: #00CCC2;
-}
-@media screen and (max-width: 1024px) {
-  .hero__title {
-    font-weight: 450;
-  }
 }
 .hero__but {
   display: flex;

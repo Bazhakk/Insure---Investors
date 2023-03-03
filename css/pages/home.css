@@ -9,6 +9,21 @@
   font-weight: 700;
 }
 @font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+@font-face {
   font-family: "GT Eesti Pro";
   src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
   font-weight: 500;
@@ -16,6 +31,21 @@
 @font-face {
   font-family: "GT Eesti Pro";
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
   font-weight: 700;
 }
 body {
@@ -48,6 +78,21 @@ ul {
 @font-face {
   font-family: "GT Eesti Pro";
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
   font-weight: 700;
 }
 .container {
@@ -141,6 +186,21 @@ ul {
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
 .header {
   width: 100%;
   position: absolute;
@@ -211,7 +271,6 @@ ul {
 .login__login-wrap {
   max-width: 412px;
   display: flex;
-  justify-content: space-between;
   gap: 40px;
 }
 .login__login-wrap_link {
@@ -338,11 +397,40 @@ ul {
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
 .hero {
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("../../img/main_banner-Front_img 4.png");
+  }
+}
+.hero__container {
+  max-width: 875px;
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    margin: 0 auto;
+  }
 }
 .hero__box {
   padding-top: 100px;
@@ -356,11 +444,6 @@ ul {
 }
 .hero__title_span {
   color: #00CCC2;
-}
-@media screen and (max-width: 1024px) {
-  .hero__title {
-    font-weight: 450;
-  }
 }
 .hero__but {
   display: flex;
@@ -394,11 +477,26 @@ ul {
   src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
   font-weight: 700;
 }
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
 .steps {
   margin-top: 200px;
   background: #000E50;
 }
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 1024px) {
   .steps {
     margin: 100px auto 0;
   }
@@ -407,14 +505,14 @@ ul {
   max-width: 830px;
   margin: 0 auto;
 }
-@media screen and (max-width: 348px) {
-  .steps__box {
-    max-width: 415px;
-  }
-}
 .steps__namber {
   padding-top: 150px;
   position: absolute;
+}
+@media screen and (max-width: 1024px) {
+  .steps__namber {
+    padding-top: 50px;
+  }
 }
 .steps__title {
   padding-top: 215px;
@@ -425,6 +523,11 @@ ul {
   font-size: 91px;
   line-height: 100px;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .steps__title {
+    padding: 100px 0 25px;
+  }
 }
 .steps__subtitle {
   margin: 0 auto;
@@ -440,8 +543,9 @@ ul {
   padding: 80px 0 100px;
   gap: 30px;
 }
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 1024px) {
   .steps .step {
+    padding: 35px 0 55px;
     flex-direction: column;
   }
 }
@@ -455,7 +559,7 @@ ul {
   border-radius: 12px;
   background: #0D1A59;
 }
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 1024px) {
   .steps .step__item {
     margin: 0 auto;
   }
@@ -463,7 +567,7 @@ ul {
 .steps .step__point {
   max-width: 500px;
 }
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 1024px) {
   .steps .step__point {
     margin: 0 auto;
   }
@@ -472,10 +576,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 348px) {
+@media screen and (max-width: 376px) {
   .steps .step__namber {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
 }
 .steps .step__title {
