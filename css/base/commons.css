@@ -1,98 +1,17 @@
-@font-face {
-  font-family: "GT Eesti Pro";
-  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "GT Eesti Pro";
-  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
-  font-weight: 700;
-}
-.container {
-  width: 100%;
-  max-width: 1560px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+/* Error: expected "{".
+ *    ,
+ * 72 |       font-family: 'DM Sans';
+ *    |                             ^
+ *    '
+ *   scss\base\commons.scss 72:29  root stylesheet */
 
-.button_first {
-  padding: 13px 40px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  border-radius: 66px;
-  color: #fff;
-  background: #00CCC2;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a    \2577 \a 72 \2502        font-family: 'DM Sans';\d\a    \2502                              ^\a    \2575 \a   scss\\base\\commons.scss 72:29  root stylesheet";
 }
-.button_first:hover {
-  transition: all 0.4s;
-  background-color: #0EB7AE;
-}
-@media screen and (max-width: 1024px) {
-  .button_first {
-    display: none;
-  }
-}
-.button_second {
-  padding: 20px 40px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #fff;
-  background: #E91E63;
-  border-radius: 66px;
-}
-@media screen and (max-width: 1024px) {
-  .button_second {
-    padding: 20px 80px;
-    margin: 0 auto;
-  }
-}
-.button_second:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
-}
-.button_third {
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  text-align: right;
-  color: #0A1C33;
-}
-.button_fourth {
-  padding: 20px 40px;
-  background: #E91E63;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #fff;
-}
-.button_fourth:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
-}
-
-.link-anima {
-  position: relative;
-}
-.link-anima::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  background-color: #0EB7AE;
-  transition: width 0.4s;
-}
-.link-anima:hover::before {
-  width: 100%;
-}
-
-/*# sourceMappingURL=commons.css.map */

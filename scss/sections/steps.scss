@@ -5,7 +5,11 @@
     margin-top: 200px;
     background: $blue-dark;
 
+<<<<<<< HEAD
     @media screen and (max-width: 348px) {
+=======
+    @media screen and (max-width: 1024px) {
+>>>>>>> master
         margin: 100px auto 0;
     }
 
@@ -21,6 +25,10 @@
     &__namber {
         padding-top: 150px;
         position: absolute;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 50px;
+        }
     }
 
     &__title {
@@ -33,6 +41,7 @@
         line-height: 100px;
         color: $white-color;
 
+<<<<<<< HEAD
         // &_span {
         //     border: 6px solid $main-color-pink;
         //     // position: absolute;
@@ -50,6 +59,11 @@
         //     // margin-left: 50px;
         //     // background: $main-color-pink;
         // }
+=======
+        @media screen and (max-width: 1024px) {
+            padding: 100px 0 25px;
+        }
+>>>>>>> master
     }
 
     &__subtitle {
@@ -65,10 +79,17 @@
     .step {
         display: flex;
         padding: 80px 0 100px;
+<<<<<<< HEAD
         // justify-content: space-between;
         gap: 30px;
 
         @media screen and (max-width: 348px) {
+=======
+        gap: 30px;
+
+        @media screen and (max-width: 1024px) {
+            padding: 35px 0 55px;
+>>>>>>> master
             flex-direction: column;
         }
 
@@ -84,7 +105,11 @@
             border-radius: 12px;
             background: $step-namber;
 
+<<<<<<< HEAD
             @media screen and (max-width: 348px) {
+=======
+            @media screen and (max-width: 1024px) {
+>>>>>>> master
                 margin: 0 auto;
             }
         }
@@ -92,7 +117,11 @@
         &__point {
             max-width: 500px;
 
+<<<<<<< HEAD
             @media screen and (max-width: 348px) {
+=======
+            @media screen and (max-width: 1024px) {
+>>>>>>> master
                 margin: 0 auto;
             }
         }
@@ -101,9 +130,14 @@
             display: flex;
             justify-content: space-between;
 
+<<<<<<< HEAD
             @media screen and (max-width: 348px) {
                 display: flex;
                 justify-content: space-between;
+=======
+            @media screen and (max-width: 376px) {
+                flex-direction: column;
+>>>>>>> master
             }
         
         }

@@ -40,11 +40,14 @@
       background: $main-color-pink;
       border-radius: 66px;
 
+<<<<<<< HEAD
       @media screen and (max-width: 1024px) {
         padding: 20px 80px;
         margin: 0 auto;
       }
 
+=======
+>>>>>>> master
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;
@@ -64,6 +67,7 @@
       padding: 20px 40px;
       background: $main-color-pink;
       border-radius: 66px;
+<<<<<<< HEAD
 
       font-family: 'DM Sans';
       font-weight: 700;
@@ -89,31 +93,21 @@
     //   border-radius: 66px;
     //   color: $white-color;
     //   background: $main-color-pink;
+=======
+>>>>>>> master
 
-    //   &:hover {
-    //     transition: all .4s;
-    //     background-color: $hover-color-pink;
-    //   }
-    // }
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $white-color;
 
-    // &_third {
-    //   padding: 5px 15px;
-    //   font-family: 'GT Eesti Pro';
-    //   font-weight: 700;
-    //   font-size: 12px;
-    //   line-height: 24px;
-    //   color: $white-color;
-    //   background: $main-color-teal;
-    //   border-radius: 66px;
-
-    //   &:hover {
-    //     transition: all .4s;
-    //     background-color: $hover-color-teal;
-    //   }
-    // }
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+    }
 }
-
-
 
 //ANIMATION
 .link-anima {
