@@ -30,84 +30,84 @@
         }
     }
 
-    &_second {
-      padding: 20px 40px;
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
-      background: $main-color-pink;
-      border-radius: 66px;
-
-<<<<<<< HEAD
-      @media screen and (max-width: 1024px) {
-        padding: 20px 80px;
-        margin: 0 auto;
-      }
-
-=======
->>>>>>> master
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
-    }
-
-    &_third {
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      text-align: right;
-      color: $Gray-100;
-    }
-
-    &_fourth {
-      padding: 20px 40px;
-      background: $main-color-pink;
-      border-radius: 66px;
-<<<<<<< HEAD
-
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
-
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
-    }
-
-
-
-// Multi Family
     // &_second {
     //   padding: 20px 40px;
     //   font-family: 'DM Sans';
     //   font-weight: 700;
     //   font-size: 21px;
     //   line-height: 25px;
-    //   border-radius: 66px;
     //   color: $white-color;
     //   background: $main-color-pink;
-=======
->>>>>>> master
+    //   border-radius: 66px;
 
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
+// <<<<<<< HEAD
+//       @media screen and (max-width: 1024px) {
+//         padding: 20px 80px;
+//         margin: 0 auto;
+//       }
 
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
+// =======
+// >>>>>>> master
+//       &:hover {
+//         transition: all .4s;
+//         background-color: $hover-color-pink;
+//       }
+//     }
+
+//     &_third {
+//       font-family: 'DM Sans';
+//       font-weight: 700;
+//       font-size: 21px;
+//       line-height: 25px;
+//       text-align: right;
+//       color: $Gray-100;
+//     }
+
+//     &_fourth {
+//       padding: 20px 40px;
+//       background: $main-color-pink;
+//       border-radius: 66px;
+// <<<<<<< HEAD
+
+//       font-family: 'DM Sans';
+//       font-weight: 700;
+//       font-size: 21px;
+//       line-height: 25px;
+//       color: $white-color;
+
+//       &:hover {
+//         transition: all .4s;
+//         background-color: $hover-color-pink;
+//       }
     }
-}
+
+
+
+// // Multi Family
+//     // &_second {
+//     //   padding: 20px 40px;
+//     //   font-family: 'DM Sans';
+//     //   font-weight: 700;
+//     //   font-size: 21px;
+//     //   line-height: 25px;
+//     //   border-radius: 66px;
+//     //   color: $white-color;
+//     //   background: $main-color-pink;
+// =======
+// >>>>>>> master
+
+//       font-family: 'DM Sans';
+//       font-weight: 700;
+//       font-size: 21px;
+//       line-height: 25px;
+//       color: $white-color;
+
+//       &:hover {
+//         transition: all .4s;
+//         background-color: $hover-color-pink;
+//       }
+//     }
+// }
 
 //ANIMATION
 .link-anima {

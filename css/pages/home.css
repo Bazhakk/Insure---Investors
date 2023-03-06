@@ -1,18 +1,410 @@
-/* Error: expected "{".
- *    ,
- * 72 |       font-family: 'DM Sans';
- *    |                             ^
- *    '
- *   scss\base\commons.scss 72:29  @import
- *   scss\pages\home.scss 4:9      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected \"{\".\a    \2577 \a 72 \2502        font-family: 'DM Sans';\d\a    \2502                              ^\a    \2575 \a   scss\\base\\commons.scss 72:29  @import\a   scss\\pages\\home.scss 4:9      root stylesheet";
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
 }
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.button_first {
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 66px;
+  color: #fff;
+  background: #00CCC2;
+}
+.button_first:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
+@media screen and (max-width: 1024px) {
+  .button_first {
+    display: none;
+  }
+}
+
+.link-anima {
+  position: relative;
+}
+.link-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #0EB7AE;
+  transition: width 0.4s;
+}
+.link-anima:hover::before {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  margin-top: 47px;
+  top: 0;
+  background: transparent;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    position: relative;
+    padding-bottom: 15px;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .header__container {
+    margin: 0 auto;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__login {
+  margin-right: auto;
+}
+.header .logo {
+  max-height: 42px;
+}
+.header .logo svg {
+  max-height: 42px;
+}
+@media screen and (max-width: 1024px) {
+  .header .logo {
+    margin-right: 10px;
+  }
+}
+
+.main-menu {
+  width: 100%;
+  margin-left: 80px;
+  max-width: 655px;
+  display: flex;
+  gap: 40px;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main-menu__link {
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+.login__login-wrap {
+  max-width: 412px;
+  display: flex;
+  gap: 40px;
+}
+.login__login-wrap_link {
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0D1958;
+}
+.login__login-wrap_link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+@media screen and (max-width: 1024px) {
+  .login__login-wrap {
+    display: none;
+  }
+}
+.login__link {
+  max-height: 42px;
+  gap: 30px;
+}
+.login__link svg {
+  max-height: 42px;
+  margin-right: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .login__link {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  height: 100vh;
+  display: none;
+  z-index: 999999;
+  flex-direction: column;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  left: 0;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  gap: 40px;
+  background-color: #fff;
+}
+.mobile-menu__menu, .mobile-menu__link, .mobile-menu__reference {
+  color: #0A1C33;
+}
+.mobile-menu__menu::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  background: #0A1C33;
+}
+.mobile-menu__reference::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  background: #0A1C33;
+}
+.mobile-menu__registration {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+@media screen and (max-width: 348px) {
+  .mobile-menu__registration {
+    flex-direction: column;
+  }
+}
+.mobile-menu__vector {
+  border: 1px solid #CED2D6;
+}
+.mobile-menu__btn {
+  margin-left: 66px;
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 66px;
+  color: #fff;
+  background: #00CCC2;
+}
+
+.burger {
+  position: relative;
+  z-index: 9999;
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  background-image: url("../../img/burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.burger-active {
+  background-image: url("../../img/close.svg");
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+.hero {
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.woff2") format("otf");
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=home.css.map */
