@@ -16,24 +16,33 @@
 
     &__figure {
         position: absolute;
-        max-width: 343px;
-        max-height: 100px;
-        left: 411px;
-        top: 1211px;
+        top: 935px;
+        left: 350px;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto;
+        }
     }
 
-        &__number {
-            font-family: 'Poller One';
-            font-weight: 400;
-            font-size: 450px;
-            line-height: 100px;
-            text-align: center;
-            color: #0D1A59;
+    &__number {
+        font-family: 'Poller One';
+        font-weight: 400;
+        font-size: 450px;
+        line-height: 100px;
+        text-align: center;
+        color: $step-namber;
+    }
+
+    &__info {
+        position: relative;
+        padding-top: 215px;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto;
         }
+    }
     
     &__title {
-        padding-top: 215px;
-        padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
@@ -46,12 +55,12 @@
         }
 
         &_span {
-            max-height: 20px;
             background: $main-color-pink;
         }
     }
 
     &__subtitle {
+        max-width: 525px;
         margin: 0 auto;
         font-family: 'DM Sans';
         font-weight: 400;
