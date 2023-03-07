@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.steps {
+  margin-top: 200px;
+  background: #000E50;
+}
+@media screen and (max-width: 1024px) {
+  .steps {
+    margin: 100px auto 0;
+  }
+}
+.steps__box {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.steps__figure {
+  position: absolute;
+  max-width: 343px;
+  max-height: 100px;
+  left: 411px;
+  top: 1211px;
+}
+.steps__number {
+  font-family: "Poller One";
+  font-weight: 400;
+  font-size: 450px;
+  line-height: 100px;
+  text-align: center;
+  color: #0D1A59;
+}
+.steps__title {
+  padding-top: 215px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .steps__title {
+    padding: 100px 0 25px;
+  }
+}
+.steps__title_span {
+  max-height: 20px;
+  background: #E91E63;
+}
+.steps__subtitle {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+.steps .step {
+  display: flex;
+  padding: 80px 0 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step {
+    padding: 35px 0 55px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__container {
+    margin: 0 auto;
+  }
+}
+.steps .step__item {
+  padding: 70px 56px 40px;
+  border-radius: 12px;
+  background: #0D1A59;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__item {
+    margin: 0 auto;
+  }
+}
+.steps .step__point {
+  max-width: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__point {
+    margin: 0 auto;
+  }
+}
+.steps .step__namber {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  .steps .step__namber {
+    flex-direction: column;
+  }
+}
+.steps .step__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.steps .step__subtitle {
+  display: flex;
+  align-items: center;
+  padding: 4px 20px;
+  max-width: 82px;
+  max-height: 52px;
+  border: 2px solid #B5BAC1;
+  border-radius: 99px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fff;
+}
+.steps .step__vector {
+  max-width: 70px;
+  margin: 16px 0;
+  border: 2px solid #00CCC2;
+}
+.steps .step__text {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.steps .step__img {
+  max-width: 740px;
+}
+.steps .step__img_1 {
+  padding-top: 100px;
+}
+.steps .step__img_2 {
+  padding-top: 45px;
+}
+.steps .step__img_3 {
+  padding-top: 130px;
+}
+.steps .btn-steps {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/*# sourceMappingURL=steps.css.map */

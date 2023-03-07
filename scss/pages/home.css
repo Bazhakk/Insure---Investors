@@ -1,0 +1,675 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+section {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.button_first {
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 66px;
+  color: #fff;
+  background: #00CCC2;
+}
+.button_first:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
+@media screen and (max-width: 1024px) {
+  .button_first {
+    display: none;
+  }
+}
+.button_second {
+  padding: 20px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+  background: #E91E63;
+  border-radius: 66px;
+}
+.button_second:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_third {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: right;
+  color: #0A1C33;
+}
+.button_fourth {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_fourth:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+
+.link-anima {
+  position: relative;
+}
+.link-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #0EB7AE;
+  transition: width 0.4s;
+}
+.link-anima:hover::before {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  margin-top: 47px;
+  top: 0;
+  background: transparent;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    position: relative;
+    padding-bottom: 15px;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .header__container {
+    margin: 0 auto;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__login {
+  margin-right: auto;
+}
+.header .logo {
+  max-height: 42px;
+}
+.header .logo svg {
+  max-height: 42px;
+}
+@media screen and (max-width: 1024px) {
+  .header .logo {
+    margin-right: 10px;
+  }
+}
+
+.main-menu {
+  width: 100%;
+  margin-left: 80px;
+  max-width: 655px;
+  display: flex;
+  gap: 40px;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main-menu__link {
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+.login__login-wrap {
+  max-width: 412px;
+  display: flex;
+  gap: 40px;
+}
+.login__login-wrap_link {
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0D1958;
+}
+.login__login-wrap_link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+@media screen and (max-width: 1024px) {
+  .login__login-wrap {
+    display: none;
+  }
+}
+.login__link {
+  max-height: 42px;
+  gap: 30px;
+}
+.login__link svg {
+  max-height: 42px;
+  margin-right: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .login__link {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  height: 100vh;
+  display: none;
+  z-index: 999999;
+  flex-direction: column;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  left: 0;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  gap: 40px;
+  background-color: #fff;
+}
+.mobile-menu__menu, .mobile-menu__link, .mobile-menu__reference {
+  color: #0A1C33;
+}
+.mobile-menu__menu::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  background: #0A1C33;
+}
+.mobile-menu__reference::after {
+  content: ">";
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  max-width: 0;
+  max-height: 0;
+  right: 20px;
+  background: #0A1C33;
+}
+.mobile-menu__registration {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+@media screen and (max-width: 348px) {
+  .mobile-menu__registration {
+    flex-direction: column;
+  }
+}
+.mobile-menu__vector {
+  border: 1px solid #CED2D6;
+}
+.mobile-menu__btn {
+  margin-left: 66px;
+  padding: 13px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 66px;
+  color: #fff;
+  background: #00CCC2;
+}
+
+.burger {
+  position: relative;
+  z-index: 9999;
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  background-image: url("../../img/burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.burger-active {
+  background-image: url("../../img/close.svg");
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.hero {
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-image: url("../../img/main_banner-Front_img 4.png");
+  }
+}
+.hero__container {
+  max-width: 875px;
+  margin-left: 90px;
+  margin-bottom: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__container {
+    margin: 0 auto;
+  }
+}
+.hero__box {
+  padding-top: 100px;
+}
+.hero__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 103px;
+  line-height: 114px;
+  color: #0A1C33;
+}
+.hero__title_span {
+  color: #00CCC2;
+}
+.hero__but {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__but {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+.hero__watch {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .hero__watch {
+    margin: 0 auto;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.steps {
+  margin-top: 200px;
+  background: #000E50;
+}
+@media screen and (max-width: 1024px) {
+  .steps {
+    margin: 100px auto 0;
+  }
+}
+.steps__box {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.steps__figure {
+  position: absolute;
+  max-width: 343px;
+  max-height: 100px;
+  left: 411px;
+  top: 1211px;
+}
+.steps__number {
+  font-family: "Poller One";
+  font-weight: 400;
+  font-size: 450px;
+  line-height: 100px;
+  text-align: center;
+  color: #0D1A59;
+}
+.steps__title {
+  padding-top: 215px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .steps__title {
+    padding: 100px 0 25px;
+  }
+}
+.steps__title_span {
+  max-height: 20px;
+  background: #E91E63;
+}
+.steps__subtitle {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+.steps .step {
+  display: flex;
+  padding: 80px 0 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step {
+    padding: 35px 0 55px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__container {
+    margin: 0 auto;
+  }
+}
+.steps .step__item {
+  padding: 70px 56px 40px;
+  border-radius: 12px;
+  background: #0D1A59;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__item {
+    margin: 0 auto;
+  }
+}
+.steps .step__point {
+  max-width: 500px;
+}
+@media screen and (max-width: 1024px) {
+  .steps .step__point {
+    margin: 0 auto;
+  }
+}
+.steps .step__namber {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  .steps .step__namber {
+    flex-direction: column;
+  }
+}
+.steps .step__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.steps .step__subtitle {
+  display: flex;
+  align-items: center;
+  padding: 4px 20px;
+  max-width: 82px;
+  max-height: 52px;
+  border: 2px solid #B5BAC1;
+  border-radius: 99px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #fff;
+}
+.steps .step__vector {
+  max-width: 70px;
+  margin: 16px 0;
+  border: 2px solid #00CCC2;
+}
+.steps .step__text {
+  margin: 0 auto;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.steps .step__img {
+  max-width: 740px;
+}
+.steps .step__img_1 {
+  padding-top: 100px;
+}
+.steps .step__img_2 {
+  padding-top: 45px;
+}
+.steps .step__img_3 {
+  padding-top: 130px;
+}
+.steps .btn-steps {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/*# sourceMappingURL=home.css.map */
