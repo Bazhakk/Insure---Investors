@@ -35,6 +35,7 @@
   top: 0;
   background: transparent;
 }
+
 @media screen and (max-width: 1024px) {
   .header {
     position: relative;
@@ -46,6 +47,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 1024px) {
   .header__container {
     margin: 0 auto;
@@ -56,21 +58,24 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .header__login {
   margin-right: auto;
 }
+
 .header .logo {
   max-height: 42px;
 }
+
 .header .logo svg {
   max-height: 42px;
 }
+
 @media screen and (max-width: 1024px) {
   .header .logo {
     margin-right: 10px;
   }
 }
-
 .main-menu {
   width: 100%;
   margin-left: 80px;
@@ -82,24 +87,27 @@
   font-size: 20px;
   line-height: 26px;
 }
+
 .main-menu__link {
   color: #0A1C33;
 }
+
 @media screen and (max-width: 1024px) {
   .main-menu {
     display: none;
   }
 }
-
 .login {
   display: flex;
   align-items: center;
 }
+
 .login__login-wrap {
   max-width: 412px;
   display: flex;
   gap: 40px;
 }
+
 .login__login-wrap_link {
   font-family: "GT Eesti Pro";
   font-weight: 500;
@@ -107,10 +115,12 @@
   line-height: 26px;
   color: #0D1958;
 }
+
 .login__login-wrap_link:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
+
 @media screen and (max-width: 1024px) {
   .login__login-wrap {
     display: none;
@@ -120,16 +130,17 @@
   max-height: 42px;
   gap: 30px;
 }
+
 .login__link svg {
   max-height: 42px;
   margin-right: 45px;
 }
+
 @media screen and (max-width: 1024px) {
   .login__link {
     display: none;
   }
 }
-
 .mobile-menu {
   height: 100vh;
   display: none;
@@ -145,9 +156,11 @@
   gap: 40px;
   background-color: #fff;
 }
+
 .mobile-menu__menu, .mobile-menu__link, .mobile-menu__reference {
   color: #0A1C33;
 }
+
 .mobile-menu__menu::after {
   content: ">";
   position: absolute;
@@ -158,6 +171,7 @@
   right: 20px;
   background: #0A1C33;
 }
+
 .mobile-menu__reference::after {
   content: ">";
   position: absolute;
@@ -168,11 +182,13 @@
   right: 20px;
   background: #0A1C33;
 }
+
 .mobile-menu__registration {
   display: flex;
   align-items: center;
   gap: 22px;
 }
+
 @media screen and (max-width: 348px) {
   .mobile-menu__registration {
     flex-direction: column;
@@ -181,6 +197,7 @@
 .mobile-menu__vector {
   border: 1px solid #CED2D6;
 }
+
 .mobile-menu__btn {
   margin-left: 66px;
   padding: 13px 40px;
@@ -204,13 +221,16 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .burger-active {
   background-image: url("../../img/close.svg");
 }
+
 @media (max-width: 1024px) {
   .burger {
     display: block;
   }
 }
+/*# sourceMappingURL=header.css.map */
 
 /*# sourceMappingURL=header.css.map */

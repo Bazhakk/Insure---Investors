@@ -46,10 +46,12 @@
   color: #fff;
   background: #00CCC2;
 }
+
 .button_first:hover {
   transition: all 0.4s;
   background-color: #0EB7AE;
 }
+
 @media screen and (max-width: 1024px) {
   .button_first {
     display: none;
@@ -65,10 +67,12 @@
   background: #E91E63;
   border-radius: 66px;
 }
+
 .button_second:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
+
 .button_third {
   font-family: "DM Sans";
   font-weight: 700;
@@ -77,6 +81,7 @@
   text-align: right;
   color: #0A1C33;
 }
+
 .button_fourth {
   padding: 20px 40px;
   background: #E91E63;
@@ -87,6 +92,7 @@
   line-height: 25px;
   color: #fff;
 }
+
 .button_fourth:hover {
   transition: all 0.4s;
   background-color: #D81859;
@@ -95,6 +101,7 @@
 .link-anima {
   position: relative;
 }
+
 .link-anima::before {
   content: "";
   position: absolute;
@@ -105,8 +112,11 @@
   background-color: #0EB7AE;
   transition: width 0.4s;
 }
+
 .link-anima:hover::before {
   width: 100%;
 }
+
+/*# sourceMappingURL=commons.css.map */
 
 /*# sourceMappingURL=commons.css.map */
