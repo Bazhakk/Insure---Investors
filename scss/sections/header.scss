@@ -8,7 +8,7 @@
     // top: 0;
     background: transparent;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1250px) {
         position: relative;
         padding-bottom: 15px;
     }
@@ -18,15 +18,10 @@
         align-items: center;
         justify-content: space-between;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
             margin: 0 auto;
         }
     }
-
-    // &__input {
-    //     display: flex;
-    //     align-items: center;
-    // }
 }
 
 .main-menu {
@@ -44,7 +39,7 @@
         color: $Gray-100;
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1250px) {
         display: none;
     }
 }
@@ -55,7 +50,10 @@
     gap: 45px;
 
     &__left {
-        
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
         &_link {
             font-family: 'GT Eesti Pro';
             font-weight: 500;
@@ -66,9 +64,15 @@
             &:hover {
                 transition: all .4s;
                 color: $hover-color-teal;
+            }
         }
+
+        &_span {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
           display: none;
         }
     }
@@ -89,141 +93,95 @@
                 background-color: $hover-color-teal;
             }
         }
+
+        @media screen and (max-width: 1250px) {
+            display: none;
+        }
     }
 }
 
-// .login {
-//     display: flex;
-//     align-items: center;
+.mobile-menu {
+    height: 100vh;
+    display: none;
+    z-index: 999999;
+    flex-direction: column;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    left: 0;
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    gap: 40px;
+    background-color: $white-color;
 
-//     &__login-wrap {
-//         // width: 100%;
-//         max-width: 412px;
-//         display: flex;
-//         // justify-content: space-between;
-//         gap: 40px;
+    &__link,
+    &__menu,
+    &__reference {
+        color: $Gray-100;
+    }
 
-//         &_link {
-//             font-family: 'GT Eesti Pro';
-//             font-weight: 500;
-//             font-size: 16px;
-//             line-height: 26px;
-//             color: $blue-deep;
+    &__vector {
+        border: 1px solid $Gray-20;
+    }
 
-//             &:hover {
-//                 transition: all .4s;
-//                 color: $hover-color-teal;
-//             }
-//         }
+    &__registration {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
 
-//         @media screen and (max-width: 1024px) {
-//             display: none;
-//         }
-//     }
+    &__button {
+        padding: 13px 40px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 66px;
+        color: $white-color;
+        background: $main-color-teal;
+    }
 
-//     &__link {
-//         max-height: 42px;
-//         gap: 30px;
+    &__menu::after {
+        content: ">";
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        max-width: 0;
+        max-height: 0;
+        right: 20px;
+        background: $Gray-100;
+    }
 
-//         svg {
-//             max-height: 42px;
-//             margin-right: 45px;
-//         }
+    &__reference::after {
+        content: ">";
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        max-width: 0;
+        max-height: 0;
+        right: 20px;
+        background: $Gray-100;
+    }
+}
 
-//         @media screen and (max-width: 1024px) {
-//             display: none;
-//         }
-//     }
+.burger {
+    position: relative;
+    z-index: 9999;
+    display: none;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    background-image: url("../../img/burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
 
-// }
-
-// .mobile-menu {
-//     height: 100vh;
-//     display: none;
-//     z-index: 999999;
-//     flex-direction: column;
-//     position: fixed;
-//     // position: sticky;
-//     top: 120px;
-//     right: 0;
-//     left: 0;
-//     padding-left: 20px;
-//     font-size: 24px;
-//     line-height: 28px;
-//     gap: 40px;
-//     background-color: $white-color;
-
-//     &__menu,
-//     &__link,
-//     &__reference {
-//         color: $Gray-100;
-//     }
-
-//     &__menu::after {
-//         content: ">";
-//         position: absolute;
-//         text-align: center;
-//         z-index: 1;
-//         max-width: 0;
-//         max-height: 0;
-//         right: 20px;
-//         background: $Gray-100;
-//     }
-
-//     &__reference::after {
-//         content: ">";
-//         position: absolute;
-//         text-align: center;
-//         z-index: 1;
-//         max-width: 0;
-//         max-height: 0;
-//         right: 20px;
-//         background: $Gray-100;
-//     }
-
-//     &__registration {
-//         display: flex;
-//         align-items: center;
-//         gap: 22px;
-
-//         @media screen and (max-width: 348px) {
-//             flex-direction: column;
-//         }
-//     }
-
-//     &__vector {
-//         border: 1px solid $Gray-20;
-//     }
-
-//     &__btn {
-//         margin-left: 66px;
-//         padding: 13px 40px;
-//         font-family: 'DM Sans';
-//         font-weight: 700;
-//         font-size: 16px;
-//         line-height: 20px;
-//         border-radius: 66px;
-//         color: $white-color;
-//         background: $main-color-teal;
-//     }
-// }
-
-// .burger {
-//     position: relative;
-//     z-index: 9999;
-//     display: none;
-//     width: 60px;
-//     height: 60px;
-//     margin-left: 20px;
-//     background-image: url("../../img/burger.svg");
-//     background-size: contain;
-//     background-repeat: no-repeat;
-
-//     &-active {
-//         background-image: url("../../img/close.svg");
-//     }
+    &-active {
+        background-image: url("../../img/close.svg");
+    }
     
-//     @media (max-width: 1024px) {
-//         display: block;
-//     }
-// }
+    @media (max-width: 1250px) {
+        display: block;
+    }
+}
