@@ -1,34 +1,19 @@
 @import "variables";
 @import "fonts";
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
-    width: 100%;
-    max-width: 1560px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1540px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
 }
 
 .button {
-    &_first {
-        padding: 13px 40px;
-        font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        border-radius: 66px;
-        color: $white-color;
-        background: $main-color-teal;
-
-        &:hover {
-            transition: all .4s;
-            background-color: $hover-color-teal;
-        }
-
-        @media screen and (max-width: 1024px) {
-          display: none;
-        }
-    }
 
     &_second {
       padding: 20px 40px;
