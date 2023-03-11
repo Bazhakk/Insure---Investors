@@ -15,7 +15,7 @@
 
 .button {
 
-    &_second {
+    &_first {
       padding: 20px 40px;
       font-family: 'DM Sans';
       font-weight: 700;
@@ -25,37 +25,53 @@
       background: $main-color-pink;
       border-radius: 66px;
 
+      @media screen and (max-width: 300px) {
+        padding: 10px 20px;
+        font-size: 11px;
+        line-height: 13px;
+      }
+
+      @media screen and (max-width: 200px) {
+        font-size: 6px;
+        line-height: 8px;
+      }
+
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;
       }
     }
 
-    &_third {
+    &_second {
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
       text-align: right;
       color: $Gray-100;
-    }
 
-    &_fourth {
-      padding: 20px 40px;
-      background: $main-color-pink;
-      border-radius: 66px;
-
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
-
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
+      @media screen and (max-width: 300px) {
+        font-size: 11px;
+        line-height: 13px;
       }
     }
+
+    // &_fourth {
+    //   padding: 20px 40px;
+    //   background: $main-color-pink;
+    //   border-radius: 66px;
+
+    //   font-family: 'DM Sans';
+    //   font-weight: 700;
+    //   font-size: 21px;
+    //   line-height: 25px;
+    //   color: $white-color;
+
+    //   &:hover {
+    //     transition: all .4s;
+    //     background-color: $hover-color-pink;
+    //   }
+    // }
 }
 
 //ANIMATION

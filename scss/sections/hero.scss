@@ -2,26 +2,24 @@
 @import "../base/variables";
 
 .hero {
+    height: 100vh;
+    position: relative;
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
 
-    @media screen and (max-width: 1024px) {
-        background-image: url("../../img/main_banner-Front_img\ 4.png");
-    }
-
-    &__container {
-        max-width: 875px;
-        margin-left: 90px;
-        margin-bottom: 150px;
-
-        @media screen and (max-width: 1024px) {
-            margin: 0 auto;
-        }
+    @media screen and (max-width: 1250px) {
+        // background-image: url("../../img/main_banner-Front_img\ 4.png");
     }
 
     &__box {
+        max-width: 875px;
         padding-top: 100px;
+
+        @media screen and (max-width: 1250px) {
+            max-width: 430px;
+            padding-top: 50px;
+        }
     }
 
     &__title {
@@ -30,6 +28,16 @@
         font-size: 103px;
         line-height: 114px;
         color: $Gray-100;
+
+        @media screen and (max-width: 1250px) {
+            font-size: 50px;
+            line-height: 57px;
+        }
+
+        @media screen and (max-width: 300px) {
+            font-size: 25px;
+            line-height: 30px;
+          }
 
         &_span {
             color: $main-color-teal;
@@ -40,9 +48,9 @@
         display: flex;
         gap: 50px;
 
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
+        @media screen and (max-width: 1250px) {
             margin: 0 auto;
+            flex-direction: column;
             align-items: center;
         }
     }
@@ -52,8 +60,12 @@
         align-items: center;
         gap: 15px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1250px) {
             margin: 0 auto;
         }
+
+        @media screen and (max-width: 300px) {
+            flex-direction: column-reverse;
+          }
     }
 }

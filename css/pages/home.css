@@ -122,7 +122,7 @@ ul {
   margin: 0 auto;
 }
 
-.button_second {
+.button_first {
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -132,11 +132,24 @@ ul {
   background: #E91E63;
   border-radius: 66px;
 }
-.button_second:hover {
+@media screen and (max-width: 300px) {
+  .button_first {
+    padding: 10px 20px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 200px) {
+  .button_first {
+    font-size: 6px;
+    line-height: 8px;
+  }
+}
+.button_first:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_third {
+.button_second {
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
@@ -144,19 +157,11 @@ ul {
   text-align: right;
   color: #0A1C33;
 }
-.button_fourth {
-  padding: 20px 40px;
-  background: #E91E63;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #fff;
-}
-.button_fourth:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
+@media screen and (max-width: 300px) {
+  .button_second {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .link-anima {
@@ -210,7 +215,9 @@ ul {
   width: 100%;
   position: absolute;
   margin-top: 47px;
+  top: 0;
   background: transparent;
+  z-index: 2;
 }
 @media screen and (max-width: 1250px) {
   .header {
@@ -414,27 +421,21 @@ ul {
   font-weight: 700;
 }
 .hero {
+  height: 100vh;
+  position: relative;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 1024px) {
-  .hero {
-    background-image: url("../../img/main_banner-Front_img 4.png");
-  }
-}
-.hero__container {
-  max-width: 875px;
-  margin-left: 90px;
-  margin-bottom: 150px;
-}
-@media screen and (max-width: 1024px) {
-  .hero__container {
-    margin: 0 auto;
-  }
-}
 .hero__box {
+  max-width: 875px;
   padding-top: 100px;
+}
+@media screen and (max-width: 1250px) {
+  .hero__box {
+    max-width: 430px;
+    padding-top: 50px;
+  }
 }
 .hero__title {
   font-family: "GT Eesti Pro";
@@ -443,6 +444,18 @@ ul {
   line-height: 114px;
   color: #0A1C33;
 }
+@media screen and (max-width: 1250px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 57px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .hero__title_span {
   color: #00CCC2;
 }
@@ -450,10 +463,10 @@ ul {
   display: flex;
   gap: 50px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .hero__but {
-    flex-direction: column;
     margin: 0 auto;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -462,9 +475,14 @@ ul {
   align-items: center;
   gap: 15px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .hero__watch {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero__watch {
+    flex-direction: column-reverse;
   }
 }
 

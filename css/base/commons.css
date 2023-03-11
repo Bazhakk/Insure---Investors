@@ -40,7 +40,7 @@
   margin: 0 auto;
 }
 
-.button_second {
+.button_first {
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -50,11 +50,24 @@
   background: #E91E63;
   border-radius: 66px;
 }
-.button_second:hover {
+@media screen and (max-width: 300px) {
+  .button_first {
+    padding: 10px 20px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 200px) {
+  .button_first {
+    font-size: 6px;
+    line-height: 8px;
+  }
+}
+.button_first:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_third {
+.button_second {
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
@@ -62,19 +75,11 @@
   text-align: right;
   color: #0A1C33;
 }
-.button_fourth {
-  padding: 20px 40px;
-  background: #E91E63;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #fff;
-}
-.button_fourth:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
+@media screen and (max-width: 300px) {
+  .button_second {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .link-anima {
