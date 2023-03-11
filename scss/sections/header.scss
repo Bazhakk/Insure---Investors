@@ -118,17 +118,40 @@
     &__link,
     &__menu,
     &__reference {
+        font-weight: bold;
         color: $Gray-100;
     }
 
+    &__menu,
+    &__reference {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+        
+    }
+
+    &__link {
+        &_span {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+    }
+
     &__vector {
+        max-width: 380px;
         border: 1px solid $Gray-20;
     }
 
     &__registration {
         display: flex;
         align-items: center;
+        padding-top: 24px;
         gap: 65px;
+
+        @media screen and (max-width: 410px) {
+            flex-direction: column;
+        }
     }
 
     &__button {
@@ -140,28 +163,12 @@
         border-radius: 66px;
         color: $white-color;
         background: $main-color-teal;
-    }
 
-    &__menu::after {
-        content: ">";
-        position: absolute;
-        text-align: center;
-        z-index: 1;
-        max-width: 0;
-        max-height: 0;
-        right: 20px;
-        background: $Gray-100;
-    }
-
-    &__reference::after {
-        content: ">";
-        position: absolute;
-        text-align: center;
-        z-index: 1;
-        max-width: 0;
-        max-height: 0;
-        right: 20px;
-        background: $Gray-100;
+        @media screen and (max-width: 220px) {
+            padding: 7px 20px;
+            font-size: 8px;
+            line-height: 10px;
+        }
     }
 }
 
