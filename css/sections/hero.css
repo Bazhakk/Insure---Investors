@@ -35,6 +35,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 1250px) {
+  .hero {
+    background-image: url("../../img/main_banner-Front_img 4.png");
+  }
+}
 .hero__box {
   max-width: 875px;
   padding-top: 100px;
