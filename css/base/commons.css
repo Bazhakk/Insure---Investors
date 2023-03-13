@@ -41,6 +41,8 @@
 }
 
 .button_first {
+  display: flex;
+  align-items: center;
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
