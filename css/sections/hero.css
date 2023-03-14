@@ -40,15 +40,29 @@
     background-image: url("../../img/bg-mobile-menu.png");
   }
 }
-.hero__box {
-  max-width: 875px;
+.hero__container {
+  display: flex;
+  justify-content: space-between;
   padding-top: 100px;
 }
 @media screen and (max-width: 1250px) {
-  .hero__box {
-    max-width: 430px;
+  .hero__container {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+}
+.hero__col_left {
+  flex-basis: 65%;
+  max-width: 875px;
+}
+.hero__col_right {
+  flex-basis: 35%;
+  padding-top: 60px;
+}
+@media screen and (max-width: 1250px) {
+  .hero__img {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 }
 .hero__title {
@@ -98,14 +112,6 @@
   .hero__watch {
     flex-direction: column-reverse;
   }
-}
-@media screen and (max-width: 1250px) {
-  .hero__mobile {
-    background-image: url("../../img/hero-mobile.png");
-  }
-}
-.hero__img {
-  display: none;
 }
 
 /*# sourceMappingURL=hero.css.map */

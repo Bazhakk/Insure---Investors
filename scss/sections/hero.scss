@@ -12,14 +12,38 @@
         background-image: url("../../img/bg-mobile-menu.png");
     }
 
-    &__box {
-        max-width: 875px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
         padding-top: 100px;
 
         @media screen and (max-width: 1250px) {
-            max-width: 430px;
+            padding-top: 40px;
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+    
+        &_left {
+          flex-basis: 65%;
+          max-width: 875px;
+        }
+    
+        &_right {
+          flex-basis: 35%;
+          padding-top: 60px;
+        }
+    }
+
+    &__img {
+        // width: 90vh;
+        // height: 90vh;
+
+        @media screen and (max-width: 1250px) {
             margin: 0 auto;
-            padding-top: 50px;
+            padding-top: 20px;
         }
     }
 
@@ -69,15 +93,4 @@
             flex-direction: column-reverse;
           }
     }
-
-    &__mobile {
-        @media screen and (max-width: 1250px) {
-            background-image: url("../../img/hero-mobile.png");
-        }
-    }
-
-    &__img {
-        display: none;
-    }
-
 }
