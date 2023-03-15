@@ -8,19 +8,19 @@
     background-repeat: no-repeat; 
     background-size: cover;
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1350px) {
+        flex-direction: column;
         background-image: url("../../img/bg-mobile-menu.png");
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
         padding-top: 100px;
 
-        @media screen and (max-width: 1250px) {
-            padding-top: 40px;
-            flex-direction: column;
+        @media screen and (max-width: 1045px) {
+            display: block;
+            padding-top: 0;
         }
     }
 
@@ -29,21 +29,16 @@
         &_left {
           flex-basis: 65%;
           max-width: 875px;
+          padding-top: 30px;
         }
     
         &_right {
           flex-basis: 35%;
-          padding-top: 60px;
+          position: absolute;
+
+          @media screen and (max-width: 1370px) {
+            flex-direction: column;
         }
-    }
-
-    &__img {
-        // width: 90vh;
-        // height: 90vh;
-
-        @media screen and (max-width: 1250px) {
-            margin: 0 auto;
-            padding-top: 20px;
         }
     }
 
@@ -53,6 +48,11 @@
         font-size: 103px;
         line-height: 114px;
         color: $Gray-100;
+
+        @media screen and (max-width: 1370px) {
+            font-size: 80px;
+            line-height: 87px;
+        }
 
         @media screen and (max-width: 1250px) {
             font-size: 50px;
