@@ -30,7 +30,6 @@
 }
 .hero {
   height: 100vh;
-  position: relative;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,6 +44,12 @@
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
+}
+@media screen and (max-width: 1370px) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1045px) {
   .hero__container {
@@ -62,7 +67,8 @@
   position: absolute;
 }
 @media screen and (max-width: 1370px) {
-  .hero__col_right {
+  .hero__col {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -77,12 +83,6 @@
   .hero__title {
     font-size: 80px;
     line-height: 87px;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .hero__title {
-    font-size: 50px;
-    line-height: 57px;
   }
 }
 @media screen and (max-width: 300px) {
