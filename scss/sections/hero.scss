@@ -27,7 +27,7 @@
           
           @media screen and (max-width: 1370px) {
             z-index: 0;
-            }
+          }
         }
     
         &_right {
@@ -35,6 +35,11 @@
           top: 15%;
           right: 0;
           z-index: 1;
+
+          @media screen and (max-width: 1170px) {
+            margin: 0 auto;
+            top: 100%;
+          }
         }
     }
 
@@ -43,6 +48,11 @@
         max-width: 1500px;
         min-width: 700px;
         object-fit: cover;
+
+        @media screen and (max-width: 1170px) {
+            // margin: 0 auto;
+            width: 100%;
+          }
     }
 
     &__title {
