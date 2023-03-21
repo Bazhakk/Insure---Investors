@@ -1,178 +1,177 @@
-// @import "../base/fonts";
-// @import "../base/variables";
+@import "../base/fonts";
+@import "../base/variables";
 
-// .steps {
-//     background: $blue-dark;
+.steps {
+    background: $blue-dark;
 
-//     @media screen and (max-width: 1024px) {
-//         margin: 100px auto 0;
-//     }
+    @media screen and (max-width: 1370px) {
+        margin: 100px auto 0;
+    }
 
-//     &__box {
-//         max-width: 860px;
-//         margin: 0 auto;
-//     }
+    &__box {
+        max-width: 860px;
+        margin: 0 auto;
+    }
 
-//     &__figure {
-//         position: absolute;
-//         top: 935px;
-//         left: 350px;
+    &__figure {
+        position: absolute;
+        top: 935px;
+        left: 350px;
 
-//         @media screen and (max-width: 1024px) {
-//             margin: 0 auto;
-//         }
-//     }
+        @media screen and (max-width: 1370px) {
+            margin: 0 auto;
+        }
+    }
 
-//     &__number {
-//         font-family: 'Poller One';
-//         font-weight: 400;
-//         font-size: 450px;
-//         line-height: 100px;
-//         text-align: center;
-//         color: $step-namber;
-//     }
+    &__number {
+        font-family: 'Poller One';
+        font-weight: 400;
+        font-size: 450px;
+        line-height: 100px;
+        text-align: center;
+        color: $step-namber;
+    }
 
-//     &__info {
-//         position: relative;
-//         padding-top: 215px;
+    &__info {
+        position: relative;
+        padding-top: 215px;
 
-//         @media screen and (max-width: 1024px) {
-//             margin: 0 auto;
-//         }
-//     }
+        @media screen and (max-width: 1370px) {
+            margin: 0 auto;
+        }
+    }
     
-//     &__title {
-//         text-align: center;
-//         font-family: 'GT Eesti Pro';
-//         font-weight: 700;
-//         font-size: 91px;
-//         line-height: 100px;
-//         color: $white-color;
+    &__title {
+        text-align: center;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $white-color;
 
-//         @media screen and (max-width: 1024px) {
-//             padding: 100px 0 25px;
-//         }
+        @media screen and (max-width: 1370px) {
+            padding: 100px 0 25px;
+        }
 
-//         &_span {
-//             background: $main-color-pink;
-//         }
-//     }
+        &_span {
+            background: $main-color-pink;
+        }
+    }
 
-//     &__subtitle {
-//         max-width: 525px;
-//         margin: 0 auto;
-//         font-family: 'DM Sans';
-//         font-weight: 400;
-//         font-size: 22px;
-//         line-height: 32px;
-//         text-align: center;
-//         color: $Gray-30;
-//     }
+    &__subtitle {
+        max-width: 525px;
+        margin: 0 auto;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-30;
+    }
 
-//     .step {
-//         display: flex;
-//         padding: 80px 0 100px;
-//         gap: 30px;
+    .step {
+        display: flex;
+        padding: 80px 0 100px;
+        gap: 30px;
 
-//         @media screen and (max-width: 1024px) {
-//             padding: 35px 0 55px;
-//             flex-direction: column;
-//         }
+        @media screen and (max-width: 1370px) {
+            padding: 35px 0 55px;
+            flex-direction: column;
+        }
 
-//         &__container {
+        &__container {
         
-//             @media screen and (max-width: 1024px) {
-//                 margin: 0 auto;
-//             }
-//         }
+            @media screen and (max-width: 1370px) {
+                margin: 0 auto;
+            }
+        }
 
-//         &__item {
-//             padding: 70px 56px 40px;
-//             border-radius: 12px;
-//             background: $step-namber;
+        &__item {
+            padding: 70px 56px 40px;
+            border-radius: 12px;
+            background: $step-namber;
 
-//             @media screen and (max-width: 1024px) {
-//                 margin: 0 auto;
-//             }
-//         }
+            @media screen and (max-width: 1370px) {
+                margin: 0 auto;
+            }
+        }
 
-//         &__point {
-//             max-width: 500px;
+        &__point {
+            max-width: 500px;
 
-//             @media screen and (max-width: 1024px) {
-//                 margin: 0 auto;
-//             }
-//         }
+            @media screen and (max-width: 1370px) {
+                margin: 0 auto;
+            }
+        }
 
-//         &__namber {
-//             display: flex;
-//             justify-content: space-between;
+        &__namber {
+            display: flex;
+            justify-content: space-between;
 
-//             @media screen and (max-width: 376px) {
-//                 flex-direction: column;
-//             }
+            @media screen and (max-width: 376px) {
+                flex-direction: column;
+            }
         
-//         }
+        }
 
-//         &__title {
-//             font-family: 'GT Eesti Pro';
-//             font-weight: 700;
-//             font-size: 54px;
-//             line-height: 58px;
-//             color: $white-color;
-//         }
+        &__title {
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 58px;
+            color: $white-color;
+        }
 
-//         &__subtitle {
-//             display: flex;
-//             align-items: center;
-//             padding: 4px 20px;
-//             max-width: 82px;
-//             max-height: 52px;
-//             border: 2px solid $Gray-30;
-//             border-radius: 99px;
+        &__subtitle {
+            display: flex;
+            padding: 4px 20px;
+            max-width: 82px;
+            max-height: 52px;
+            border: 2px solid $Gray-30;
+            border-radius: 99px;
 
-//             font-family: 'GT Eesti Pro';
-//             font-weight: 700;
-//             font-size: 42px;
-//             line-height: 44px;
-//             color: $white-color;
-//         }
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 44px;
+            color: $white-color;
+        }
 
-//         &__vector {
-//             max-width: 70px;
-//             margin: 16px 0;
-//             border: 2px solid $main-color-teal;
-//         }
+        &__vector {
+            max-width: 70px;
+            margin: 16px 0;
+            border: 2px solid $main-color-teal;
+        }
 
-//         &__text {
-//             margin: 0 auto;
-//             font-family: 'DM Sans';
-//             font-weight: 400;
-//             font-size: 22px;
-//             line-height: 32px;
-//             color: $white-color;
-//         }
+        &__text {
+            margin: 0 auto;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+        }
 
-//         &__img {
-//             max-width: 740px;
+        &__img {
+            max-width: 740px;
             
-//             &_1 {
-//                 padding-top: 100px;
-//             }
+            &_1 {
+                padding-top: 100px;
+            }
 
-//             &_2 {
-//                 padding-top: 45px;
-//             }
+            &_2 {
+                padding-top: 45px;
+            }
 
-//             &_3 {
-//                 padding-top: 130px;
-//             }
-//         }
-//     } 
+            &_3 {
+                padding-top: 130px;
+            }
+        }
+    } 
 
-//     .btn-steps {
-//         margin: 0 auto;
-//         text-align: center;
-//         margin-bottom: 120px;
-//     }
-// }
+    .btn-steps {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
