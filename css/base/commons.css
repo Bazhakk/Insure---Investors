@@ -52,17 +52,17 @@
   background: #E91E63;
   border-radius: 66px;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 375px) {
   .button_first {
-    padding: 10px 20px;
-    font-size: 11px;
-    line-height: 13px;
+    padding: 20px 40px;
+    font-size: 21px;
+    line-height: 25px;
   }
 }
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 375px) {
   .button_first {
-    font-size: 6px;
-    line-height: 8px;
+    font-size: 16px;
+    line-height: 15px;
   }
 }
 .button_first:hover {
@@ -77,10 +77,16 @@
   text-align: right;
   color: #0A1C33;
 }
+@media screen and (max-width: 375px) {
+  .button_second {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
 @media screen and (max-width: 300px) {
   .button_second {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 

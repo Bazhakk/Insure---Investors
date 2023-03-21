@@ -27,15 +27,15 @@
       background: $main-color-pink;
       border-radius: 66px;
 
-      @media screen and (max-width: 300px) {
-        padding: 10px 20px;
-        font-size: 11px;
-        line-height: 13px;
+      @media screen and (max-width: 375px) {
+        padding: 20px 40px;
+        font-size: 21px;
+        line-height: 25px;
       }
 
-      @media screen and (max-width: 200px) {
-        font-size: 6px;
-        line-height: 8px;
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        line-height: 15px;
       }
 
       &:hover {
@@ -52,28 +52,16 @@
       text-align: right;
       color: $Gray-100;
 
+      @media screen and (max-width: 375px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
       @media screen and (max-width: 300px) {
-        font-size: 11px;
-        line-height: 13px;
+        font-size: 15px;
+        line-height: 20px;
       }
     }
-
-    // &_fourth {
-    //   padding: 20px 40px;
-    //   background: $main-color-pink;
-    //   border-radius: 66px;
-
-    //   font-family: 'DM Sans';
-    //   font-weight: 700;
-    //   font-size: 21px;
-    //   line-height: 25px;
-    //   color: $white-color;
-
-    //   &:hover {
-    //     transition: all .4s;
-    //     background-color: $hover-color-pink;
-    //   }
-    // }
 }
 
 //ANIMATION

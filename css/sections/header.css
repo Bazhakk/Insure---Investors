@@ -39,7 +39,8 @@
 @media screen and (max-width: 1250px) {
   .header {
     position: relative;
-    padding-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 30px;
   }
 }
 .header__container {
@@ -50,6 +51,12 @@
 @media screen and (max-width: 1250px) {
   .header__container {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .header__logo {
+    width: 106px;
+    padding: 15px;
   }
 }
 
@@ -73,38 +80,38 @@
   }
 }
 
-.input {
+.registration-menu {
   display: flex;
   align-items: center;
   gap: 45px;
 }
-.input__left {
+.registration-menu__left {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.input__left_link {
+.registration-menu__left_link {
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #0D1958;
 }
-.input__left_link:hover {
+.registration-menu__left_link:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
-.input__left_span {
+.registration-menu__left_span {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 @media screen and (max-width: 1250px) {
-  .input__left {
+  .registration-menu__left {
     display: none;
   }
 }
-.input__right_button {
+.registration-menu__right_button {
   padding: 13px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -114,12 +121,12 @@
   color: #fff;
   background: #00CCC2;
 }
-.input__right_button:hover {
+.registration-menu__right_button:hover {
   transition: all 0.4s;
   background-color: #0EB7AE;
 }
 @media screen and (max-width: 1250px) {
-  .input__right {
+  .registration-menu__right {
     display: none;
   }
 }
@@ -140,7 +147,10 @@
   background-color: #fff;
 }
 .mobile-menu__link, .mobile-menu__menu, .mobile-menu__reference {
-  font-weight: bold;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
   color: #0A1C33;
 }
 .mobile-menu__menu, .mobile-menu__reference {
@@ -154,13 +164,12 @@
   gap: 22px;
 }
 .mobile-menu__vector {
-  max-width: 380px;
+  margin-right: 20px;
   border: 1px solid #CED2D6;
 }
 .mobile-menu__registration {
   display: flex;
   align-items: center;
-  padding-top: 24px;
   gap: 65px;
 }
 @media screen and (max-width: 410px) {
@@ -190,8 +199,8 @@
   position: relative;
   z-index: 9999;
   display: none;
-  width: 60px;
-  height: 60px;
+  width: 24px;
+  height: 24px;
   margin-left: 20px;
   background-image: url("../../img/burger.svg");
   background-size: contain;

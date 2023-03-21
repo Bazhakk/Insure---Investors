@@ -46,11 +46,11 @@
                 <a href="#" title="Сommercial properties" class="main-menu__link link-anima">Сommercial properties</a>
             </nav>
 
-            <nav class="input">
-                <div class="input__left">
-                    <a href="#" title="About" class="input__left_link">About</a>
-                    <a  href="#" title="Sign In" class="input__left_link">
-                        <span class="input__left_span">Sign In
+            <nav class="registration-menu">
+                <div class="registration-menu__left">
+                    <a href="#" title="About" class="registration-menu__left_link">About</a>
+                    <a  href="#" title="Sign In" class="registration-menu__left_link">
+                        <span class="registration-menu__left_span">Sign In
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 4C18.7907 4 21 5.50893 21 10.5C21 14.0982 18.7907 17 16 17C13.2093 17 11 13.9821 11 10.3839C11 5.50893 13.2093 4 16 4Z" stroke="#0A1C33" stroke-width="2" stroke-miterlimit="10"/>
                                 <path d="M12.6292 18C11.2809 19.051 10.7191 19.2612 9.82022 19.6816C7.91011 20.5224 6 20.9428 6 23.1499C6 23.7805 6 23.9907 6 24.306C6 25.6723 6.33708 25.7774 7.68539 26.408C10.1573 27.6692 12.6292 28.0896 16 27.9845C19.3708 27.9845 21.9551 27.5641 24.3146 26.408C25.6629 25.6723 26 25.6723 26 24.306C26 23.9907 26 23.7805 26 23.1499C26 20.8377 24.0899 20.5224 22.1798 19.6816C21.2809 19.2612 20.7191 19.051 19.3708 18" stroke="#0A1C33" stroke-width="2" stroke-miterlimit="10"/>
@@ -59,8 +59,8 @@
                     </a>
                 </div>
 
-                <div class="input__right">
-                    <a href="#" title="Get Appointed" class="input__right_button">Get Appointed</a>
+                <div class="registration-menu__right">
+                    <a href="#" title="Get Appointed" class="registration-menu__right_button">Get Appointed</a>
                 </div>
             </nav>
 
@@ -81,7 +81,7 @@
                 <div class="mobile-menu__vector"></div>
 
                 <a class="mobile-menu__menu" href="#" title="Lender portal" class="mobile-menu__link">Lender portal 
-                    <span class="mobile-menu__link_sign">
+                    <span class="mobile-menu__link-sign">
                         <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2L8 8L2 14" stroke="#0A1C33" stroke-width="3" stroke-linecap="round"/>
                         </svg>
@@ -123,110 +123,37 @@
     <main class="home">
     <!--HERO-->
 
-    <section class="hero">
-        <div class="hero__container container">
-            <div class="hero__col hero__col_left">
-                <h1 class="hero__title">Manage all of your insurance in <span class="hero__title_span">one simple policy</span></h1>
-                
-                <div class="hero__btn">
-                    <a href="#" title="Button" class="button button_first">Get Instant Quote</a>
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__col hero__col_left">
+                    <h1 class="hero__title">Manage all of your insurance in <span class="hero__title_span">one simple policy</span></h1>
+                    
+                    <div class="hero__btns">
+                        <a href="#" title="Button" class="button button_first">Get Instant Quote</a>
 
-                    <div class="hero__watch">
-                        <a href="index.html" title="Button" class="button_third_btn">
-                            <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="33.5" cy="33.5" r="32.5" stroke="#000E50" stroke-width="2"/>
-                                <path d="M43.4027 32.3205C44.6214 33.1086 44.6214 34.8914 43.4027 35.6795L30.336 44.1288C29.0052 44.9894 27.25 44.0341 27.25 42.4494L27.25 25.5506C27.25 23.9659 29.0052 23.0106 30.336 23.8712L43.4027 32.3205Z" fill="#000E50"/>
-                            </svg>
-                        </a>
-                        <a href="#" title="Button" class="button button_second">Watch how it works</a>
+                        <div class="hero__watch">
+                            <a href="index.html" title="Button" class="button_third_btn">
+                                <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="33.5" cy="33.5" r="32.5" stroke="#000E50" stroke-width="2"/>
+                                    <path d="M43.4027 32.3205C44.6214 33.1086 44.6214 34.8914 43.4027 35.6795L30.336 44.1288C29.0052 44.9894 27.25 44.0341 27.25 42.4494L27.25 25.5506C27.25 23.9659 29.0052 23.0106 30.336 23.8712L43.4027 32.3205Z" fill="#000E50"/>
+                                </svg>
+                            </a>
+                            <a href="#" title="Button" class="button button_second">Watch how it works</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__col hero__col_right">
+                    <img src="img/hero_img.png" alt="Hero" class="hero__img"/>
+
+                    <div class="hero__mobile">
+                        <img src="img/hero_mobile.png" alt="Hero" class="hero__img-mobile"/>
                     </div>
                 </div>
             </div>
-
-            <div class="hero__col hero__col_right">
-                <img src="img/hero_img.png" alt="Hero" class="hero__img"/>
-            </div>
-        </div>
-    </section>
+        </section>
     
-    <!--STEPS-->
-
-    <!-- <section class="steps">
-        <div class="steps__container container">
-            <div class="steps__box">
-
-                <div class="steps__figure">
-                    <p class="steps__number">3</p>
-                </div>
-                
-                <div class="steps__info">
-                    <h2 class="steps__title">Get coverage in <span class="steps__title_span">three</span> simple steps</h3>
-                    <p class="steps__subtitle">Our bundled property and liability coverage will save you money</p>
-                </div>
-
-            </div>
-
-            <ul class="step">
-                <li class="step__item">
-                    <div class="step__point">
-                        <div class="step__namber">
-                            <p class="step__title">Step</p>
-                            <p class="step__subtitle">#1</p>
-                        </div>
-
-                        <div class="step__vector"></div>
-
-                        <p class="step__text">Enter your property address and receive a real time quote instantly.</p>
-                        <img src="img/step_1.png" alt="Step" class="step__img_1"/>
-                    </div>
-                </li>
-
-                <li class="step__item">
-                    <div class="step__point">
-                        <div class="step__namber">
-                            <p class="step__title">Step</p>
-                            <p class="step__subtitle">#2</p>
-                        </div>
-
-                        <div class="step__vector"></div>
-
-                        <p class="step__text">Customize your coverage. Our online platform allows you tailor your policy to fit your specific needs and budget.</p>
-                        <img src="img/step_2.png" alt="Step" class="step__img_2"/>
-                    </div>
-                </li>
-
-                <li class="step__item">
-                    <div class="step__point">
-                        <div class="step__namber">
-                            <p class="step__title">Step</p>
-                            <p class="step__subtitle">#3</p>
-                        </div>
-
-                        <div class="step__vector"></div>
-
-                        <p class="step__text">Instantly receive proof of insurance so you can get back to doing what you do best!</p>
-                        <img src="img/step_3.png" alt="Step" class="step__img_3"/>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="btn-steps">
-                <a href="#" title="Get" class="btn-steps button_fourth">Get Started</a>
-            </div>
-
-        </div>
-    </section> -->
-
-
-    <!--SPECIALITIES-->
-
-    <!-- <section class="specialities">
-        <div class="specialities__container container">
-            <h2 class="specialities__title">Our specialities</h3>
-            <p class="specialities__subtitle">What we do best</p>
-        </div>
-    </section> -->
-
+   
     </main>
 
     <!--FOOTER-->
