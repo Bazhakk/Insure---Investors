@@ -4,23 +4,14 @@
 .steps {
     background: $blue-dark;
 
-    @media screen and (max-width: 1370px) {
-        margin: 100px auto 0;
-    }
-
     &__box {
-        max-width: 860px;
-        margin: 0 auto;
+        display: flex;
     }
 
-    &__figure {
-        position: absolute;
-        top: 935px;
-        left: 350px;
-
-        @media screen and (max-width: 1370px) {
-            margin: 0 auto;
-        }
+    &__flo {
+        // position: relative;
+        padding-top: 22%;
+        z-index: 1;
     }
 
     &__number {
@@ -28,30 +19,24 @@
         font-weight: 400;
         font-size: 450px;
         line-height: 100px;
-        text-align: center;
         color: $step-namber;
     }
 
     &__info {
-        position: relative;
-        padding-top: 215px;
-
-        @media screen and (max-width: 1370px) {
-            margin: 0 auto;
-        }
+        // position: absolute;
+        max-width: 730px;
+        padding-top: 200px;
+        z-index: 2;
     }
-    
+
     &__title {
+        padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
         color: $white-color;
-
-        @media screen and (max-width: 1370px) {
-            padding: 100px 0 25px;
-        }
 
         &_span {
             background: $main-color-pink;
@@ -68,6 +53,7 @@
         text-align: center;
         color: $Gray-30;
     }
+    
 
     .step {
         display: flex;
@@ -75,6 +61,7 @@
         gap: 30px;
 
         @media screen and (max-width: 1370px) {
+            margin: 0 auto;
             padding: 35px 0 55px;
             flex-direction: column;
         }
