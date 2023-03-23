@@ -4,15 +4,37 @@
 .steps {
     background: $blue-dark;
 
-    &__box {
-        display: flex;
+    &__container {
+        position: relative;
     }
 
-    &__flo {
-        // position: relative;
-        padding-top: 22%;
-        z-index: 1;
+    &__col {
+        display: flex;
+        padding-top: 200px;
+        transform: translate(27%);
+
+        &_left {
+            position: absolute;
+            max-width: 350px;
+            left: 0;
+            padding-top: 130px;
+            z-index: 1;
+        }
+
+        &_right {
+            position: relative;
+            max-width: 730px;
+            z-index: 2;
+            padding-bottom: 80px;
+
+        }
     }
+
+    // &__left {
+    //     // position: relative;
+    //     padding-top: 30%;
+    //     z-index: 1;
+    // }
 
     &__number {
         font-family: 'Poller One';
@@ -22,15 +44,16 @@
         color: $step-namber;
     }
 
-    &__info {
-        // position: absolute;
-        max-width: 730px;
-        padding-top: 200px;
-        z-index: 2;
-    }
+    // &__right {
+    //     // position: absolute;
+    //     max-width: 730px;
+    //     padding-top: 200px;
+    //     z-index: 2;
+    //     padding-bottom: 80px;
+    // }
 
     &__title {
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
