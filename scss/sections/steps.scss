@@ -13,19 +13,20 @@
         padding-top: 200px;
         transform: translate(27%);
 
-        @media screen and (max-width: 1370px) {
+        @media screen and (max-width: 1110px) {
             padding-bottom: 32px;
+            margin: 0 auto;
         }
 
         &_left {
             position: absolute;
-            max-width: 350px;
-            left: 0;
+            left: -200px;
             padding-top: 130px;
             z-index: 1;
 
             @media screen and (max-width: 1370px) {
                 max-width: 125px;
+                padding-top: 50px;
             }
         }
 
@@ -34,6 +35,11 @@
             max-width: 730px;
             z-index: 2;
             padding-bottom: 80px;
+
+            @media screen and (max-width: 1370px) {
+                max-width: 350px;
+                padding-bottom: 32px;
+            }
 
         }
     }
@@ -44,6 +50,11 @@
         font-size: 450px;
         line-height: 100px;
         color: $step-namber;
+
+        @media screen and (max-width: 870px) {
+            font-size: 300px;
+            line-height: 50px;
+        }
     }
 
     &__title {
@@ -87,7 +98,7 @@
         padding-bottom: 100px;
         gap: 30px;
 
-        @media screen and (max-width: 1370px) {
+        @media screen and (max-width: 1110px) {
             margin: 0 auto;
             flex-direction: column;
             gap: 16px;
@@ -182,7 +193,7 @@
             max-width: 740px;
             
             &_1 {
-                padding-top: 100px;
+                padding-top: 110px;
 
                 @media screen and (max-width: 1380px) {
                     padding-top: 30px;

@@ -59,6 +59,7 @@
 @media screen and (max-width: 1200px) {
   .hero__col_left {
     max-width: 650px;
+    z-index: 0;
   }
 }
 @media screen and (max-width: 680px) {

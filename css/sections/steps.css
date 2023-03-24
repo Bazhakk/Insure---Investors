@@ -39,21 +39,22 @@
   padding-top: 200px;
   transform: translate(27%);
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1110px) {
   .steps__col {
     padding-bottom: 32px;
+    margin: 0 auto;
   }
 }
 .steps__col_left {
   position: absolute;
-  max-width: 350px;
-  left: 0;
+  left: -200px;
   padding-top: 130px;
   z-index: 1;
 }
 @media screen and (max-width: 1370px) {
   .steps__col_left {
     max-width: 125px;
+    padding-top: 50px;
   }
 }
 .steps__col_right {
@@ -62,12 +63,24 @@
   z-index: 2;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 1370px) {
+  .steps__col_right {
+    max-width: 350px;
+    padding-bottom: 32px;
+  }
+}
 .steps__number {
   font-family: "Poller One";
   font-weight: 400;
   font-size: 450px;
   line-height: 100px;
   color: #0D1A59;
+}
+@media screen and (max-width: 870px) {
+  .steps__number {
+    font-size: 300px;
+    line-height: 50px;
+  }
 }
 .steps__title {
   text-align: center;
@@ -108,7 +121,7 @@
   padding-bottom: 100px;
   gap: 30px;
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1110px) {
   .steps .step {
     margin: 0 auto;
     flex-direction: column;
@@ -201,7 +214,7 @@
   max-width: 740px;
 }
 .steps .step__img_1 {
-  padding-top: 100px;
+  padding-top: 110px;
 }
 @media screen and (max-width: 1380px) {
   .steps .step__img_1 {

@@ -33,10 +33,6 @@ body {
   padding: 0;
 }
 
-html {
-  overflow: scroll;
-}
-
 main,
 section {
   overflow-x: hidden;
