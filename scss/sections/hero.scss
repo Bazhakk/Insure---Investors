@@ -30,7 +30,7 @@
           padding-top: 30px;
           z-index: 2;
           
-          @media screen and (max-width: 1200px) {
+          @media screen and (max-width: 1280px) {
             max-width: 650px;
             z-index: 0;
           }
@@ -90,7 +90,7 @@
         line-height: 114px;
         color: $Gray-100;
 
-        @media screen and (max-width: 1285px) {
+        @media screen and (max-width: 1280px) {
             font-size: 90px;
             line-height: 100px;
         }
@@ -104,10 +104,10 @@
             font-size: 52px;
             line-height: 55px;
         }
+    }
 
-        &_span {
-            color: $main-color-teal;
-        }
+    &__title-other {
+        color: $main-color-teal;
     }
 
     &__btns {

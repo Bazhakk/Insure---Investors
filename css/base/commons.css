@@ -69,6 +69,10 @@
   transition: all 0.4s;
   background-color: #D81859;
 }
+.button_first:active {
+  vertical-align: middle;
+  color: #0CA099;
+}
 .button_second {
   font-family: "DM Sans";
   font-weight: 700;

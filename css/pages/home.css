@@ -151,6 +151,10 @@ ul {
   transition: all 0.4s;
   background-color: #D81859;
 }
+.button_first:active {
+  vertical-align: middle;
+  color: #0CA099;
+}
 .button_second {
   font-family: "DM Sans";
   font-weight: 700;
@@ -241,11 +245,11 @@ ul {
   background: transparent;
   z-index: 2;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .header {
     position: relative;
     margin-top: 15px;
-    padding-bottom: 30px;
+    padding: 0 15px 15px;
   }
 }
 .header__container {
@@ -253,15 +257,14 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .header__container {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 1250px) {
-  .header__logo {
-    width: 106px;
-    padding: 15px;
+@media screen and (max-width: 1280px) {
+  .header__logo svg {
+    max-width: 106px;
   }
 }
 
@@ -279,7 +282,7 @@ ul {
 .main-menu__link {
   color: #0A1C33;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .main-menu {
     display: none;
   }
@@ -295,24 +298,27 @@ ul {
   align-items: center;
   gap: 40px;
 }
-.registration-menu__left_link {
+.registration-menu__left-link {
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #0D1958;
 }
-.registration-menu__left_link:hover {
+.registration-menu__left-link:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
-.registration-menu__left_span {
+.registration-menu__left-link:hover svg path {
+  stroke: #0EB7AE;
+}
+.registration-menu__left-sign {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-@media screen and (max-width: 1250px) {
-  .registration-menu__left {
+@media screen and (max-width: 1280px) {
+  .registration-menu {
     display: none;
   }
 }
@@ -330,7 +336,7 @@ ul {
   transition: all 0.4s;
   background-color: #0EB7AE;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .registration-menu__right {
     display: none;
   }
@@ -342,7 +348,7 @@ ul {
   z-index: 999999;
   flex-direction: column;
   position: fixed;
-  top: 120px;
+  top: 76px;
   right: 0;
   left: 0;
   padding-left: 20px;
@@ -364,7 +370,7 @@ ul {
   justify-content: space-between;
   padding-right: 15px;
 }
-.mobile-menu__link_span {
+.mobile-menu__link-sign {
   display: flex;
   align-items: center;
   gap: 22px;
@@ -374,7 +380,9 @@ ul {
   border: 1px solid #CED2D6;
 }
 .mobile-menu__registration {
+  padding-top: 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 65px;
 }
@@ -384,6 +392,7 @@ ul {
   }
 }
 .mobile-menu__button {
+  margin-right: 15px;
   padding: 13px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -416,7 +425,7 @@ ul {
 .burger-active {
   background-image: url("../../img/close.svg");
 }
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   .burger {
     display: block;
   }
@@ -480,7 +489,7 @@ ul {
   padding-top: 30px;
   z-index: 2;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .hero__col_left {
     max-width: 650px;
     z-index: 0;
@@ -539,7 +548,7 @@ ul {
   line-height: 114px;
   color: #0A1C33;
 }
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1280px) {
   .hero__title {
     font-size: 90px;
     line-height: 100px;
@@ -557,7 +566,7 @@ ul {
     line-height: 55px;
   }
 }
-.hero__title_span {
+.hero__title-other {
   color: #00CCC2;
 }
 .hero__btns {

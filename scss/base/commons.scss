@@ -42,6 +42,11 @@
         transition: all .4s;
         background-color: $hover-color-pink;
       }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-teal;
+      }
     }
 
     &_second {
