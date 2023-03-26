@@ -8,78 +8,53 @@
         position: relative;
     }
 
-    &__col {
-        max-width: 880px;
-        display: flex;
+    &__text {
+        position: relative;
         margin: 0 auto;
-        padding-left: 110px;
+        max-width: 738px;
         padding-top: 200px;
+        padding-bottom: 80px;
 
-        @media screen and (max-width: 1110px) {
-            margin: 0 auto;
-            padding-bottom: 32px;
-        }
-
-        &_left {
+        ::before {
+            content:"";
+            background-image:  url("../../img/steps-namber.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
             position: absolute;
-            padding-top: 130px;
-            left: 17%;
+            width: 345px;
+            height: 100px;
+            top: 110px;
+            left: -187px;
             z-index: 1;
-
-            @media screen and (max-width: 1370px) {
-                max-width: 125px;
-                margin: 0 auto;
-                padding-top: 50px;
-            }
-        }
-
-        &_right {
-            position: relative;
-            max-width: 730px;
-            padding-bottom: 80px;
-            z-index: 2;
-
-            @media screen and (max-width: 1070px) {
-                max-width: 350px;
-                margin: 0 auto;
-                padding-bottom: 32px;
-            }
-
-        }
-    }
-
-    &__number {
-        font-family: 'Poller One';
-        font-weight: 400;
-        font-size: 450px;
-        line-height: 100px;
-        color: $step-namber;
-
-        @media screen and (max-width: 1070px) {
-            font-size: 300px;
-            line-height: 50px;
         }
     }
 
     &__title {
-        text-align: center;
+        max-width: 740px;
+        margin: 0 auto;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
         color: $white-color;
 
-        &_span {
-            max-height: 20px;
-            position: absolute;
-            background: $main-color-pink;
-        }
-
         @media screen and (max-width: 1070px) {
             font-size: 40px;
             line-height: 44px;
         }
     }
+
+    &__title-other {
+        position: relative;
+        ::after {
+            content: "";
+            position: absolute;
+            max-height: 20px;
+            background-color: red;
+        }
+    }
+
 
     &__subtitle {
         max-width: 525px;
