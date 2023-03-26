@@ -61,6 +61,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 main,
@@ -153,7 +154,11 @@ ul {
 }
 .button_first:active {
   vertical-align: middle;
-  color: #0CA099;
+  color: #B4174C;
+}
+.button_first:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
 }
 .button_second {
   font-family: "DM Sans";
@@ -175,6 +180,20 @@ ul {
     line-height: 20px;
   }
 }
+.button_second:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.button_third-play:hover svg {
+  fill: #F7FBFD;
+}
+.button_third-play:hover svg path {
+  stroke: #00CCC2;
+  fill: #00CCC2;
+}
+.button_third-play:hover svg circle {
+  stroke: #00CCC2;
+}
 .button_fourth {
   padding: 20px 40px;
   background: #E91E63;
@@ -188,6 +207,14 @@ ul {
 .button_fourth:hover {
   transition: all 0.4s;
   background-color: #D81859;
+}
+.button_fourth:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_fourth:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
 }
 
 .link-anima {
@@ -322,7 +349,7 @@ ul {
     display: none;
   }
 }
-.registration-menu__right_button {
+.registration-menu__right-button {
   padding: 13px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -332,12 +359,20 @@ ul {
   color: #fff;
   background: #00CCC2;
 }
-.registration-menu__right_button:hover {
+.registration-menu__right-button:hover {
   transition: all 0.4s;
   background-color: #0EB7AE;
 }
+.registration-menu__right-button:active {
+  vertical-align: middle;
+  color: #0CA099;
+}
+.registration-menu__right-button:focus {
+  vertical-align: middle;
+  color: #CFE9E7;
+}
 @media screen and (max-width: 1280px) {
-  .registration-menu__right {
+  .registration-menu__right-button {
     display: none;
   }
 }
@@ -512,7 +547,7 @@ ul {
   }
 }
 .hero__img {
-  width: 100%;
+  margin-left: 180px;
   max-width: 1500px;
   min-width: 700px;
   object-fit: cover;
