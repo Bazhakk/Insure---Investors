@@ -42,6 +42,16 @@
         transition: all .4s;
         background-color: $hover-color-pink;
       }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        color: $disabled-color-pink;
+      }
     }
 
     &_second {
@@ -61,7 +71,27 @@
         font-size: 15px;
         line-height: 20px;
       }
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+      }
     }
+
+    &_third-play {
+      &:hover {
+        svg {
+          fill: $hover-btn-teal;
+          path {
+            stroke: $hover-background-teal;
+            fill: $hover-background-teal;
+          }
+          circle {
+            stroke: $hover-background-teal;
+          }
+      }
+    }
+  }
 
     &_fourth {
         padding: 20px 40px;
@@ -77,6 +107,16 @@
         &:hover {
           transition: all .4s;
           background-color: $hover-color-pink;
+        }
+  
+        &:active {
+          vertical-align: middle;
+          color: $pressed-color-pink;
+        }
+  
+        &:focus {
+          vertical-align: middle;
+          color: $disabled-color-pink;
         }
     }
 }
@@ -101,4 +141,4 @@
         width: 100%;
       }
     }
-  }
+}

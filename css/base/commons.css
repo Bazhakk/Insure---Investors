@@ -69,6 +69,14 @@
   transition: all 0.4s;
   background-color: #D81859;
 }
+.button_first:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_first:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
 .button_second {
   font-family: "DM Sans";
   font-weight: 700;
@@ -89,6 +97,20 @@
     line-height: 20px;
   }
 }
+.button_second:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.button_third-play:hover svg {
+  fill: #F7FBFD;
+}
+.button_third-play:hover svg path {
+  stroke: #00CCC2;
+  fill: #00CCC2;
+}
+.button_third-play:hover svg circle {
+  stroke: #00CCC2;
+}
 .button_fourth {
   padding: 20px 40px;
   background: #E91E63;
@@ -102,6 +124,14 @@
 .button_fourth:hover {
   transition: all 0.4s;
   background-color: #D81859;
+}
+.button_fourth:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_fourth:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
 }
 
 .link-anima {
