@@ -79,8 +79,12 @@
     }
 
     &_third-play {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       &:hover {
         svg {
+          transition: all .4s;
           fill: $hover-btn-teal;
           path {
             stroke: $hover-background-teal;
@@ -91,7 +95,7 @@
           }
       }
     }
-  }
+    }
 
     &_fourth {
         padding: 20px 40px;

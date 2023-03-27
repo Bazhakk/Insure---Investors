@@ -183,7 +183,13 @@ ul {
   transition: all 0.4s;
   color: #0EB7AE;
 }
+.button_third-play {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .button_third-play:hover svg {
+  transition: all 0.4s;
   fill: #F7FBFD;
 }
 .button_third-play:hover svg path {
@@ -339,6 +345,7 @@ ul {
   color: #0EB7AE;
 }
 .registration-menu__left-link:hover svg path {
+  transition: all 0.4s;
   stroke: #0EB7AE;
 }
 .registration-menu__left-sign {
@@ -539,32 +546,28 @@ ul {
 }
 .hero__col_right {
   position: absolute;
-  top: 15%;
-  right: 0;
+  top: 9%;
+  right: -10%;
   z-index: 1;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
+  .hero__col_right {
+    right: -8%;
+  }
+}
+@media screen and (max-width: 1283px) {
+  .hero__col_right {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 171px) {
   .hero__col_right {
     top: 100%;
   }
 }
 .hero__img {
-  width: 100%;
-  margin-left: 180px;
-  max-width: 1500px;
-  min-width: 700px;
+  width: 1600px;
   object-fit: cover;
-}
-@media screen and (max-width: 1590px) {
-  .hero__img {
-    display: inline;
-    margin-left: 100px;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .hero__img {
-    margin: 0 auto;
-  }
 }
 @media screen and (max-width: 680px) {
   .hero__img {

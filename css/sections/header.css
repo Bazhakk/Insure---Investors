@@ -104,6 +104,7 @@
   color: #0EB7AE;
 }
 .registration-menu__left-link:hover svg path {
+  transition: all 0.4s;
   stroke: #0EB7AE;
 }
 .registration-menu__left-sign {

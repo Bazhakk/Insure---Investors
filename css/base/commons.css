@@ -101,7 +101,13 @@
   transition: all 0.4s;
   color: #0EB7AE;
 }
+.button_third-play {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .button_third-play:hover svg {
+  transition: all 0.4s;
   fill: #F7FBFD;
 }
 .button_third-play:hover svg path {
