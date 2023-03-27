@@ -11,8 +11,11 @@
 
     @media screen and (max-width: 1280px) {
         position: relative;
-        margin-top: 15px;
-        padding: 0 15px 15px;
+        margin: 0;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        background: $white-color;
     }
 
     &__container {
