@@ -57,6 +57,7 @@
 .steps__title {
   max-width: 740px;
   margin: 0 auto;
+  text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
@@ -68,15 +69,6 @@
     font-size: 40px;
     line-height: 44px;
   }
-}
-.steps__title-other {
-  position: relative;
-}
-.steps__title-other ::after {
-  content: "";
-  position: absolute;
-  max-height: 20px;
-  background-color: red;
 }
 .steps__subtitle {
   max-width: 525px;

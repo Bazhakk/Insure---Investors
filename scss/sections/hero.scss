@@ -53,11 +53,20 @@
     }
 
     &__img {
-        // width: 100%;
+        width: 100%;
         margin-left: 180px;
         max-width: 1500px;
         min-width: 700px;
         object-fit: cover;
+
+        @media screen and (max-width: 1590px) {
+            display: inline;
+            margin-left: 100px;
+        }
+
+         @media screen and (max-width: 1210px) {
+            margin: 0 auto;
+        }
 
         @media screen and (max-width: 680px) {
            display: none;

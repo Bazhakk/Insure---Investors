@@ -14,6 +14,16 @@ jQuery(document).ready(function ( $ ) {
     }
   });
 
+  //Scroll
+
+  $('body').click(function () {
+    if($){
+      $("body").css("overflow","hidden");
+    } else {
+      $("body").css("overflow", "auto");
+    }
+});
+
   // AOS init
   AOS.init({
     once: true

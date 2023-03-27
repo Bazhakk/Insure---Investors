@@ -79,10 +79,22 @@
   }
 }
 .hero__img {
+  width: 100%;
   margin-left: 180px;
   max-width: 1500px;
   min-width: 700px;
   object-fit: cover;
+}
+@media screen and (max-width: 1590px) {
+  .hero__img {
+    display: inline;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .hero__img {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 680px) {
   .hero__img {

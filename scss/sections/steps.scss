@@ -33,6 +33,7 @@
     &__title {
         max-width: 740px;
         margin: 0 auto;
+        text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
@@ -45,15 +46,15 @@
         }
     }
 
-    &__title-other {
-        position: relative;
-        ::after {
-            content: "";
-            position: absolute;
-            max-height: 20px;
-            background-color: red;
-        }
-    }
+    // &__title-other {
+    //     position: relative;
+    //     ::after {
+    //         content: "";
+    //         position: absolute;
+    //         max-height: 20px;
+    //         background-color: red;
+    //     }
+    // }
 
 
     &__subtitle {
