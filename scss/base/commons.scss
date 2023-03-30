@@ -55,6 +55,10 @@
     }
 
     &_second {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+        
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
@@ -72,32 +76,30 @@
         line-height: 20px;
       }
 
+      @media screen and (max-width: 250px) {
+        margin: 0 auto;
+        flex-direction: column;
+      }
+
       &:hover {
         transition: all .4s;
         color: $hover-teal;
-      }
-    }
 
-    &_third-play {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      &:hover {
         svg {
           transition: all .4s;
           fill: $hover-btn-teal;
           path {
-            stroke: $hover-background-teal;
-            fill: $hover-background-teal;
+          stroke: $hover-background-teal;
+          fill: $hover-background-teal;
           }
           circle {
-            stroke: $hover-background-teal;
+          stroke: $hover-background-teal;
           }
       }
-    }
+      }
     }
 
-    &_fourth {
+    &_third {
         padding: 20px 40px;
         background: $main-color-pink;
         border-radius: 66px;
