@@ -716,7 +716,8 @@ ul {
   padding: 130px 0;
 }
 .specialities__container {
-  background-color: red;
+  padding: 0 0 30px 0;
+  background-color: gainsboro;
 }
 .specialities__title {
   padding-top: 50px;
@@ -727,6 +728,12 @@ ul {
   text-align: center;
   color: #0A1C33;
 }
+@media screen and (max-width: 645px) {
+  .specialities__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 .specialities__subtitle {
   font-family: "DM Sans";
   font-style: normal;
@@ -736,11 +743,24 @@ ul {
   text-align: center;
   color: #3B495C;
 }
+@media screen and (max-width: 645px) {
+  .specialities__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 .specialities__top-block {
   display: flex;
   padding-top: 80px;
   padding-bottom: 30px;
   gap: 30px;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__top-block {
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 15px;
+  }
 }
 .specialities__investors {
   background-image: url("../../img/Investors-portfolio.png");
@@ -752,6 +772,14 @@ ul {
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .specialities__investors {
+    background-image: url("../../img/mobile-menu/Investors portfolio-mb.png");
+    width: 345px;
+    height: 450px;
+    margin: 0 auto;
+  }
 }
 .specialities__number {
   display: flex;
@@ -767,8 +795,15 @@ ul {
   line-height: 30px;
   color: #E6E8EA;
 }
+@media screen and (max-width: 1024px) {
+  .specialities__number {
+    max-width: 15px;
+    max-height: 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .specialities__text-investors, .specialities__text-commercial, .specialities__text-multifamily, .specialities__text-storage, .specialities__text-builder, .specialities__text-hotel {
-  padding-bottom: 40px;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 54px;
@@ -788,13 +823,20 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .specialities__commercial {
+    background-image: url("../../img/mobile-menu/Commercial property-mb.png");
+    width: 345px;
+    height: 450px;
+    margin: 0 auto;
+  }
+}
 .specialities__text-commercial {
   max-width: 620px;
 }
 .specialities__bottom-block {
   display: flex;
   max-width: 975px;
-  padding-bottom: 30px;
   gap: 30px;
 }
 .specialities__multifamily {
@@ -802,7 +844,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 980px;
+  padding-bottom: 100px;
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
@@ -821,12 +863,10 @@ ul {
   background-repeat: no-repeat;
   background-position: right;
   width: 475px;
+  height: 435px;
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
-}
-.specialities__text-storage {
-  max-width: 365px;
 }
 .specialities__builder {
   background-image: url("../../img//Builder-risk.png");
@@ -838,16 +878,13 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
-.specialities__text-builder {
-  max-width: 270px;
-}
 .specialities__hotel {
   background-image: url("../../img/motel -img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  width: 363px;
-  height: 895px;
+  width: 385px;
+  height: 1000px;
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
