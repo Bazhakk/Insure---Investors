@@ -89,13 +89,15 @@
           transition: all .4s;
           fill: $hover-btn-teal;
           path {
-          stroke: $hover-background-teal;
-          fill: $hover-background-teal;
+            transition: all .2s;
+            stroke: $hover-background-teal;
+            fill: $hover-background-teal;
           }
           circle {
-          stroke: $hover-background-teal;
+            transition: all .4s;
+            stroke: $hover-background-teal;
           }
-      }
+        }
       }
     }
 

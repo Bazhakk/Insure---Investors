@@ -115,10 +115,12 @@
   fill: #F7FBFD;
 }
 .button_second:hover svg path {
+  transition: all 0.2s;
   stroke: #00CCC2;
   fill: #00CCC2;
 }
 .button_second:hover svg circle {
+  transition: all 0.4s;
   stroke: #00CCC2;
 }
 .button_third {
