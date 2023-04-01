@@ -21,14 +21,18 @@
             padding: 75px 0 0 35px;
         }
 
-        ::before {
-            content:url("../../img/steps-namber.svg");
-            // background-image:  url("../../img/steps-namber.svg");
+        &::before {
+            content: "";
+            // content:url("../../img/steps-namber.svg");
+            background-image:  url("../../img/steps-namber.svg");
+            // background-image: url("data:image/svg+xml,%3Csvg width='284' height='333' viewBox='0 0 284 333' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.3096 258.226C28.2393 259.251 32.1943 260.569 37.1748 262.181C42.1553 263.646 47.7949 265.184 54.0938 266.795C60.3926 268.26 66.9844 269.578 73.8691 270.75C80.9004 271.775 87.8584 272.288 94.7432 272.288C105.437 272.288 114.958 270.896 123.308 268.113C131.657 265.184 138.688 261.302 144.401 256.468C150.114 251.634 154.436 246.141 157.365 239.988C160.441 233.689 161.979 227.244 161.979 220.652C161.979 213.035 160.075 205.931 156.267 199.339C152.458 192.747 146.965 187.181 139.787 182.64C132.756 178.099 124.187 174.803 114.079 172.752C104.118 170.555 92.9121 170.115 80.4609 171.434V143.748L163.298 79.8076L115.617 82.2246H20.0361V0.486328H270.085V47.2881L162.858 128.147C182.487 128.733 199.772 131.663 214.714 136.937C229.802 142.21 242.399 149.241 252.507 158.03C262.614 166.819 270.231 177 275.358 188.572C280.632 200.145 283.269 212.522 283.269 225.706C283.269 241.673 279.606 256.248 272.282 269.432C264.958 282.469 254.704 293.675 241.521 303.05C228.483 312.278 212.81 319.456 194.499 324.583C176.188 329.563 156.047 332.054 134.074 332.054C121.477 332.054 109.099 331.175 96.9404 329.417C84.9287 327.806 73.2832 325.462 62.0039 322.386C50.7246 319.31 39.8848 315.574 29.4844 311.18C19.2305 306.785 9.70898 301.878 0.919922 296.458L25.3096 258.226Z' fill='%230D1A59'/%3E%3C/svg%3E%0A");
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
-            max-width: 345px;
-            max-height: 100px;
+            width: 350px;
+            height: 350px;
+            // max-width: 345px;
+            // max-height: 100px;
             top: 130px;
             left: -187px;
             z-index: 0;
@@ -46,6 +50,7 @@
     }
 
     &__title {
+        position: relative;
         max-width: 740px;
         margin: 0 auto;
         text-align: center;
@@ -60,14 +65,22 @@
             line-height: 44px;
         }
 
-        // &_other ::after {
-        //     content: "";
-        //     position: absolute;
-        //     max-height: 20px;
-        //     background-color: red;
-        // }
-    }
+        &-text {
+            position: relative;
+            z-index: 2;
+        }
 
+        &-line {
+            content: "";
+            position: absolute;
+            bottom: 12px;
+            left: 1px;
+            width: 210px;
+            height: 21px;
+            background-color: #E91E63;
+            z-index: 1;
+        }
+    }
 
     &__subtitle {
         max-width: 525px;

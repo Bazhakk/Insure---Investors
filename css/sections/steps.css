@@ -48,30 +48,32 @@
     padding: 75px 0 0 35px;
   }
 }
-.steps__block ::before {
-  content: url("../../img/steps-namber.svg");
+.steps__block::before {
+  content: "";
+  background-image: url("../../img/steps-namber.svg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  max-width: 345px;
-  max-height: 100px;
+  width: 350px;
+  height: 350px;
   top: 130px;
   left: -187px;
   z-index: 0;
 }
 @media screen and (max-width: 1045px) {
-  .steps__block ::before {
+  .steps__block::before {
     left: -40px;
     top: 130px;
   }
 }
 @media screen and (max-width: 875px) {
-  .steps__block ::before {
+  .steps__block::before {
     max-width: 125px;
     max-height: 146px;
   }
 }
 .steps__title {
+  position: relative;
   max-width: 740px;
   margin: 0 auto;
   text-align: center;
@@ -86,6 +88,20 @@
     font-size: 40px;
     line-height: 44px;
   }
+}
+.steps__title-text {
+  position: relative;
+  z-index: 2;
+}
+.steps__title-line {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 1px;
+  width: 210px;
+  height: 21px;
+  background-color: #E91E63;
+  z-index: 1;
 }
 .steps__subtitle {
   max-width: 525px;
