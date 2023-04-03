@@ -2,14 +2,15 @@
 @import "../base/variables";
 
 .hero {
-    height: 100vh;
+    // height: 100vh;
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
+    // background-position: center;
 
-    // @media screen and (max-width: 1370px) {
-    //     background-image: url("../../img/bg-mobile-menu.png");
-    // }
+    @media screen and (max-width: 1370px) {
+        background-image: url("../../img/bg-mobile-menu.png");
+    }
 
     &__container {
         position: relative;
@@ -38,28 +39,24 @@
         }
     
         &_right {
-          position: absolute;
+        //   position: absolute;
           top: 9%;
           right: -10%;
           z-index: 1;
 
-        //   @media screen and (max-width: 1600px) {
-        //     right: -8%;
-        //   }
+          @media screen and (max-width: 1600px) {
+            right: -8%;
+          }
 
-        //   @media screen and (max-width: 1290px) {
-        //     top: 73%;
-        //   }
+          @media screen and (max-width: 1290px) {
+            top: 73%;
+          }
         }
     }
 
     &__img {
         width: 1617px;
         object-fit: cover;
-
-        @media screen and (max-width: 1380px) {
-            width: 900px;
-        }
 
         @media screen and (max-width: 760px) {
             width: 1400px;
@@ -71,29 +68,29 @@
         }
     }
 
-    // &__mobile {
-    //     display: none;
+    &__mobile {
+        display: none;
 
-    //     @media screen and (max-width: 660px) {
-    //         display: inline;
-    //         margin: 0 auto;
-    //     }
-    // }
+        @media screen and (max-width: 660px) {
+            display: inline;
+            margin: 0 auto;
+        }
+    }
 
-    // &__img-mobile {
-    //     max-width: 100%;
-    //     height: auto;
+    &__img-mobile {
+        max-width: 100%;
+        height: auto;
 
-    //     @media screen and (max-width: 660px) {
-    //         width: 50vh;
-    //         margin: 30px auto;
-    //         padding: 130px 50px 0 0;
-    //     }
+        @media screen and (max-width: 660px) {
+            width: 50vh;
+            margin: 30px auto;
+            padding: 130px 50px 0 0;
+        }
 
-    //     // @media screen and (max-width: 210px) {
-    //     //     padding-top: 100px;
-    //     // }
-    // }
+        // @media screen and (max-width: 210px) {
+        //     padding-top: 100px;
+        // }
+    }
 
 
     &__title {
