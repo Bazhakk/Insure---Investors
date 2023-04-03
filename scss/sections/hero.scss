@@ -2,11 +2,10 @@
 @import "../base/variables";
 
 .hero {
-    // height: 100vh;
+    height: 100vh;
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
-    // background-position: center;
 
     @media screen and (max-width: 1370px) {
         background-image: url("../../img/bg-mobile-menu.png");
@@ -39,7 +38,7 @@
         }
     
         &_right {
-        //   position: absolute;
+          position: absolute;
           top: 9%;
           right: -10%;
           z-index: 1;
@@ -87,9 +86,9 @@
             padding: 130px 50px 0 0;
         }
 
-        // @media screen and (max-width: 210px) {
-        //     padding-top: 100px;
-        // }
+        @media screen and (max-width: 210px) {
+            padding-top: 100px;
+        }
     }
 
 

@@ -29,6 +29,7 @@
   font-weight: 700;
 }
 .hero {
+  height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +65,7 @@
   }
 }
 .hero__col_right {
+  position: absolute;
   top: 9%;
   right: -10%;
   z-index: 1;
@@ -111,6 +113,11 @@
     width: 50vh;
     margin: 30px auto;
     padding: 130px 50px 0 0;
+  }
+}
+@media screen and (max-width: 210px) {
+  .hero__img-mobile {
+    padding-top: 100px;
   }
 }
 .hero__title {

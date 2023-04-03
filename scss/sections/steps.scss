@@ -18,7 +18,8 @@
 
         @media screen and (max-width: 880px) {
             max-width: 345px;
-            padding: 75px 0 0 35px;
+            padding-top: 74px;
+            // padding: 75px 0 0 35px;
         }
 
         &::before {
@@ -35,12 +36,13 @@
 
             @media screen and (max-width: 1045px) {
                 left: -40px;
-                top: 130px;
+                top: 48px;
             }
 
-            @media screen and (max-width: 875px) {
-                max-width: 125px;
+            @media screen and (max-width: 880px) {
+                max-width: 135px;
                 max-height: 146px;
+                margin: 0 15px;
             }
         }
     }
@@ -56,9 +58,14 @@
         line-height: 100px;
         color: $white-color;
 
-        @media screen and (max-width: 875px) {
+        @media screen and (max-width: 880px) {
             font-size: 40px;
             line-height: 44px;
+        }
+
+        @media screen and (max-width: 290px) {
+            font-size: 33px;
+            line-height: 40px;
         }
 
         &-text {
@@ -75,6 +82,30 @@
             height: 21px;
             background-color: #E91E63;
             z-index: 1;
+
+            @media screen and (max-width: 880px) {
+                width: 92px;
+                height: 13px;
+                // bottom: 48px;
+                bottom: 6px;
+                left: 15px;
+                // left: 48px;
+            }
+
+            @media screen and (max-width: 360px) {
+                left: 7px;
+            }
+
+            @media screen and (max-width: 340px) {
+                left: 52px;
+                bottom: 50px;
+            }
+
+            @media screen and (max-width: 290px) {
+                width: 75px;
+                left: 5px;
+                bottom: 7px;
+            }
         }
     }
 
@@ -93,27 +124,36 @@
             font-size: 18px;
             line-height: 26px;
         }
+
+        @media screen and (max-width: 290px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
     
 
     .step {
         width: 100%;
         display: flex;
-        align-items: center;
         padding-bottom: 100px;
         gap: 30px;
 
         @media screen and (max-width: 1230px) {
             margin: 0 auto;
             flex-direction: column;
+            align-items: center;
             gap: 16px;
         }
 
 
         &__item {
-            padding: 0 40px 0 55px;
+            padding: 0 40px;
             border-radius: 12px;
             background: $step-namber;
+
+            @media screen and (max-width: 490px) {
+                padding: 0 25px;
+            }
         }
 
         &__point {
@@ -143,10 +183,10 @@
             line-height: 58px;
             color: $white-color;
 
-            // @media screen and (max-width: 1380px) {
-            //     font-size: 32px;
-            //     line-height: 38px;
-            // }
+            @media screen and (max-width: 490px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
 
             @media screen and (max-width: 380px) {
                 margin-bottom: 5px;
@@ -175,6 +215,10 @@
         &__vector {
             max-width: 70px;
             border: 2px solid $main-color-teal;
+
+            @media screen and (max-width: 380px) {
+                margin: 0 auto;
+            }
         }
 
         &__text {
@@ -184,8 +228,8 @@
             line-height: 32px;
             color: $white-color;
             
-            @media screen and (max-width: 380px) {
-                font-size: 18px;
+            @media screen and (max-width: 490px) {
+                font-size: 16px;
                 line-height: 28px;
             }
         }
@@ -196,30 +240,26 @@
             &_1 {
                 padding-top: 115px;
 
-                // @media screen and (max-width: 1380px) {
-                //     padding-top: 30px;
-                // }
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
 
             &_2 {
                 padding-top: 45px;
 
-                // @media screen and (max-width: 1380px) {
-                //     padding-top: 30px;
-                // }
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
 
             &_3 {
                 padding-top: 130px;
 
-                // @media screen and (max-width: 1380px) {
-                //     padding-top: 30px;
-                // }
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
-
-            // @media screen and (max-width: 1380px) {
-            //     max-width: 345px;
-            // }
         }
     } 
 
@@ -227,5 +267,9 @@
         margin: 0 auto;
         text-align: center;
         margin-bottom: 120px;
+
+        @media screen and (max-width: 490px) {
+            margin-bottom: 55px;
+        }
     }
 }
