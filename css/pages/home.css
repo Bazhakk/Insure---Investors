@@ -719,6 +719,11 @@ ul {
   padding: 0 0 30px 0;
   background-color: gainsboro;
 }
+@media screen and (max-width: 1024px) {
+  .specialities__container {
+    margin: 0 auto;
+  }
+}
 .specialities__title {
   padding-top: 50px;
   font-family: "GT Eesti Pro";
@@ -758,7 +763,9 @@ ul {
 @media screen and (max-width: 1380px) {
   .specialities__top-block {
     flex-direction: column;
+    margin: 0 auto;
     padding-top: 32px;
+    align-items: center;
     gap: 15px;
   }
 }
@@ -773,7 +780,7 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 830px) {
   .specialities__investors {
     background-image: url("../../img/mobile-menu/Investors portfolio-mb.png");
     width: 345px;
@@ -848,6 +855,14 @@ ul {
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .specialities__multifamily {
+    background-image: url("../../img/mobile-menu/multy-fam-mb.png");
+    width: 345px;
+    height: 450px;
+    margin: 0 auto;
+  }
 }
 .specialities__text-multifamily {
   max-width: 490px;
