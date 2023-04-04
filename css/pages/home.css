@@ -691,6 +691,7 @@ ul {
   .steps__block {
     max-width: 345px;
     padding-top: 74px;
+    z-index: 0;
   }
 }
 .steps__block::before {
@@ -771,6 +772,11 @@ ul {
 @media screen and (max-width: 360px) {
   .steps__title-line {
     left: 7px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .steps__title-line {
+    left: 3px;
   }
 }
 .steps__subtitle {

@@ -19,6 +19,7 @@
         @media screen and (max-width: 880px) {
             max-width: 345px;
             padding-top: 74px;
+            z-index: 0;
             // padding: 75px 0 0 35px;
         }
 
@@ -103,10 +104,10 @@
                 left: 7px;
             }
 
-            // @media screen and (max-width: 340px) {
-            //     left: 3px;
+            @media screen and (max-width: 340px) {
+                left: 3px;
                 // bottom: 50px;
-            // }
+            }
 
             // @media screen and (max-width: 290px) {
             //     width: 75px;
