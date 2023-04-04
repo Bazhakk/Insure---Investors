@@ -728,6 +728,7 @@ ul {
   font-size: 91px;
   line-height: 100px;
   color: #fff;
+  z-index: 3;
 }
 @media screen and (max-width: 880px) {
   .steps__title {
@@ -742,6 +743,10 @@ ul {
   }
 }
 .steps__title-text {
+  position: relative;
+  z-index: 2;
+}
+.steps__title-lines {
   position: relative;
   z-index: 2;
 }
@@ -766,19 +771,6 @@ ul {
 @media screen and (max-width: 360px) {
   .steps__title-line {
     left: 7px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .steps__title-line {
-    left: 52px;
-    bottom: 50px;
-  }
-}
-@media screen and (max-width: 290px) {
-  .steps__title-line {
-    width: 75px;
-    left: 5px;
-    bottom: 7px;
   }
 }
 .steps__subtitle {

@@ -57,6 +57,7 @@
         font-size: 91px;
         line-height: 100px;
         color: $white-color;
+        z-index: 3;
 
         @media screen and (max-width: 880px) {
             font-size: 40px;
@@ -69,6 +70,12 @@
         }
 
         &-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        &-lines {
+            // display: block;
             position: relative;
             z-index: 2;
         }
@@ -96,16 +103,16 @@
                 left: 7px;
             }
 
-            @media screen and (max-width: 340px) {
-                left: 52px;
-                bottom: 50px;
-            }
+            // @media screen and (max-width: 340px) {
+            //     left: 3px;
+                // bottom: 50px;
+            // }
 
-            @media screen and (max-width: 290px) {
-                width: 75px;
-                left: 5px;
-                bottom: 7px;
-            }
+            // @media screen and (max-width: 290px) {
+            //     width: 75px;
+            //     left: 5px;
+            //     bottom: 7px;
+            // }
         }
     }
 
