@@ -8,9 +8,9 @@
         padding: 0 0 30px 0;
         background-color: gainsboro;
 
-        @media screen and (max-width: 1024px) {
-            margin: 0 auto;
-        }
+        // @media screen and (max-width: 1024px) {
+        //     margin: 0 auto;
+        // }
     }
     
     &__title {
@@ -51,7 +51,7 @@
 
         @media screen and (max-width: 1380px) {
             flex-direction: column;
-            margin: 0 auto;
+            // margin: 0 auto;
             padding-top: 32px;
             align-items: center;
             gap: 15px;
@@ -70,11 +70,11 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 830px) {
+        @media screen and (max-width: 815px) {
             background-image: url("../../img/mobile-menu/Investors\ portfolio-mb.png");
             width: 345px;
             height: 450px;
-            margin: 0 auto;
+            // margin: 0 auto;
         }
     }
 
@@ -130,7 +130,7 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 815px) {
             background-image: url("../../img/mobile-menu/Commercial\ property-mb.png");
             width: 345px;
             height: 450px;
@@ -148,6 +148,11 @@
         display: flex;
         max-width: 975px;
         gap: 30px;
+
+        @media screen and (max-width: 1556px) {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+        }
     }
 
     //Multy Family
@@ -161,7 +166,7 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 815px) {
             background-image: url("../../img/mobile-menu/multy-fam-mb.png");
             width: 345px;
             height: 450px;
@@ -178,6 +183,11 @@
         display: flex;
         padding-top: 30px;
         gap: 30px;
+
+        @media screen and (max-width: 815px) {
+            flex-direction: column;;
+            margin: 0 auto;
+        }
     }
 
     //Storage
@@ -191,6 +201,13 @@
         padding-top: 50px;
         padding-left: 55px;
         border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/storage-mb.png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
     }
 
     //Builder
@@ -203,6 +220,13 @@
         padding-top: 50px;
         padding-left: 55px;
         border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/Builder-mb.png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
     }
 
     //Hotel
@@ -216,6 +240,13 @@
         padding-top: 50px;
         padding-left: 55px;
         border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/motel\ program-mb\ .png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
     }
 
     &__text-hotel {
