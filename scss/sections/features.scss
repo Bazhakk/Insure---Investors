@@ -1,0 +1,163 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.features {
+    margin-top: 100px;///
+    padding-bottom: 100px;
+    background: $blue-dark;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+    }
+
+    &__title {
+        padding-top: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $white-color;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 40px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-30;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .features-menu {
+        width: 100%;
+        max-width: 1160px;
+        padding: 65px 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 130px;
+
+        font-family: 'GT Eesti Pro Display';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+
+        &__link {
+            color: $Gray-30;
+
+            &-other {
+                padding: 6px 14px;
+                border: 2px solid $main-color-teal;
+                border-radius: 66px;
+                color: $main-color-teal;
+            }
+        }
+
+        @media screen and (max-width: 1170px) {
+            display: none;
+        }
+    }
+
+    .features-mobile {
+        display: none;
+
+        @media screen and (max-width: 1170px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__link {
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            color: $white-color;
+
+            ::before {
+                content: "";
+                background-image:  url("../../img/features-mobile.svg");
+                width: 6px;
+                height: 12px;
+                position: absolute;
+                // margin: 0 -25px;
+            }
+        }
+    }
+
+    // &__divide {
+    //     max-width: 345px;
+    //     margin: 0 auto;
+    //     border: 1px solid $Gray-70;
+    // }
+
+    &__box {
+        display: flex;
+        gap: 33px;
+
+        &-left {
+            padding-top: 90px;
+        }
+
+        &-right {
+            max-width: 835;
+        }
+        
+    }
+
+    &__img {
+        width: 700px;
+        object-fit: cover;
+    }
+
+    &__contents {
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 58px;
+        color: $white-color;
+    }
+
+    &__text {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $white-color;
+    }
+
+    &__info {
+        display: flex;
+        position: relative;
+        gap: 13px;
+
+        &-text {
+            max-width: 370px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+
+            &::before {
+                content: "";
+                background-image:  url("../../img/features.svg");
+                width: 20px;
+                height: 18px;
+                position: absolute;
+                margin: 0 -25px;
+            }
+        }
+    }
+}
