@@ -1003,7 +1003,7 @@ ul {
 }
 .features {
   margin-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   background: #000E50;
 }
 @media screen and (max-width: 1024px) {
@@ -1048,8 +1048,8 @@ ul {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 130px;
-  font-family: "GT Eesti Pro Display";
+  gap: 97px;
+  font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
@@ -1058,12 +1058,19 @@ ul {
   color: #B5BAC1;
 }
 .features .features-menu__link-other {
-  padding: 6px 14px;
+  padding: 14px 48px;
   border: 2px solid #00CCC2;
   border-radius: 66px;
   color: #00CCC2;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1330px) {
+  .features .features-menu {
+    max-width: 900px;
+    font-size: 20px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 840px) {
   .features .features-menu {
     display: none;
   }
@@ -1071,39 +1078,90 @@ ul {
 .features .features-mobile {
   display: none;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 840px) {
   .features .features-mobile {
     display: flex;
     flex-direction: column;
   }
 }
 .features .features-mobile__link {
+  padding: 24px 0;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   color: #fff;
 }
-.features .features-mobile__link ::before {
+.features .features-mobile__link::before {
   content: "";
   background-image: url("../../img/features-mobile.svg");
-  width: 6px;
-  height: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
+  right: 27px;
+  width: 22px;
+  height: 15px;
+}
+@media screen and (max-width: 765px) {
+  .features .features-mobile__link {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .features .features-mobile__link {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.features__divide {
+  margin-right: 15px;
+  border: 1px solid #536070;
 }
 .features__box {
   display: flex;
   gap: 33px;
 }
+@media screen and (max-width: 980px) {
+  .features__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .features__box-left {
   padding-top: 90px;
+}
+@media screen and (max-width: 1024px) {
+  .features__box-left {
+    padding-top: 24px;
+  }
 }
 .features__box-right {
   max-width: 835;
 }
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .features__box-right {
+    max-width: 345px;
+  }
+}
 .features__img {
   width: 700px;
   object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .features__img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .features__img {
+    width: 345px;
+  }
 }
 .features__contents {
   font-family: "GT Eesti Pro";
@@ -1119,10 +1177,23 @@ ul {
   line-height: 32px;
   color: #fff;
 }
+@media screen and (max-width: 850px) {
+  .features__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 .features__info {
   display: flex;
   position: relative;
+  left: 25px;
   gap: 13px;
+}
+@media screen and (max-width: 1390px) {
+  .features__info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .features__info-text {
   max-width: 370px;
@@ -1138,7 +1209,7 @@ ul {
   width: 20px;
   height: 18px;
   position: absolute;
-  margin: 0 -25px;
+  margin: 4px -25px;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -3,7 +3,7 @@
 
 .features {
     margin-top: 100px;///
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     background: $blue-dark;
 
     @media screen and (max-width: 1024px) {
@@ -47,9 +47,9 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        gap: 130px;
+        gap: 97px;
 
-        font-family: 'GT Eesti Pro Display';
+        font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 36px;
         line-height: 46px;
@@ -58,14 +58,22 @@
             color: $Gray-30;
 
             &-other {
-                padding: 6px 14px;
+                padding: 14px 48px;
                 border: 2px solid $main-color-teal;
                 border-radius: 66px;
                 color: $main-color-teal;
             }
         }
 
-        @media screen and (max-width: 1170px) {
+        @media screen and (max-width: 1330px) {
+            max-width: 900px;
+            font-size: 20px;
+            line-height: 38px;
+        }
+
+
+
+        @media screen and (max-width: 840px) {
             display: none;
         }
     }
@@ -73,45 +81,74 @@
     .features-mobile {
         display: none;
 
-        @media screen and (max-width: 1170px) {
+        @media screen and (max-width: 840px) {
             display: flex;
             flex-direction: column;
         }
 
         &__link {
+            padding: 24px 0;
             font-family: 'GT Eesti Pro';
             font-weight: 700;
             font-size: 32px;
             line-height: 38px;
             color: $white-color;
 
-            ::before {
+            &::before {
                 content: "";
                 background-image:  url("../../img/features-mobile.svg");
-                width: 6px;
-                height: 12px;
+                background-repeat: no-repeat;
+                background-size: cover;
                 position: absolute;
-                // margin: 0 -25px;
+                right: 27px;
+                width: 22px;
+                height: 15px;
+            }
+
+            @media screen and (max-width: 765px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            @media screen and (max-width: 315px) {
+                font-size: 20px;
+                line-height: 28px;
             }
         }
     }
 
-    // &__divide {
-    //     max-width: 345px;
-    //     margin: 0 auto;
-    //     border: 1px solid $Gray-70;
-    // }
+    &__divide {
+        margin-right: 15px;
+        border: 1px solid $Gray-70;
+    }
 
     &__box {
         display: flex;
         gap: 33px;
 
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &-left {
             padding-top: 90px;
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 24px;
+            }
         }
 
         &-right {
             max-width: 835;
+
+            @media screen and (max-width: 980px) {
+                text-align: center;
+            }
+
+            @media screen and (max-width: 375px) {
+                max-width: 345px;
+            }
         }
         
     }
@@ -119,6 +156,14 @@
     &__img {
         width: 700px;
         object-fit: cover;
+
+        @media screen and (max-width: 1200px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 345px;
+        }
     }
 
     &__contents {
@@ -135,12 +180,23 @@
         font-size: 22px;
         line-height: 32px;
         color: $white-color;
+
+        @media screen and (max-width: 850px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 
     &__info {
         display: flex;
         position: relative;
+        left: 25px;
         gap: 13px;
+
+        @media screen and (max-width: 1390px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &-text {
             max-width: 370px;
@@ -156,7 +212,7 @@
                 width: 20px;
                 height: 18px;
                 position: absolute;
-                margin: 0 -25px;
+                margin: 4px -25px;
             }
         }
     }
