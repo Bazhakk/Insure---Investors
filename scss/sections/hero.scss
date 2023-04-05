@@ -6,6 +6,7 @@
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
+    overflow-y: hidden;
 
     @media screen and (max-width: 1370px) {
         background-image: url("../../img/bg-mobile-menu.png");
