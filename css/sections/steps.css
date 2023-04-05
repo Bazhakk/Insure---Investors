@@ -78,6 +78,7 @@
   position: relative;
   max-width: 740px;
   margin: 0 auto;
+  padding-bottom: 50px;
   text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -88,6 +89,7 @@
 }
 @media screen and (max-width: 880px) {
   .steps__title {
+    padding-bottom: 24px;
     font-size: 40px;
     line-height: 44px;
   }
@@ -172,6 +174,7 @@
   }
 }
 .steps .step__item {
+  background: red;
   padding: 0 40px;
   border-radius: 12px;
   background: #0D1A59;

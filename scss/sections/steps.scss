@@ -20,7 +20,6 @@
             max-width: 345px;
             padding-top: 74px;
             z-index: 0;
-            // padding: 75px 0 0 35px;
         }
 
         &::before {
@@ -52,6 +51,7 @@
         position: relative;
         max-width: 740px;
         margin: 0 auto;
+        padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
@@ -61,6 +61,7 @@
         z-index: 3;
 
         @media screen and (max-width: 880px) {
+            padding-bottom: 24px;
             font-size: 40px;
             line-height: 44px;
         }
@@ -76,7 +77,6 @@
         }
 
         &-lines {
-            // display: block;
             position: relative;
             z-index: 2;
         }
@@ -94,10 +94,8 @@
             @media screen and (max-width: 880px) {
                 width: 92px;
                 height: 13px;
-                // bottom: 48px;
                 bottom: 6px;
                 left: 15px;
-                // left: 48px;
             }
 
             @media screen and (max-width: 360px) {
@@ -106,14 +104,7 @@
 
             @media screen and (max-width: 340px) {
                 left: 3px;
-                // bottom: 50px;
             }
-
-            // @media screen and (max-width: 290px) {
-            //     width: 75px;
-            //     left: 5px;
-            //     bottom: 7px;
-            // }
         }
     }
 
@@ -155,6 +146,7 @@
 
 
         &__item {
+            background: red;
             padding: 0 40px;
             border-radius: 12px;
             background: $step-namber;
