@@ -144,6 +144,34 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_seventh {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_seventh:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_seventh:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_seventh:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+@media screen and (max-width: 1024px) {
+  .button_seventh {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 
 .link-anima {
   position: relative;

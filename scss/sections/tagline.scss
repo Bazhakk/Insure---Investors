@@ -1,0 +1,48 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.tagline {
+
+    &__container {
+        padding-bottom: 80px;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &__title {
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+
+        &-other {
+            color: $main-color-teal;
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $Gray-80;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 345px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
