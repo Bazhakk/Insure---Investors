@@ -33,6 +33,7 @@
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 1370px) {
   .hero {
@@ -51,7 +52,6 @@
   }
 }
 .hero__col_left {
-  position: relative;
   max-width: 875px;
 }
 @media screen and (max-width: 1280px) {
@@ -151,7 +151,9 @@
 }
 .hero__btns {
   display: flex;
+  position: relative;
   gap: 50px;
+  z-index: 2;
 }
 @media screen and (max-width: 690px) {
   .hero__btns {

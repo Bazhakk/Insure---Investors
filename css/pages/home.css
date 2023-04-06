@@ -122,6 +122,8 @@ ul {
 }
 
 .button_first {
+  display: flex;
+  align-items: center;
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
@@ -513,6 +515,7 @@ ul {
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 1370px) {
   .hero {
@@ -531,7 +534,6 @@ ul {
   }
 }
 .hero__col_left {
-  position: relative;
   max-width: 875px;
 }
 @media screen and (max-width: 1280px) {
@@ -631,7 +633,9 @@ ul {
 }
 .hero__btns {
   display: flex;
+  position: relative;
   gap: 50px;
+  z-index: 2;
 }
 @media screen and (max-width: 690px) {
   .hero__btns {
@@ -673,6 +677,7 @@ ul {
 }
 .steps {
   background: #000E50;
+  overflow-y: hidden;
 }
 .steps__container {
   position: relative;
@@ -758,7 +763,7 @@ ul {
   width: 210px;
   height: 21px;
   background-color: #E91E63;
-  z-index: 1;
+  z-index: -1;
 }
 @media screen and (max-width: 880px) {
   .steps__title-line {
@@ -797,6 +802,7 @@ ul {
   }
 }
 .steps .step {
+  padding: 0;
   width: 100%;
   display: flex;
   padding-bottom: 100px;
@@ -811,7 +817,6 @@ ul {
   }
 }
 .steps .step__item {
-  background: red;
   padding: 0 40px;
   border-radius: 12px;
   background: #0D1A59;
