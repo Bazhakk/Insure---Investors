@@ -6,10 +6,16 @@
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
+    // overflow-y: hidden;
 
     @media screen and (max-width: 1370px) {
         background-image: url("../../img/bg-mobile-menu.png");
+
     }
+
+    // @media screen and (max-width: 680px) {
+    //     overflow-y: hidden;
+    // }
 
     &__container {
         position: relative;
@@ -58,7 +64,7 @@
         object-fit: cover;
 
         @media screen and (max-width: 760px) {
-            width: 1400px;
+            width: 1200px;
             padding-top: 80px;
         }
 
@@ -83,11 +89,11 @@
         @media screen and (max-width: 660px) {
             width: 50vh;
             margin: 30px auto;
-            padding: 130px 50px 0 0;
+            padding: 200px 50px 0 75px;
         }
 
-        @media screen and (max-width: 210px) {
-            padding-top: 100px;
+        @media screen and (max-width: 280px) {
+            padding-top: 180px;
         }
     }
 

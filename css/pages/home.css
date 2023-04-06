@@ -122,16 +122,14 @@ ul {
 }
 
 .button_first {
-  display: flex;
-  align-items: center;
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
+  border-radius: 66px;
   color: #fff;
   background: #E91E63;
-  border-radius: 66px;
 }
 @media screen and (max-width: 375px) {
   .button_first {
@@ -169,6 +167,23 @@ ul {
   text-align: right;
   color: #0A1C33;
 }
+.button_second:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.button_second:hover svg {
+  transition: all 0.4s;
+  fill: #F7FBFD;
+}
+.button_second:hover svg path {
+  transition: all 0.2s;
+  stroke: #00CCC2;
+  fill: #00CCC2;
+}
+.button_second:hover svg circle {
+  transition: all 0.4s;
+  stroke: #00CCC2;
+}
 @media screen and (max-width: 375px) {
   .button_second {
     font-size: 21px;
@@ -186,23 +201,6 @@ ul {
     margin: 0 auto;
     flex-direction: column;
   }
-}
-.button_second:hover {
-  transition: all 0.4s;
-  color: #0EB7AE;
-}
-.button_second:hover svg {
-  transition: all 0.4s;
-  fill: #F7FBFD;
-}
-.button_second:hover svg path {
-  transition: all 0.2s;
-  stroke: #00CCC2;
-  fill: #00CCC2;
-}
-.button_second:hover svg circle {
-  transition: all 0.4s;
-  stroke: #00CCC2;
 }
 .button_third {
   padding: 20px 40px;
@@ -568,7 +566,7 @@ ul {
 }
 @media screen and (max-width: 760px) {
   .hero__img {
-    width: 1400px;
+    width: 1200px;
     padding-top: 80px;
   }
 }
@@ -594,12 +592,12 @@ ul {
   .hero__img-mobile {
     width: 50vh;
     margin: 30px auto;
-    padding: 130px 50px 0 0;
+    padding: 200px 50px 0 75px;
   }
 }
-@media screen and (max-width: 210px) {
+@media screen and (max-width: 280px) {
   .hero__img-mobile {
-    padding-top: 100px;
+    padding-top: 180px;
   }
 }
 .hero__title {
@@ -679,6 +677,11 @@ ul {
 .steps__container {
   position: relative;
 }
+@media screen and (max-width: 1280px) {
+  .steps__container {
+    z-index: 0;
+  }
+}
 .steps__block {
   position: relative;
   margin: 0 auto;
@@ -730,7 +733,7 @@ ul {
   font-size: 91px;
   line-height: 100px;
   color: #fff;
-  z-index: 3;
+  z-index: 2;
 }
 @media screen and (max-width: 880px) {
   .steps__title {
@@ -756,7 +759,7 @@ ul {
 .steps__title-line {
   content: "";
   position: absolute;
-  bottom: 12px;
+  bottom: 16px;
   left: 1px;
   width: 210px;
   height: 21px;
@@ -765,20 +768,15 @@ ul {
 }
 @media screen and (max-width: 880px) {
   .steps__title-line {
-    width: 92px;
+    width: 90px;
     height: 13px;
     bottom: 6px;
-    left: 15px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .steps__title-line {
-    left: 7px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .steps__title-line {
     left: 3px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .steps__title-line {
+    width: 73px;
   }
 }
 .steps__subtitle {

@@ -1,5 +1,5 @@
-@import "variables";
-@import "fonts";
+@import "../base/fonts";
+@import "../base/variables";
 
 * {
   box-sizing: border-box;
@@ -15,16 +15,16 @@
 .button {
 
     &_first {
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
       padding: 20px 40px;
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
+      border-radius: 66px;
       color: $white-color;
       background: $main-color-pink;
-      border-radius: 66px;
 
       @media screen and (max-width: 375px) {
         padding: 20px 40px;
@@ -65,21 +65,6 @@
       text-align: right;
       color: $Gray-100;
 
-      @media screen and (max-width: 375px) {
-        font-size: 21px;
-        line-height: 25px;
-      }
-
-      @media screen and (max-width: 300px) {
-        font-size: 15px;
-        line-height: 20px;
-      }
-
-      @media screen and (max-width: 250px) {
-        margin: 0 auto;
-        flex-direction: column;
-      }
-
       &:hover {
         transition: all .4s;
         color: $hover-teal;
@@ -97,6 +82,21 @@
             stroke: $hover-background-teal;
           }
         }
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 300px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @media screen and (max-width: 250px) {
+        margin: 0 auto;
+        flex-direction: column;
       }
     }
 
