@@ -6,6 +6,10 @@
 
     &__container {
         position: relative;
+
+        @media screen and (max-width: 1280px) {
+            z-index: 0;
+        }
     }
 
     &__block {
@@ -79,7 +83,7 @@
         &-line {
             content: "";
             position: absolute;
-            bottom: 12px;
+            bottom: 16px;
             left: 1px;
             width: 210px;
             height: 21px;
@@ -87,19 +91,15 @@
             z-index: 1;
 
             @media screen and (max-width: 880px) {
-                width: 92px;
+                width: 90px;
                 height: 13px;
                 bottom: 6px;
                 left: 2px;
             }
 
-            // @media screen and (max-width: 360px) {
-            //     left: 7px;
-            // }
-
-            // @media screen and (max-width: 340px) {
-            //     left: 3px;
-            // }
+            @media screen and (max-width: 290px) {
+                width: 73px;
+            }
         }
     }
 

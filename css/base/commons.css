@@ -40,16 +40,14 @@
 }
 
 .button_first {
-  display: flex;
-  align-items: center;
   padding: 20px 40px;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
   line-height: 25px;
+  border-radius: 66px;
   color: #fff;
   background: #E91E63;
-  border-radius: 66px;
 }
 @media screen and (max-width: 375px) {
   .button_first {
@@ -87,6 +85,23 @@
   text-align: right;
   color: #0A1C33;
 }
+.button_second:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.button_second:hover svg {
+  transition: all 0.4s;
+  fill: #F7FBFD;
+}
+.button_second:hover svg path {
+  transition: all 0.2s;
+  stroke: #00CCC2;
+  fill: #00CCC2;
+}
+.button_second:hover svg circle {
+  transition: all 0.4s;
+  stroke: #00CCC2;
+}
 @media screen and (max-width: 375px) {
   .button_second {
     font-size: 21px;
@@ -104,23 +119,6 @@
     margin: 0 auto;
     flex-direction: column;
   }
-}
-.button_second:hover {
-  transition: all 0.4s;
-  color: #0EB7AE;
-}
-.button_second:hover svg {
-  transition: all 0.4s;
-  fill: #F7FBFD;
-}
-.button_second:hover svg path {
-  transition: all 0.2s;
-  stroke: #00CCC2;
-  fill: #00CCC2;
-}
-.button_second:hover svg circle {
-  transition: all 0.4s;
-  stroke: #00CCC2;
 }
 .button_third {
   padding: 20px 40px;
