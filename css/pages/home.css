@@ -162,6 +162,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 15px;
+  z-index: 0;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
@@ -636,6 +637,11 @@ ul {
   position: relative;
   gap: 50px;
   z-index: 2;
+}
+@media screen and (max-width: 1280px) {
+  .hero__btns {
+    z-index: 0;
+  }
 }
 @media screen and (max-width: 690px) {
   .hero__btns {

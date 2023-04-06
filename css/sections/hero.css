@@ -155,6 +155,11 @@
   gap: 50px;
   z-index: 2;
 }
+@media screen and (max-width: 1280px) {
+  .hero__btns {
+    z-index: 0;
+  }
+}
 @media screen and (max-width: 690px) {
   .hero__btns {
     margin: 0 auto;
