@@ -1,75 +1,131 @@
-@import "variables";
-@import "fonts";
+@import "../base/fonts";
+@import "../base/variables";
+
+* {
+  box-sizing: border-box;
+}
 
 .container {
-    width: 100%;
-    max-width: 1560px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1540px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .button {
+
     &_first {
-        padding: 13px 40px;
-        font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        border-radius: 66px;
-        color: $white-color;
-        background: $main-color-teal;
-
-        &:hover {
-            transition: all .4s;
-            background-color: $hover-color-teal;
-        }
-
-        @media screen and (max-width: 1024px) {
-          display: none;
-        }
-    }
-
-    &_second {
+      display: flex;
+      align-items: center;
       padding: 20px 40px;
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
+      border-radius: 66px;
       color: $white-color;
       background: $main-color-pink;
-      border-radius: 66px;
+
+      @media screen and (max-width: 375px) {
+        padding: 20px 40px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        line-height: 15px;
+      }
 
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;
       }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        color: $disabled-color-pink;
+      }
     }
 
-    &_third {
+    &_second {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      z-index: 0;
+        
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
       text-align: right;
       color: $Gray-100;
-    }
-
-    &_fourth {
-      padding: 20px 40px;
-      background: $main-color-pink;
-      border-radius: 66px;
-
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
 
       &:hover {
         transition: all .4s;
-        background-color: $hover-color-pink;
+        color: $hover-teal;
+
+        svg {
+          transition: all .4s;
+          fill: $hover-btn-teal;
+          path {
+            transition: all .2s;
+            stroke: $hover-background-teal;
+            fill: $hover-background-teal;
+          }
+          circle {
+            transition: all .4s;
+            stroke: $hover-background-teal;
+          }
+        }
       }
+
+      @media screen and (max-width: 375px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 300px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @media screen and (max-width: 250px) {
+        margin: 0 auto;
+        flex-direction: column;
+      }
+    }
+
+    &_third {
+        padding: 20px 40px;
+        background: $main-color-pink;
+        border-radius: 66px;
+  
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+        color: $white-color;
+  
+        &:hover {
+          transition: all .4s;
+          background-color: $hover-color-pink;
+        }
+  
+        &:active {
+          vertical-align: middle;
+          color: $pressed-color-pink;
+        }
+  
+        &:focus {
+          vertical-align: middle;
+          color: $disabled-color-pink;
+        }
     }
 }
 
@@ -93,4 +149,4 @@
         width: 100%;
       }
     }
-  }
+}

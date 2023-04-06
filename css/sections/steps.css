@@ -29,60 +29,107 @@
   font-weight: 700;
 }
 .steps {
-  margin-top: 200px;
   background: #000E50;
+  overflow-y: hidden;
 }
-@media screen and (max-width: 1024px) {
-  .steps {
-    margin: 100px auto 0;
-  }
-}
-.steps__box {
-  max-width: 860px;
-  margin: 0 auto;
-}
-.steps__figure {
-  position: absolute;
-  top: 935px;
-  left: 350px;
-}
-@media screen and (max-width: 1024px) {
-  .steps__figure {
-    margin: 0 auto;
-  }
-}
-.steps__number {
-  font-family: "Poller One";
-  font-weight: 400;
-  font-size: 450px;
-  line-height: 100px;
-  text-align: center;
-  color: #0D1A59;
-}
-.steps__info {
+.steps__container {
   position: relative;
-  padding-top: 215px;
 }
-@media screen and (max-width: 1024px) {
-  .steps__info {
-    margin: 0 auto;
+@media screen and (max-width: 1280px) {
+  .steps__container {
+    z-index: 0;
+  }
+}
+.steps__block {
+  position: relative;
+  margin: 0 auto;
+  max-width: 738px;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  z-index: 2;
+}
+@media screen and (max-width: 880px) {
+  .steps__block {
+    max-width: 345px;
+    padding-top: 74px;
+    z-index: 0;
+  }
+}
+.steps__block::before {
+  content: "";
+  background-image: url("../../img/steps-namber.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 130px;
+  left: -187px;
+  z-index: 0;
+}
+@media screen and (max-width: 1045px) {
+  .steps__block::before {
+    left: -40px;
+    top: 48px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .steps__block::before {
+    max-width: 135px;
+    max-height: 146px;
+    margin: 0 15px;
   }
 }
 .steps__title {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  padding-bottom: 50px;
   text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
   line-height: 100px;
   color: #fff;
+  z-index: 2;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 880px) {
   .steps__title {
-    padding: 100px 0 25px;
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 44px;
   }
 }
-.steps__title_span {
-  background: #E91E63;
+.steps__title-text {
+  position: relative;
+  z-index: 2;
+}
+.steps__title-lines {
+  position: relative;
+  z-index: 2;
+}
+.steps__title-line {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  left: 1px;
+  width: 210px;
+  height: 21px;
+  background-color: #E91E63;
+  z-index: -1;
+}
+@media screen and (max-width: 880px) {
+  .steps__title-line {
+    width: 90px;
+    height: 13px;
+    bottom: 6px;
+    left: 2px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .steps__title-line {
+    width: 73px;
+  }
 }
 .steps__subtitle {
   max-width: 525px;
@@ -94,45 +141,59 @@
   text-align: center;
   color: #B5BAC1;
 }
-.steps .step {
-  display: flex;
-  padding: 80px 0 100px;
-  gap: 30px;
-}
-@media screen and (max-width: 1024px) {
-  .steps .step {
-    padding: 35px 0 55px;
-    flex-direction: column;
+@media screen and (max-width: 375px) {
+  .steps__subtitle {
+    max-width: 345px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .steps .step__container {
+@media screen and (max-width: 290px) {
+  .steps__subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+.steps .step {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  padding-bottom: 100px;
+  gap: 30px;
+}
+@media screen and (max-width: 1230px) {
+  .steps .step {
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 }
 .steps .step__item {
-  padding: 70px 56px 40px;
+  padding: 0 40px;
   border-radius: 12px;
   background: #0D1A59;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 490px) {
   .steps .step__item {
-    margin: 0 auto;
+    padding: 0 25px;
   }
 }
 .steps .step__point {
   max-width: 500px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 375px) {
   .steps .step__point {
+    max-width: 345px;
     margin: 0 auto;
   }
 }
 .steps .step__namber {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 380px) {
   .steps .step__namber {
     flex-direction: column;
   }
@@ -144,11 +205,19 @@
   line-height: 58px;
   color: #fff;
 }
+@media screen and (max-width: 490px) {
+  .steps .step__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .steps .step__title {
+    margin-bottom: 5px;
+  }
+}
 .steps .step__subtitle {
-  display: flex;
-  align-items: center;
-  padding: 4px 20px;
-  max-width: 82px;
+  padding: 5px 20px;
   max-height: 52px;
   border: 2px solid #B5BAC1;
   border-radius: 99px;
@@ -158,35 +227,71 @@
   line-height: 44px;
   color: #fff;
 }
+@media screen and (max-width: 380px) {
+  .steps .step__subtitle {
+    max-height: 35px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
 .steps .step__vector {
   max-width: 70px;
-  margin: 16px 0;
   border: 2px solid #00CCC2;
 }
+@media screen and (max-width: 380px) {
+  .steps .step__vector {
+    margin: 0 auto;
+  }
+}
 .steps .step__text {
-  margin: 0 auto;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
   color: #fff;
 }
+@media screen and (max-width: 490px) {
+  .steps .step__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
 .steps .step__img {
   max-width: 740px;
 }
 .steps .step__img_1 {
-  padding-top: 100px;
+  padding-top: 115px;
+}
+@media screen and (max-width: 1380px) {
+  .steps .step__img_1 {
+    padding-top: 30px;
+  }
 }
 .steps .step__img_2 {
   padding-top: 45px;
 }
+@media screen and (max-width: 1380px) {
+  .steps .step__img_2 {
+    padding-top: 30px;
+  }
+}
 .steps .step__img_3 {
   padding-top: 130px;
+}
+@media screen and (max-width: 1380px) {
+  .steps .step__img_3 {
+    padding-top: 30px;
+  }
 }
 .steps .btn-steps {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 120px;
+}
+@media screen and (max-width: 490px) {
+  .steps .btn-steps {
+    margin-bottom: 55px;
+  }
 }
 
 /*# sourceMappingURL=steps.css.map */

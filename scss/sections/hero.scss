@@ -2,27 +2,95 @@
 @import "../base/variables";
 
 .hero {
+    height: 100vh;
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
+    overflow-y: hidden;
 
-    @media screen and (max-width: 1024px) {
-        background-image: url("../../img/main_banner-Front_img\ 4.png");
+    @media screen and (max-width: 1370px) {
+        background-image: url("../../img/bg-mobile-menu.png");
     }
 
     &__container {
-        max-width: 875px;
-        margin-left: 90px;
-        margin-bottom: 150px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1370px) {
+            padding-top: 40px;
+        }
+    }
+
+    &__col {
+
+        &_left {
+          max-width: 875px;
+          
+          @media screen and (max-width: 1280px) {
+            max-width: 650px;
+          }
+          
+          @media screen and (max-width: 680px) {
+            margin: 0 auto;
+          }
+        }
+    
+        &_right {
+          position: absolute;
+          top: 9%;
+          right: -10%;
+          z-index: 1;
+
+          @media screen and (max-width: 1600px) {
+            right: -8%;
+          }
+
+          @media screen and (max-width: 1290px) {
+            top: 73%;
+          }
+        }
+    }
+
+    &__img {
+        width: 1617px;
+        object-fit: cover;
+
+        @media screen and (max-width: 760px) {
+            width: 1200px;
+            padding-top: 80px;
+        }
+
+        @media screen and (max-width: 660px) {
+           display: none;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media screen and (max-width: 660px) {
+            display: inline;
             margin: 0 auto;
         }
     }
 
-    &__box {
-        padding-top: 100px;
+    &__img-mobile {
+        max-width: 100%;
+        height: auto;
+
+        @media screen and (max-width: 660px) {
+            width: 50vh;
+            margin: 30px auto;
+            padding: 200px 50px 0 75px;
+        }
+
+        @media screen and (max-width: 280px) {
+            padding-top: 180px;
+        }
     }
+
 
     &__title {
         font-family: 'GT Eesti Pro';
@@ -31,29 +99,41 @@
         line-height: 114px;
         color: $Gray-100;
 
-        &_span {
-            color: $main-color-teal;
+        @media screen and (max-width: 1280px) {
+            margin-top: 0;
+            font-size: 90px;
+            line-height: 100px;
+        }
+
+        @media screen and (max-width: 1210px) {
+            font-size: 75px;
+            line-height: 90px;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 52px;
+            line-height: 55px;
         }
     }
 
-    &__but {
+    &__title-other {
+        color: $main-color-teal;
+    }
+
+    &__btns {
         display: flex;
+        position: relative;
         gap: 50px;
+        z-index: 2;
 
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
-            margin: 0 auto;
-            align-items: center;
+        @media screen and (max-width: 1280px) {
+            z-index: 0;
         }
-    }
 
-    &__watch {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 690px) {
             margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
