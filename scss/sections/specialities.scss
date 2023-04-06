@@ -1,2 +1,261 @@
 @import "../base/fonts";
 @import "../base/variables";
+
+.specialities {
+    padding: 130px 0;
+
+    &__span {
+    padding-bottom:100px ;
+    }
+
+    &__container {
+        padding: 0;
+        background: gray;
+    }
+
+    &__title {
+        padding-top: 50px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $Gray-100;
+
+        @media screen and (max-width: 645px) {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-80;
+
+        @media screen and (max-width: 645px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &__top-block {
+        display: flex;
+        gap: 30px;
+        padding-top: 80px;
+        padding-bottom: 30px;
+
+        @media screen and (max-width: 1380px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 32px;
+            gap: 15px;
+        }
+    }
+
+    &__block-bottom {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    //investors
+    &__investors {
+        background-image: url("../../img/Investors-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        width: 765px;
+        height: 435px;
+        padding-top: 50px;
+        padding-left: 55px;
+        border-radius: 30px;
+
+        // @media screen and (max-width: 815px) {
+        //     background-image: url("../../img/mobile-menu/Investors\ portfolio-mb.png");
+        //     width: 345px;
+        //     height: 450px;
+        // }
+    }
+
+    &__number {
+        display: flex;
+        // align-items: center;
+        max-width: 55px;
+        max-height: 38px;
+        padding: 5px 14px;
+        border: 1px solid $Gray-10;
+        border-radius: 66px;
+
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $Gray-10;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 15px;
+            max-height: 30px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__text-investors,
+    &__text-commercial,
+    &__text-multifamily,
+    &__text-storage,
+    &__text-builder,
+    &__text-hotel {
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 58px;
+        color: $white-color;
+
+        @media screen and (max-width: 815px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    &__text-investors {
+        max-width: 550px;
+
+        @media screen and (max-width: 815px) {
+            max-width: 290px;
+        }
+    }
+    //commercial
+    &__commercial {
+        background-image: url("../../img/Commercial-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        width: 765px;
+        padding-top: 50px;
+        padding-left: 55px;
+        border-radius: 30px;
+
+        // @media screen and (max-width: 815px) {
+        //     background-image: url("../../img/mobile-menu/Commercial\ property-mb.png");
+        //     width: 345px;
+        //     height: 450px;
+        // }
+
+    }
+
+    &__text-commercial {
+        max-width: 620px;
+
+        @media screen and (max-width: 815px) {
+            max-width: 295px;
+        }
+    }
+    //multifamily
+    &__multifamily {
+        background-image: url("../../img/Multi\ -img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        // width: 980px;
+        height: 435px;
+        // padding-bottom: 100px;
+        padding-top: 50px;
+        padding-left: 55px;
+        border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/multy-fam-mb.png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
+    }
+
+    &__text-multifamily {
+        max-width: 490px;
+    }
+
+    //Hotel
+    &__hotel {
+        background-image: url("../../img/motel--img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        // width: 385px;
+        height: 1000px;
+        padding-top: 50px;
+        padding-left: 55px;
+        border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/motel\ program-mb\ .png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
+    }
+
+    &__text-hotel {
+        max-width: 495px;
+    }
+
+    &__bottom-col {
+        display: flex;
+        padding-top: 30px;
+        gap: 30px;
+    }
+
+    //storage
+    &__storage {
+        background-image: url("../../img/Storage-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        width: 475px;
+        height: 435px;
+        padding-top: 50px;
+        padding-left: 70px;
+        border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/storage-mb.png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
+    }
+
+    //builder
+    &__builder {
+        background-image: url("../../img/Builder-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        max-width: 100%;
+        width: 475px;
+        padding-top: 50px;
+        padding-left: 55px;
+        border-radius: 30px;
+
+        @media screen and (max-width: 815px) {
+            background-image: url("../../img/mobile-menu/Builder-mb.png");
+            width: 345px;
+            height: 450px;
+            margin: 0 auto;
+        }
+    }
+
+
+
+
+}
