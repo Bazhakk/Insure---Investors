@@ -2,11 +2,10 @@
 @import "../base/variables";
 
 .specialities {
-    padding: 130px 0;
+    padding-bottom: 130px;
 
     &__container {
         padding: 0;
-        background: gray;
     }
 
     &__title {
@@ -42,14 +41,15 @@
 
     &__top-block {
         display: flex;
-        gap: 30px;
         padding-top: 80px;
         padding-bottom: 30px;
+        gap: 30px;
 
         @media screen and (max-width: 1380px) {
             flex-direction: column;
             align-items: center;
             padding-top: 32px;
+            padding-bottom: 15px;
             gap: 15px;
         }
     }
@@ -59,27 +59,39 @@
         gap: 30px;
 
         @media screen and (max-width: 1380px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
             gap: 15px;
+        }   
+    }
+
+    &__img {
+        position: absolute;
+        max-width: 310px;
+        max-height: 310px;
+        bottom: 0;
+        right: 0;
+
+        @media screen and (max-width: 815px) {
+            max-width: 260px;
+            max-height: 260px;
         }
     }
 
     //investors
     &__investors {
-        background-image: url("../../img/Investors-img.png");
+        position: relative;
+        background-image: url("../../img/specialities/inves.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
-        max-width: 100%;
         width: 765px;
-        height: 475px;
+        height: 435px;
         padding-top: 50px;
         padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 815px) {
-            background-image: url("../../img/mobile-menu/Investors\ portfolio-mb.png");
+            // background-image: url("../../img/mobile-menu/Investors\ portfolio-mb.png");
             width: 345px;
             height: 450px;
             padding-top: 32px;
@@ -134,6 +146,7 @@
             max-width: 290px;
         }
     }
+
     //commercial
     &__commercial {
         background-image: url("../../img/Commercial-img.png");
@@ -154,7 +167,6 @@
             padding-top: 32px;
             padding-left: 24px;
         }
-
     }
 
     &__text-commercial {
@@ -176,17 +188,28 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 815px) {
+        @media screen and (max-width: 1380px) {
             background-image: url("../../img/mobile-menu/multifamily-m.png");
-            width: 345px;
+            background-position: bottom;
+            width: 765px;
             height: 450px;
+            margin: 0 auto;
             padding-top: 32px;
             padding-left: 24px;
+        }
+
+        @media screen and (max-width: 815px) {
+            width: 345px;
+            height: 450px;
         }
     }
 
     &__text-multifamily {
         max-width: 490px;
+
+        @media screen and (max-width: 815px) {
+            max-width: 250px;
+        }
     }
 
     //Hotel
@@ -201,17 +224,27 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 815px) {
+        @media screen and (max-width: 1380px) {
             background-image: url("../../img/mobile-menu/motel\ program-mb.png");
-            width: 345px;
+            width: 765px;
             height: 450px;
+            margin: 0 auto;
             padding-top: 32px;
             padding-left: 24px;
+        }
+
+        @media screen and (max-width: 815px) {
+            width: 345px;
+            height: 450px;
         }
     }
 
     &__text-hotel {
         max-width: 495px;
+
+        @media screen and (max-width: 815px) {
+            max-width: 295px;
+        }
     }
 
     &__bottom-col {
@@ -219,8 +252,8 @@
         padding-top: 30px;
         gap: 30px;
 
-        @media screen and (max-width: 1380px) {
-            flex-direction: column;
+        @media screen and (max-width: 985px) {
+            flex-direction: column-reverse;
             align-items: center;
             padding-top: 15px;
             gap: 15px;
@@ -240,12 +273,26 @@
         padding-left: 70px;
         border-radius: 30px;
 
-        @media screen and (max-width: 815px) {
-            background-image: url("../../img/mobile-menu/Builder-mb.png");
-            width: 345px;
+        @media screen and (max-width: 1380px) {
+            background-image: url("../../img/mobile-menu/storage-img.png");
+            background-position: bottom;
+            width: 765px;
             height: 450px;
+            margin: 0 auto;
             padding-top: 32px;
             padding-left: 24px;
+        }
+
+        @media screen and (max-width: 815px) {
+            width: 345px;
+            height: 450px;
+        }
+    }
+
+    &__text-storage {
+
+        @media screen and (max-width: 815px) {
+            max-width: 295px;
         }
     }
 
@@ -262,12 +309,26 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        @media screen and (max-width: 815px) {
-            background-image: url("../../img/mobile-menu/Builder\ risk-mb.png");
-            width: 345px;
+        @media screen and (max-width: 1380px) {
+            background-image: url("../../img/mobile-menu/Builder-mb.png");
+            background-position: bottom;
+            width: 765px;
             height: 450px;
+            margin: 0 auto;
             padding-top: 32px;
             padding-left: 24px;
+        }
+
+        @media screen and (max-width: 815px) {
+            width: 345px;
+            height: 450px;
+        }
+    }
+
+    &__text-builder {
+
+        @media screen and (max-width: 815px) {
+            max-width: 295px;
         }
     }
 }

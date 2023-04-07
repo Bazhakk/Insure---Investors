@@ -227,6 +227,34 @@ ul {
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_specialities:hover svg {
+  transition: all 0.3s;
+  fill: #E91E63;
+}
+.button_specialities:hover svg circle {
+  transition: all 0.3s;
+  stroke: #E91E63;
+}
+.button_specialities:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_specialities:focus {
+  vertical-align: middle;
+}
+.button_specialities:focus svg {
+  transition: all 0.4s;
+  fill: #fff;
+}
+.button_specialities:focus svg path {
+  transition: all 0.2s;
+  stroke: #CED2D6;
+  fill: #CED2D6;
+}
+.button_specialities:focus svg circle {
+  transition: all 0.4s;
+  stroke: #CED2D6;
+}
 
 .link-anima {
   position: relative;
@@ -978,11 +1006,10 @@ ul {
   font-weight: 700;
 }
 .specialities {
-  padding: 130px 0;
+  padding-bottom: 130px;
 }
 .specialities__container {
   padding: 0;
-  background: gray;
 }
 .specialities__title {
   padding-top: 50px;
@@ -1017,15 +1044,16 @@ ul {
 }
 .specialities__top-block {
   display: flex;
-  gap: 30px;
   padding-top: 80px;
   padding-bottom: 30px;
+  gap: 30px;
 }
 @media screen and (max-width: 1380px) {
   .specialities__top-block {
     flex-direction: column;
     align-items: center;
     padding-top: 32px;
+    padding-bottom: 15px;
     gap: 15px;
   }
 }
@@ -1035,26 +1063,37 @@ ul {
 }
 @media screen and (max-width: 1380px) {
   .specialities__block-bottom {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 15px;
   }
 }
+.specialities__img {
+  position: absolute;
+  max-width: 310px;
+  max-height: 310px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 815px) {
+  .specialities__img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
 .specialities__investors {
-  background-image: url("../../img/Investors-img.png");
+  position: relative;
+  background-image: url("../../img/specialities/inves.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  max-width: 100%;
   width: 765px;
-  height: 475px;
+  height: 435px;
   padding-top: 50px;
   padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 815px) {
   .specialities__investors {
-    background-image: url("../../img/mobile-menu/Investors portfolio-mb.png");
     width: 345px;
     height: 450px;
     padding-top: 32px;
@@ -1143,17 +1182,30 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1380px) {
   .specialities__multifamily {
     background-image: url("../../img/mobile-menu/multifamily-m.png");
-    width: 345px;
+    background-position: bottom;
+    width: 765px;
     height: 450px;
+    margin: 0 auto;
     padding-top: 32px;
     padding-left: 24px;
   }
 }
+@media screen and (max-width: 815px) {
+  .specialities__multifamily {
+    width: 345px;
+    height: 450px;
+  }
+}
 .specialities__text-multifamily {
   max-width: 490px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-multifamily {
+    max-width: 250px;
+  }
 }
 .specialities__hotel {
   background-image: url("../../img/motel--img.png");
@@ -1166,26 +1218,38 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1380px) {
   .specialities__hotel {
     background-image: url("../../img/mobile-menu/motel program-mb.png");
-    width: 345px;
+    width: 765px;
     height: 450px;
+    margin: 0 auto;
     padding-top: 32px;
     padding-left: 24px;
   }
 }
+@media screen and (max-width: 815px) {
+  .specialities__hotel {
+    width: 345px;
+    height: 450px;
+  }
+}
 .specialities__text-hotel {
   max-width: 495px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-hotel {
+    max-width: 295px;
+  }
 }
 .specialities__bottom-col {
   display: flex;
   padding-top: 30px;
   gap: 30px;
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 985px) {
   .specialities__bottom-col {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding-top: 15px;
     gap: 15px;
@@ -1203,13 +1267,26 @@ ul {
   padding-left: 70px;
   border-radius: 30px;
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1380px) {
   .specialities__storage {
-    background-image: url("../../img/mobile-menu/Builder-mb.png");
-    width: 345px;
+    background-image: url("../../img/mobile-menu/storage-img.png");
+    background-position: bottom;
+    width: 765px;
     height: 450px;
+    margin: 0 auto;
     padding-top: 32px;
     padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__storage {
+    width: 345px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-storage {
+    max-width: 295px;
   }
 }
 .specialities__builder {
@@ -1224,13 +1301,26 @@ ul {
   padding-left: 55px;
   border-radius: 30px;
 }
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 1380px) {
   .specialities__builder {
-    background-image: url("../../img/mobile-menu/Builder risk-mb.png");
-    width: 345px;
+    background-image: url("../../img/mobile-menu/Builder-mb.png");
+    background-position: bottom;
+    width: 765px;
     height: 450px;
+    margin: 0 auto;
     padding-top: 32px;
     padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__builder {
+    width: 345px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-builder {
+    max-width: 295px;
   }
 }
 

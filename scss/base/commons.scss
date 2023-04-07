@@ -127,6 +127,41 @@
           color: $disabled-color-pink;
         }
     }
+
+    &_specialities {
+      &:hover {
+        svg {
+          transition: all .3s;
+          fill: $main-color-pink;
+          circle {
+            transition: all .3s;
+            stroke: $main-color-pink;
+          }
+        }
+      }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        svg {
+          transition: all .4s;
+          fill: $white-color;
+          path {
+            transition: all .2s;
+            stroke: $Gray-20;
+            fill: $Gray-20;
+          }
+          circle {
+            transition: all .4s;
+            stroke: $Gray-20;
+          }
+        }
+      }
+    }
 }
 
 //ANIMATION

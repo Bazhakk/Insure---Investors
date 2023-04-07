@@ -145,6 +145,34 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_specialities:hover svg {
+  transition: all 0.3s;
+  fill: #E91E63;
+}
+.button_specialities:hover svg circle {
+  transition: all 0.3s;
+  stroke: #E91E63;
+}
+.button_specialities:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_specialities:focus {
+  vertical-align: middle;
+}
+.button_specialities:focus svg {
+  transition: all 0.4s;
+  fill: #fff;
+}
+.button_specialities:focus svg path {
+  transition: all 0.2s;
+  stroke: #CED2D6;
+  fill: #CED2D6;
+}
+.button_specialities:focus svg circle {
+  transition: all 0.4s;
+  stroke: #CED2D6;
+}
 
 .link-anima {
   position: relative;
