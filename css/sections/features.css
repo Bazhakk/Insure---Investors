@@ -166,11 +166,6 @@
 .features__box-right {
   max-width: 835;
 }
-@media screen and (max-width: 980px) {
-  .features__box-right {
-    text-align: center;
-  }
-}
 @media screen and (max-width: 375px) {
   .features__box-right {
     max-width: 345px;
@@ -212,14 +207,13 @@
 }
 .features__info {
   display: flex;
+  justify-content: space-between;
   position: relative;
   left: 25px;
-  gap: 13px;
 }
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1500px) {
   .features__info {
     flex-direction: column;
-    align-items: center;
   }
 }
 .features__info-text {
@@ -236,7 +230,7 @@
   width: 20px;
   height: 18px;
   position: absolute;
-  margin: 4px -25px;
+  margin: 4px -30px;
 }
 
 /*# sourceMappingURL=features.css.map */
