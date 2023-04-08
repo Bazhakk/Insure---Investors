@@ -76,22 +76,42 @@
             max-width: 260px;
             max-height: 260px;
         }
+
+        @media screen and (max-width: 300px) {
+            max-width: 160px;
+            max-height: 160px;
+        }
     }
 
     //investors
     &__investors {
         position: relative;
-        background-image: url("../../img/specialities/inves.png");
+        background-image: url("../../img/specialities/investors-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
+        max-width: 100%;
         width: 765px;
         height: 435px;
-        padding-top: 50px;
+        padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
 
+        // &::before {
+        //     content: "";
+        //     background-image: url("../../img/specialities/Mask\ group.png");
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     width: 765px;
+        //     height: 435px;
+        //     top: 0;
+        //     left: -4px;
+        //     z-index: 0;
+        //     border-radius: 30px;
+        // }
+
         @media screen and (max-width: 815px) {
-            // background-image: url("../../img/mobile-menu/Investors\ portfolio-mb.png");
+            // background-image: url("../../img/specialities/investors-bg.png");
             width: 345px;
             height: 450px;
             padding-top: 32px;
@@ -149,19 +169,19 @@
 
     //commercial
     &__commercial {
-        background-image: url("../../img/Commercial-img.png");
+        position: relative;
+        background-image: url("../../img/specialities/commercian-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
         max-width: 100%;
         width: 765px;
-        height: 475px;
-        padding-top: 50px;
+        height: 435px;
+        padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 815px) {
-            background-image: url("../../img/mobile-menu/Commercial\ property-mb.png");
+            // background-image: url("../../img/mobile-menu/Commercial\ property-mb.png");
             width: 345px;
             height: 450px;
             padding-top: 32px;
@@ -178,19 +198,18 @@
     }
     //multifamily
     &__multifamily {
-        background-image: url("../../img/Multi\ -img.png");
+        position: relative;
+        background-image: url("../../img/specialities/multifam-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
         max-width: 100%;
         height: 475px;
-        padding-top: 50px;
+        padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            background-image: url("../../img/mobile-menu/multifamily-m.png");
-            background-position: bottom;
+            // background-image: url("../../img/mobile-menu/multifamily-m.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -214,18 +233,18 @@
 
     //Hotel
     &__hotel {
-        background-image: url("../../img/motel--img.png");
+        position: relative;
+        background-image: url("../../img/specialities/hotel-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
         max-width: 100%;
         height: 940px;
-        padding-top: 50px;
+        padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            background-image: url("../../img/mobile-menu/motel\ program-mb.png");
+            // background-image: url("../../img/mobile-menu/motel\ program-mb.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -252,6 +271,10 @@
         padding-top: 30px;
         gap: 30px;
 
+        @media screen and (max-width: 1380px) {
+            flex-direction: column;
+        }
+
         @media screen and (max-width: 985px) {
             flex-direction: column-reverse;
             align-items: center;
@@ -262,20 +285,19 @@
 
     //storage
     &__storage {
-        background-image: url("../../img/Storage-img.png");
+        position: relative;
+        background-image: url("../../img/specialities/storage-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
         max-width: 100%;
         width: 475px;
         height: 435px;
-        padding-top: 50px;
-        padding-left: 70px;
+        padding-top: 15px;
+        padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            background-image: url("../../img/mobile-menu/storage-img.png");
-            background-position: bottom;
+            // background-image: url("../../img/mobile-menu/storage-img.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -298,20 +320,19 @@
 
     //builder
     &__builder {
-        background-image: url("../../img/Builder-img.png");
+        position: relative;
+        background-image: url("../../img/specialities/Builder-bg.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
         max-width: 100%;
         width: 475px;
         height: 435px;
-        padding-top: 50px;
+        padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            background-image: url("../../img/mobile-menu/Builder-mb.png");
-            background-position: bottom;
+            // background-image: url("../../img/mobile-menu/Builder-mb.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;

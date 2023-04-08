@@ -1081,14 +1081,21 @@ ul {
     max-height: 260px;
   }
 }
+@media screen and (max-width: 300px) {
+  .specialities__img {
+    max-width: 160px;
+    max-height: 160px;
+  }
+}
 .specialities__investors {
   position: relative;
-  background-image: url("../../img/specialities/inves.png");
+  background-image: url("../../img/specialities/investors-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
   width: 765px;
   height: 435px;
-  padding-top: 50px;
+  padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
 }
@@ -1143,20 +1150,19 @@ ul {
   }
 }
 .specialities__commercial {
-  background-image: url("../../img/Commercial-img.png");
+  position: relative;
+  background-image: url("../../img/specialities/commercian-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   max-width: 100%;
   width: 765px;
-  height: 475px;
-  padding-top: 50px;
+  height: 435px;
+  padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 815px) {
   .specialities__commercial {
-    background-image: url("../../img/mobile-menu/Commercial property-mb.png");
     width: 345px;
     height: 450px;
     padding-top: 32px;
@@ -1172,20 +1178,18 @@ ul {
   }
 }
 .specialities__multifamily {
-  background-image: url("../../img/Multi -img.png");
+  position: relative;
+  background-image: url("../../img/specialities/multifam-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   max-width: 100%;
   height: 475px;
-  padding-top: 50px;
+  padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 1380px) {
   .specialities__multifamily {
-    background-image: url("../../img/mobile-menu/multifamily-m.png");
-    background-position: bottom;
     width: 765px;
     height: 450px;
     margin: 0 auto;
@@ -1208,19 +1212,18 @@ ul {
   }
 }
 .specialities__hotel {
-  background-image: url("../../img/motel--img.png");
+  position: relative;
+  background-image: url("../../img/specialities/hotel-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   max-width: 100%;
   height: 940px;
-  padding-top: 50px;
+  padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 1380px) {
   .specialities__hotel {
-    background-image: url("../../img/mobile-menu/motel program-mb.png");
     width: 765px;
     height: 450px;
     margin: 0 auto;
@@ -1247,6 +1250,11 @@ ul {
   padding-top: 30px;
   gap: 30px;
 }
+@media screen and (max-width: 1380px) {
+  .specialities__bottom-col {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 985px) {
   .specialities__bottom-col {
     flex-direction: column-reverse;
@@ -1256,21 +1264,19 @@ ul {
   }
 }
 .specialities__storage {
-  background-image: url("../../img/Storage-img.png");
+  position: relative;
+  background-image: url("../../img/specialities/storage-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   max-width: 100%;
   width: 475px;
   height: 435px;
-  padding-top: 50px;
-  padding-left: 70px;
+  padding-top: 15px;
+  padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 1380px) {
   .specialities__storage {
-    background-image: url("../../img/mobile-menu/storage-img.png");
-    background-position: bottom;
     width: 765px;
     height: 450px;
     margin: 0 auto;
@@ -1290,21 +1296,19 @@ ul {
   }
 }
 .specialities__builder {
-  background-image: url("../../img/Builder-img.png");
+  position: relative;
+  background-image: url("../../img/specialities/Builder-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   max-width: 100%;
   width: 475px;
   height: 435px;
-  padding-top: 50px;
+  padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
 }
 @media screen and (max-width: 1380px) {
   .specialities__builder {
-    background-image: url("../../img/mobile-menu/Builder-mb.png");
-    background-position: bottom;
     width: 765px;
     height: 450px;
     margin: 0 auto;
