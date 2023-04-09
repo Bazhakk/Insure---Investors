@@ -1,0 +1,164 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.contact {
+    &__container {
+        display: flex;
+        padding-top: 130px;
+        padding-bottom: 80px;
+        justify-content: space-between;
+    }
+
+
+    &__title {
+        max-width: 580px;
+        margin: 0;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+    }
+
+    &__subtitle {
+        max-width: 385px;
+        padding-top: 40px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-80;
+    }
+
+    &__info {
+        position: relative;
+        left: 50px;
+    }
+
+    &__address,
+    &__email,
+    &__tel {
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: $Gray-80;
+    }
+
+    &__address {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        &::before {
+            content: "";
+            background-image:  url("../../img/contact-address.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            top: 45px;
+            left: -55px;
+        }
+    }
+
+    &__tel {
+        padding-bottom: 40px;
+        &::before {
+            content: "";
+            background-image:  url("../../img/contact-tel.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            bottom: 85px;
+            left: -55px;
+        }
+    }
+
+    &__email {
+        &::before {
+            content: "";
+            background-image:  url("../../img/contact-email.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            left: -55px;
+            bottom: 0;
+        }
+    }
+
+    .form {
+        width: 950px;
+        height: 585px;
+        padding-top: 80px;
+        text-align: center;
+        background: $white-color;
+        border: 1px solid #E6E8EA;
+        box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+        border-radius: 12px;
+
+        &__element,
+        &__name,
+        &__message,
+        &__email {
+            padding-bottom: 40px;
+            border: none;
+        }
+
+        &__name {
+            display: flex;
+            gap: 40px;
+        }
+        
+        &__element {
+            width: 374px;
+            height: 60px;
+            padding-left: 16px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-50;
+            background: $white-color;
+            border: 1px solid $Gray-20;
+            border-radius: 6px;
+        }
+
+        &__element-email {
+            width: 788px;
+            height: 60px;
+            padding-left: 16px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-50;
+            background: $white-color;
+            border: 1px solid $Gray-20;
+            border-radius: 6px;
+        }
+
+        &__element-message {
+            width: 788px;
+            height: 120px;
+            padding-left: 16px;
+            padding-top: 14px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-50;
+            background: $white-color;
+            border: 1px solid $Gray-20;
+            border-radius: 6px;
+        }
+
+        &__btn-contact {
+            padding-top: 40px;
+            padding-bottom: 80px;
+        }
+    }
+}

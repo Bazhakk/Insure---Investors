@@ -145,6 +145,16 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_contact {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
 
 .link-anima {
   position: relative;
