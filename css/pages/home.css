@@ -1081,6 +1081,7 @@ ul {
 @media screen and (max-width: 840px) {
   .features .features-mobile {
     display: flex;
+    margin: 0 16px;
     flex-direction: column;
   }
 }
@@ -1098,7 +1099,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  right: 27px;
+  right: 41px;
   width: 22px;
   height: 15px;
 }
@@ -1138,6 +1139,11 @@ ul {
 }
 .features__box-right {
   max-width: 835;
+}
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    margin: 0 16px;
+  }
 }
 @media screen and (max-width: 375px) {
   .features__box-right {
