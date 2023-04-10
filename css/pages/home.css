@@ -512,7 +512,7 @@ ul {
   font-weight: 700;
 }
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -852,6 +852,7 @@ ul {
   }
 }
 .steps .step__title {
+  margin-bottom: 0;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 54px;
