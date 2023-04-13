@@ -162,6 +162,29 @@
         }
       }
     }
+
+    &_footer {
+      padding: 20px 40px;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      border-radius: 66px;
+      color: $white-color;
+      background-color: $main-color-pink;
+
+      // &::after {
+      //   content: "";
+      //   background-image:  url("../../img/footer-after.svg");
+      //   background-size: cover;
+      //   background-repeat: no-repeat;
+      //   position: absolute;
+      //   width: 185px;
+      //   height: 138px;
+      //   top: 13px;
+      //   left: -18px;
+      // }
+    }
 }
 
 //ANIMATION

@@ -28,5 +28,28 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.footer {
+  background-color: #000E50;
+  padding-top: 80px;
+  border-radius: 60px 60px 0 0;
+}
+.footer__title {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+.footer__title-other {
+  color: #00CCC2;
+}
+.footer__img {
+  max-width: 185px;
+  transform: rotate(-15deg);
+}
 
 /*# sourceMappingURL=footer.css.map */

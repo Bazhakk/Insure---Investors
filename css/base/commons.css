@@ -173,6 +173,16 @@
   transition: all 0.4s;
   stroke: #CED2D6;
 }
+.button_footer {
+  padding: 20px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  color: #fff;
+  background-color: #E91E63;
+}
 
 .link-anima {
   position: relative;

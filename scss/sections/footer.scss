@@ -1,3 +1,31 @@
 @import "../base/fonts";
 @import "../base/variables";
 
+.footer {
+    background-color: $blue-dark;
+    padding-top: 80px;
+    border-radius: 60px 60px 0 0;
+    // background-image: url("../../img/footer-bg.png");
+
+    &__title {
+        max-width: 1030px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $white-color;
+    
+        &-other {
+            color: $main-color-teal;
+        }
+    }
+
+    &__img {
+        max-width: 185px;
+        transform: rotate(-15deg);
+    }
+}
+
