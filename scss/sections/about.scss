@@ -17,7 +17,7 @@
         }
 
         @media screen and (max-width: 1024px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
         }
     }
@@ -65,9 +65,9 @@
     &__img {
         max-width: 745px;
 
-        @media screen and (max-width: 1024px) {
-            max-width: 345px;
-        }
+        // @media screen and (max-width: 1024px) {
+        //     max-width: 345px;
+        // }
     }
 
     &__btn {

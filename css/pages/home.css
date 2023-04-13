@@ -1046,7 +1046,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .about__container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
@@ -1089,11 +1089,6 @@ ul {
 }
 .about__img {
   max-width: 745px;
-}
-@media screen and (max-width: 1024px) {
-  .about__img {
-    max-width: 345px;
-  }
 }
 @media screen and (max-width: 375px) {
   .about__btn {
