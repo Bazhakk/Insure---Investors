@@ -162,6 +162,33 @@
         }
       }
     }
+
+    &_insurance {
+      padding: 20px 40px;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      border-radius: 66px;
+      color: $white-color;
+      background-color: $main-color-pink;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        color: $disabled-color-pink;
+      }
+    }
+
 }
 
 //ANIMATION

@@ -173,6 +173,28 @@
   transition: all 0.4s;
   stroke: #CED2D6;
 }
+.button_insurance {
+  padding: 20px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  color: #fff;
+  background-color: #E91E63;
+}
+.button_insurance:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_insurance:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_insurance:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
 
 .link-anima {
   position: relative;
