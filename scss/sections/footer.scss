@@ -2,30 +2,94 @@
 @import "../base/variables";
 
 .footer {
-    background-color: $blue-dark;
     padding-top: 80px;
     border-radius: 60px 60px 0 0;
-    // background-image: url("../../img/footer-bg.png");
+    background-color: $Gray-100;
 
-    &__title {
-        max-width: 1030px;
-        margin: 0 auto;
-        padding-bottom: 80px;
-        font-family: 'GT Eesti Pro';
-        font-weight: 700;
-        font-size: 91px;
-        line-height: 100px;
-        text-align: center;
-        color: $white-color;
-    
-        &-other {
-            color: $main-color-teal;
+    &__head {
+        display: flex;
+    }
+
+    &__logo {
+
+        svg {
+
+            @media screen and (max-width: 1280px) {
+                max-width: 156px;
+            }
         }
     }
 
-    &__img {
-        max-width: 185px;
-        transform: rotate(-15deg);
+    .menu {
+        display: flex;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        gap: 214px;
+
+        &__title {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+        }
+    
+        &__subtitle {
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: $Gray-30;
+        }
     }
+
+    &__col {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            gap: 50px;
+        }
+
+        &-right {
+            display: flex;
+            margin-top: -15px;
+            gap: 24px;
+        }
+    }
+
+    &__subtitle {
+        padding-bottom: 32px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $Gray-30;
+    }
+
+    &__line {
+        margin: 0 auto;
+        border: 1px solid $Gray-80;
+    }
+
+    &__text {
+        padding: 24px 0;
+        text-align: center;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: $Gray-30;
+    }
+
+
+    
+
+    
+   
 }
 
