@@ -138,6 +138,13 @@
       font-size: 21px;
       line-height: 25px;
       color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background-color: $disabled-color-teal;
+        border-color: $hover-background-teal;
+      }
     }
 }
 

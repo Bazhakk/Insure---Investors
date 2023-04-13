@@ -237,6 +237,12 @@ ul {
   line-height: 25px;
   color: #0A1C33;
 }
+.button_contact:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background-color: #CFE9E7;
+  border-color: #00CCC2;
+}
 
 .link-anima {
   position: relative;
@@ -1319,7 +1325,7 @@ ul {
   text-align: center;
   background: #fff;
   border: 1px solid #E6E8EA;
-  box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+  box-shadow: 0 18 60 0 rgba(10, 28, 51, 0.05);
   border-radius: 12px;
 }
 .contact .form__element, .contact .form__name, .contact .form__message, .contact .form__email {

@@ -110,7 +110,7 @@
   text-align: center;
   background: #fff;
   border: 1px solid #E6E8EA;
-  box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+  box-shadow: 0 18 60 0 rgba(10, 28, 51, 0.05);
   border-radius: 12px;
 }
 .contact .form__element, .contact .form__name, .contact .form__message, .contact .form__email {

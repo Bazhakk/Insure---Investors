@@ -96,8 +96,8 @@
         padding-top: 80px;
         text-align: center;
         background: $white-color;
-        border: 1px solid #E6E8EA;
-        box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+        border: 1px solid $Gray-10;
+        box-shadow: $box-shadow-l;
         border-radius: 12px;
 
         &__element,
