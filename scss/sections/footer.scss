@@ -6,8 +6,17 @@
     border-radius: 60px 60px 0 0;
     background-color: $Gray-100;
 
+    @media screen and (max-width: 1024px) {
+        padding-top: 40px;
+        border-radius: 30px 30px 0 0;
+    }
+
     &__head {
         display: flex;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
 
     &__logo {
@@ -16,32 +25,61 @@
 
             @media screen and (max-width: 1280px) {
                 max-width: 156px;
+                margin: 0 16px;
             }
         }
     }
 
-    .menu {
+    &__menu {
         display: flex;
         margin: 0 auto;
         padding-bottom: 120px;
         gap: 214px;
 
-        &__title {
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            color: $white-color;
-        }
-    
-        &__subtitle {
-            font-family: 'GT Eesti Pro';
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
-            color: $Gray-30;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            margin: 0 16px;
         }
     }
+
+    &__title {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $white-color;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        
+    }
+        
+    &__subtitle {
+        padding-bottom: 32px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: $Gray-30;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 25px;
+            line-height: 30px;
+
+            &::after {
+                content: "";
+                background-image:  url("../../img/arrow.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 12px;
+                height: 6px;
+            }
+        }
+    }
+
 
     &__col {
         display: flex;
@@ -86,10 +124,12 @@
         color: $Gray-30;
     }
 
-
-    
-
-    
-   
+    &__line {
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            // margin: 0 16px;
+            border: 1px solid $Gray-80;
+        }
+    }
 }
 

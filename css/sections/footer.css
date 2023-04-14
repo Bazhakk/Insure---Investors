@@ -33,33 +33,73 @@
   border-radius: 60px 60px 0 0;
   background-color: #0A1C33;
 }
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding-top: 40px;
+    border-radius: 30px 30px 0 0;
+  }
+}
 .footer__head {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .footer__head {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1280px) {
   .footer__logo svg {
     max-width: 156px;
+    margin: 0 16px;
   }
 }
-.footer .menu {
+.footer__menu {
   display: flex;
   margin: 0 auto;
   padding-bottom: 120px;
   gap: 214px;
 }
-.footer .menu__title {
+@media screen and (max-width: 1024px) {
+  .footer__menu {
+    flex-direction: column;
+    margin: 0 16px;
+  }
+}
+.footer__title {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
   color: #fff;
 }
-.footer .menu__subtitle {
+@media screen and (max-width: 1024px) {
+  .footer__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.footer__subtitle {
+  padding-bottom: 32px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
   color: #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .footer__subtitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .footer__subtitle::after {
+    content: "";
+    background-image: url("../../img/arrow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 12px;
+    height: 6px;
+  }
 }
 .footer__col {
   display: flex;
@@ -97,6 +137,12 @@
   font-size: 13px;
   line-height: 18px;
   color: #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .footer__line {
+    width: 100%;
+    border: 1px solid #3B495C;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
