@@ -60,7 +60,6 @@
 
         @media screen and (max-width: 1380px) {
             flex-direction: column-reverse;
-            align-items: center;
             gap: 15px;
         }   
     }
@@ -72,7 +71,42 @@
         bottom: 0;
         right: 0;
 
-        @media screen and (max-width: 815px) {
+        &-multifamily {
+            position: absolute;
+            max-width: 435px;
+            max-height: 310px;
+            bottom: 0;
+            right: 0;
+
+            @media screen and (max-width: 1380px) {
+                max-width: 345px;
+                max-height: 260px;
+            }
+        }
+
+        &-hotel {
+            position: absolute;
+            max-width: 455px;
+            max-height: 563px;
+            bottom: 0;
+            right: 0;
+
+            @media screen and (max-width: 1380px) {
+                max-width: 260px;
+                max-height: 260px;
+            }
+        }
+
+        &-bulder,
+        &-storage {
+            position: absolute;
+            max-width: 330px;
+            max-height: 205px;
+            bottom: 0;
+            right: 0;
+        }
+
+        @media screen and (max-width: 1380px) {
             max-width: 260px;
             max-height: 260px;
         }
@@ -96,22 +130,7 @@
         padding-left: 55px;
         border-radius: 30px;
 
-        // &::before {
-        //     content: "";
-        //     background-image: url("../../img/specialities/Mask\ group.png");
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     position: absolute;
-        //     width: 765px;
-        //     height: 435px;
-        //     top: 0;
-        //     left: -4px;
-        //     z-index: 0;
-        //     border-radius: 30px;
-        // }
-
         @media screen and (max-width: 815px) {
-            // background-image: url("../../img/specialities/investors-bg.png");
             width: 345px;
             height: 450px;
             padding-top: 32px;
@@ -181,7 +200,6 @@
         border-radius: 30px;
 
         @media screen and (max-width: 815px) {
-            // background-image: url("../../img/mobile-menu/Commercial\ property-mb.png");
             width: 345px;
             height: 450px;
             padding-top: 32px;
@@ -209,7 +227,6 @@
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            // background-image: url("../../img/mobile-menu/multifamily-m.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -244,7 +261,6 @@
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            // background-image: url("../../img/mobile-menu/motel\ program-mb.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -296,7 +312,6 @@
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            // background-image: url("../../img/mobile-menu/storage-img.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;
@@ -331,7 +346,6 @@
         border-radius: 30px;
 
         @media screen and (max-width: 1380px) {
-            // background-image: url("../../img/mobile-menu/Builder-mb.png");
             width: 765px;
             height: 450px;
             margin: 0 auto;

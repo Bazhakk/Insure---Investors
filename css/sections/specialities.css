@@ -87,7 +87,6 @@
 @media screen and (max-width: 1380px) {
   .specialities__block-bottom {
     flex-direction: column-reverse;
-    align-items: center;
     gap: 15px;
   }
 }
@@ -98,7 +97,40 @@
   bottom: 0;
   right: 0;
 }
-@media screen and (max-width: 815px) {
+.specialities__img-multifamily {
+  position: absolute;
+  max-width: 435px;
+  max-height: 310px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__img-multifamily {
+    max-width: 345px;
+    max-height: 260px;
+  }
+}
+.specialities__img-hotel {
+  position: absolute;
+  max-width: 455px;
+  max-height: 563px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__img-hotel {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+.specialities__img-bulder, .specialities__img-storage {
+  position: absolute;
+  max-width: 330px;
+  max-height: 205px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1380px) {
   .specialities__img {
     max-width: 260px;
     max-height: 260px;
