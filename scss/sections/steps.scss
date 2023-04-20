@@ -3,9 +3,14 @@
 
 .steps {
     background: $blue-dark;
+    overflow-y: hidden;
 
     &__container {
         position: relative;
+
+        @media screen and (max-width: 1280px) {
+            z-index: 0;
+        }
     }
 
     &__block {
@@ -58,17 +63,12 @@
         font-size: 91px;
         line-height: 100px;
         color: $white-color;
-        z-index: 3;
+        z-index: 2;
 
         @media screen and (max-width: 880px) {
             padding-bottom: 24px;
             font-size: 40px;
             line-height: 44px;
-        }
-
-        @media screen and (max-width: 290px) {
-            font-size: 33px;
-            line-height: 40px;
         }
 
         &-text {
@@ -84,26 +84,22 @@
         &-line {
             content: "";
             position: absolute;
-            bottom: 12px;
+            bottom: 16px;
             left: 1px;
             width: 210px;
             height: 21px;
             background-color: #E91E63;
-            z-index: 1;
+            z-index: -1;
 
             @media screen and (max-width: 880px) {
-                width: 92px;
+                width: 90px;
                 height: 13px;
                 bottom: 6px;
-                left: 15px;
+                left: 2px;
             }
 
-            @media screen and (max-width: 360px) {
-                left: 7px;
-            }
-
-            @media screen and (max-width: 340px) {
-                left: 3px;
+            @media screen and (max-width: 290px) {
+                width: 73px;
             }
         }
     }
@@ -132,6 +128,7 @@
     
 
     .step {
+        padding: 0;
         width: 100%;
         display: flex;
         padding-bottom: 100px;
@@ -146,7 +143,6 @@
 
 
         &__item {
-            background: red;
             padding: 0 40px;
             border-radius: 12px;
             background: $step-namber;
@@ -177,6 +173,7 @@
         }
 
         &__title {
+            margin-bottom: 0;
             font-family: 'GT Eesti Pro';
             font-weight: 700;
             font-size: 54px;

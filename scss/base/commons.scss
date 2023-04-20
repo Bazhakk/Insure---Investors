@@ -1,5 +1,5 @@
-@import "variables";
-@import "fonts";
+@import "../base/fonts";
+@import "../base/variables";
 
 * {
   box-sizing: border-box;
@@ -22,9 +22,9 @@
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
+      border-radius: 66px;
       color: $white-color;
       background: $main-color-pink;
-      border-radius: 66px;
 
       @media screen and (max-width: 375px) {
         padding: 20px 40px;
@@ -57,6 +57,7 @@
       display: flex;
       align-items: center;
       gap: 15px;
+      z-index: 0;
         
       font-family: 'DM Sans';
       font-weight: 700;
@@ -64,21 +65,6 @@
       line-height: 25px;
       text-align: right;
       color: $Gray-100;
-
-      @media screen and (max-width: 375px) {
-        font-size: 21px;
-        line-height: 25px;
-      }
-
-      @media screen and (max-width: 300px) {
-        font-size: 15px;
-        line-height: 20px;
-      }
-
-      @media screen and (max-width: 250px) {
-        margin: 0 auto;
-        flex-direction: column;
-      }
 
       &:hover {
         transition: all .4s;
@@ -97,6 +83,21 @@
             stroke: $hover-background-teal;
           }
         }
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 300px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @media screen and (max-width: 250px) {
+        margin: 0 auto;
+        flex-direction: column;
       }
     }
 
@@ -127,6 +128,7 @@
         }
     }
 
+<<<<<<< HEAD
     &_fifth {
       padding: 20px 40px;
       border: 2px solid $Gray-30;
@@ -149,6 +151,40 @@
         padding: 8px 17px;
         font-size: 13px;
         line-height: 15px;
+=======
+    &_specialities {
+      &:hover {
+        svg {
+          transition: all .3s;
+          fill: $main-color-pink;
+          circle {
+            transition: all .3s;
+            stroke: $main-color-pink;
+          }
+        }
+      }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        svg {
+          transition: all .4s;
+          fill: $white-color;
+          path {
+            transition: all .2s;
+            stroke: $Gray-20;
+            fill: $Gray-20;
+          }
+          circle {
+            transition: all .4s;
+            stroke: $Gray-20;
+          }
+        }
+>>>>>>> master
       }
     }
 }
@@ -171,6 +207,6 @@
     &:hover {
       &::before {
         width: 100%;
-      }
+    }
     }
 }

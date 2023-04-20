@@ -1,0 +1,219 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.features {
+    margin-top: 100px;///
+    padding-bottom: 120px;
+    background: $blue-dark;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+    }
+
+    &__title {
+        padding-top: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $white-color;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 40px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-30;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    .features-menu {
+        width: 100%;
+        max-width: 1160px;
+        padding: 65px 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 97px;
+
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+
+        &__link {
+            color: $Gray-30;
+
+            &-other {
+                padding: 14px 48px;
+                border: 2px solid $main-color-teal;
+                border-radius: 66px;
+                color: $main-color-teal;
+            }
+        }
+
+        @media screen and (max-width: 1330px) {
+            max-width: 900px;
+            font-size: 20px;
+            line-height: 38px;
+        }
+
+
+
+        @media screen and (max-width: 840px) {
+            display: none;
+        }
+    }
+
+    .features-mobile {
+        display: none;
+
+        @media screen and (max-width: 840px) {
+            display: flex;
+            margin: 0 16px;
+            flex-direction: column;
+        }
+
+        &__link {
+            padding: 24px 0;
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            color: $white-color;
+
+            &::before {
+                content: "";
+                background-image:  url("../../img/features-mobile.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                right: 41px;
+                width: 22px;
+                height: 15px;
+            }
+
+            @media screen and (max-width: 765px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            @media screen and (max-width: 315px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__divide {
+        margin-right: 15px;
+        border: 1px solid $Gray-70;
+    }
+
+    &__box {
+        display: flex;
+        gap: 33px;
+
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-left {
+            padding-top: 90px;
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 24px;
+            }
+        }
+
+        &-right {
+            max-width: 835;
+
+            @media screen and (max-width: 980px) {
+                margin: 0 16px;
+            }
+
+            @media screen and (max-width: 375px) {
+                max-width: 345px;
+            }
+        }
+        
+    }
+
+    &__img {
+        width: 700px;
+        object-fit: cover;
+
+        @media screen and (max-width: 1200px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 345px;
+        }
+    }
+
+    &__contents {
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 58px;
+        color: $white-color;
+    }
+
+    &__text {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $white-color;
+
+        @media screen and (max-width: 850px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 25px;
+
+        @media screen and (max-width: 1500px) {
+            flex-direction: column;
+        }
+
+        &-text {
+            max-width: 370px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+
+            &::before {
+                content: "";
+                background-image:  url("../../img/features.svg");
+                width: 20px;
+                height: 18px;
+                position: absolute;
+                margin: 4px -30px;
+            }
+        }
+    }
+}
