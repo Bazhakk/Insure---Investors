@@ -127,8 +127,6 @@
           color: $disabled-color-pink;
         }
     }
-
-<<<<<<< HEAD
     &_fifth {
       padding: 20px 40px;
       border: 2px solid $Gray-30;
@@ -151,7 +149,9 @@
         padding: 8px 17px;
         font-size: 13px;
         line-height: 15px;
-=======
+      }
+    }
+
     &_specialities {
       &:hover {
         svg {
@@ -184,7 +184,6 @@
             stroke: $Gray-20;
           }
         }
->>>>>>> master
       }
     }
 }
