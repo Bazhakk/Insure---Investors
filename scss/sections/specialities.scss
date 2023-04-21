@@ -2,7 +2,7 @@
 @import "../base/variables";
 
 .specialities {
-    padding-bottom: 130px;
+    padding: 130px 0;
 
     &__container {
         padding: 0;
@@ -78,7 +78,7 @@
             bottom: 0;
             right: 0;
 
-            @media screen and (max-width: 1380px) {
+            @media screen and (max-width: 1024px) {
                 max-width: 345px;
                 max-height: 260px;
             }
@@ -92,6 +92,11 @@
             right: 0;
 
             @media screen and (max-width: 1380px) {
+                max-width: 350px;
+                max-height: 450px;
+            }
+
+            @media screen and (max-width: 1024px) {
                 max-width: 260px;
                 max-height: 260px;
             }
@@ -106,7 +111,7 @@
             right: 0;
         }
 
-        @media screen and (max-width: 1380px) {
+        @media screen and (max-width: 1024px) {
             max-width: 260px;
             max-height: 260px;
         }
@@ -129,6 +134,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 815px) {
             width: 345px;
@@ -198,6 +204,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 815px) {
             width: 345px;
@@ -225,6 +232,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 1380px) {
             width: 765px;
@@ -259,6 +267,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 1380px) {
             width: 765px;
@@ -310,6 +319,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 1380px) {
             width: 765px;
@@ -344,6 +354,7 @@
         padding-top: 15px;
         padding-left: 55px;
         border-radius: 30px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
         @media screen and (max-width: 1380px) {
             width: 765px;

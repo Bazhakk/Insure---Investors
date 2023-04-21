@@ -29,7 +29,7 @@
   font-weight: 700;
 }
 .specialities {
-  padding-bottom: 130px;
+  padding: 130px 0;
 }
 .specialities__container {
   padding: 0;
@@ -104,7 +104,7 @@
   bottom: 0;
   right: 0;
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1024px) {
   .specialities__img-multifamily {
     max-width: 345px;
     max-height: 260px;
@@ -119,6 +119,12 @@
 }
 @media screen and (max-width: 1380px) {
   .specialities__img-hotel {
+    max-width: 350px;
+    max-height: 450px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img-hotel {
     max-width: 260px;
     max-height: 260px;
   }
@@ -130,7 +136,7 @@
   bottom: 0;
   right: 0;
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1024px) {
   .specialities__img {
     max-width: 260px;
     max-height: 260px;
@@ -153,6 +159,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 815px) {
   .specialities__investors {
@@ -215,6 +222,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 815px) {
   .specialities__commercial {
@@ -242,6 +250,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__multifamily {
@@ -276,6 +285,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__hotel {
@@ -328,6 +338,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__storage {
@@ -360,6 +371,7 @@
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__builder {
