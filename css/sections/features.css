@@ -91,6 +91,9 @@
   border-radius: 66px;
   color: #00CCC2;
 }
+.features .features-menu__link-other:hover {
+  transform: scale(1.1);
+}
 @media screen and (max-width: 1330px) {
   .features .features-menu {
     max-width: 900px;
@@ -145,6 +148,9 @@
   height: 15px;
   top: 10px;
   right: 15px;
+}
+.features .features-mobile__arrow-active {
+  background-image: url("../../img/arrow-active.svg");
 }
 .features__divide {
   margin-right: 15px;
