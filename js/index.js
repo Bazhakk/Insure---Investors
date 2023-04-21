@@ -21,8 +21,8 @@ jQuery(document).ready(function ( $ ) {
   });
 
   //Arrow
-  let arrow = document.getElementById('arrow');
-  let featuresMenu = document.getElementById('features-mobile');
+  let arrow = document.getElementsByClassName('arrow');
+  let featuresMenu = document.getElementsByClassName('features-mobile');
   
   arrow.addEventListener('click', function() {
     $(this).toggleClass('active').next().slideToggle(300);

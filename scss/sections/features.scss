@@ -65,6 +65,7 @@
                 color: $main-color-teal;
 
                 &:hover {
+                    transition: all .4s;
                     transform: scale(1.1);
                 }
             }
@@ -91,8 +92,13 @@
             cursor: pointer;
         }
 
-        &__text {
-            display: none;
+        &__text-mobile {
+            // display: none;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $white-color;
         }
 
         &__link {
@@ -104,17 +110,6 @@
             font-size: 32px;
             line-height: 38px;
             color: $white-color;
-
-            // &::before {
-            //     content: "";
-            //     background-image:  url("../../img/features-mobile.svg");
-            //     background-repeat: no-repeat;
-            //     background-size: cover;
-            //     position: absolute;
-            //     right: 41px;
-            //     width: 22px;
-            //     height: 15px;
-            // }
 
             @media screen and (max-width: 765px) {
                 font-size: 32px;
@@ -198,6 +193,11 @@
         @media screen and (max-width: 1024px) {
             width: 345px;
         }
+
+        &-mobile {
+            // display: none;
+            width: 342px;
+        }
     }
 
     &__contents {
@@ -249,4 +249,23 @@
             }
         }
     }
+
+    // &__tex-box {
+    //     margin: 0 32px;
+    //     max-width: 370px;
+    //     font-family: 'DM Sans';
+    //     font-weight: 400;
+    //     font-size: 22px;
+    //     line-height: 32px;
+    //     color: $white-color;
+
+    //     &::before {
+    //         content: "";
+    //         background-image:  url("../../img/features.svg");
+    //         width: 20px;
+    //         height: 18px;
+    //         position: absolute;
+    //         margin: 4px -30px;
+    //     }
+    // }
 }

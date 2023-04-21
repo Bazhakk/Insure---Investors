@@ -92,6 +92,7 @@
   color: #00CCC2;
 }
 .features .features-menu__link-other:hover {
+  transition: all 0.4s;
   transform: scale(1.1);
 }
 @media screen and (max-width: 1330px) {
@@ -117,8 +118,12 @@
     cursor: pointer;
   }
 }
-.features .features-mobile__text {
-  display: none;
+.features .features-mobile__text-mobile {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
 }
 .features .features-mobile__link {
   display: flex;
@@ -205,6 +210,9 @@
   .features__img {
     width: 345px;
   }
+}
+.features__img-mobile {
+  width: 342px;
 }
 .features__contents {
   font-family: "GT Eesti Pro";
