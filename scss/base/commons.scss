@@ -127,7 +127,8 @@
           color: $disabled-color-pink;
         }
     }
-    &_fifth {
+
+    &_sixth {
       padding: 20px 40px;
       border: 2px solid $Gray-30;
       border-radius: 66px;
@@ -184,6 +185,7 @@
             stroke: $Gray-20;
           }
         }
+        border: 2px solid  $hover-teal;
       }
     }
 }

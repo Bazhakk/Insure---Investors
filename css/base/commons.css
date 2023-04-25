@@ -145,7 +145,7 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
-.button_fifth {
+.button_sixth {
   padding: 20px 40px;
   border: 2px solid #B5BAC1;
   border-radius: 66px;
@@ -155,14 +155,14 @@
   line-height: 25px;
   color: #0A1C33;
 }
-.button_fifth:hover {
+.button_sixth:hover {
   transition: all 0.4s;
   color: #0EB7AE;
   background: #CFE9E7;
   border: 2px solid #0EB7AE;
 }
 @media screen and (max-width: 212px) {
-  .button_fifth {
+  .button_sixth {
     padding: 8px 17px;
     font-size: 13px;
     line-height: 15px;
@@ -182,6 +182,7 @@
 }
 .button_specialities:focus {
   vertical-align: middle;
+  border: 2px solid #0EB7AE;
 }
 .button_specialities:focus svg {
   transition: all 0.4s;
