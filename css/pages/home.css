@@ -227,6 +227,29 @@ ul {
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_fifth {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_fifth:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_fifth {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
 .button_sixth {
   padding: 20px 40px;
   border: 2px solid #B5BAC1;

@@ -128,6 +128,31 @@
         }
     }
 
+    &_fifth {
+      padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background: $disabled-color-teal;
+        border: 2px solid $hover-teal;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
     &_sixth {
       padding: 20px 40px;
       border: 2px solid $Gray-30;
