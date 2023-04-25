@@ -20,6 +20,21 @@ jQuery(document).ready(function ( $ ) {
     }
   });
 
+  //Arrow
+  let arrow = document.getElementById('arrow');
+  let featuresMenu = document.getElementById('features-mobile');
+
+    arrow.addEventListener('click', function() {
+    $(this).toggleClass('active').next().slideToggle(300);
+    if(arrow.classList.contains('arrow-active')) {
+      featuresMenu.style.display = "none";
+      arrow.classList.remove('arrow-active');
+    } else {
+      featuresMenu.style.display = "flex";
+      arrow.classList.add('arrow-active');
+    }
+  });
+
   // AOS init
   AOS.init({
     once: true

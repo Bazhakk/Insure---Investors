@@ -2,7 +2,7 @@
 @import "../base/variables";
 
 .features {
-    margin-top: 100px;///
+    margin-top: 130px;
     padding-bottom: 120px;
     background: $blue-dark;
 
@@ -20,7 +20,8 @@
         color: $white-color;
 
         @media screen and (max-width: 1024px) {
-            padding-top: 40px;
+            margin: 0;
+            padding-top: 55px;
             font-size: 40px;
             line-height: 44px;
         }
@@ -62,6 +63,11 @@
                 border: 2px solid $main-color-teal;
                 border-radius: 66px;
                 color: $main-color-teal;
+
+                &:hover {
+                    transition: all .4s;
+                    transform: scale(1.1);
+                }
             }
         }
 
@@ -71,9 +77,7 @@
             line-height: 38px;
         }
 
-
-
-        @media screen and (max-width: 840px) {
+        @media screen and (max-width: 1024px) {
             display: none;
         }
     }
@@ -81,30 +85,31 @@
     .features-mobile {
         display: none;
 
-        @media screen and (max-width: 840px) {
+        @media screen and (max-width: 1024px) {
             display: flex;
             margin: 0 16px;
             flex-direction: column;
+            cursor: pointer;
+        }
+
+        &__text-mobile {
+            display: none;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $white-color;
         }
 
         &__link {
+            display: flex;
+            justify-content: space-between;
             padding: 24px 0;
             font-family: 'GT Eesti Pro';
             font-weight: 700;
             font-size: 32px;
             line-height: 38px;
             color: $white-color;
-
-            &::before {
-                content: "";
-                background-image:  url("../../img/features-mobile.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                right: 41px;
-                width: 22px;
-                height: 15px;
-            }
 
             @media screen and (max-width: 765px) {
                 font-size: 32px;
@@ -115,6 +120,22 @@
                 font-size: 20px;
                 line-height: 28px;
             }
+        }
+
+        &__arrow {
+            position: relative;
+            width: 22px;
+            height: 15px;
+            top: 10px;
+            right: 15px;
+
+            &-active {
+                background-image: url("../../img/arrow-active.svg");
+            }
+
+            // @media (max-width: 1024px) {
+            //     display: block;
+            // }
         }
     }
 
@@ -147,11 +168,18 @@
                 margin: 0 16px;
             }
 
-            @media screen and (max-width: 375px) {
-                max-width: 345px;
+            @media screen and (max-width: 980px) {
+                margin: 0 16px;
             }
+
+            // @media screen and (max-width: 375px) {
+            //     max-width: 345px;
+            // }
         }
         
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 
     &__img {
@@ -164,6 +192,11 @@
 
         @media screen and (max-width: 1024px) {
             width: 345px;
+        }
+
+        &-mobile {
+            // display: none;
+            width: 342px;
         }
     }
 
@@ -216,4 +249,23 @@
             }
         }
     }
+
+    // &__tex-box {
+    //     margin: 0 32px;
+    //     max-width: 370px;
+    //     font-family: 'DM Sans';
+    //     font-weight: 400;
+    //     font-size: 22px;
+    //     line-height: 32px;
+    //     color: $white-color;
+
+    //     &::before {
+    //         content: "";
+    //         background-image:  url("../../img/features.svg");
+    //         width: 20px;
+    //         height: 18px;
+    //         position: absolute;
+    //         margin: 4px -30px;
+    //     }
+    // }
 }
