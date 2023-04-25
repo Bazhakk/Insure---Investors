@@ -1053,6 +1053,9 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .tagline__title {
+    margin: 0;
+    padding-bottom: 24px;
+    padding-top: 60px;
     font-size: 40px;
     line-height: 44px;
   }
