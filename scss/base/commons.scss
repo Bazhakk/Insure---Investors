@@ -153,6 +153,29 @@
       }
     }
 
+    &_seventh {
+      padding: 20px 40px;
+      background: $main-color-pink;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $white-color;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
     &_sixth {
       padding: 20px 40px;
       border: 2px solid $Gray-30;
@@ -188,6 +211,11 @@
             stroke: $main-color-pink;
           }
         }
+      color: $white-color;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
       }
 
       &:active {
@@ -211,8 +239,15 @@
           }
         }
         border: 2px solid  $hover-teal;
+        color: $disabled-color-pink;
+      }
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 18px;
       }
     }
+  }
 }
 
 //ANIMATION
