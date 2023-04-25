@@ -294,9 +294,6 @@ ul {
     line-height: 15px;
   }
 }
-.button_specialities:hover {
-  color: #fff;
-}
 .button_specialities:hover svg {
   transition: all 0.3s;
   fill: #E91E63;
@@ -304,10 +301,6 @@ ul {
 .button_specialities:hover svg circle {
   transition: all 0.3s;
   stroke: #E91E63;
-}
-.button_specialities:hover:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
 }
 .button_specialities:hover:active {
   vertical-align: middle;
@@ -1485,11 +1478,11 @@ ul {
   font-weight: 700;
 }
 .about {
-  padding-bottom: 130px;
+  padding: 130px 0;
 }
 @media screen and (max-width: 1024px) {
   .about {
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
 }
 .about__container {
@@ -1506,9 +1499,6 @@ ul {
     flex-direction: column-reverse;
     align-items: center;
   }
-}
-.about__col_right {
-  padding-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   .about__col_right {
@@ -1862,7 +1852,7 @@ ul {
   color: #0A1C33;
 }
 .questions__subtitle {
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -1886,6 +1876,7 @@ ul {
   color: #3B495C;
 }
 .questions__band {
+  margin: 0 33px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1926,6 +1917,9 @@ ul {
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.tagline {
+  padding-top: 130px;
+}
 .tagline__container {
   padding-bottom: 80px;
   text-align: center;
@@ -1936,6 +1930,8 @@ ul {
   }
 }
 .tagline__title {
+  margin: 0;
+  padding-bottom: 48px;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;

@@ -29,11 +29,11 @@
   font-weight: 700;
 }
 .about {
-  padding-bottom: 130px;
+  padding: 130px 0;
 }
 @media screen and (max-width: 1024px) {
   .about {
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
 }
 .about__container {
@@ -50,9 +50,6 @@
     flex-direction: column-reverse;
     align-items: center;
   }
-}
-.about__col_right {
-  padding-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   .about__col_right {

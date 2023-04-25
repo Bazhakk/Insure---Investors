@@ -212,9 +212,6 @@
     line-height: 15px;
   }
 }
-.button_specialities:hover {
-  color: #fff;
-}
 .button_specialities:hover svg {
   transition: all 0.3s;
   fill: #E91E63;
@@ -222,10 +219,6 @@
 .button_specialities:hover svg circle {
   transition: all 0.3s;
   stroke: #E91E63;
-}
-.button_specialities:hover:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
 }
 .button_specialities:hover:active {
   vertical-align: middle;

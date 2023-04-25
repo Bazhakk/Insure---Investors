@@ -2,7 +2,8 @@
 @import "../base/variables";
 
 .tagline {
-
+    padding-top: 130px;
+    
     &__container {
         padding-bottom: 80px;
         text-align: center;
@@ -13,6 +14,8 @@
     }
 
     &__title {
+        margin: 0;
+        padding-bottom: 48px;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;

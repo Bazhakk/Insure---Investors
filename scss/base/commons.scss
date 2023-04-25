@@ -211,12 +211,6 @@
             stroke: $main-color-pink;
           }
         }
-      color: $white-color;
-
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
 
       &:active {
         vertical-align: middle;
@@ -247,7 +241,7 @@
         line-height: 18px;
       }
     }
-  }
+    }
 }
 
 //ANIMATION
