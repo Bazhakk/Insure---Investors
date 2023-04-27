@@ -172,6 +172,9 @@
     align-items: center;
   }
 }
+.features__box_hidden {
+  display: none;
+}
 .features__box-left {
   padding-top: 90px;
 }
