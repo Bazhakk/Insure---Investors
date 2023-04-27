@@ -351,17 +351,6 @@ ul {
 .tab-anima {
   position: relative;
 }
-.tab-anima:active {
-  vertical-align: middle;
-  padding: 14px 48px;
-  border: 2px solid #0CA099;
-  border-radius: 66px;
-  color: #0CA099;
-}
-.tab-anima:focus {
-  vertical-align: middle;
-  color: #3B495C;
-}
 
 @font-face {
   font-family: "Poller One";
@@ -1644,6 +1633,14 @@ ul {
 }
 .features .features-menu__link {
   color: #B5BAC1;
+  padding: 14px 48px;
+  border: 2px solid transparent;
+  border-radius: 66px;
+}
+.features .features-menu__link_active {
+  border: 2px solid #0CA099;
+  border-radius: 66px;
+  color: #0CA099;
 }
 .features .features-menu__link:hover {
   transition: all 0.4s;
@@ -1676,7 +1673,10 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.features .features-mobile__box_hidden {
+.features .features-mobile__content p {
+  color: white;
+}
+.features .features-mobile__content_hidden {
   display: none;
 }
 .features .features-mobile__link {

@@ -56,6 +56,17 @@
 
         &__link {
             color: $Gray-30;
+            padding: 14px 48px;
+            border: 2px solid transparent;
+            border-radius: 66px;
+
+            &_active {
+                // vertical-align: middle;
+                // padding: 14px 48px;
+                border: 2px solid $pressed-color-teal;
+                border-radius: 66px;
+                color: $pressed-color-teal;
+            }
 
             &:hover {
                 transition: all .4s;
@@ -87,7 +98,12 @@
         &__box {
             display: flex;
             justify-content: space-between;
+        }
 
+        &__content {
+            p {
+                color: white;
+            }
             &_hidden {
                 display: none;
             }

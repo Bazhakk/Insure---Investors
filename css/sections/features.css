@@ -83,6 +83,14 @@
 }
 .features .features-menu__link {
   color: #B5BAC1;
+  padding: 14px 48px;
+  border: 2px solid transparent;
+  border-radius: 66px;
+}
+.features .features-menu__link_active {
+  border: 2px solid #0CA099;
+  border-radius: 66px;
+  color: #0CA099;
 }
 .features .features-menu__link:hover {
   transition: all 0.4s;
@@ -115,7 +123,10 @@
   display: flex;
   justify-content: space-between;
 }
-.features .features-mobile__box_hidden {
+.features .features-mobile__content p {
+  color: white;
+}
+.features .features-mobile__content_hidden {
   display: none;
 }
 .features .features-mobile__link {
