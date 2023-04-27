@@ -1,0 +1,72 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.questions {
+
+    &__container {
+        background: #F7FBFD;
+        border-radius: 12px;
+    }
+
+    &__title {
+        padding-top: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $Gray-100;
+    }
+
+    &__subtitle {
+        padding-bottom: 80px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-80;
+    }
+
+    &__return {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__strip {
+        border: 1px solid $Gray-20;
+    }
+
+    &__text {
+        // margin: 0 33px;
+        padding: 32px 0;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $Gray-80;
+
+        // &::after {
+        //     content: "";
+        //     background-image:  url("../../img/Questions.svg");
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     width: 54px;
+        //     height: 54px;
+        // }
+    }
+
+    &__band {
+        margin: 0 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        padding-top: 80px;
+        padding-bottom: 120px;
+        text-align: center;
+    }
+}

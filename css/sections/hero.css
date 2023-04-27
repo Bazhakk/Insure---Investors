@@ -29,27 +29,97 @@
   font-weight: 700;
 }
 .hero {
+  min-height: 70vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1370px) {
   .hero {
-    background-image: url("../../img/main_banner-Front_img 4.png");
+    min-height: 100vh;
+    background-image: url("../../img/bg-mobile-menu.png");
   }
 }
 .hero__container {
-  max-width: 875px;
-  margin-left: 90px;
-  margin-bottom: 150px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1370px) {
   .hero__container {
+    padding-top: 40px;
+  }
+}
+.hero__col_left {
+  max-width: 875px;
+}
+@media screen and (max-width: 1280px) {
+  .hero__col_left {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .hero__col_left {
     margin: 0 auto;
   }
 }
-.hero__box {
-  padding-top: 100px;
+.hero__col_right {
+  position: absolute;
+  top: 9%;
+  right: -10%;
+  z-index: 1;
+}
+@media screen and (max-width: 1600px) {
+  .hero__col_right {
+    right: -8%;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .hero__col_right {
+    top: 73%;
+  }
+}
+.hero__img {
+  width: 1617px;
+  object-fit: cover;
+}
+@media screen and (max-width: 760px) {
+  .hero__img {
+    width: 1200px;
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .hero__img {
+    display: none;
+  }
+}
+.hero__mobile {
+  display: none;
+}
+@media screen and (max-width: 660px) {
+  .hero__mobile {
+    display: inline;
+    margin: 0 auto;
+  }
+}
+.hero__img-mobile {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 660px) {
+  .hero__img-mobile {
+    width: 50vh;
+    margin: 30px auto;
+    padding: 200px 50px 0 75px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero__img-mobile {
+    padding-top: 180px;
+  }
 }
 .hero__title {
   font-family: "GT Eesti Pro";
@@ -58,28 +128,44 @@
   line-height: 114px;
   color: #0A1C33;
 }
-.hero__title_span {
-  color: #00CCC2;
-}
-.hero__but {
-  display: flex;
-  gap: 50px;
-}
-@media screen and (max-width: 1024px) {
-  .hero__but {
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
+@media screen and (max-width: 1280px) {
+  .hero__title {
+    margin-top: 0;
+    font-size: 90px;
+    line-height: 100px;
   }
 }
-.hero__watch {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+@media screen and (max-width: 1210px) {
+  .hero__title {
+    font-size: 75px;
+    line-height: 90px;
+  }
 }
-@media screen and (max-width: 1024px) {
-  .hero__watch {
+@media screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 52px;
+    line-height: 55px;
+  }
+}
+.hero__title-other {
+  color: #00CCC2;
+}
+.hero__btns {
+  display: flex;
+  position: relative;
+  gap: 50px;
+  z-index: 2;
+}
+@media screen and (max-width: 1280px) {
+  .hero__btns {
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 690px) {
+  .hero__btns {
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -1,61 +1,159 @@
-@import "variables";
-@import "fonts";
+@import "../base/fonts";
+@import "../base/variables";
+
+* {
+  box-sizing: border-box;
+}
 
 .container {
-    width: 100%;
-    max-width: 1560px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1540px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .button {
+
     &_first {
-        padding: 13px 40px;
-        font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        border-radius: 66px;
-        color: $white-color;
-        background: $main-color-teal;
-
-        &:hover {
-            transition: all .4s;
-            background-color: $hover-color-teal;
-        }
-
-        @media screen and (max-width: 1024px) {
-          display: none;
-        }
-    }
-
-    &_second {
+      display: flex;
+      align-items: center;
       padding: 20px 40px;
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
+      border-radius: 66px;
       color: $white-color;
       background: $main-color-pink;
-      border-radius: 66px;
+
+      @media screen and (max-width: 375px) {
+        padding: 20px 40px;
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        line-height: 15px;
+      }
 
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;
       }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        color: $disabled-color-pink;
+      }
     }
 
-    &_third {
+    &_second {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      z-index: 0;
+        
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
       text-align: right;
       color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+
+        svg {
+          transition: all .4s;
+          fill: $hover-btn-teal;
+          path {
+            transition: all .2s;
+            stroke: $hover-background-teal;
+            fill: $hover-background-teal;
+          }
+          circle {
+            transition: all .4s;
+            stroke: $hover-background-teal;
+          }
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 21px;
+        line-height: 25px;
+      }
+
+      @media screen and (max-width: 300px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      @media screen and (max-width: 250px) {
+        margin: 0 auto;
+        flex-direction: column;
+      }
     }
 
-    &_fourth {
+    &_third {
+        padding: 20px 40px;
+        background: $main-color-pink;
+        border-radius: 66px;
+  
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 25px;
+        color: $white-color;
+  
+        &:hover {
+          transition: all .4s;
+          background-color: $hover-color-pink;
+        }
+  
+        &:active {
+          vertical-align: middle;
+          color: $pressed-color-pink;
+        }
+  
+        &:focus {
+          vertical-align: middle;
+          color: $disabled-color-pink;
+        }
+    }
+
+    &_fifth {
+      padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background: $disabled-color-teal;
+        border: 2px solid $hover-teal;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_seventh {
       padding: 20px 40px;
       background: $main-color-pink;
       border-radius: 66px;
@@ -70,6 +168,79 @@
         transition: all .4s;
         background-color: $hover-color-pink;
       }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_sixth {
+      padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background: $disabled-color-teal;
+        border: 2px solid $hover-teal;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_specialities {
+      &:hover {
+        svg {
+          transition: all .3s;
+          fill: $main-color-pink;
+          circle {
+            transition: all .3s;
+            stroke: $main-color-pink;
+          }
+        }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        svg {
+          transition: all .4s;
+          fill: $white-color;
+          path {
+            transition: all .2s;
+            stroke: $Gray-20;
+            fill: $Gray-20;
+          }
+          circle {
+            transition: all .4s;
+            stroke: $Gray-20;
+          }
+        }
+        border: 2px solid  $hover-teal;
+        color: $disabled-color-pink;
+      }
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
     }
 }
 
@@ -91,6 +262,33 @@
     &:hover {
       &::before {
         width: 100%;
-      }
     }
+    }
+}
+
+.tab-anima {
+  position: relative;
+
+  &:hover {
+    // color: $hover-color-teal;
+    transition: all .4s;
+    color: $hover-color-pink;
   }
+}
+
+
+// &__link {
+//   color: $Gray-30;
+
+//   &-other {
+//       padding: 14px 48px;
+//       border: 2px solid $main-color-teal;
+//       border-radius: 66px;
+//       color: $main-color-teal;
+
+//       &:hover {
+//           transition: all .4s;
+//           transform: scale(1.1);
+//       }
+//   }
+// }

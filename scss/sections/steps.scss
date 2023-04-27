@@ -2,60 +2,105 @@
 @import "../base/variables";
 
 .steps {
-    margin-top: 200px;
     background: $blue-dark;
+    overflow-y: hidden;
 
-    @media screen and (max-width: 1024px) {
-        margin: 100px auto 0;
-    }
-
-    &__box {
-        max-width: 860px;
-        margin: 0 auto;
-    }
-
-    &__figure {
-        position: absolute;
-        top: 935px;
-        left: 350px;
-
-        @media screen and (max-width: 1024px) {
-            margin: 0 auto;
-        }
-    }
-
-    &__number {
-        font-family: 'Poller One';
-        font-weight: 400;
-        font-size: 450px;
-        line-height: 100px;
-        text-align: center;
-        color: $step-namber;
-    }
-
-    &__info {
+    &__container {
         position: relative;
-        padding-top: 215px;
 
-        @media screen and (max-width: 1024px) {
-            margin: 0 auto;
+        @media screen and (max-width: 1280px) {
+            z-index: 0;
         }
     }
-    
+
+    &__block {
+        position: relative;
+        margin: 0 auto;
+        max-width: 738px;
+        padding-top: 200px;
+        padding-bottom: 80px;
+        z-index: 2;
+
+        @media screen and (max-width: 880px) {
+            max-width: 345px;
+            padding-top: 74px;
+            z-index: 0;
+        }
+
+        &::before {
+            content: "";
+            background-image:  url("../../img/steps-namber.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            top: 130px;
+            left: -187px;
+            z-index: 0;
+
+            @media screen and (max-width: 1045px) {
+                left: -40px;
+                top: 48px;
+            }
+
+            @media screen and (max-width: 880px) {
+                max-width: 135px;
+                max-height: 146px;
+                margin: 0 15px;
+            }
+        }
+    }
+
     &__title {
+        position: relative;
+        max-width: 740px;
+        margin: 0 auto;
+        padding-bottom: 50px;
         text-align: center;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
         color: $white-color;
+        z-index: 2;
 
-        @media screen and (max-width: 1024px) {
-            padding: 100px 0 25px;
+        @media screen and (max-width: 880px) {
+            padding-bottom: 24px;
+            font-size: 40px;
+            line-height: 44px;
         }
 
-        &_span {
-            background: $main-color-pink;
+        &-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        &-lines {
+            position: relative;
+            z-index: 2;
+        }
+
+        &-line {
+            content: "";
+            position: absolute;
+            bottom: 16px;
+            left: 1px;
+            width: 210px;
+            height: 21px;
+            background-color: #E91E63;
+            z-index: -1;
+
+            @media screen and (max-width: 880px) {
+                width: 90px;
+                height: 13px;
+                bottom: 6px;
+                left: 2px;
+            }
+
+            @media screen and (max-width: 290px) {
+                width: 73px;
+            }
         }
     }
 
@@ -68,66 +113,85 @@
         line-height: 32px;
         text-align: center;
         color: $Gray-30;
+
+        @media screen and (max-width: 375px) {
+            max-width: 345px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        @media screen and (max-width: 290px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
     }
+    
 
     .step {
+        padding: 0;
+        width: 100%;
         display: flex;
-        padding: 80px 0 100px;
+        padding-bottom: 100px;
         gap: 30px;
 
-        @media screen and (max-width: 1024px) {
-            padding: 35px 0 55px;
+        @media screen and (max-width: 1230px) {
+            margin: 0 auto;
             flex-direction: column;
+            align-items: center;
+            gap: 16px;
         }
 
-        &__container {
-        
-            @media screen and (max-width: 1024px) {
-                margin: 0 auto;
-            }
-        }
 
         &__item {
-            padding: 70px 56px 40px;
+            padding: 0 40px;
             border-radius: 12px;
             background: $step-namber;
 
-            @media screen and (max-width: 1024px) {
-                margin: 0 auto;
+            @media screen and (max-width: 490px) {
+                padding: 0 25px;
             }
         }
 
         &__point {
             max-width: 500px;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 375px) {
+                max-width: 345px;
                 margin: 0 auto;
             }
         }
 
         &__namber {
             display: flex;
+            align-items: center;
             justify-content: space-between;
 
-            @media screen and (max-width: 376px) {
+            @media screen and (max-width: 380px) {
                 flex-direction: column;
             }
         
         }
 
         &__title {
+            margin-bottom: 0;
             font-family: 'GT Eesti Pro';
             font-weight: 700;
             font-size: 54px;
             line-height: 58px;
             color: $white-color;
+
+            @media screen and (max-width: 490px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            @media screen and (max-width: 380px) {
+                margin-bottom: 5px;
+            }
         }
 
         &__subtitle {
-            display: flex;
-            align-items: center;
-            padding: 4px 20px;
-            max-width: 82px;
+            padding: 5px 20px;
             max-height: 52px;
             border: 2px solid $Gray-30;
             border-radius: 99px;
@@ -137,36 +201,61 @@
             font-size: 42px;
             line-height: 44px;
             color: $white-color;
+
+            @media screen and (max-width: 380px) {
+                max-height: 35px;
+                font-size: 26px;
+                line-height: 28px;
+            }
         }
 
         &__vector {
             max-width: 70px;
-            margin: 16px 0;
             border: 2px solid $main-color-teal;
+
+            @media screen and (max-width: 380px) {
+                margin: 0 auto;
+            }
         }
 
         &__text {
-            margin: 0 auto;
             font-family: 'DM Sans';
             font-weight: 400;
             font-size: 22px;
             line-height: 32px;
             color: $white-color;
+            
+            @media screen and (max-width: 490px) {
+                font-size: 16px;
+                line-height: 28px;
+            }
         }
 
         &__img {
             max-width: 740px;
             
             &_1 {
-                padding-top: 100px;
+                padding-top: 115px;
+
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
 
             &_2 {
                 padding-top: 45px;
+
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
 
             &_3 {
                 padding-top: 130px;
+
+                @media screen and (max-width: 1380px) {
+                    padding-top: 30px;
+                }
             }
         }
     } 
@@ -175,5 +264,9 @@
         margin: 0 auto;
         text-align: center;
         margin-bottom: 120px;
+
+        @media screen and (max-width: 490px) {
+            margin-bottom: 55px;
+        }
     }
 }
