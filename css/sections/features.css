@@ -83,13 +83,17 @@
 }
 .features .features-menu__link {
   color: #B5BAC1;
-  padding: 14px 48px;
+  border: 2px solid transparent;
+  border-radius: 66px;
+}
+.features .features-menu__link-other {
+  color: #B5BAC1;
+  padding: 12px 45px;
   border: 2px solid transparent;
   border-radius: 66px;
 }
 .features .features-menu__link_active {
   border: 2px solid #0CA099;
-  border-radius: 66px;
   color: #0CA099;
 }
 .features .features-menu__link:hover {
@@ -171,6 +175,9 @@
 }
 .features__box_hidden {
   display: none;
+}
+.features__box_hidden-2 {
+  display: inline;
 }
 .features__box-left {
   padding-top: 90px;

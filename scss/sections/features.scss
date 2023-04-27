@@ -56,15 +56,19 @@
 
         &__link {
             color: $Gray-30;
-            padding: 14px 48px;
+            // padding: 14px 48px;
             border: 2px solid transparent;
             border-radius: 66px;
 
-            &_active {
-                // vertical-align: middle;
-                // padding: 14px 48px;
-                border: 2px solid $pressed-color-teal;
+            &-other {
+                color: $Gray-30;
+                padding: 12px 45px;
+                border: 2px solid transparent;
                 border-radius: 66px;
+            }
+
+            &_active {
+                border: 2px solid $pressed-color-teal;
                 color: $pressed-color-teal;
             }
 
@@ -168,6 +172,10 @@
 
         &_hidden {
             display: none;
+
+            &-2 {
+                display: inline;
+            }
         }
 
         &-left {
