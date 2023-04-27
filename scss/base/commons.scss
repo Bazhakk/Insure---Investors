@@ -265,3 +265,30 @@
     }
     }
 }
+
+.tab-anima {
+  position: relative;
+
+  &:hover {
+    // color: $hover-color-teal;
+    transition: all .4s;
+    color: $hover-color-pink;
+  }
+}
+
+
+// &__link {
+//   color: $Gray-30;
+
+//   &-other {
+//       padding: 14px 48px;
+//       border: 2px solid $main-color-teal;
+//       border-radius: 66px;
+//       color: $main-color-teal;
+
+//       &:hover {
+//           transition: all .4s;
+//           transform: scale(1.1);
+//       }
+//   }
+// }

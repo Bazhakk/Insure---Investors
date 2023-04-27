@@ -348,6 +348,14 @@ ul {
   width: 100%;
 }
 
+.tab-anima {
+  position: relative;
+}
+.tab-anima:hover {
+  transition: all 0.4s;
+  color: #D81859;
+}
+
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -615,7 +623,7 @@ ul {
   font-weight: 700;
 }
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -623,6 +631,7 @@ ul {
 }
 @media screen and (max-width: 1370px) {
   .hero {
+    min-height: 100vh;
     background-image: url("../../img/bg-mobile-menu.png");
   }
 }
@@ -1574,7 +1583,6 @@ ul {
   font-weight: 700;
 }
 .features {
-  margin-top: 130px;
   padding-bottom: 120px;
   background: #000E50;
 }

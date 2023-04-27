@@ -266,4 +266,12 @@
   width: 100%;
 }
 
+.tab-anima {
+  position: relative;
+}
+.tab-anima:hover {
+  transition: all 0.4s;
+  color: #D81859;
+}
+
 /*# sourceMappingURL=commons.css.map */
