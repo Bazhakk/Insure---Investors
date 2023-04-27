@@ -269,9 +269,16 @@
 .tab-anima {
   position: relative;
 }
-.tab-anima:hover {
-  transition: all 0.4s;
-  color: #D81859;
+.tab-anima:active {
+  vertical-align: middle;
+  padding: 14px 48px;
+  border: 2px solid #0CA099;
+  border-radius: 66px;
+  color: #0CA099;
+}
+.tab-anima:focus {
+  vertical-align: middle;
+  color: #3B495C;
 }
 
 /*# sourceMappingURL=commons.css.map */

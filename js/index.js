@@ -62,4 +62,10 @@ jQuery(document).ready(function ( $ ) {
     $('#features-box-4').removeClass('features__box_hidden');
   });
 
+  //Features mobile-menu 
+  $('#mobile_1').on('click', function() {
+    $('.features-mobile__box').addClass('features-mobile__box_hidden');
+    $('#features-mobile-box-1').removeClass('features-mobile__box_hidden');
+  });
+
 });

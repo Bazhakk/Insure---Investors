@@ -84,15 +84,9 @@
 .features .features-menu__link {
   color: #B5BAC1;
 }
-.features .features-menu__link-other {
-  padding: 14px 48px;
-  border: 2px solid #00CCC2;
-  border-radius: 66px;
-  color: #00CCC2;
-}
-.features .features-menu__link-other:hover {
+.features .features-menu__link:hover {
   transition: all 0.4s;
-  transform: scale(1.1);
+  color: #0EB7AE;
 }
 @media screen and (max-width: 1330px) {
   .features .features-menu {
@@ -117,17 +111,14 @@
     cursor: pointer;
   }
 }
-.features .features-mobile__text-mobile {
-  display: none;
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: #fff;
-}
-.features .features-mobile__link {
+.features .features-mobile__box {
   display: flex;
   justify-content: space-between;
+}
+.features .features-mobile__box_hidden {
+  display: none;
+}
+.features .features-mobile__link {
   padding: 24px 0;
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -156,10 +147,6 @@
 }
 .features .features-mobile__arrow-active {
   background-image: url("../../img/arrow-active.svg");
-}
-.features__divide {
-  margin-right: 15px;
-  border: 1px solid #536070;
 }
 .features__box {
   display: flex;

@@ -57,16 +57,9 @@
         &__link {
             color: $Gray-30;
 
-            &-other {
-                padding: 14px 48px;
-                border: 2px solid $main-color-teal;
-                border-radius: 66px;
-                color: $main-color-teal;
-
-                &:hover {
-                    transition: all .4s;
-                    transform: scale(1.1);
-                }
+            &:hover {
+                transition: all .4s;
+                color: $hover-color-teal;
             }
         }
 
@@ -91,18 +84,18 @@
             cursor: pointer;
         }
 
-        &__text-mobile {
-            display: none;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 26px;
-            color: $white-color;
+        &__box {
+            display: flex;
+            justify-content: space-between;
+
+            &_hidden {
+                display: none;
+            }
         }
 
         &__link {
-            display: flex;
-            justify-content: space-between;
+            // display: flex;
+            // justify-content: space-between;
             padding: 24px 0;
             font-family: 'GT Eesti Pro';
             font-weight: 700;
@@ -119,7 +112,17 @@
                 font-size: 20px;
                 line-height: 28px;
             }
+
+            // &::after {
+            //     content: "";
+            //     display: block;
+            //     margin: 24px 0;
+            //     border: 1px solid $Gray-70;
+            // }
         }
+        // &__text {
+        //     display: none;
+        // }
 
         &__arrow {
             position: relative;
@@ -136,11 +139,6 @@
             //     display: block;
             // }
         }
-    }
-
-    &__divide {
-        margin-right: 15px;
-        border: 1px solid $Gray-70;
     }
 
     &__box {
@@ -252,23 +250,4 @@
             }
         }
     }
-
-    // &__tex-box {
-    //     margin: 0 32px;
-    //     max-width: 370px;
-    //     font-family: 'DM Sans';
-    //     font-weight: 400;
-    //     font-size: 22px;
-    //     line-height: 32px;
-    //     color: $white-color;
-
-    //     &::before {
-    //         content: "";
-    //         background-image:  url("../../img/features.svg");
-    //         width: 20px;
-    //         height: 18px;
-    //         position: absolute;
-    //         margin: 4px -30px;
-    //     }
-    // }
 }
