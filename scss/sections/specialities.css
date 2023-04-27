@@ -1,0 +1,397 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.specialities {
+  padding: 130px 0;
+}
+.specialities__container {
+  padding: 0;
+}
+.specialities__title {
+  padding-top: 50px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #0A1C33;
+}
+@media screen and (max-width: 815px) {
+  .specialities__title {
+    padding-top: 60px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.specialities__subtitle {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #3B495C;
+}
+@media screen and (max-width: 645px) {
+  .specialities__subtitle {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.specialities__top-block {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__top-block {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+}
+.specialities__block-bottom {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__block-bottom {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+}
+.specialities__img {
+  position: absolute;
+  max-width: 310px;
+  max-height: 310px;
+  bottom: 0;
+  right: 0;
+}
+.specialities__img-multifamily {
+  position: absolute;
+  max-width: 435px;
+  max-height: 310px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img-multifamily {
+    max-width: 345px;
+    max-height: 260px;
+  }
+}
+.specialities__img-hotel {
+  position: absolute;
+  max-width: 455px;
+  max-height: 563px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__img-hotel {
+    max-width: 350px;
+    max-height: 450px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img-hotel {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+.specialities__img-bulder, .specialities__img-storage {
+  position: absolute;
+  max-width: 330px;
+  max-height: 205px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .specialities__img {
+    max-width: 160px;
+    max-height: 160px;
+  }
+}
+.specialities__investors {
+  position: relative;
+  background-image: url("../../img/specialities/investors-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 765px;
+  height: 435px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 815px) {
+  .specialities__investors {
+    width: 345px;
+    height: 450px;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+.specialities__number {
+  display: flex;
+  max-width: 55px;
+  max-height: 38px;
+  padding: 5px 14px;
+  border: 1px solid #E6E8EA;
+  border-radius: 66px;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #E6E8EA;
+}
+@media screen and (max-width: 815px) {
+  .specialities__number {
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.specialities__text-investors, .specialities__text-commercial, .specialities__text-multifamily, .specialities__text-storage, .specialities__text-builder, .specialities__text-hotel {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-investors, .specialities__text-commercial, .specialities__text-multifamily, .specialities__text-storage, .specialities__text-builder, .specialities__text-hotel {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+.specialities__text-investors {
+  max-width: 550px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-investors {
+    max-width: 290px;
+  }
+}
+.specialities__commercial {
+  position: relative;
+  background-image: url("../../img/specialities/commercian-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 765px;
+  height: 435px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 815px) {
+  .specialities__commercial {
+    width: 345px;
+    height: 450px;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+.specialities__text-commercial {
+  max-width: 620px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-commercial {
+    max-width: 295px;
+  }
+}
+.specialities__multifamily {
+  position: relative;
+  background-image: url("../../img/specialities/multifam-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 475px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 1380px) {
+  .specialities__multifamily {
+    width: 765px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__multifamily {
+    width: 345px;
+    height: 450px;
+  }
+}
+.specialities__text-multifamily {
+  max-width: 490px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-multifamily {
+    max-width: 250px;
+  }
+}
+.specialities__hotel {
+  position: relative;
+  background-image: url("../../img/specialities/hotel-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 940px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 1380px) {
+  .specialities__hotel {
+    width: 765px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__hotel {
+    width: 345px;
+    height: 450px;
+  }
+}
+.specialities__text-hotel {
+  max-width: 495px;
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-hotel {
+    max-width: 295px;
+  }
+}
+.specialities__bottom-col {
+  display: flex;
+  padding-top: 30px;
+  gap: 30px;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__bottom-col {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 985px) {
+  .specialities__bottom-col {
+    align-items: center;
+    padding-top: 15px;
+    gap: 15px;
+  }
+}
+.specialities__storage {
+  position: relative;
+  background-image: url("../../img/specialities/storage-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 475px;
+  height: 435px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 1380px) {
+  .specialities__storage {
+    width: 765px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__storage {
+    width: 345px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-storage {
+    max-width: 295px;
+  }
+}
+.specialities__builder {
+  position: relative;
+  background-image: url("../../img/specialities/Builder-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 475px;
+  height: 435px;
+  padding-top: 15px;
+  padding-left: 55px;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 1380px) {
+  .specialities__builder {
+    width: 765px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__builder {
+    width: 345px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .specialities__text-builder {
+    max-width: 295px;
+  }
+}
+
+/*# sourceMappingURL=specialities.css.map */

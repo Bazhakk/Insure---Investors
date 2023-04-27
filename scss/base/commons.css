@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1540px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.button_first {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  color: #fff;
+  background: #E91E63;
+}
+@media screen and (max-width: 375px) {
+  .button_first {
+    padding: 20px 40px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .button_first {
+    font-size: 16px;
+    line-height: 15px;
+  }
+}
+.button_first:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_first:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_first:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_second {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 0;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: right;
+  color: #0A1C33;
+}
+.button_second:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+.button_second:hover svg {
+  transition: all 0.4s;
+  fill: #F7FBFD;
+}
+.button_second:hover svg path {
+  transition: all 0.2s;
+  stroke: #00CCC2;
+  fill: #00CCC2;
+}
+.button_second:hover svg circle {
+  transition: all 0.4s;
+  stroke: #00CCC2;
+}
+@media screen and (max-width: 375px) {
+  .button_second {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .button_second {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .button_second {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+.button_third {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_third:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_third:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_third:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_fifth {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_fifth:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_fifth {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_seventh {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_seventh:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+@media screen and (max-width: 212px) {
+  .button_seventh {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_sixth {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_sixth:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_sixth {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_specialities:hover svg {
+  transition: all 0.3s;
+  fill: #E91E63;
+}
+.button_specialities:hover svg circle {
+  transition: all 0.3s;
+  stroke: #E91E63;
+}
+.button_specialities:hover:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_specialities:hover:focus {
+  vertical-align: middle;
+  border: 2px solid #0EB7AE;
+  color: #F8D4E0;
+}
+.button_specialities:hover:focus svg {
+  transition: all 0.4s;
+  fill: #fff;
+}
+.button_specialities:hover:focus svg path {
+  transition: all 0.2s;
+  stroke: #CED2D6;
+  fill: #CED2D6;
+}
+.button_specialities:hover:focus svg circle {
+  transition: all 0.4s;
+  stroke: #CED2D6;
+}
+@media screen and (max-width: 1024px) {
+  .button_specialities:hover {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.link-anima {
+  position: relative;
+}
+.link-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: #0EB7AE;
+  transition: width 0.4s;
+}
+.link-anima:hover::before {
+  width: 100%;
+}
+
+.tab-anima {
+  position: relative;
+}
+.tab-anima:hover {
+  transition: all 0.4s;
+  color: #D81859;
+}
+
+/*# sourceMappingURL=commons.css.map */
