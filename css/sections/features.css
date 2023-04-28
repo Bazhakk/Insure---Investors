@@ -32,7 +32,7 @@
   padding-bottom: 120px;
   background: #000E50;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
   .features {
     padding-top: 50px;
   }
@@ -83,12 +83,7 @@
 }
 .features .features-menu__link {
   color: #B5BAC1;
-  border: 2px solid transparent;
-  border-radius: 66px;
-}
-.features .features-menu__link-other {
-  color: #B5BAC1;
-  padding: 12px 45px;
+  padding: 10px 10px;
   border: 2px solid transparent;
   border-radius: 66px;
 }
@@ -100,14 +95,7 @@
   transition: all 0.4s;
   color: #0EB7AE;
 }
-@media screen and (max-width: 1330px) {
-  .features .features-menu {
-    max-width: 900px;
-    font-size: 20px;
-    line-height: 38px;
-  }
-}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
   .features .features-menu {
     display: none;
   }
@@ -115,7 +103,7 @@
 .features .features-mobile {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
   .features .features-mobile {
     display: flex;
     margin: 0 16px;
@@ -123,17 +111,12 @@
     cursor: pointer;
   }
 }
-.features .features-mobile__box {
-  display: flex;
-  justify-content: space-between;
-}
-.features .features-mobile__content p {
-  color: white;
-}
 .features .features-mobile__content_hidden {
   display: none;
 }
 .features .features-mobile__link {
+  display: flex;
+  justify-content: space-between;
   padding: 24px 0;
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -153,15 +136,9 @@
     line-height: 28px;
   }
 }
-.features .features-mobile__arrow {
-  position: relative;
-  width: 22px;
-  height: 15px;
-  top: 10px;
-  right: 15px;
-}
-.features .features-mobile__arrow-active {
-  background-image: url("../../img/arrow-active.svg");
+.features .features-mobile__line {
+  margin: 24px 15px 24px 0;
+  border: 1px solid #536070;
 }
 .features__box {
   display: flex;
@@ -182,7 +159,7 @@
 .features__box-left {
   padding-top: 90px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
   .features__box-left {
     padding-top: 24px;
   }
@@ -200,7 +177,7 @@
     margin: 0 16px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
   .features__box {
     display: none;
   }
@@ -208,11 +185,6 @@
 .features__img {
   width: 700px;
   object-fit: cover;
-}
-@media screen and (max-width: 1200px) {
-  .features__img {
-    width: 500px;
-  }
 }
 @media screen and (max-width: 1024px) {
   .features__img {
@@ -268,6 +240,16 @@
   height: 18px;
   position: absolute;
   margin: 4px -30px;
+}
+.features .features-arrow {
+  position: relative;
+  width: 22px;
+  height: 15px;
+  top: 10px;
+  right: 15px;
+}
+.features .features-arrow-active {
+  background-image: url("../../img/arrow-active.svg");
 }
 
 /*# sourceMappingURL=features.css.map */

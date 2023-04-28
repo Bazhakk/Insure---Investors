@@ -20,21 +20,6 @@ jQuery(document).ready(function ( $ ) {
     }
   });
 
-  //Arrow
-  // let arrow = document.getElementById('arrow');
-  // let featuresMenu = document.getElementById('features-mobile');
-
-  //   arrow.addEventListener('click', function() {
-  //   $(this).toggleClass('active').next().slideToggle(300);
-  //   if(arrow.classList.contains('arrow-active')) {
-  //     featuresMenu.style.display = "none";
-  //     arrow.classList.remove('arrow-active');
-  //   } else {
-  //     featuresMenu.style.display = "flex";
-  //     arrow.classList.add('arrow-active');
-  //   }
-  // });
-
   // AOS init
   AOS.init({
     once: true
@@ -75,5 +60,36 @@ jQuery(document).ready(function ( $ ) {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
     $('#features-mobile-box-1').removeClass('features-mobile__content_hidden');
   });
+
+  $('#features-mobile-2').on('click', function() {
+    $('.features-mobile__content').addClass('features-mobile__content_hidden');
+    $('#features-mobile-box-2').removeClass('features-mobile__content_hidden');
+  });
+
+  $('#features-mobile-3').on('click', function() {
+    $('.features-mobile__content').addClass('features-mobile__content_hidden');
+    $('#features-mobile-box-3').removeClass('features-mobile__content_hidden');
+  });
+
+  $('#features-mobile-4').on('click', function() {
+    $('.features-mobile__content').addClass('features-mobile__content_hidden');
+    $('#features-mobile-box-4').removeClass('features-mobile__content_hidden');
+  });
+
+  //Features-arrow
+  let featuresArrow = document.getElementById('features-arrow');
+  let featuresMenu = document.getElementById('features-mobile');
+
+  featuresArrow.addEventListener('click', function() {
+  $(this).toggleClass('active').next().slideToggle(300);
+    if(featuresArrow.classList.contains('featuresArrow-active')) {
+      featuresMenu.style.display = "none";
+      featuresArrow.classList.remove('featuresArrow-active');
+    } else {
+      featuresMenu.style.display = "flex";
+      featuresArrow.classList.add('featuresArrow-active');
+    }
+  });
+
 
 });
