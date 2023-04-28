@@ -168,6 +168,27 @@
     line-height: 15px;
   }
 }
+.button_seventh {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_seventh:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+@media screen and (max-width: 212px) {
+  .button_seventh {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
 .button_sixth {
   padding: 20px 40px;
   border: 2px solid #B5BAC1;
@@ -199,26 +220,33 @@
   transition: all 0.3s;
   stroke: #E91E63;
 }
-.button_specialities:active {
+.button_specialities:hover:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_specialities:focus {
+.button_specialities:hover:focus {
   vertical-align: middle;
   border: 2px solid #0EB7AE;
+  color: #F8D4E0;
 }
-.button_specialities:focus svg {
+.button_specialities:hover:focus svg {
   transition: all 0.4s;
   fill: #fff;
 }
-.button_specialities:focus svg path {
+.button_specialities:hover:focus svg path {
   transition: all 0.2s;
   stroke: #CED2D6;
   fill: #CED2D6;
 }
-.button_specialities:focus svg circle {
+.button_specialities:hover:focus svg circle {
   transition: all 0.4s;
   stroke: #CED2D6;
+}
+@media screen and (max-width: 1024px) {
+  .button_specialities:hover {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .link-anima {

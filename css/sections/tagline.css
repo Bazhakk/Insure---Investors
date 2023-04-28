@@ -28,70 +28,55 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
-.about {
-  padding: 130px 0;
+.tagline {
+  padding-top: 130px;
+}
+.tagline__container {
+  padding-bottom: 80px;
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
-  .about {
-    padding: 60px 0;
+  .tagline__container {
+    padding-bottom: 60px;
   }
 }
-.about__container {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 1250px) {
-  .about__container {
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .about__container {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .about__col_right {
-    padding-top: 60px;
-  }
-}
-.about__title {
+.tagline__title {
+  margin: 0;
+  padding-bottom: 48px;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
   line-height: 100px;
   color: #0A1C33;
 }
+.tagline__title-other {
+  color: #00CCC2;
+}
 @media screen and (max-width: 1024px) {
-  .about__title {
+  .tagline__title {
+    margin: 0;
+    padding-bottom: 24px;
+    padding-top: 60px;
     font-size: 40px;
     line-height: 44px;
   }
 }
-.about__subtitle {
-  max-width: 617px;
+.tagline__subtitle {
+  max-width: 700px;
+  margin: 0 auto;
   padding-bottom: 80px;
-  font-family: "DM Sans";
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 32px;
-  color: #0A1C33;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #3B495C;
 }
 @media screen and (max-width: 1024px) {
-  .about__subtitle {
-    padding-bottom: 33px;
+  .tagline__subtitle {
+    max-width: 345px;
     font-size: 18px;
-    line-height: 28px;
-  }
-}
-.about__img {
-  max-width: 745px;
-}
-@media screen and (max-width: 375px) {
-  .about__btn {
-    text-align: center;
+    line-height: 22px;
   }
 }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=tagline.css.map */
