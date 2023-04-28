@@ -9,13 +9,20 @@
     }
 
     &__title {
+        margin-bottom: 0;
         padding-top: 80px;
+        padding-bottom: 50px;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
         text-align: center;
         color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 40px;
+            line-height: 44px;
+        }
     }
 
     &__subtitle {
@@ -26,42 +33,66 @@
         line-height: 32px;
         text-align: center;
         color: $Gray-80;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
 
-    &__return {
+    &__box {
         max-width: 1000px;
         margin: 0 auto;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 500px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            background-image:  url("../../img/questions-img/questions-line.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 1000px;
+            height: 2px;
+        }
     }
 
-    &__strip {
-        border: 1px solid $Gray-20;
-    }
-
-    &__text {
-        // margin: 0 33px;
+    &__band {
+        margin: 0 33px;
         padding: 32px 0;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
-
-        // &::after {
-        //     content: "";
-        //     background-image:  url("../../img/Questions.svg");
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     position: absolute;
-        //     width: 54px;
-        //     height: 54px;
-        // }
-    }
-
-    &__band {
-        margin: 0 33px;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &_active {
+            display: block;
+            margin: 0;
+            padding: 0 32px;
+            background-color: $white-color;
+        }
+    }
+
+    &__content {
+        max-width: 750px;
+        padding: 32px 0;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+
+        &_hidden {
+            display: none;
+        }
     }
 
     &__btn {
