@@ -4,6 +4,10 @@
 .specialities {
     padding: 130px 0;
 
+    @media screen and (max-width: 1024px) {
+        padding-top: 60px;
+    }
+
     &__container {
         padding: 0;
     }

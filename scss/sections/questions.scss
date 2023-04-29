@@ -52,7 +52,8 @@
             max-width: 500px;
         }
 
-        &::before {
+        &::before,
+        &::after {
             content: "";
             display: block;
             border: 1px solid #CED2D6;
@@ -108,7 +109,7 @@
         text-align: center;
 
         @media screen and (max-width: 1024px) {
-            padding-top: 32px;
+            // padding-top: 32px;
             padding-bottom: 60px;
         }
     }

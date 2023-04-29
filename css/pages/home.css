@@ -1085,6 +1085,11 @@ ul {
 .specialities {
   padding: 130px 0;
 }
+@media screen and (max-width: 1024px) {
+  .specialities {
+    padding-top: 60px;
+  }
+}
 .specialities__container {
   padding: 0;
 }
@@ -1879,7 +1884,7 @@ ul {
     max-width: 500px;
   }
 }
-.questions__col::before {
+.questions__col::before, .questions__col::after {
   content: "";
   display: block;
   border: 1px solid #CED2D6;
@@ -1931,7 +1936,6 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .questions__btn {
-    padding-top: 32px;
     padding-bottom: 60px;
   }
 }
@@ -2014,6 +2018,134 @@ ul {
     max-width: 345px;
     font-size: 18px;
     line-height: 22px;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.partners {
+  padding-bottom: 130px;
+}
+.partners__box {
+  background-color: #000E50;
+  border-radius: 12px;
+}
+.partners__title {
+  padding-top: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .partners__title {
+    padding-top: 55px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.partners__subtitle {
+  padding-bottom: 80px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .partners__subtitle {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.partners .partner {
+  max-width: 1290px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  gap: 30px;
+}
+@media screen and (max-width: 1100px) {
+  .partners .partner {
+    display: none;
+  }
+}
+.partners .partner__element {
+  padding: 34px 52px;
+  background: #0D1958;
+  border-radius: 12px;
+}
+.partners .partner__img {
+  max-width: 135px;
+}
+.partners .slider-section {
+  display: flex;
+  gap: 20px;
+}
+.partners .slider-section .slider {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .partners .slider-section .slider {
+    display: inline;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider-section .slider {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.partners .slider-section .slider__element {
+  padding: 34px 52px;
+  background: #0D1958;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider-section .slider__element {
+    padding: 19px 30px;
+  }
+}
+.partners .slider-section .slider__img {
+  max-width: 135px;
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider-section .slider__img {
+    max-width: 78px;
   }
 }
 

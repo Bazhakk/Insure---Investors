@@ -123,5 +123,13 @@ jQuery(document).ready(function ( $ ) {
     $('.questions__content').addClass('questions__content_hidden');
     $('#questions-col-5').removeClass('questions__content_hidden');
   });
+
+
+  // Slick-slider
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
   
 });
