@@ -96,32 +96,32 @@ jQuery(document).ready(function ( $ ) {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-1').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
-    $('#questions-box-1').removeClass('questions__content_hidden');
+    $('#questions-col-1').removeClass('questions__content_hidden');
   });
 
   $('#questions-2').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-2').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
-    $('#questions-box-2').removeClass('questions__content_hidden');
+    $('#questions-col-2').removeClass('questions__content_hidden');
   });
   $('#questions-3').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-3').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
-    $('#questions-box-3').removeClass('questions__content_hidden');
+    $('#questions-col-3').removeClass('questions__content_hidden');
   });
   $('#questions-4').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-4').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
-    $('#questions-box-4').removeClass('questions__content_hidden');
+    $('#questions-col-4').removeClass('questions__content_hidden');
   });
   $('#questions-5').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-5').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
-    $('#questions-box-5').removeClass('questions__content_hidden');
+    $('#questions-col-5').removeClass('questions__content_hidden');
   });
   
 });

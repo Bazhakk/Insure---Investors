@@ -1,103 +1,115 @@
 @import "../base/fonts";
 @import "../base/variables";
 
-// .questions {
-    
-//     &__container {
-//         background: #F7FBFD;
-//         border-radius: 12px;
-//     }
+.questions {
 
-//     &__title {
-//         margin-bottom: 0;
-//         padding-top: 80px;
-//         padding-bottom: 50px;
-//         font-family: 'GT Eesti Pro';
-//         font-weight: 700;
-//         font-size: 91px;
-//         line-height: 100px;
-//         text-align: center;
-//         color: $Gray-100;
+    &__box {
+        background: #F7FBFD;
+        border-radius: 12px;
+    }
 
-//         @media screen and (max-width: 1024px) {
-//             font-size: 40px;
-//             line-height: 44px;
-//         }
-//     }
+    &__title {
+        margin-bottom: 0;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $Gray-100;
 
-//     &__subtitle {
-//         padding-bottom: 80px;
-//         font-family: 'DM Sans';
-//         font-weight: 400;
-//         font-size: 22px;
-//         line-height: 32px;
-//         text-align: center;
-//         color: $Gray-80;
+        @media screen and (max-width: 1024px) {
+            padding-top: 55px;
+            padding-bottom: 24px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
 
-//         @media screen and (max-width: 1024px) {
-//             font-size: 18px;
-//             line-height: 26px;
-//         }
-//     }
+    &__subtitle {
+        padding-bottom: 80px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-80;
 
-//     &__box {
-//         max-width: 1000px;
-//         margin: 0 auto;
+        @media screen and (max-width: 1024px) {
+            margin: 0;
+            padding-bottom: 24px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 
-//         @media screen and (max-width: 1024px) {
-//             max-width: 500px;
-//         }
+    &__col {
+        max-width: 1000px;
+        margin: 0 auto;
 
-//         &::before,
-//         &::after {
-//             content: "";
-//             background-image:  url("../../img/questions-img/questions-line.svg");
-//             background-size: cover;
-//             background-repeat: no-repeat;
-//             position: absolute;
-//             width: 1000px;
-//             height: 2px;
-//         }
-//     }
+        @media screen and (max-width: 1024px) {
+            max-width: 500px;
+        }
 
-//     &__band {
-//         margin: 0 33px;
-//         padding: 32px 0;
-//         font-family: 'GT Eesti Pro';
-//         font-weight: 500;
-//         font-size: 25px;
-//         line-height: 30px;
-//         color: $Gray-80;
+        &::before {
+            content: "";
+            display: block;
+            border: 1px solid #CED2D6;
+        }
+    }
+
+    &__band {
+        margin: 0 33px;
+        padding: 32px 0;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $Gray-80;
         
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-//         &_active {
-//             display: block;
-//             margin: 0;
-//             padding: 0 32px;
-//             background-color: $white-color;
-//         }
-//     }
+        @media screen and (max-width: 1024px) {
+            padding: 18px 0;
+        }
 
-//     &__content {
-//         max-width: 750px;
-//         padding: 32px 0;
-//         font-family: 'DM Sans';
-//         font-weight: 400;
-//         font-size: 22px;
-//         line-height: 32px;
-//         color: $Gray-100;
+        &_active {
+            display: block;
+            margin: 0;
+            padding: 0 32px;
+            background-color: $white-color;
 
-//         &_hidden {
-//             display: none;
-//         }
-//     }
+            @media screen and (max-width: 1024px) {
+                padding: 0 18px;
+            }
+        }
+    }
 
-//     &__btn {
-//         padding-top: 80px;
-//         padding-bottom: 120px;
-//         text-align: center;
-//     }
-// }
+    &__content {
+        max-width: 750px;
+        padding: 32px 0;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__btn {
+        padding-top: 80px;
+        padding-bottom: 120px;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 32px;
+            padding-bottom: 60px;
+        }
+    }
+}
