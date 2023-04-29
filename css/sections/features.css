@@ -62,7 +62,7 @@
   text-align: center;
   color: #B5BAC1;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 375px) {
   .features__subtitle {
     font-size: 18px;
     line-height: 28px;
@@ -111,6 +111,12 @@
     cursor: pointer;
   }
 }
+.features .features-mobile__box::after {
+  content: "";
+  display: block;
+  margin: 24px 15px 24px 0;
+  border: 1px solid #536070;
+}
 .features .features-mobile__content_hidden {
   display: none;
 }
@@ -135,10 +141,6 @@
     font-size: 20px;
     line-height: 28px;
   }
-}
-.features .features-mobile__line {
-  margin: 24px 15px 24px 0;
-  border: 1px solid #536070;
 }
 .features__box {
   display: flex;
