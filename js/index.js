@@ -126,10 +126,10 @@ jQuery(document).ready(function ( $ ) {
 
 
   // Slick-slider
-  $('.slider').slick({
+  $('.slider-mobile').slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToShow: 2,
+    slidesToScroll: 2
   });
   
 });
