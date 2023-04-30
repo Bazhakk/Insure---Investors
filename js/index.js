@@ -59,6 +59,7 @@ jQuery(document).ready(function ( $ ) {
   $('#features-mobile-1').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
     $('#features-mobile-box-1').removeClass('features-mobile__content_hidden');
+    $('.features-mobile__link').classList.toggle('active');
   });
 
   $('#features-mobile-2').on('click', function() {
@@ -97,6 +98,7 @@ jQuery(document).ready(function ( $ ) {
     $('#questions-1').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
     $('#questions-col-1').removeClass('questions__content_hidden');
+    $('.questions__band').classList.toggle('active');
   });
 
   $('#questions-2').on('click', function() {

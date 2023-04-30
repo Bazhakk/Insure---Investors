@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -141,6 +142,13 @@
     font-size: 20px;
     line-height: 28px;
   }
+}
+.features .features-mobile__link::after {
+  content: "∨";
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
 }
 .features__box {
   display: flex;

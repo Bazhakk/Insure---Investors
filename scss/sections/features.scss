@@ -128,6 +128,14 @@
                 font-size: 20px;
                 line-height: 28px;
             }
+
+            &::after {
+                content: "\2228";
+                font-size: 1rem;
+                font-weight: bold;
+                position: absolute;
+                right: 1rem;
+            }
         }
     }
 

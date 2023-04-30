@@ -4,7 +4,7 @@
 .questions {
 
     &__box {
-        background: #F7FBFD;
+        background: $light-gray;
         border-radius: 12px;
     }
 
@@ -52,15 +52,37 @@
             max-width: 500px;
         }
 
-        &::before,
-        &::after {
+        &::before {
             content: "";
             display: block;
-            border: 1px solid #CED2D6;
+            margin: 0;
+            border: 1px solid $Gray-20;
+
+            @media screen and (max-width: 525px) {
+                margin: 0 24px;
+            }
+        }
+
+        &-tail {
+            &::after {
+                content: "";
+                display: block;
+                margin: 0;
+                border: 1px solid $Gray-20;
+    
+                @media screen and (max-width: 525px) {
+                    margin: 0 24px;
+                }
+            }
         }
     }
 
     &__band {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
         margin: 0 33px;
         padding: 32px 0;
         font-family: 'GT Eesti Pro';
@@ -68,10 +90,17 @@
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+
+        &::after {
+            content: "\002B";
+            font-size: 3rem;
+            font-weight: bold;
+            position: absolute;
+            right: 1rem;
+            padding: 15px;
+            border-radius: 46px;
+            border: 2px solid $Gray-30;
+        }
 
         @media screen and (max-width: 1024px) {
             padding: 18px 0;
@@ -80,18 +109,27 @@
         &_active {
             display: block;
             margin: 0;
-            padding: 0 32px;
+            padding: 32px;
             background-color: $white-color;
 
+            &::after {
+                content: "\00D7";
+                font-size: 3rem;
+                font-weight: bold;
+                position: absolute;
+                right: 1rem;
+            }
+
             @media screen and (max-width: 1024px) {
-                padding: 0 18px;
+                padding: 16px 24px;
+                background-color: $light-gray;
             }
         }
     }
 
     &__content {
         max-width: 750px;
-        padding: 32px 0;
+        padding-top: 32px;
         font-family: 'DM Sans';
         font-weight: 400;
         font-size: 22px;
@@ -101,6 +139,11 @@
         &_hidden {
             display: none;
         }
+
+        @media screen and (max-width: 1024px) {
+            max-width: 295px;
+            padding-top: 18px;
+        }
     }
 
     &__btn {
@@ -109,7 +152,6 @@
         text-align: center;
 
         @media screen and (max-width: 1024px) {
-            // padding-top: 32px;
             padding-bottom: 60px;
         }
     }

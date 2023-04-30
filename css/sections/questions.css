@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -77,12 +78,33 @@
     max-width: 500px;
   }
 }
-.questions__col::before, .questions__col::after {
+.questions__col::before {
   content: "";
   display: block;
+  margin: 0;
   border: 1px solid #CED2D6;
 }
+@media screen and (max-width: 525px) {
+  .questions__col::before {
+    margin: 0 24px;
+  }
+}
+.questions__col-tail::after {
+  content: "";
+  display: block;
+  margin: 0;
+  border: 1px solid #CED2D6;
+}
+@media screen and (max-width: 525px) {
+  .questions__col-tail::after {
+    margin: 0 24px;
+  }
+}
 .questions__band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   margin: 0 33px;
   padding: 32px 0;
   font-family: "GT Eesti Pro";
@@ -90,9 +112,16 @@
   font-size: 25px;
   line-height: 30px;
   color: #3B495C;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.questions__band::after {
+  content: "+";
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  padding: 15px;
+  border-radius: 46px;
+  border: 2px solid #B5BAC1;
 }
 @media screen and (max-width: 1024px) {
   .questions__band {
@@ -102,17 +131,25 @@
 .questions__band_active {
   display: block;
   margin: 0;
-  padding: 0 32px;
+  padding: 32px;
   background-color: #fff;
+}
+.questions__band_active::after {
+  content: "×";
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .questions__band_active {
-    padding: 0 18px;
+    padding: 16px 24px;
+    background-color: #F7FBFD;
   }
 }
 .questions__content {
   max-width: 750px;
-  padding: 32px 0;
+  padding-top: 32px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -121,6 +158,12 @@
 }
 .questions__content_hidden {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  .questions__content {
+    max-width: 295px;
+    padding-top: 18px;
+  }
 }
 .questions__btn {
   padding-top: 80px;
