@@ -150,6 +150,25 @@
   position: absolute;
   right: 1rem;
 }
+.features .features-mobile__link_active {
+  display: block;
+  margin: 0;
+  padding: 32px;
+  background-color: #fff;
+}
+.features .features-mobile__link_active::after {
+  content: "∧";
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .features .features-mobile__link_active {
+    padding: 16px 24px;
+    background-color: #F7FBFD;
+  }
+}
 .features__box {
   display: flex;
   gap: 33px;

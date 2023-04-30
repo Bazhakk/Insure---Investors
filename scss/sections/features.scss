@@ -136,6 +136,26 @@
                 position: absolute;
                 right: 1rem;
             }
+
+            &_active {
+                display: block;
+                margin: 0;
+                padding: 32px;
+                background-color: $white-color;
+    
+                &::after {
+                    content: "\2227";
+                    font-size: 3rem;
+                    font-weight: bold;
+                    position: absolute;
+                    right: 1rem;
+                }
+    
+                @media screen and (max-width: 1024px) {
+                    padding: 16px 24px;
+                    background-color: $light-gray;
+                }
+            }
         }
     }
 
