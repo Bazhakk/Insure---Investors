@@ -136,10 +136,12 @@
 }
 .questions__band_active::after {
   content: "×";
+  padding: 16px 16px;
+  top: 20px;
   font-size: 3rem;
   font-weight: bold;
   position: absolute;
-  right: 1rem;
+  right: 3rem;
 }
 @media screen and (max-width: 1024px) {
   .questions__band_active {

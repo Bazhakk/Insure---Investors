@@ -58,39 +58,39 @@ jQuery(document).ready(function ( $ ) {
   //Features mobile-menu 
   $('#features-mobile-1').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
-    $('#features-mobile-box-1').removeClass('features-mobile__content_hidden');
+    $('#features-mobile-block-1').removeClass('features-mobile__content_hidden');
     $('.features-mobile__link').classList.toggle('active');
   });
 
   $('#features-mobile-2').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
-    $('#features-mobile-box-2').removeClass('features-mobile__content_hidden');
+    $('#features-mobile-block-2').removeClass('features-mobile__content_hidden');
   });
 
   $('#features-mobile-3').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
-    $('#features-mobile-box-3').removeClass('features-mobile__content_hidden');
+    $('#features-mobile-block-3').removeClass('features-mobile__content_hidden');
   });
 
   $('#features-mobile-4').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
-    $('#features-mobile-box-4').removeClass('features-mobile__content_hidden');
+    $('#features-mobile-block-4').removeClass('features-mobile__content_hidden');
   });
 
-  //Features-arrow
-  let featuresArrow = document.getElementById('features-arrow');
-  let featuresMenu = document.getElementById('features-mobile');
+  // //Features-arrow
+  // let featuresArrow = document.getElementById('features-arrow');
+  // let featuresMenu = document.getElementById('features-mobile');
 
-  featuresArrow.addEventListener('click', function() {
-  $(this).toggleClass('active').next().slideToggle(300);
-    if(featuresArrow.classList.contains('featuresArrow-active')) {
-      featuresMenu.style.display = "none";
-      featuresArrow.classList.remove('featuresArrow-active');
-    } else {
-      featuresMenu.style.display = "flex";
-      featuresArrow.classList.add('featuresArrow-active');
-    }
-  });
+  // featuresArrow.addEventListener('click', function() {
+  // $(this).toggleClass('active').next().slideToggle(300);
+  //   if(featuresArrow.classList.contains('featuresArrow-active')) {
+  //     featuresMenu.style.display = "none";
+  //     featuresArrow.classList.remove('featuresArrow-active');
+  //   } else {
+  //     featuresMenu.style.display = "flex";
+  //     featuresArrow.classList.add('featuresArrow-active');
+  //   }
+  // });
 
   //QUESTIONS
   $('#questions-1').on('click', function() {

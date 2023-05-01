@@ -93,7 +93,7 @@
             cursor: pointer;
         }
 
-        &__box {
+        &__block {
             &::after {
                 content: "";
                 display: block;
@@ -131,10 +131,10 @@
 
             &::after {
                 content: "\2228";
-                font-size: 1rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 position: absolute;
-                right: 1rem;
+                right: 3rem;
             }
 
             &_active {
@@ -144,7 +144,7 @@
                 background-color: $white-color;
     
                 &::after {
-                    content: "\2227";
+                    content: "\00D7";
                     font-size: 3rem;
                     font-weight: bold;
                     position: absolute;

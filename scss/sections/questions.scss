@@ -114,10 +114,12 @@
 
             &::after {
                 content: "\00D7";
+                padding: 16px 16px;
+                top: 20px;
                 font-size: 3rem;
                 font-weight: bold;
                 position: absolute;
-                right: 1rem;
+                right: 3rem;
             }
 
             @media screen and (max-width: 1024px) {
