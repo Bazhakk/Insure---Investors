@@ -53,28 +53,26 @@
             display: none;
         }
 
-        // @media screen and (max-width: 1024px) {
-        //     max-width: 700px;
-        //     font-size: 18px;
-        //     line-height: 26px;
-        // }
+        @media screen and (max-width: 1024px) {
+            max-width: 700px;
+        }
 
         &__element {
             padding: 34px 52px;
             background: #0D1958;
             border-radius: 12px;
 
-            // @media screen and (max-width: 1024px) {
-            //     padding: 19px 30px;
-            // }
+            @media screen and (max-width: 1024px) {
+                padding: 19px 30px;
+            }
         }
     
         &__img {
             max-width: 135px;
 
-            // @media screen and (max-width: 1024px) {
-            //     max-width: 78px;
-            // }
+            @media screen and (max-width: 1024px) {
+                max-width: 78px;
+            }
         }
     }
 

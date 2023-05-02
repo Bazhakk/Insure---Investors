@@ -2178,13 +2178,28 @@ ul {
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .partners .partner {
+    max-width: 700px;
+  }
+}
 .partners .partner__element {
   padding: 34px 52px;
   background: #0D1958;
   border-radius: 12px;
 }
+@media screen and (max-width: 1024px) {
+  .partners .partner__element {
+    padding: 19px 30px;
+  }
+}
 .partners .partner__img {
   max-width: 135px;
+}
+@media screen and (max-width: 1024px) {
+  .partners .partner__img {
+    max-width: 78px;
+  }
 }
 .partners .slider {
   display: flex;
