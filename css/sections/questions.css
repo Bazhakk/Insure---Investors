@@ -126,6 +126,8 @@
 @media screen and (max-width: 1024px) {
   .questions__band {
     padding: 18px 0;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 .questions__band_active {
@@ -165,6 +167,8 @@
   .questions__content {
     max-width: 295px;
     padding-top: 18px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 .questions__btn {
