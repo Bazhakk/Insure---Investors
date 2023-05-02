@@ -59,12 +59,13 @@ jQuery(document).ready(function ( $ ) {
   $('#features-mobile-1').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
     $('#features-mobile-block-1').removeClass('features-mobile__content_hidden');
-    $('.features-mobile__link').classList.toggle('active');
+    $('#features-mobile-1 .features-mobile__link').toggleClass('features-mobile__link_active');
   });
 
   $('#features-mobile-2').on('click', function() {
     $('.features-mobile__content').addClass('features-mobile__content_hidden');
     $('#features-mobile-block-2').removeClass('features-mobile__content_hidden');
+    $('#features-mobile-2 .features-mobile__link').toggleClass('features-mobile__link_active');
   });
 
   $('#features-mobile-3').on('click', function() {
@@ -124,6 +125,8 @@ jQuery(document).ready(function ( $ ) {
     $('#questions-5').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
     $('#questions-col-5').removeClass('questions__content_hidden');
+
+    // slideToggle()
   });
 
 
@@ -131,7 +134,9 @@ jQuery(document).ready(function ( $ ) {
   $('.slider-mobile').slick({
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 2
+    slidesToScroll: 2,
+    arrows: false,
+    dots: true
   });
   
 });

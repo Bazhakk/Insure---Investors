@@ -95,11 +95,14 @@
             content: "\002B";
             font-size: 3rem;
             font-weight: bold;
-            position: absolute;
             right: 1rem;
-            padding: 15px;
             border-radius: 46px;
             border: 2px solid $Gray-30;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         @media screen and (max-width: 1024px) {

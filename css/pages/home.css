@@ -1950,11 +1950,14 @@ ul {
   content: "+";
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
   right: 1rem;
-  padding: 15px;
   border-radius: 46px;
   border: 2px solid #B5BAC1;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   .questions__band {
