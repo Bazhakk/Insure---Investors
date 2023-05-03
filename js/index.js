@@ -82,13 +82,20 @@ jQuery(document).ready(function ( $ ) {
   });
 
   //QUESTIONS
+  // let questions1 = document.getElementById('questions-1');
+  // questions1.addEventListener('click', function() {
+  //   $('.questions').questions1({
+  //     collapsible: true,
+  //   });
+  // });
+
   $('#questions-1').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-1').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
     $('#questions-col-1').removeClass('questions__content_hidden');
     $('#questions-1 .questions__band').toggleClass('questions__band_active');
-    $('#questions__col').accordion({
+    $('#questions__col').questions1({
       collapsible: true
     });
   });
