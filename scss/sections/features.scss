@@ -53,6 +53,7 @@
         font-weight: 500;
         font-size: 36px;
         line-height: 46px;
+        cursor: pointer;
 
         &__link {
             color: $Gray-30;
@@ -141,10 +142,9 @@
                 display: block;
                 margin: 0;
                 padding: 32px;
-                background-color: $white-color;
     
                 &::after {
-                    content: "\00D7";
+                    content: "\2303";
                     font-size: 3rem;
                     font-weight: bold;
                     position: absolute;
@@ -153,7 +153,6 @@
     
                 @media screen and (max-width: 1024px) {
                     padding: 16px 24px;
-                    background-color: $light-gray;
                 }
             }
         }

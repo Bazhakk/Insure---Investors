@@ -1632,6 +1632,7 @@ ul {
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
+  cursor: pointer;
 }
 .features .features-menu__link {
   color: #B5BAC1;
@@ -1705,10 +1706,9 @@ ul {
   display: block;
   margin: 0;
   padding: 32px;
-  background-color: #fff;
 }
 .features .features-mobile__link_active::after {
-  content: "×";
+  content: "⌃";
   font-size: 3rem;
   font-weight: bold;
   position: absolute;
@@ -1717,7 +1717,6 @@ ul {
 @media screen and (max-width: 1024px) {
   .features .features-mobile__link_active {
     padding: 16px 24px;
-    background-color: #F7FBFD;
   }
 }
 .features__box {
@@ -1905,6 +1904,7 @@ ul {
 .questions__col {
   max-width: 1000px;
   margin: 0 auto;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .questions__col {
@@ -1948,11 +1948,15 @@ ul {
 }
 .questions__band::after {
   content: "+";
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
   right: 1rem;
-  padding: 15px;
   border-radius: 46px;
   border: 2px solid #B5BAC1;
 }
@@ -1970,12 +1974,18 @@ ul {
 }
 .questions__band_active::after {
   content: "×";
-  padding: 16px 16px;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   top: 20px;
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
-  right: 3rem;
+  right: 2rem;
+  border-radius: 46px;
+  border: 2px solid #B5BAC1;
 }
 @media screen and (max-width: 1024px) {
   .questions__band_active {

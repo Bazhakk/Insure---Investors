@@ -72,6 +72,7 @@
 .questions__col {
   max-width: 1000px;
   margin: 0 auto;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .questions__col {
@@ -115,11 +116,15 @@
 }
 .questions__band::after {
   content: "+";
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
   right: 1rem;
-  padding: 15px;
   border-radius: 46px;
   border: 2px solid #B5BAC1;
 }
@@ -137,12 +142,18 @@
 }
 .questions__band_active::after {
   content: "×";
-  padding: 16px 16px;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   top: 20px;
   font-size: 3rem;
   font-weight: bold;
-  position: absolute;
-  right: 3rem;
+  right: 2rem;
+  border-radius: 46px;
+  border: 2px solid #B5BAC1;
 }
 @media screen and (max-width: 1024px) {
   .questions__band_active {
