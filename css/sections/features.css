@@ -81,6 +81,7 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 46px;
+  cursor: pointer;
 }
 .features .features-menu__link {
   color: #B5BAC1;
@@ -154,10 +155,9 @@
   display: block;
   margin: 0;
   padding: 32px;
-  background-color: #fff;
 }
 .features .features-mobile__link_active::after {
-  content: "×";
+  content: "⌃";
   font-size: 3rem;
   font-weight: bold;
   position: absolute;
@@ -166,7 +166,6 @@
 @media screen and (max-width: 1024px) {
   .features .features-mobile__link_active {
     padding: 16px 24px;
-    background-color: #F7FBFD;
   }
 }
 .features__box {

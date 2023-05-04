@@ -47,6 +47,7 @@
     &__col {
         max-width: 1000px;
         margin: 0 auto;
+        cursor: pointer;
 
         @media screen and (max-width: 1024px) {
             max-width: 500px;
@@ -93,17 +94,20 @@
 
         &::after {
             content: "\002B";
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
             font-size: 3rem;
             font-weight: bold;
-            position: absolute;
             right: 1rem;
-            padding: 15px;
             border-radius: 46px;
             border: 2px solid $Gray-30;
         }
 
         @media screen and (max-width: 1024px) {
-            padding: 18px 0;
             font-size: 18px;
             line-height: 22px;
         }
@@ -116,12 +120,18 @@
 
             &::after {
                 content: "\00D7";
-                padding: 16px 16px;
+                width: 46px;
+                height: 46px;
+                position: absolute;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
                 top: 20px;
                 font-size: 3rem;
                 font-weight: bold;
-                position: absolute;
-                right: 3rem;
+                right: 2rem;
+                border-radius: 46px;
+                border: 2px solid $Gray-30;
             }
 
             @media screen and (max-width: 1024px) {
