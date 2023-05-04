@@ -94,6 +94,8 @@ jQuery(document).ready(function ( $ ) {
     $('#questions-1').addClass('questions__band_active');
     $('.questions__content').addClass('questions__content_hidden');
     $('#questions-col-1').removeClass('questions__content_hidden');
+    // $('.questions-1').slideToggle('questions__band_active');
+
     $('#questions-1 .questions__band').toggleClass('questions__band_active');
     $('#questions__col').questions1({
       collapsible: true
