@@ -75,7 +75,6 @@
         width: 100%;
         margin: 0 auto;
         padding-bottom: 60px;
-        gap: 20px;
 
         .slider-mobile {
             display: none;
@@ -90,9 +89,9 @@
                 border-radius: 12px;
             }
         
-            &__img {
-                max-width: 78px;
-            }
+            // &__img {
+            //     max-width: 78px;
+            // }
         }
     }
 }

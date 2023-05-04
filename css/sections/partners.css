@@ -99,7 +99,6 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 60px;
-  gap: 20px;
 }
 .partners .slider .slider-mobile {
   display: none;
@@ -113,9 +112,6 @@
   padding: 19px 30px;
   background: #0D1958;
   border-radius: 12px;
-}
-.partners .slider .slider-mobile__img {
-  max-width: 78px;
 }
 
 /*# sourceMappingURL=partners.css.map */
