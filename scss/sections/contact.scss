@@ -4,10 +4,28 @@
 .contact {
     padding: 130px 0;
 
+    @media (max-width: 1024px) {
+        padding: 60px;
+    }
+
     &__container {
         display: flex;
+        margin: 0 auto;
         padding-bottom: 80px;
         justify-content: space-between;
+
+        @media (max-width: 1400px) {
+            margin: 0 16px;
+            flex-direction: column;
+        }
+
+        @media (max-width: 1024px) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__box {
+        padding-bottom: 32px;
     }
 
 
@@ -19,6 +37,12 @@
         font-size: 91px;
         line-height: 100px;
         color: $Gray-100;
+
+        @media (max-width: 1024px) {
+            max-width: 345px;
+            font-size: 40px;
+            line-height: 44px;
+        }
     }
 
     &__subtitle {
@@ -30,6 +54,14 @@
         font-size: 22px;
         line-height: 32px;
         color: $Gray-80;
+
+        @media (max-width: 1024px) {
+            max-width: 340px;
+            padding-top: 25px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        
     }
 
     &__col {
@@ -63,6 +95,14 @@
             height: 32px;
             top: 45px;
             left: -55px;
+
+            @media (max-width: 1024px) {
+                top: 20px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding: 25px 0;
         }
     }
 
@@ -104,36 +144,44 @@
         box-shadow: $box-shadow-l;
         border-radius: 12px;
 
+        @media (max-width: 1024px) {
+            width: 345px;
+            height: 510px;
+            margin: 0 16px;
+            padding: 32px 24px;
+        }
+
         &__first-row {
             display: flex;
             margin-bottom: 40px;
             padding: 0;
             gap: 40px;
             border: none;
-        }
 
-        &__field {
-            font-size: 22px;
-            line-height: 32px;
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+                flex-direction: column;
+                gap: 16px;
+            }
         }
 
         &__field-wrap {
-            font-size: 13px;
-            line-height: 18px;
-        }
-
-        &__field-wrap,
-        &__field {
             display: inline-grid;
             width: 374px;
             height: 60px;
             padding-left: 16px;
             font-family: 'DM Sans';
-            font-weight: 500;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
             border-radius: 6px;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+            }
         }
 
         &__second-row {
@@ -149,9 +197,19 @@
             background: $input;
             border: 1px solid $Gray-20;
             border-radius: 6px;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+                margin-bottom: 16px;
+            }
         }
 
         &__third-row {
+            padding: 0;
+            border: none;
+        }
+
+        &__textarea {
             width: 788px;
             height: 120px;
             margin-bottom: 40px;
@@ -165,11 +223,21 @@
             background: $input;
             border: 1px solid $Gray-20;
             border-radius: 6px;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+            }
         }
 
         &__name {
-            padding-top: 14px;
+            padding: 14px 0;
             
+            &-other {
+                padding: 14px 0;
+                font-size: 22px;
+                line-height: 32px;
+            }
+
             &-top {
                 padding-top: 6px;
             }
