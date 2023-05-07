@@ -2216,9 +2216,19 @@ ul {
   }
 }
 .partners .slider .slider-mobile__element {
-  padding: 19px 30px;
+  padding: 34px 50px;
   background: #0D1958;
   border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider .slider-mobile__element {
+    padding: 19px 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider .slider-mobile__img {
+    max-width: 78px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
