@@ -222,7 +222,7 @@
                     <h5 class="contact__title">Have any questions?</h5>
                     <p class="contact__subtitle">We make our customers’ problems our problems</p>
 
-                    <div class="contact__info">
+                    <div class="contact__col-left">
                         <p class="contact__address">827 N Loop W | Houston TX 77008</p>
                         <p class="contact__tel">+1-2815694353</p>
                         <p class="contact__email"> jfoty@benchmarkbroker.com</p>
@@ -231,22 +231,26 @@
 
                 <div class="contact__col-right">
                     <form class="form" id="form">
-                        <fieldset class="form__name">
-                            <div class="form__col ">
-                                <input class="form__element" id="first name" type="text" placeholder="First Name">
-                                <input class="form__element" id="last name" type="text" placeholder="Last Name">
+                        <fieldset class="form__first-row">
+                            <div class="form__field-wrap">
+                                <label class="form__name-top" id="first Name" type="text">First Name</label>
+                                <label class="form__name-bottom" type="text">Toby</label>
                             </div>
-                        </fieldset>
-
-                        <fieldset class="form__email">
-                            <input class="form__element-email" id="email" type="text" placeholder="Email">
+                            
+                            <div class="form__field">
+                                <label class="form__name" id="last Name" type="text">Last Name</label>
+                            </div>
                           </fieldset>
 
-                        <fieldset class="form__message">
-                            <textarea class="form__element-message" id="message" type="text" placeholder="Message"></textarea>
-                        </fieldset>
+                          <fieldset class="form__second-row">
+                            <label  class="form__name" id="email" type="text">Email</label>
+                          </fieldset>
 
-                        <div class="btn-contact">
+                          <fieldset class="form__third-row">
+                            <label class="form__name" id="message" type="text">Message</label>
+                          </fieldset>
+
+                        <div class="form__btn">
                             <a href="#" title="Submit" class="button button_contact">Submit</a>
                         </div>
                     </form>

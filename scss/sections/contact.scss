@@ -2,9 +2,10 @@
 @import "../base/variables";
 
 .contact {
+    padding: 130px 0;
+
     &__container {
         display: flex;
-        padding-top: 130px;
         padding-bottom: 80px;
         justify-content: space-between;
     }
@@ -22,6 +23,7 @@
 
     &__subtitle {
         max-width: 385px;
+        margin: 0;
         padding-top: 40px;
         font-family: 'DM Sans';
         font-weight: 400;
@@ -30,9 +32,11 @@
         color: $Gray-80;
     }
 
-    &__info {
-        position: relative;
-        left: 50px;
+    &__col {
+        &-left {
+            position: relative;
+            left: 50px;
+        }
     }
 
     &__address,
@@ -46,6 +50,7 @@
     }
 
     &__address {
+        margin: 0;
         padding-top: 50px;
         padding-bottom: 40px;
         &::before {
@@ -93,43 +98,48 @@
     .form {
         width: 950px;
         height: 585px;
-        padding-top: 80px;
-        text-align: center;
+        padding: 80px;
         background: $white-color;
         border: 1px solid $Gray-10;
         box-shadow: $box-shadow-l;
         border-radius: 12px;
 
-        &__element,
-        &__name,
-        &__message,
-        &__email {
-            padding-bottom: 40px;
+        &__first-row {
+            display: flex;
+            margin-bottom: 40px;
+            padding: 0;
+            gap: 40px;
             border: none;
         }
 
-        &__col {
-            display: flex;
-            gap: 40px;
+        &__field {
+            font-size: 22px;
+            line-height: 32px;
         }
-        
-        &__element {
+
+        &__field-wrap {
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        &__field-wrap,
+        &__field {
+            display: inline-grid;
             width: 374px;
             height: 60px;
             padding-left: 16px;
             font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
+            font-weight: 500;
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
             border-radius: 6px;
         }
 
-        &__element-email {
+        &__second-row {
             width: 788px;
             height: 60px;
+            margin-bottom: 40px;
             padding-left: 16px;
             font-family: 'DM Sans';
             font-weight: 400;
@@ -141,9 +151,10 @@
             border-radius: 6px;
         }
 
-        &__element-message {
+        &__third-row {
             width: 788px;
             height: 120px;
+            margin-bottom: 40px;
             padding-left: 16px;
             padding-top: 14px;
             font-family: 'DM Sans';
@@ -156,8 +167,27 @@
             border-radius: 6px;
         }
 
-        .btn-contact {
-            padding-top: 40px;
+        &__name {
+            padding-top: 14px;
+            
+            &-top {
+                padding-top: 6px;
+            }
+
+           &-bottom {
+            border: none;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-100;
+           }
+        }
+
+        &__btn {
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
         }
     }
 }
