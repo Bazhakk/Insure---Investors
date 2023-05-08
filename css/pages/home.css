@@ -1546,12 +1546,31 @@ ul {
   font-weight: 700;
 }
 .insurance {
-  background-image: url("../../img/insurance.png");
-  background-color: #000E50;
+  background-image: url("../../img/insurance.img/insurance-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
   border-radius: 60px 60px 0 0;
+  position: relative;
+  overflow-y: hidden;
+}
+.insurance::before {
+  content: "";
+  background-image: url("../../img/insurance.img/insurance-before.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 660px;
+  height: 436px;
+  top: 36%;
+  left: 3%;
+  opacity: 0.6;
+}
+@media screen and (max-width: 1024px) {
+  .insurance::before {
+    width: 272px;
+    height: 337px;
+  }
 }
 .insurance__title {
   max-width: 1030px;
@@ -1572,11 +1591,20 @@ ul {
 .insurance__title-other {
   color: #00CCC2;
 }
-.insurance__block {
+.insurance__box {
+  position: relative;
   display: flex;
+  justify-content: right;
+  right: 26rem;
   align-items: center;
   padding-bottom: 80px;
   gap: 13px;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__box {
+    justify-content: center;
+    right: 3rem;
+  }
 }
 .insurance__img {
   max-width: 185px;
