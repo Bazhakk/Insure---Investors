@@ -1,0 +1,77 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.about {
+    padding: 130px 0;
+
+    @media screen and (max-width: 1024px) {
+        padding: 60px 0;
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1250px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    
+    &__col {
+
+        &_right {
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 60px;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 617px;
+        padding-bottom: 80px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 33px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &__img {
+        max-width: 745px;
+
+        // @media screen and (max-width: 1024px) {
+        //     max-width: 345px;
+        // }
+    }
+
+    &__btn {
+        @media screen and (max-width: 375px) {
+            text-align: center;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -121,7 +122,7 @@ ul {
   margin: 0 auto;
 }
 
-.button_first {
+.button_hero {
   display: flex;
   align-items: center;
   padding: 20px 40px;
@@ -134,31 +135,31 @@ ul {
   background: #E91E63;
 }
 @media screen and (max-width: 375px) {
-  .button_first {
+  .button_hero {
     padding: 20px 40px;
     font-size: 21px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 375px) {
-  .button_first {
+  .button_hero {
     font-size: 16px;
     line-height: 15px;
   }
 }
-.button_first:hover {
+.button_hero:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_first:active {
+.button_hero:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_first:focus {
+.button_hero:focus {
   vertical-align: middle;
   color: #F8D4E0;
 }
-.button_second {
+.button_watch {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -170,42 +171,42 @@ ul {
   text-align: right;
   color: #0A1C33;
 }
-.button_second:hover {
+.button_watch:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
-.button_second:hover svg {
+.button_watch:hover svg {
   transition: all 0.4s;
   fill: #F7FBFD;
 }
-.button_second:hover svg path {
+.button_watch:hover svg path {
   transition: all 0.2s;
   stroke: #00CCC2;
   fill: #00CCC2;
 }
-.button_second:hover svg circle {
+.button_watch:hover svg circle {
   transition: all 0.4s;
   stroke: #00CCC2;
 }
 @media screen and (max-width: 375px) {
-  .button_second {
+  .button_watch {
     font-size: 21px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 300px) {
-  .button_second {
+  .button_watch {
     font-size: 15px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 250px) {
-  .button_second {
+  .button_watch {
     margin: 0 auto;
     flex-direction: column;
   }
 }
-.button_third {
+.button_steps {
   padding: 20px 40px;
   background: #E91E63;
   border-radius: 66px;
@@ -215,15 +216,15 @@ ul {
   line-height: 25px;
   color: #fff;
 }
-.button_third:hover {
+.button_steps:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_third:active {
+.button_steps:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_third:focus {
+.button_steps:focus {
   vertical-align: middle;
   color: #F8D4E0;
 }
@@ -235,25 +236,122 @@ ul {
   transition: all 0.3s;
   stroke: #E91E63;
 }
-.button_specialities:active {
+.button_specialities:hover:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_specialities:focus {
+.button_specialities:hover:focus {
   vertical-align: middle;
+  border: 2px solid #0EB7AE;
+  color: #F8D4E0;
 }
-.button_specialities:focus svg {
+.button_specialities:hover:focus svg {
   transition: all 0.4s;
   fill: #fff;
 }
-.button_specialities:focus svg path {
+.button_specialities:hover:focus svg path {
   transition: all 0.2s;
   stroke: #CED2D6;
   fill: #CED2D6;
 }
-.button_specialities:focus svg circle {
+.button_specialities:hover:focus svg circle {
   transition: all 0.4s;
   stroke: #CED2D6;
+}
+@media screen and (max-width: 1024px) {
+  .button_specialities:hover {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.button_about {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_about:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_about {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_questions {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_questions:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_questions {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_tagline {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_tagline:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+@media screen and (max-width: 212px) {
+  .button_tagline {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_contact {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+  background-color: #fff;
+}
+.button_contact:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background-color: #CFE9E7;
+  border-color: #00CCC2;
+}
+@media (max-width: 1024px) {
+  .button_contact {
+    width: 295px;
+  }
 }
 .button_insurance {
   padding: 20px 40px;
@@ -562,7 +660,7 @@ ul {
   font-weight: 700;
 }
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -570,6 +668,7 @@ ul {
 }
 @media screen and (max-width: 1370px) {
   .hero {
+    min-height: 100vh;
     background-image: url("../../img/bg-mobile-menu.png");
   }
 }
@@ -858,10 +957,9 @@ ul {
   }
 }
 .steps .step {
-  padding: 0;
   width: 100%;
   display: flex;
-  padding-bottom: 100px;
+  padding: 0 0 100px 0;
   gap: 30px;
 }
 @media screen and (max-width: 1230px) {
@@ -892,13 +990,32 @@ ul {
   }
 }
 .steps .step__namber {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 380px) {
   .steps .step__namber {
     flex-direction: column;
+  }
+}
+.steps .step__namber::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  bottom: 5px;
+  border: 2px solid #00CCC2;
+}
+@media screen and (max-width: 475px) {
+  .steps .step__namber::after {
+    bottom: 25px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .steps .step__namber::after {
+    width: 23%;
+    bottom: 5px;
   }
 }
 .steps .step__title {
@@ -921,8 +1038,9 @@ ul {
   }
 }
 .steps .step__subtitle {
-  padding: 5px 20px;
   max-height: 52px;
+  margin-top: 78px;
+  padding: 5px 20px;
   border: 2px solid #B5BAC1;
   border-radius: 99px;
   font-family: "GT Eesti Pro";
@@ -934,17 +1052,9 @@ ul {
 @media screen and (max-width: 380px) {
   .steps .step__subtitle {
     max-height: 35px;
+    margin-top: 30px;
     font-size: 26px;
     line-height: 28px;
-  }
-}
-.steps .step__vector {
-  max-width: 70px;
-  border: 2px solid #00CCC2;
-}
-@media screen and (max-width: 380px) {
-  .steps .step__vector {
-    margin: 0 auto;
   }
 }
 .steps .step__text {
@@ -956,8 +1066,14 @@ ul {
 }
 @media screen and (max-width: 490px) {
   .steps .step__text {
+    margin: 0;
     font-size: 16px;
     line-height: 28px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .steps .step__text {
+    padding-top: 30px;
   }
 }
 .steps .step__img {
@@ -1031,6 +1147,11 @@ ul {
 .specialities {
   padding-bottom: 130px;
 }
+@media screen and (max-width: 1024px) {
+  .specialities {
+    padding-top: 60px;
+  }
+}
 .specialities__container {
   padding: 0;
 }
@@ -1087,7 +1208,6 @@ ul {
 @media screen and (max-width: 1380px) {
   .specialities__block-bottom {
     flex-direction: column-reverse;
-    align-items: center;
     gap: 15px;
   }
 }
@@ -1098,7 +1218,46 @@ ul {
   bottom: 0;
   right: 0;
 }
-@media screen and (max-width: 815px) {
+.specialities__img-multifamily {
+  position: absolute;
+  max-width: 435px;
+  max-height: 310px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img-multifamily {
+    max-width: 345px;
+    max-height: 260px;
+  }
+}
+.specialities__img-hotel {
+  position: absolute;
+  max-width: 455px;
+  max-height: 563px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1380px) {
+  .specialities__img-hotel {
+    max-width: 350px;
+    max-height: 450px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .specialities__img-hotel {
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+.specialities__img-bulder, .specialities__img-storage {
+  position: absolute;
+  max-width: 330px;
+  max-height: 205px;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 1024px) {
   .specialities__img {
     max-width: 260px;
     max-height: 260px;
@@ -1121,6 +1280,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 815px) {
   .specialities__investors {
@@ -1183,6 +1343,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 815px) {
   .specialities__commercial {
@@ -1210,6 +1371,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__multifamily {
@@ -1244,6 +1406,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__hotel {
@@ -1296,6 +1459,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__storage {
@@ -1328,6 +1492,7 @@ ul {
   padding-top: 15px;
   padding-left: 55px;
   border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 @media screen and (max-width: 1380px) {
   .specialities__builder {
@@ -1415,6 +1580,1037 @@ ul {
 }
 .insurance__img {
   max-width: 185px;
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.about {
+  padding: 130px 0;
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1250px) {
+  .about__container {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__col_right {
+    padding-top: 60px;
+  }
+}
+.about__title {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .about__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.about__subtitle {
+  max-width: 617px;
+  padding-bottom: 80px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .about__subtitle {
+    padding-bottom: 33px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.about__img {
+  max-width: 745px;
+}
+@media screen and (max-width: 375px) {
+  .about__btn {
+    text-align: center;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.features {
+  padding-bottom: 120px;
+  background: #000E50;
+}
+@media screen and (max-width: 1245px) {
+  .features {
+    padding-top: 50px;
+  }
+}
+.features__title {
+  padding-top: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .features__title {
+    margin: 0;
+    padding-top: 55px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.features__subtitle {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+@media screen and (max-width: 375px) {
+  .features__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.features .features-menu {
+  width: 100%;
+  max-width: 1160px;
+  padding: 65px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 46px;
+  cursor: pointer;
+}
+.features .features-menu__link {
+  color: #B5BAC1;
+  padding: 14px 48px;
+  border: 2px solid transparent;
+  border-radius: 66px;
+}
+.features .features-menu__link_active {
+  border: 2px solid #0CA099;
+  color: #0CA099;
+}
+.features .features-menu__link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+@media screen and (max-width: 1245px) {
+  .features .features-menu {
+    display: none;
+  }
+}
+.features .features-mobile {
+  display: none;
+}
+@media screen and (max-width: 1245px) {
+  .features .features-mobile {
+    display: flex;
+    margin: 0 16px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+.features .features-mobile__block::after {
+  content: "";
+  display: block;
+  margin: 24px 15px 24px 0;
+  border: 1px solid #536070;
+}
+.features .features-mobile__content_hidden {
+  display: none;
+}
+.features .features-mobile__link {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+}
+@media screen and (max-width: 765px) {
+  .features .features-mobile__link {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .features .features-mobile__link {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.features .features-mobile__link::after {
+  content: "∨";
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 3rem;
+}
+.features .features-mobile__link_active {
+  display: block;
+  margin: 0;
+  padding: 32px;
+}
+.features .features-mobile__link_active::after {
+  content: "⌃";
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .features .features-mobile__link_active {
+    padding: 16px 24px;
+  }
+}
+.features__box {
+  display: flex;
+  gap: 33px;
+}
+@media screen and (max-width: 980px) {
+  .features__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.features__box_hidden {
+  display: none;
+}
+.features__box_hidden-2 {
+  display: inline;
+}
+.features__box-left {
+  padding-top: 90px;
+}
+@media screen and (max-width: 1245px) {
+  .features__box-left {
+    padding-top: 24px;
+  }
+}
+.features__box-right {
+  max-width: 835;
+}
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .features__box {
+    display: none;
+  }
+}
+.features__img {
+  width: 700px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .features__img {
+    width: 345px;
+  }
+}
+.features__img-mobile {
+  width: 342px;
+}
+.features__contents {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.features__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+@media screen and (max-width: 850px) {
+  .features__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.features__info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 25px;
+}
+@media screen and (max-width: 1500px) {
+  .features__info {
+    flex-direction: column;
+  }
+}
+.features__info-text {
+  max-width: 370px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.features__info-text::before {
+  content: "";
+  background-image: url("../../img/features.svg");
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  margin: 4px -30px;
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.questions__box {
+  background: #F7FBFD;
+  border-radius: 12px;
+}
+.questions__title {
+  margin-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .questions__title {
+    padding-top: 55px;
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.questions__subtitle {
+  padding-bottom: 80px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #3B495C;
+}
+@media screen and (max-width: 1024px) {
+  .questions__subtitle {
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.questions__col {
+  max-width: 1000px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .questions__col {
+    max-width: 500px;
+  }
+}
+.questions__col::before {
+  content: "";
+  display: block;
+  margin: 0;
+  border: 1px solid #CED2D6;
+}
+@media screen and (max-width: 525px) {
+  .questions__col::before {
+    margin: 0 24px;
+  }
+}
+.questions__col-tail::after {
+  content: "";
+  display: block;
+  margin: 0;
+  border: 1px solid #CED2D6;
+}
+@media screen and (max-width: 525px) {
+  .questions__col-tail::after {
+    margin: 0 24px;
+  }
+}
+.questions__band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 33px;
+  padding: 32px 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #3B495C;
+}
+.questions__band::after {
+  content: "+";
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 4rem;
+  font-weight: bold;
+  right: 1rem;
+  border-radius: 46px;
+  border: 2px solid #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .questions__band {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.questions__band_active {
+  display: block;
+  margin: 0;
+  padding: 32px;
+  background-color: #fff;
+}
+.questions__band_active::after {
+  content: "×";
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  top: 20px;
+  font-size: 4rem;
+  font-weight: bold;
+  right: 2rem;
+  border-radius: 46px;
+  border: 2px solid #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .questions__band_active {
+    padding: 16px 24px;
+    background-color: #F7FBFD;
+  }
+}
+.questions__content {
+  max-width: 750px;
+  padding-top: 32px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+.questions__content_hidden {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .questions__content {
+    max-width: 295px;
+    padding-top: 18px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.questions__btn {
+  padding: 100px 0 130px 0;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .questions__btn {
+    padding-bottom: 60px;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.tagline {
+  padding-top: 130px;
+}
+.tagline__container {
+  padding-bottom: 80px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .tagline__container {
+    padding-bottom: 60px;
+  }
+}
+.tagline__title {
+  margin: 0;
+  padding-bottom: 48px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+.tagline__title-other {
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .tagline__title {
+    margin: 0;
+    padding-bottom: 24px;
+    padding-top: 60px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.tagline__subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #3B495C;
+}
+@media screen and (max-width: 1024px) {
+  .tagline__subtitle {
+    max-width: 345px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.partners {
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .partners {
+    padding-bottom: 60px;
+  }
+}
+.partners__box {
+  background-color: #000E50;
+  border-radius: 12px;
+}
+.partners__title {
+  padding-top: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .partners__title {
+    padding-top: 55px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.partners__subtitle {
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .partners__subtitle {
+    padding-bottom: 32px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.partners .partner {
+  max-width: 1290px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 0 120px 0;
+  gap: 30px;
+}
+@media screen and (max-width: 1100px) {
+  .partners .partner {
+    display: none;
+  }
+}
+.partners .partner__element {
+  padding: 34px 52px;
+  background: #0D1958;
+  border-radius: 12px;
+}
+.partners .partner__img {
+  max-width: 135px;
+}
+.partners .slider {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.partners .slider .slider-mobile {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .partners .slider .slider-mobile {
+    display: inline;
+  }
+}
+.partners .slider .slider-mobile__element {
+  padding: 34px 50px;
+  background: #0D1958;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider .slider-mobile__element {
+    padding: 19px 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .partners .slider .slider-mobile__img {
+    max-width: 78px;
+  }
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.contact {
+  padding: 0 0 130px 0;
+}
+@media (max-width: 1024px) {
+  .contact {
+    margin: 0 auto;
+  }
+}
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .contact__container {
+    margin: 0 16px;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .contact__container {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .contact__col-left {
+    margin: 0 16px;
+    padding-bottom: 32px;
+  }
+}
+.contact__title {
+  max-width: 580px;
+  margin: 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+@media (max-width: 1024px) {
+  .contact__title {
+    max-width: 345px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.contact__subtitle {
+  max-width: 385px;
+  margin: 0;
+  padding-top: 40px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #3B495C;
+}
+@media (max-width: 1024px) {
+  .contact__subtitle {
+    max-width: 340px;
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.contact__box {
+  position: relative;
+  left: 50px;
+}
+.contact__address, .contact__email, .contact__tel {
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #3B495C;
+}
+.contact__address {
+  margin: 0;
+  padding: 50px 0 40px 0;
+}
+.contact__address::before {
+  content: "";
+  background-image: url("../../img/contact-address.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 45px;
+  left: -55px;
+}
+@media (max-width: 1024px) {
+  .contact__address::before {
+    top: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact__address {
+    padding: 25px 0;
+  }
+}
+.contact__tel {
+  padding-bottom: 40px;
+}
+.contact__tel::before {
+  content: "";
+  background-image: url("../../img/contact-tel.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -52px;
+  bottom: 85px;
+}
+.contact__email::before {
+  content: "";
+  background-image: url("../../img/contact-email.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -52px;
+  bottom: 0;
+}
+.contact .form {
+  width: 950px;
+  height: 585px;
+  padding: 80px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #E6E8EA;
+  filter: drop-shadow(0px 18px 60px rgba(10, 28, 51, 0.05));
+}
+@media (max-width: 1400px) {
+  .contact .form {
+    width: 750px;
+    padding: 32px 21px;
+  }
+}
+.contact .form__first-row {
+  display: flex;
+  margin-bottom: 40px;
+  padding: 0;
+  gap: 40px;
+  border: none;
+}
+.contact .form__field-wrap {
+  display: inline-grid;
+  width: 374px;
+  height: 60px;
+  padding-left: 16px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 6px;
+  color: #848D99;
+  background: #FBFCFF;
+  border: 1px solid #CED2D6;
+}
+@media (max-width: 1400px) {
+  .contact .form__field-wrap {
+    width: 330px;
+  }
+}
+.contact .form__second-row {
+  width: 788px;
+  height: 60px;
+  margin-bottom: 40px;
+  padding: 14px 0 14px 16px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  border-radius: 6px;
+  color: #848D99;
+  background: #FBFCFF;
+  border: 1px solid #CED2D6;
+}
+@media (max-width: 1400px) {
+  .contact .form__second-row {
+    width: 700px;
+  }
+}
+.contact .form__third-row {
+  padding: 0;
+  border: none;
+}
+.contact .form__textarea {
+  width: 788px;
+  height: 120px;
+  margin-bottom: 40px;
+  padding: 14px 0 14px 16px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  border-radius: 6px;
+  color: #848D99;
+  background: #FBFCFF;
+  border: 1px solid #CED2D6;
+}
+@media (max-width: 1400px) {
+  .contact .form__textarea {
+    width: 700px;
+  }
+}
+.contact .form__name {
+  padding: 14px 0;
+}
+.contact .form__name-other {
+  padding: 14px 0;
+  font-size: 22px;
+  line-height: 32px;
+  color: #848D99;
+}
+.contact .form__name-top {
+  padding-top: 6px;
+}
+.contact .form__name-bottom {
+  border: none;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+.contact .form__btn {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=home.css.map */

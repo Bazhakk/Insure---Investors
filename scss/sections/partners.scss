@@ -1,0 +1,103 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.partners {
+    padding-bottom: 130px;
+
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 60px;
+    }
+
+    &__box {
+        background-color: $blue-dark;
+        border-radius: 12px;
+    }
+
+    &__title {
+        padding-top: 80px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $white-color;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 55px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 0;
+        padding-bottom: 80px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-30;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 32px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .partner {
+        max-width: 1290px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 0 120px 0;
+        gap: 30px;
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+
+        &__element {
+            padding: 34px 52px;
+            background: $blue-deep;
+            border-radius: 12px;
+        }
+    
+        &__img {
+            max-width: 135px;
+        }
+    }
+
+    //SLIDER
+    .slider {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 60px;
+
+        .slider-mobile {
+            display: none;
+
+            @media screen and (max-width: 1100px) {
+                display: inline;
+            }
+
+            &__element {
+                padding: 34px 50px;
+                background: $blue-deep;
+                border-radius: 12px;
+
+                @media screen and (max-width: 1024px) {
+                    padding: 19px 30px;
+                }
+            }
+        
+            &__img {
+                @media screen and (max-width: 1024px) {
+                    max-width: 78px;
+                }
+            }
+        }
+    }
+}
