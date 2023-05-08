@@ -161,6 +161,11 @@
   background-color: #CFE9E7;
   border-color: #00CCC2;
 }
+@media (max-width: 1024px) {
+  .button_contact {
+    width: 295px;
+  }
+}
 
 .link-anima {
   position: relative;

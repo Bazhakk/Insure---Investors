@@ -5,7 +5,7 @@
     padding: 130px 0;
 
     @media (max-width: 1024px) {
-        padding: 60px;
+        padding-top: 60px;
     }
 
     &__container {
@@ -25,7 +25,9 @@
     }
 
     &__box {
-        padding-bottom: 32px;
+        @media (max-width: 1024px) {
+            padding-bottom: 32px;
+        }
     }
 
 
@@ -117,7 +119,7 @@
             width: 32px;
             height: 32px;
             bottom: 85px;
-            left: -55px;
+            left: -52px;
         }
     }
 
@@ -130,7 +132,7 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            left: -55px;
+            left: -52px;
             bottom: 0;
         }
     }

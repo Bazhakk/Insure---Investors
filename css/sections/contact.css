@@ -33,7 +33,7 @@
 }
 @media (max-width: 1024px) {
   .contact {
-    padding: 60px;
+    padding-top: 60px;
   }
 }
 .contact__container {
@@ -53,8 +53,10 @@
     padding-bottom: 40px;
   }
 }
-.contact__box {
-  padding-bottom: 32px;
+@media (max-width: 1024px) {
+  .contact__box {
+    padding-bottom: 32px;
+  }
 }
 .contact__title {
   max-width: 580px;
@@ -139,7 +141,7 @@
   width: 32px;
   height: 32px;
   bottom: 85px;
-  left: -55px;
+  left: -52px;
 }
 .contact__email::before {
   content: "";
@@ -149,7 +151,7 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  left: -55px;
+  left: -52px;
   bottom: 0;
 }
 .contact .form {
