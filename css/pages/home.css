@@ -616,7 +616,7 @@ ul {
   font-weight: 700;
 }
 .hero {
-  min-height: 70vh;
+  height: 100vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
