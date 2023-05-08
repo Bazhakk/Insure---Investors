@@ -29,7 +29,7 @@
   font-weight: 700;
 }
 .specialities {
-  padding: 130px 0;
+  padding-bottom: 130px;
 }
 @media screen and (max-width: 1024px) {
   .specialities {

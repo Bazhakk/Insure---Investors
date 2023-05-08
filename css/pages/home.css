@@ -122,7 +122,7 @@ ul {
   margin: 0 auto;
 }
 
-.button_first {
+.button_hero {
   display: flex;
   align-items: center;
   padding: 20px 40px;
@@ -135,31 +135,31 @@ ul {
   background: #E91E63;
 }
 @media screen and (max-width: 375px) {
-  .button_first {
+  .button_hero {
     padding: 20px 40px;
     font-size: 21px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 375px) {
-  .button_first {
+  .button_hero {
     font-size: 16px;
     line-height: 15px;
   }
 }
-.button_first:hover {
+.button_hero:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_first:active {
+.button_hero:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_first:focus {
+.button_hero:focus {
   vertical-align: middle;
   color: #F8D4E0;
 }
-.button_second {
+.button_watch {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -171,42 +171,42 @@ ul {
   text-align: right;
   color: #0A1C33;
 }
-.button_second:hover {
+.button_watch:hover {
   transition: all 0.4s;
   color: #0EB7AE;
 }
-.button_second:hover svg {
+.button_watch:hover svg {
   transition: all 0.4s;
   fill: #F7FBFD;
 }
-.button_second:hover svg path {
+.button_watch:hover svg path {
   transition: all 0.2s;
   stroke: #00CCC2;
   fill: #00CCC2;
 }
-.button_second:hover svg circle {
+.button_watch:hover svg circle {
   transition: all 0.4s;
   stroke: #00CCC2;
 }
 @media screen and (max-width: 375px) {
-  .button_second {
+  .button_watch {
     font-size: 21px;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 300px) {
-  .button_second {
+  .button_watch {
     font-size: 15px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 250px) {
-  .button_second {
+  .button_watch {
     margin: 0 auto;
     flex-direction: column;
   }
 }
-.button_third {
+.button_steps {
   padding: 20px 40px;
   background: #E91E63;
   border-radius: 66px;
@@ -216,84 +216,17 @@ ul {
   line-height: 25px;
   color: #fff;
 }
-.button_third:hover {
+.button_steps:hover {
   transition: all 0.4s;
   background-color: #D81859;
 }
-.button_third:active {
+.button_steps:active {
   vertical-align: middle;
   color: #B4174C;
 }
-.button_third:focus {
+.button_steps:focus {
   vertical-align: middle;
   color: #F8D4E0;
-}
-.button_fifth {
-  padding: 20px 40px;
-  border: 2px solid #B5BAC1;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #0A1C33;
-}
-.button_fifth:hover {
-  transition: all 0.4s;
-  color: #0EB7AE;
-  background: #CFE9E7;
-  border: 2px solid #0EB7AE;
-}
-@media screen and (max-width: 212px) {
-  .button_fifth {
-    padding: 8px 17px;
-    font-size: 13px;
-    line-height: 15px;
-  }
-}
-.button_seventh {
-  padding: 20px 40px;
-  background: #E91E63;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #fff;
-}
-.button_seventh:hover {
-  transition: all 0.4s;
-  background-color: #D81859;
-}
-@media screen and (max-width: 212px) {
-  .button_seventh {
-    padding: 8px 17px;
-    font-size: 13px;
-    line-height: 15px;
-  }
-}
-.button_sixth {
-  padding: 20px 40px;
-  border: 2px solid #B5BAC1;
-  border-radius: 66px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 25px;
-  color: #0A1C33;
-}
-.button_sixth:hover {
-  transition: all 0.4s;
-  color: #0EB7AE;
-  background: #CFE9E7;
-  border: 2px solid #0EB7AE;
-}
-@media screen and (max-width: 212px) {
-  .button_sixth {
-    padding: 8px 17px;
-    font-size: 13px;
-    line-height: 15px;
-  }
 }
 .button_specialities:hover svg {
   transition: all 0.3s;
@@ -329,6 +262,94 @@ ul {
   .button_specialities:hover {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+.button_about {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_about:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_about {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_questions {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_questions:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background: #CFE9E7;
+  border: 2px solid #0EB7AE;
+}
+@media screen and (max-width: 212px) {
+  .button_questions {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_tagline {
+  padding: 20px 40px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+.button_tagline:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+@media screen and (max-width: 212px) {
+  .button_tagline {
+    padding: 8px 17px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+.button_contact {
+  padding: 20px 40px;
+  border: 2px solid #B5BAC1;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #0A1C33;
+}
+.button_contact:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+  background-color: #CFE9E7;
+  border-color: #00CCC2;
+}
+@media (max-width: 1024px) {
+  .button_contact {
+    width: 295px;
   }
 }
 
@@ -913,10 +934,9 @@ ul {
   }
 }
 .steps .step {
-  padding: 0;
   width: 100%;
   display: flex;
-  padding-bottom: 100px;
+  padding: 0 0 100px 0;
   gap: 30px;
 }
 @media screen and (max-width: 1230px) {
@@ -947,13 +967,32 @@ ul {
   }
 }
 .steps .step__namber {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 380px) {
   .steps .step__namber {
     flex-direction: column;
+  }
+}
+.steps .step__namber::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  bottom: 5px;
+  border: 2px solid #00CCC2;
+}
+@media screen and (max-width: 475px) {
+  .steps .step__namber::after {
+    bottom: 25px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .steps .step__namber::after {
+    width: 23%;
+    bottom: 5px;
   }
 }
 .steps .step__title {
@@ -976,8 +1015,9 @@ ul {
   }
 }
 .steps .step__subtitle {
-  padding: 5px 20px;
   max-height: 52px;
+  margin-top: 78px;
+  padding: 5px 20px;
   border: 2px solid #B5BAC1;
   border-radius: 99px;
   font-family: "GT Eesti Pro";
@@ -989,17 +1029,9 @@ ul {
 @media screen and (max-width: 380px) {
   .steps .step__subtitle {
     max-height: 35px;
+    margin-top: 30px;
     font-size: 26px;
     line-height: 28px;
-  }
-}
-.steps .step__vector {
-  max-width: 70px;
-  border: 2px solid #00CCC2;
-}
-@media screen and (max-width: 380px) {
-  .steps .step__vector {
-    margin: 0 auto;
   }
 }
 .steps .step__text {
@@ -1011,8 +1043,14 @@ ul {
 }
 @media screen and (max-width: 490px) {
   .steps .step__text {
+    margin: 0;
     font-size: 16px;
     line-height: 28px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .steps .step__text {
+    padding-top: 30px;
   }
 }
 .steps .step__img {
@@ -1084,7 +1122,7 @@ ul {
   font-weight: 700;
 }
 .specialities {
-  padding: 130px 0;
+  padding-bottom: 130px;
 }
 @media screen and (max-width: 1024px) {
   .specialities {
@@ -1626,17 +1664,17 @@ ul {
   padding: 65px 0;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 97px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 46px;
   cursor: pointer;
 }
 .features .features-menu__link {
   color: #B5BAC1;
-  padding: 10px 10px;
+  padding: 14px 48px;
   border: 2px solid transparent;
   border-radius: 66px;
 }
@@ -1820,16 +1858,6 @@ ul {
   position: absolute;
   margin: 4px -30px;
 }
-.features .features-arrow {
-  position: relative;
-  width: 22px;
-  height: 15px;
-  top: 10px;
-  right: 15px;
-}
-.features .features-arrow-active {
-  background-image: url("../../img/arrow-active.svg");
-}
 
 @font-face {
   font-family: "Poller One";
@@ -1954,7 +1982,7 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   right: 1rem;
   border-radius: 46px;
@@ -1981,7 +2009,7 @@ ul {
   justify-content: center;
   padding: 20px;
   top: 20px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   right: 2rem;
   border-radius: 46px;
@@ -2014,8 +2042,7 @@ ul {
   }
 }
 .questions__btn {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding: 100px 0 130px 0;
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
@@ -2262,7 +2289,7 @@ ul {
   font-weight: 700;
 }
 .contact {
-  padding: 130px 0;
+  padding: 0 0 130px 0;
 }
 @media (max-width: 1024px) {
   .contact {
@@ -2271,9 +2298,9 @@ ul {
 }
 .contact__container {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 80px;
-  justify-content: space-between;
 }
 @media (max-width: 1400px) {
   .contact__container {
@@ -2338,8 +2365,7 @@ ul {
 }
 .contact__address {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 50px 0 40px 0;
 }
 .contact__address::before {
   content: "";
@@ -2373,8 +2399,8 @@ ul {
   position: absolute;
   width: 32px;
   height: 32px;
-  bottom: 85px;
   left: -52px;
+  bottom: 85px;
 }
 .contact__email::before {
   content: "";
@@ -2391,10 +2417,10 @@ ul {
   width: 950px;
   height: 585px;
   padding: 80px;
+  border-radius: 12px;
   background: #fff;
   border: 1px solid #E6E8EA;
-  box-shadow: 0 18 60 0 rgba(10, 28, 51, 0.05);
-  border-radius: 12px;
+  filter: drop-shadow(0px 18px 60px rgba(10, 28, 51, 0.05));
 }
 @media (max-width: 1024px) {
   .contact .form {
@@ -2427,10 +2453,10 @@ ul {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__field-wrap {
@@ -2446,10 +2472,10 @@ ul {
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__second-row {
@@ -2471,10 +2497,10 @@ ul {
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__textarea {

@@ -2,7 +2,7 @@
 @import "../base/variables";
 
 .contact {
-    padding: 130px 0;
+    padding: 0 0 130px 0;
 
     @media (max-width: 1024px) {
         padding-top: 60px;
@@ -10,9 +10,9 @@
 
     &__container {
         display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         padding-bottom: 80px;
-        justify-content: space-between;
 
         @media (max-width: 1400px) {
             margin: 0 16px;
@@ -25,6 +25,7 @@
     }
 
     &__box {
+
         @media (max-width: 1024px) {
             padding-bottom: 32px;
         }
@@ -85,8 +86,8 @@
 
     &__address {
         margin: 0;
-        padding-top: 50px;
-        padding-bottom: 40px;
+        padding: 50px 0 40px 0;
+        
         &::before {
             content: "";
             background-image:  url("../../img/contact-address.svg");
@@ -110,6 +111,7 @@
 
     &__tel {
         padding-bottom: 40px;
+
         &::before {
             content: "";
             background-image:  url("../../img/contact-tel.svg");
@@ -118,12 +120,13 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            bottom: 85px;
             left: -52px;
+            bottom: 85px;
         }
     }
 
     &__email {
+
         &::before {
             content: "";
             background-image:  url("../../img/contact-email.svg");
@@ -141,10 +144,10 @@
         width: 950px;
         height: 585px;
         padding: 80px;
+        border-radius: 12px;
         background: $white-color;
         border: 1px solid $Gray-10;
-        box-shadow: $box-shadow-l;
-        border-radius: 12px;
+        filter: $box-shadow-l;
 
         @media (max-width: 1024px) {
             width: 345px;
@@ -176,10 +179,10 @@
             font-weight: 400;
             font-size: 13px;
             line-height: 18px;
+            border-radius: 6px;
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
-            border-radius: 6px;
 
             @media (max-width: 1024px) {
                 width: 295px;
@@ -195,10 +198,10 @@
             font-weight: 400;
             font-size: 22px;
             line-height: 32px;
+            border-radius: 6px;
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
-            border-radius: 6px;
 
             @media (max-width: 1024px) {
                 width: 295px;
@@ -221,10 +224,10 @@
             font-weight: 400;
             font-size: 22px;
             line-height: 32px;
+            border-radius: 6px;
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
-            border-radius: 6px;
 
             @media (max-width: 1024px) {
                 width: 295px;

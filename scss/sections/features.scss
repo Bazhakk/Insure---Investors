@@ -46,19 +46,17 @@
         padding: 65px 0;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 97px;
-
         font-family: 'GT Eesti Pro';
         font-weight: 500;
-        font-size: 36px;
+        font-size: 35px;
         line-height: 46px;
         cursor: pointer;
 
         &__link {
             color: $Gray-30;
-            padding: 10px 10px;
-            // padding: 14px 48px;
+            padding: 14px 48px;
             border: 2px solid transparent;
             border-radius: 66px;
 
@@ -72,12 +70,6 @@
                 color: $hover-color-teal;
             }
         }
-
-        // @media screen and (max-width: 1100px) {
-        //     max-width: 900px;
-        //     font-size: 32px;
-        //     line-height: 38px;
-        // }
 
         @media screen and (max-width: 1245px) {
             display: none;
@@ -263,15 +255,15 @@
         }
     }
 
-    .features-arrow {
-        position: relative;
-        width: 22px;
-        height: 15px;
-        top: 10px;
-        right: 15px;
+    // .features-arrow {
+    //     position: relative;
+    //     width: 22px;
+    //     height: 15px;
+    //     top: 10px;
+    //     right: 15px;
 
-        &-active {
-            background-image: url("../../img/arrow-active.svg");
-        }
-    }
+    //     &-active {
+    //         background-image: url("../../img/arrow-active.svg");
+    //     }
+    // }
 }

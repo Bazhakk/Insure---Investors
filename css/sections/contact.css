@@ -29,7 +29,7 @@
   font-weight: 700;
 }
 .contact {
-  padding: 130px 0;
+  padding: 0 0 130px 0;
 }
 @media (max-width: 1024px) {
   .contact {
@@ -38,9 +38,9 @@
 }
 .contact__container {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 80px;
-  justify-content: space-between;
 }
 @media (max-width: 1400px) {
   .contact__container {
@@ -105,8 +105,7 @@
 }
 .contact__address {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 50px 0 40px 0;
 }
 .contact__address::before {
   content: "";
@@ -140,8 +139,8 @@
   position: absolute;
   width: 32px;
   height: 32px;
-  bottom: 85px;
   left: -52px;
+  bottom: 85px;
 }
 .contact__email::before {
   content: "";
@@ -158,10 +157,10 @@
   width: 950px;
   height: 585px;
   padding: 80px;
+  border-radius: 12px;
   background: #fff;
   border: 1px solid #E6E8EA;
-  box-shadow: 0 18 60 0 rgba(10, 28, 51, 0.05);
-  border-radius: 12px;
+  filter: drop-shadow(0px 18px 60px rgba(10, 28, 51, 0.05));
 }
 @media (max-width: 1024px) {
   .contact .form {
@@ -194,10 +193,10 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__field-wrap {
@@ -213,10 +212,10 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__second-row {
@@ -238,10 +237,10 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
+  border-radius: 6px;
   color: #848D99;
   background: #FBFCFF;
   border: 1px solid #CED2D6;
-  border-radius: 6px;
 }
 @media (max-width: 1024px) {
   .contact .form__textarea {

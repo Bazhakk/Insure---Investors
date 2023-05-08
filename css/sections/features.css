@@ -75,17 +75,17 @@
   padding: 65px 0;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 97px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 46px;
   cursor: pointer;
 }
 .features .features-menu__link {
   color: #B5BAC1;
-  padding: 10px 10px;
+  padding: 14px 48px;
   border: 2px solid transparent;
   border-radius: 66px;
 }
@@ -268,16 +268,6 @@
   height: 18px;
   position: absolute;
   margin: 4px -30px;
-}
-.features .features-arrow {
-  position: relative;
-  width: 22px;
-  height: 15px;
-  top: 10px;
-  right: 15px;
-}
-.features .features-arrow-active {
-  background-image: url("../../img/arrow-active.svg");
 }
 
 /*# sourceMappingURL=features.css.map */
