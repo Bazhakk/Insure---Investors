@@ -5,7 +5,7 @@
     padding: 0 0 130px 0;
 
     @media (max-width: 1024px) {
-        padding-top: 60px;
+        margin: 0 auto;
     }
 
     &__container {
@@ -14,9 +14,10 @@
         margin: 0 auto;
         padding-bottom: 80px;
 
-        @media (max-width: 1400px) {
+        @media (max-width: 1200px) {
             margin: 0 16px;
             flex-direction: column;
+            padding: 0;
         }
 
         @media (max-width: 1024px) {
@@ -24,10 +25,13 @@
         }
     }
 
-    &__box {
+    &__col {
 
-        @media (max-width: 1024px) {
-            padding-bottom: 32px;
+        &-left {
+            @media (max-width: 1200px) {
+                margin: 0 16px;
+                padding-bottom: 32px;
+            }
         }
     }
 
@@ -67,11 +71,9 @@
         
     }
 
-    &__col {
-        &-left {
-            position: relative;
-            left: 50px;
-        }
+    &__box {
+        position: relative;
+        left: 50px;
     }
 
     &__address,
@@ -149,12 +151,14 @@
         border: 1px solid $Gray-10;
         filter: $box-shadow-l;
 
-        @media (max-width: 1024px) {
-            width: 345px;
-            height: 510px;
-            margin: 0 16px;
-            padding: 32px 24px;
+        @media (max-width: 1400px) {
+            width: 750px;
+            padding: 32px 21px;
         }
+
+        // @media (max-width: 780px) {
+        //     width: 345px;
+        // }
 
         &__first-row {
             display: flex;
@@ -163,11 +167,11 @@
             gap: 40px;
             border: none;
 
-            @media (max-width: 1024px) {
-                margin-bottom: 16px;
-                flex-direction: column;
-                gap: 16px;
-            }
+            // @media (max-width: 1024px) {
+            //     margin-bottom: 16px;
+            //     flex-direction: column;
+            //     gap: 16px;
+            // }
         }
 
         &__field-wrap {
@@ -184,16 +188,20 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1024px) {
-                width: 295px;
+            @media (max-width: 1400px) {
+                width: 330px;
             }
+
+            // @media (max-width: 1024px) {
+            //     width: 295px;
+            // }
         }
 
         &__second-row {
             width: 788px;
             height: 60px;
             margin-bottom: 40px;
-            padding-left: 16px;
+            padding: 14px 0 14px 16px;
             font-family: 'DM Sans';
             font-weight: 400;
             font-size: 22px;
@@ -203,10 +211,14 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1024px) {
-                width: 295px;
-                margin-bottom: 16px;
+            @media (max-width: 1400px) {
+                width: 700px;
             }
+
+            // @media (max-width: 1024px) {
+            //     width: 295px;
+            //     margin-bottom: 16px;
+            // }
         }
 
         &__third-row {
@@ -218,8 +230,7 @@
             width: 788px;
             height: 120px;
             margin-bottom: 40px;
-            padding-left: 16px;
-            padding-top: 14px;
+            padding: 14px 0 14px 16px;
             font-family: 'DM Sans';
             font-weight: 400;
             font-size: 22px;
@@ -229,9 +240,13 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1024px) {
-                width: 295px;
+            @media (max-width: 1400px) {
+                width: 700px;
             }
+
+            // @media (max-width: 1024px) {
+            //     width: 295px;
+            // }
         }
 
         &__name {
@@ -241,6 +256,7 @@
                 padding: 14px 0;
                 font-size: 22px;
                 line-height: 32px;
+                color: $Gray-50;
             }
 
             &-top {
@@ -259,7 +275,6 @@
 
         &__btn {
             margin: 0 auto;
-            padding-top: 20px;
             text-align: center;
         }
     }

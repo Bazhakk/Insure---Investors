@@ -33,7 +33,7 @@
 }
 @media (max-width: 1024px) {
   .contact {
-    padding-top: 60px;
+    margin: 0 auto;
   }
 }
 .contact__container {
@@ -42,10 +42,11 @@
   margin: 0 auto;
   padding-bottom: 80px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .contact__container {
     margin: 0 16px;
     flex-direction: column;
+    padding: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -53,8 +54,9 @@
     padding-bottom: 40px;
   }
 }
-@media (max-width: 1024px) {
-  .contact__box {
+@media (max-width: 1200px) {
+  .contact__col-left {
+    margin: 0 16px;
     padding-bottom: 32px;
   }
 }
@@ -92,7 +94,7 @@
     line-height: 28px;
   }
 }
-.contact__col-left {
+.contact__box {
   position: relative;
   left: 50px;
 }
@@ -162,12 +164,10 @@
   border: 1px solid #E6E8EA;
   filter: drop-shadow(0px 18px 60px rgba(10, 28, 51, 0.05));
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact .form {
-    width: 345px;
-    height: 510px;
-    margin: 0 16px;
-    padding: 32px 24px;
+    width: 750px;
+    padding: 32px 21px;
   }
 }
 .contact .form__first-row {
@@ -176,13 +176,6 @@
   padding: 0;
   gap: 40px;
   border: none;
-}
-@media (max-width: 1024px) {
-  .contact .form__first-row {
-    margin-bottom: 16px;
-    flex-direction: column;
-    gap: 16px;
-  }
 }
 .contact .form__field-wrap {
   display: inline-grid;
@@ -198,16 +191,16 @@
   background: #FBFCFF;
   border: 1px solid #CED2D6;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact .form__field-wrap {
-    width: 295px;
+    width: 330px;
   }
 }
 .contact .form__second-row {
   width: 788px;
   height: 60px;
   margin-bottom: 40px;
-  padding-left: 16px;
+  padding: 14px 0 14px 16px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -217,10 +210,9 @@
   background: #FBFCFF;
   border: 1px solid #CED2D6;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact .form__second-row {
-    width: 295px;
-    margin-bottom: 16px;
+    width: 700px;
   }
 }
 .contact .form__third-row {
@@ -231,8 +223,7 @@
   width: 788px;
   height: 120px;
   margin-bottom: 40px;
-  padding-left: 16px;
-  padding-top: 14px;
+  padding: 14px 0 14px 16px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -242,9 +233,9 @@
   background: #FBFCFF;
   border: 1px solid #CED2D6;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .contact .form__textarea {
-    width: 295px;
+    width: 700px;
   }
 }
 .contact .form__name {
@@ -254,6 +245,7 @@
   padding: 14px 0;
   font-size: 22px;
   line-height: 32px;
+  color: #848D99;
 }
 .contact .form__name-top {
   padding-top: 6px;
@@ -268,7 +260,6 @@
 }
 .contact .form__btn {
   margin: 0 auto;
-  padding-top: 20px;
   text-align: center;
 }
 

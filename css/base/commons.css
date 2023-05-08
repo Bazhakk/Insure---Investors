@@ -257,6 +257,7 @@
   font-size: 21px;
   line-height: 25px;
   color: #0A1C33;
+  background-color: #fff;
 }
 .button_contact:hover {
   transition: all 0.4s;
