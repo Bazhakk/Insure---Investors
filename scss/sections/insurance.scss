@@ -2,53 +2,28 @@
 @import "../base/variables";
 
 .insurance {
+    height: 575px;
+    border-radius: 60px 60px 0 0;
     background-image: url("../../img/insurance.img/insurance-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
-    border-radius: 60px 60px 0 0;
 
     &__container {
-        height: 415px;
+        position: absolute;
         padding-top: 80px;
-        position: relative;
-        overflow-y: hidden;
-    
-        // &::before {
-        //     content: "";
-        //     background-image:  url("../../img/insurance.img/insurance-before.svg");
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     position: absolute;
-        //     width: 570px;
-        //     height: 400px;
-        //     top: 46%;
-        //     left: -1.7rem;
-        //     opacity: .5;
-    
-        //     @media screen and (max-width: 1024px) {
-        //         width: 485px;
-        //         height: 337px;
-        //         margin: 0 16px;
-        //         top: 33%;
-        //         opacity: 0.4;
-        //         left: 5rem;
-        //     }
-
-        //     @media screen and (max-width: 675px) {
-        //         margin: 0 16px;
-        //         top: 40%;
-        //     }
-        // }
     }
 
     &__title {
+        position: relative;
         max-width: 1030px;
         margin: 0 auto;
+        padding-bottom: 80px;
+        text-align: center;
+        left: 11rem;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 91px;
         line-height: 100px;
-        text-align: center;
         color: $white-color;
 
         @media screen and (max-width: 1024px) {
@@ -60,53 +35,29 @@
             color: $main-color-teal;
         }
 
-        // &::after {
-        //     content: "";
-        //     background-image:  url("../../img/insurance-before.svg");
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     position: absolute;
-        //     width: 980px;
-        //     height: 660px;
-        //     z-index: 0;
-        // }
+        &-shade {
+            content: "";
+            background-image:  url("../../img/insurance.img/insurance-before.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 605px;
+            height: 380px;
+            top: 41%;
+            left: -29%;
+            opacity: .4;
+        }
+
     }
 
     &__box {
         position: relative;
-        display: flex;
-        justify-content: right;
-        right: 26rem;
-        align-items: center;
-        padding-bottom: 80px;
-        gap: 13px;
-
-        @media screen and (max-width: 1024px) {
-            justify-content: center;
-            padding-top: 70px;
-            right: -4rem;
-        }
-    }
-
-    &__mobile {
-        display: none;
-
-        @media screen and (max-width: 1024px) {
-            display: inline;
-        }
+        padding-top: 80px;
+        text-align: center;
+        left: 12%;
     }
 
     &__img {
         max-width: 185px;
-
-        @media screen and (max-width: 1024px) {
-            display: none;
-        }
-
-        &-mobile {
-            @media screen and (max-width: 1024px) {
-                max-width: 190px;
-            }
-        }
     }
 }
