@@ -280,6 +280,14 @@
   color: #fff;
   background-color: #E91E63;
 }
+@media screen and (max-width: 485px) {
+  .button_insurance {
+    margin: 0 auto;
+    padding: 13px 20px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .button_insurance:hover {
   transition: all 0.4s;
   background-color: #D81859;

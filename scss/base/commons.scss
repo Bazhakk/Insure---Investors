@@ -277,6 +277,13 @@
       color: $white-color;
       background-color: $main-color-pink;
 
+      @media screen and (max-width: 485px) {
+        margin: 0 auto;
+        padding: 13px 20px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+
       &:hover {
         transition: all .4s;
         background-color: $hover-color-pink;

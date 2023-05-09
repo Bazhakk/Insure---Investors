@@ -5,27 +5,40 @@
     background-image: url("../../img/insurance.img/insurance-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
-    padding-top: 80px;
     border-radius: 60px 60px 0 0;
-    position: relative;
-    overflow-y: hidden;
 
-    &::before {
-        content: "";
-        background-image:  url("../../img/insurance.img/insurance-before.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: absolute;
-        width: 660px;
-        height: 436px;
-        top: 36%;
-        left: 3%;
-        opacity: .6;
+    &__container {
+        height: 415px;
+        padding-top: 80px;
+        position: relative;
+        overflow-y: hidden;
+    
+        // &::before {
+        //     content: "";
+        //     background-image:  url("../../img/insurance.img/insurance-before.svg");
+        //     background-size: cover;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     width: 570px;
+        //     height: 400px;
+        //     top: 46%;
+        //     left: -1.7rem;
+        //     opacity: .5;
+    
+        //     @media screen and (max-width: 1024px) {
+        //         width: 485px;
+        //         height: 337px;
+        //         margin: 0 16px;
+        //         top: 33%;
+        //         opacity: 0.4;
+        //         left: 5rem;
+        //     }
 
-        @media screen and (max-width: 1024px) {
-            width: 272px;
-            height: 337px;
-        }
+        //     @media screen and (max-width: 675px) {
+        //         margin: 0 16px;
+        //         top: 40%;
+        //     }
+        // }
     }
 
     &__title {
@@ -70,11 +83,30 @@
 
         @media screen and (max-width: 1024px) {
             justify-content: center;
-            right: 3rem;
+            padding-top: 70px;
+            right: -4rem;
+        }
+    }
+
+    &__mobile {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            display: inline;
         }
     }
 
     &__img {
         max-width: 185px;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
+        &-mobile {
+            @media screen and (max-width: 1024px) {
+                max-width: 190px;
+            }
+        }
     }
 }
