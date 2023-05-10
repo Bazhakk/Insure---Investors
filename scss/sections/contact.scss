@@ -2,7 +2,11 @@
 @import "../base/variables";
 
 .contact {
-    padding: 0 0 130px 0;
+    padding: 130px 0 130px 0;
+
+    @media (max-width: 1400px) {
+        margin: 0 16px;
+    }
 
     @media (max-width: 1024px) {
         margin: 0 auto;
@@ -19,22 +23,7 @@
             flex-direction: column;
             padding: 0;
         }
-
-        @media (max-width: 1024px) {
-            padding-bottom: 40px;
-        }
     }
-
-    &__col {
-
-        &-left {
-            @media (max-width: 1200px) {
-                margin: 0 16px;
-                padding-bottom: 32px;
-            }
-        }
-    }
-
 
     &__title {
         max-width: 580px;
@@ -98,8 +87,8 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            top: 45px;
-            left: -55px;
+            top: 19%;
+            left: -9%;
 
             @media (max-width: 1024px) {
                 top: 20px;
@@ -122,8 +111,8 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            left: -52px;
-            bottom: 85px;
+            left: -9%;
+            bottom: 34%;
         }
     }
 
@@ -137,8 +126,8 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            left: -52px;
-            bottom: 0;
+            left: -9%;
+            bottom: -1%;
         }
     }
 
@@ -151,14 +140,10 @@
         border: 1px solid $Gray-10;
         filter: $box-shadow-l;
 
-        @media (max-width: 1400px) {
+        @media (max-width: 1024px) {
             width: 750px;
             padding: 32px 21px;
         }
-
-        // @media (max-width: 780px) {
-        //     width: 345px;
-        // }
 
         &__first-row {
             display: flex;
@@ -167,11 +152,9 @@
             gap: 40px;
             border: none;
 
-            // @media (max-width: 1024px) {
-            //     margin-bottom: 16px;
-            //     flex-direction: column;
-            //     gap: 16px;
-            // }
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+            }
         }
 
         &__field-wrap {
@@ -188,13 +171,9 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1400px) {
-                width: 330px;
+            @media (max-width: 1024px) {
+                width: 331px;
             }
-
-            // @media (max-width: 1024px) {
-            //     width: 295px;
-            // }
         }
 
         &__second-row {
@@ -211,14 +190,14 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1400px) {
-                width: 700px;
+            @media (max-width: 1024px) {
+                width: 705px;
+                margin-bottom: 16px;
             }
 
-            // @media (max-width: 1024px) {
-            //     width: 295px;
-            //     margin-bottom: 16px;
-            // }
+            @media (max-width: 375px) {
+                width: 295px;
+            }
         }
 
         &__third-row {
@@ -240,13 +219,13 @@
             background: $input;
             border: 1px solid $Gray-20;
 
-            @media (max-width: 1400px) {
-                width: 700px;
+            @media (max-width: 1024px) {
+                width: 705px;
             }
 
-            // @media (max-width: 1024px) {
-            //     width: 295px;
-            // }
+            @media (max-width: 375px) {
+                width: 295px;
+            }
         }
 
         &__name {
@@ -263,14 +242,14 @@
                 padding-top: 6px;
             }
 
-           &-bottom {
-            border: none;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            color: $Gray-100;
-           }
+            &-bottom {
+                border: none;
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                color: $Gray-100;
+            }
         }
 
         &__btn {
