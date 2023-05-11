@@ -14,7 +14,7 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
+        gap: 30px;
         margin: 0 auto;
         padding-bottom: 80px;
 
@@ -132,6 +132,7 @@
     }
 
     .form {
+        display: grid;
         width: 950px;
         height: 585px;
         padding: 80px;
@@ -145,20 +146,8 @@
             padding: 32px 21px;
         }
 
-        &__first-row {
-            display: flex;
-            margin-bottom: 40px;
-            padding: 0;
-            gap: 40px;
-            border: none;
-
-            @media (max-width: 1024px) {
-                margin-bottom: 16px;
-            }
-        }
-
         &__field-wrap {
-            display: inline-grid;
+            display: grid;
             width: 374px;
             height: 60px;
             padding-left: 16px;
@@ -167,7 +156,6 @@
             font-size: 13px;
             line-height: 18px;
             border-radius: 6px;
-            color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
 
@@ -176,19 +164,26 @@
             }
         }
 
+        &__first-row {
+            display: flex;
+            margin-bottom: 40px;
+            padding: 0;
+            justify-content: space-between;
+            border: none;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+            }
+        }
+
         &__second-row {
             width: 788px;
             height: 60px;
             margin-bottom: 40px;
             padding: 14px 0 14px 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
             border-radius: 6px;
-            color: $Gray-50;
-            background: $input;
             border: 1px solid $Gray-20;
+            background: $input;
 
             @media (max-width: 1024px) {
                 width: 705px;
@@ -205,7 +200,7 @@
             border: none;
         }
 
-        &__textarea {
+        &__text-field {
             width: 788px;
             height: 120px;
             margin-bottom: 40px;
@@ -229,17 +224,28 @@
         }
 
         &__name {
-            padding: 14px 0;
+            border: none;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            background: $input;
             
             &-other {
-                padding: 14px 0;
+                width: 374px;
+                height: 60px;
+                padding-left: 16px;
                 font-size: 22px;
                 line-height: 32px;
-                color: $Gray-50;
+                border-radius: 6px;
+                background: $input;
+                border: 1px solid $Gray-20;
             }
 
             &-top {
                 padding-top: 6px;
+                border: none;
+                background: $input;
             }
 
             &-bottom {
@@ -248,7 +254,6 @@
                 font-weight: 400;
                 font-size: 22px;
                 line-height: 32px;
-                color: $Gray-100;
             }
         }
 

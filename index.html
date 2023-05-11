@@ -726,7 +726,6 @@
                 <div class="contact__col-left">
                     <h2 class="contact__title">Have any questions?</h2>
                     <p class="contact__subtitle">We make our customers’ problems our problems</p>
-
                     <div class="contact__box">
                         <p class="contact__address">827 N Loop W | Houston TX 77008</p>
                         <p class="contact__tel">+1-2815694353</p>
@@ -738,28 +737,53 @@
                     <form class="form" id="form">
                         <fieldset class="form__first-row">
                             <div class="form__field-wrap">
-                                <label class="form__name-top" id="first Name" type="text">First Name</label>
+                                <input class="form__name-top" id="first Name" type="text" placeholder="First Name"/>
                                 <label class="form__name-bottom" type="text">Toby</label>
                             </div>
-                            
-                            <div class="form__field-wrap">
-                                <label class="form__name-other" id="last Name" type="text">Last Name</label>
-                            </div>
-                          </fieldset>
 
-                          <fieldset class="form__second-row">
-                            <label  class="form__name" id="email" type="text">Email</label>
-                          </fieldset>
+                            <input class="form__name-other" id="last Name" type="text" placeholder="Last Name"/>
+                        </fieldset>
 
-                          <fieldset class="form__third-row">
-                            <textarea class="form__textarea" id="message" type="text">Message</textarea>
-                          </fieldset>
+                        <fieldset class="form__second-row">
+                        <input class="form__name" id="email" placeholder="Email" type="text"/>
+                        </fieldset>
 
-                          <div class="form__btn">
-                            <button class="button button_contact" href="#" title="Button">Submit</button>
+                        <fieldset class="form__third-row">
+                        <textarea class="form__text-field" id="message" type="text">Message</textarea>
+                        </fieldset>
+
+                        <div class="form__btn">
+                        <button class="button button_contact" href="#" title="Button">Submit</button>
                         </div>
                     </form>
                 </div>
+
+                <!-- <div class="contact__col-right">
+                    <form class="form" id="form">
+                        <fieldset class="form__first-row">
+                            <div class="form__field-wrap">
+                                <input class="form__name-other" id="last Name" type="text" placeholder="First Name"/>
+                                <input class="form__name-bottom" type="text">Toby</input>
+                            </div>
+
+                            <div class="form__field-wrap">
+                                <input class="form__name-other" id="last Name" type="text" placeholder="Last Name"/>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__second-row">
+                            <input class="form__name" id="email" type="text" placeholder="Email"/>
+                        </fieldset>
+                        
+                        <fieldset class="form__third-row">
+                            <textarea class="form__textarea" id="message" type="text" placeholder="Message"></textarea>
+                        </fieldset>
+                       
+                        <div class="form__btn">
+                            <button class="button button_contact" href="#" title="Button">Submit</button>
+                        </div>
+                    </form>
+                </div> -->
             </div>
         </section>
 
