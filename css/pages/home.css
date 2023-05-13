@@ -1811,6 +1811,12 @@ ul {
   border: 2px solid #0CA099;
   color: #0CA099;
 }
+.features .features-menu__link_acting {
+  color: #0EB7AE;
+  padding: 14px 48px;
+  border: 2px solid #0CA099;
+  border-radius: 66px;
+}
 .features .features-menu__link:hover {
   transition: all 0.4s;
   color: #0EB7AE;

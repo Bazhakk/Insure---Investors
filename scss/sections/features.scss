@@ -65,6 +65,13 @@
                 color: $pressed-color-teal;
             }
 
+            &_acting {
+                color: $hover-color-teal;
+                padding: 14px 48px;
+                border: 2px solid $pressed-color-teal;
+                border-radius: 66px; 
+            }
+
             &:hover {
                 transition: all .4s;
                 color: $hover-color-teal;
@@ -254,16 +261,4 @@
             }
         }
     }
-
-    // .features-arrow {
-    //     position: relative;
-    //     width: 22px;
-    //     height: 15px;
-    //     top: 10px;
-    //     right: 15px;
-
-    //     &-active {
-    //         background-image: url("../../img/arrow-active.svg");
-    //     }
-    // }
 }

@@ -105,9 +105,6 @@ jQuery(document).ready(function ( $ ) {
     })
   });
   
-  
-  
-
   // Slick-slider
   $('.slider-mobile').slick({
     infinite: true,
