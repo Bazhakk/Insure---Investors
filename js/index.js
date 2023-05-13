@@ -88,6 +88,10 @@ jQuery(document).ready(function ( $ ) {
   //   });
   // });
 
+  $('.questions__box').on('click', function(e) {
+    console.log(e.target)
+  })
+
   $('#questions-1').on('click', function() {
     $('.questions__band').removeClass('questions__band_active');
     $('#questions-1').addClass('questions__band_active');
@@ -95,10 +99,10 @@ jQuery(document).ready(function ( $ ) {
     $('#questions-col-1').removeClass('questions__content_hidden');
     // $('.questions-1').slideToggle('questions__band_active');
 
-    $('#questions-1 .questions__band').toggleClass('questions__band_active');
-    $('#questions__col').questions1({
-      collapsible: true
-    });
+    $('#questions-1.questions__band').toggleClass('questions__band_active');
+    // $('#questions__col').questions1({
+    //   collapsible: true
+    // });
   });
 
   $('#questions-2').on('click', function() {
