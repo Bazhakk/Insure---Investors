@@ -3,7 +3,7 @@
 
 .questions {
 
-    &__box {
+    &__container {
         background: $light-gray;
         border-radius: 12px;
     }
@@ -44,15 +44,22 @@
         }
     }
 
-    &__col {
+    &__btn {
+        padding: 100px 0 130px 0;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .accordion {
         max-width: 1000px;
         margin: 0 auto;
         cursor: pointer;
+    }
 
-        @media screen and (max-width: 1024px) {
-            max-width: 500px;
-        }
-
+    .accordion-item {
         &::before {
             content: "";
             display: block;
@@ -64,7 +71,7 @@
             }
         }
 
-        &-tail {
+        &_tail {
             &::after {
                 content: "";
                 display: block;
@@ -76,98 +83,63 @@
                 }
             }
         }
+
+        &_active {
+            background-color: $white-color;
+        }
     }
 
-    &__band {
+    .accordion-header {
+        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
-
-        margin: 0 33px;
-        padding: 32px 0;
+        padding: 32px;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
-
-        &::after {
-            content: "\002B";
-            width: 46px;
-            height: 46px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            font-size: 4rem;
-            font-weight: bold;
-            right: 1rem;
-            border-radius: 46px;
-            border: 2px solid $Gray-30;
-        }
-
-        @media screen and (max-width: 1024px) {
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        &_active {
-            display: block;
-            margin: 0;
-            padding: 32px;
-            background-color: $white-color;
-
-            &::after {
-                content: "\00D7";
-                width: 46px;
-                height: 46px;
-                position: absolute;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                top: 20px;
-                font-size: 4rem;
-                font-weight: bold;
-                right: 2rem;
-                border-radius: 46px;
-                border: 2px solid $Gray-30;
-            }
-
-            @media screen and (max-width: 1024px) {
-                padding: 16px 24px;
-                background-color: $light-gray;
-            }
-        }
     }
-
-    &__content {
+      
+    .accordion-toggle {
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        background: url("../../img/questions-img/Questions.svg") no-repeat;
+        background-size: contain;
+        transition: transform all 0.4s;
+    }
+    
+    .accordion-item.active .accordion-toggle {
+        // transform: rotate(180deg);
+        background-image: url("../../img/questions-img/questions-activ.svg");
+        width: 54px;
+        height: 54px;
+    }
+    
+    // .accordion-close {
+    //     display: inline-block;
+    //     width: 16px;
+    //     height: 16px;
+    //     background: url("") no-repeat;
+    //     background-size: contain;
+    //     // float: right;
+    // }
+    
+    .accordion-content {
+        display: none;
         max-width: 750px;
-        padding-top: 32px;
+        padding: 0 0 32px 32px;
         font-family: 'DM Sans';
         font-weight: 400;
         font-size: 22px;
         line-height: 32px;
         color: $Gray-100;
-
-        &_hidden {
-            display: none;
-        }
-
-        @media screen and (max-width: 1024px) {
-            max-width: 295px;
-            padding-top: 18px;
-            font-size: 18px;
-            line-height: 28px;
-        }
     }
-
-    &__btn {
-        padding: 100px 0 130px 0;
-        text-align: center;
-
-        @media screen and (max-width: 1024px) {
-            padding-bottom: 60px;
-        }
+    
+    .accordion-item.active .accordion-content {
+        display: block;
     }
 }
