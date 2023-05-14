@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -93,12 +92,6 @@
   border: 2px solid #0CA099;
   color: #0CA099;
 }
-.features .features-menu__link_acting {
-  color: #0EB7AE;
-  padding: 14px 48px;
-  border: 2px solid #0CA099;
-  border-radius: 66px;
-}
 .features .features-menu__link:hover {
   transition: all 0.4s;
   color: #0EB7AE;
@@ -119,14 +112,19 @@
     cursor: pointer;
   }
 }
+.features .features-mobile__icon {
+  display: inline-block;
+}
 .features .features-mobile__block::after {
   content: "";
   display: block;
-  margin: 24px 15px 24px 0;
-  border: 1px solid #536070;
+  margin: 0;
+  border: 1px solid #CED2D6;
 }
-.features .features-mobile__content_hidden {
-  display: none;
+@media screen and (max-width: 525px) {
+  .features .features-mobile__block::after {
+    margin: 0 24px;
+  }
 }
 .features .features-mobile__link {
   display: flex;
@@ -137,6 +135,7 @@
   font-size: 32px;
   line-height: 38px;
   color: #fff;
+  cursor: pointer;
 }
 @media screen and (max-width: 765px) {
   .features .features-mobile__link {
@@ -150,29 +149,19 @@
     line-height: 28px;
   }
 }
-.features .features-mobile__link::after {
-  content: "∨";
-  font-size: 1.5rem;
-  font-weight: bold;
-  position: absolute;
-  right: 3rem;
-}
 .features .features-mobile__link_active {
-  display: block;
-  margin: 0;
-  padding: 32px;
+  display: flex;
 }
 .features .features-mobile__link_active::after {
-  content: "⌃";
-  font-size: 3rem;
-  font-weight: bold;
-  position: absolute;
-  right: 1rem;
+  content: "";
+  background-image: url("../../img/fearures/arrow-after.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 20px;
 }
-@media screen and (max-width: 1024px) {
-  .features .features-mobile__link_active {
-    padding: 16px 24px;
-  }
+.features .features-mobile__content_hidden {
+  display: none;
 }
 .features__box {
   display: flex;
