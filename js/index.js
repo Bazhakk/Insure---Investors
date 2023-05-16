@@ -77,7 +77,8 @@ jQuery(document).ready(function ( $ ) {
         var content = $(this).closest('.features-mobile__link').next('.features-mobile__content');
         content.slideToggle();
         
-        $(this).toggleClass('opened');
+        $(this).toggleClass('active');
+        $('#icon').addClass('features-mobile__icon_active');
       });
     });
   });

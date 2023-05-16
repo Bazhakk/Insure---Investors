@@ -182,13 +182,21 @@
   background: #FBFCFF;
   border: 1px solid #CED2D6;
 }
-.contact .form__field-other {
+.contact .form__name {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: #0A1C33;
   background: #FBFCFF;
+  border: none;
+}
+.contact .form__field-other {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
   border: none;
 }
 .contact .form__second-row {

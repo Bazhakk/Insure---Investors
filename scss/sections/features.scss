@@ -86,15 +86,13 @@
             cursor: pointer;
         }
         
-        &__icon {
-            display: inline-block;
-            // margin-right: 5px;
-            // transition: transform 0.3s ease-in-out;
-
-            // &-opened {
-            //     transform: rotate(180deg);
-            // }
-        }
+        // &__icon {
+        //     &_active {
+        //         svg {
+        //             transform: rotate(180deg);
+        //         }
+        //     }
+        // }
 
         &__block {
             &::after {
@@ -129,19 +127,26 @@
                 font-size: 20px;
                 line-height: 28px;
             }
-    
+
             &_active {
-                display: flex;
-    
-                &::after {
-                    content: "";
-                    background-image: url("../../img/fearures/arrow-after.svg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 32px;
-                    height: 20px;
+                svg {
+                    transform: rotate(180deg);
                 }
             }
+    
+            // &_active {
+            //     display: flex;
+            //     // transform: rotate(180deg);
+    
+            //     &::after {
+            //         content: "";
+            //         background-image: url("../../img/fearures/arrow-after.svg");
+            //         background-repeat: no-repeat;
+            //         background-size: cover;
+            //         width: 32px;
+            //         height: 20px;
+            //     }
+            // }
         }
 
         &__content {

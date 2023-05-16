@@ -1833,9 +1833,6 @@ ul {
     cursor: pointer;
   }
 }
-.features .features-mobile__icon {
-  display: inline-block;
-}
 .features .features-mobile__block::after {
   content: "";
   display: block;
@@ -1870,16 +1867,8 @@ ul {
     line-height: 28px;
   }
 }
-.features .features-mobile__link_active {
-  display: flex;
-}
-.features .features-mobile__link_active::after {
-  content: "";
-  background-image: url("../../img/fearures/arrow-after.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32px;
-  height: 20px;
+.features .features-mobile__link_active svg {
+  transform: rotate(180deg);
 }
 .features .features-mobile__content_hidden {
   display: none;
@@ -2543,13 +2532,21 @@ ul {
   background: #FBFCFF;
   border: 1px solid #CED2D6;
 }
-.contact .form__field-other {
+.contact .form__name {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: #0A1C33;
   background: #FBFCFF;
+  border: none;
+}
+.contact .form__field-other {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
   border: none;
 }
 .contact .form__second-row {

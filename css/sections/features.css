@@ -112,9 +112,6 @@
     cursor: pointer;
   }
 }
-.features .features-mobile__icon {
-  display: inline-block;
-}
 .features .features-mobile__block::after {
   content: "";
   display: block;
@@ -149,16 +146,8 @@
     line-height: 28px;
   }
 }
-.features .features-mobile__link_active {
-  display: flex;
-}
-.features .features-mobile__link_active::after {
-  content: "";
-  background-image: url("../../img/fearures/arrow-after.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 32px;
-  height: 20px;
+.features .features-mobile__link_active svg {
+  transform: rotate(180deg);
 }
 .features .features-mobile__content_hidden {
   display: none;
