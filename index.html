@@ -736,54 +736,17 @@
                 <div class="contact__col-right">
                     <form class="form" id="form">
                         <fieldset class="form__first-row">
-                            <div class="form__field-wrap">
-                                <input class="form__name-top" id="first Name" type="text" placeholder="First Name"/>
-                                <label class="form__name-bottom" type="text">Toby</label>
+                            <div class="form__name-value">
+                                <input class="form__field-other" type="text" id="name" name="name" required placeholder="First Name">
+                                <label class="form__name" type="text">Toby</label>
                             </div>
-
-                            <input class="form__name-other" id="last Name" type="text" placeholder="Last Name"/>
+                            <input class="form__field-wrap" type="text" id="name" name="name" required placeholder="Last Name">
                         </fieldset>
-
-                        <fieldset class="form__second-row">
-                        <input class="form__name" id="email" placeholder="Email" type="text"/>
-                        </fieldset>
-
-                        <fieldset class="form__third-row">
-                        <textarea class="form__text-field" id="message" type="text">Message</textarea>
-                        </fieldset>
-
-                        <div class="form__btn">
-                        <button class="button button_contact" href="#" title="Button">Submit</button>
-                        </div>
+                        <input class="form__second-row" type="email" id="email" name="email" required placeholder="Email">
+                        <textarea class="form__third-row" id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                        <input class="button button_contact" type="submit" value="Submit">
                     </form>
                 </div>
-
-                <!-- <div class="contact__col-right">
-                    <form class="form" id="form">
-                        <fieldset class="form__first-row">
-                            <div class="form__field-wrap">
-                                <input class="form__name-other" id="last Name" type="text" placeholder="First Name"/>
-                                <input class="form__name-bottom" type="text">Toby</input>
-                            </div>
-
-                            <div class="form__field-wrap">
-                                <input class="form__name-other" id="last Name" type="text" placeholder="Last Name"/>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="form__second-row">
-                            <input class="form__name" id="email" type="text" placeholder="Email"/>
-                        </fieldset>
-                        
-                        <fieldset class="form__third-row">
-                            <textarea class="form__textarea" id="message" type="text" placeholder="Message"></textarea>
-                        </fieldset>
-                       
-                        <div class="form__btn">
-                            <button class="button button_contact" href="#" title="Button">Submit</button>
-                        </div>
-                    </form>
-                </div> -->
             </div>
         </section>
 
