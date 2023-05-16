@@ -722,7 +722,6 @@
                 <div class="contact__col-left">
                     <h2 class="contact__title">Have any questions?</h2>
                     <p class="contact__subtitle">We make our customers’ problems our problems</p>
-
                     <div class="contact__box">
                         <p class="contact__address">827 N Loop W | Houston TX 77008</p>
                         <p class="contact__tel">+1-2815694353</p>
@@ -733,27 +732,15 @@
                 <div class="contact__col-right">
                     <form class="form" id="form">
                         <fieldset class="form__first-row">
-                            <div class="form__field-wrap">
-                                <label class="form__name-top" id="first Name" type="text">First Name</label>
-                                <label class="form__name-bottom" type="text">Toby</label>
+                            <div class="form__name-value">
+                                <input class="form__field-other" type="text" id="name" name="name" required placeholder="First Name">
+                                <label class="form__name" type="text">Toby</label>
                             </div>
-                            
-                            <div class="form__field-wrap">
-                                <label class="form__name-other" id="last Name" type="text">Last Name</label>
-                            </div>
-                          </fieldset>
-
-                          <fieldset class="form__second-row">
-                            <label  class="form__name" id="email" type="text">Email</label>
-                          </fieldset>
-
-                          <fieldset class="form__third-row">
-                            <textarea class="form__textarea" id="message" type="text">Message</textarea>
-                          </fieldset>
-
-                          <div class="form__btn">
-                            <button class="button button_contact" href="#" title="Button">Submit</button>
-                        </div>
+                            <input class="form__field-wrap" type="text" id="name" name="name" required placeholder="Last Name">
+                        </fieldset>
+                        <input class="form__second-row" type="email" id="email" name="email" required placeholder="Email">
+                        <textarea class="form__third-row" id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                        <input class="button button_contact" type="submit" value="Submit">
                     </form>
                 </div>
             </div>

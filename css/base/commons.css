@@ -249,6 +249,9 @@
   }
 }
 .button_contact {
+  width: 155px;
+  height: 65px;
+  margin: 0 auto;
   padding: 20px 40px;
   border: 2px solid #B5BAC1;
   border-radius: 66px;
