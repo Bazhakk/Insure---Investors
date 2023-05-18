@@ -5,14 +5,16 @@
     padding: 130px 0 130px 0;
 
     @media (max-width: 1400px) {
-        margin: 0 16px;
+        // margin: 0 16px;
     }
 
     @media (max-width: 1024px) {
-        margin: 0 auto;
+        // margin: 0 auto;
+        padding-top: 60px;
     }
 
     &__container {
+        position: relative;
         display: flex;
         gap: 30px;
         margin: 0 auto;
@@ -24,14 +26,6 @@
             padding: 0;
         }
     }
-
-    // &__col {
-    //     &-left {
-    //         @media (max-width: 1024px) {
-    //             margin: 0 auto;
-    //         }
-    //     }
-    // }
 
     &__title {
         max-width: 580px;
@@ -68,6 +62,12 @@
         
     }
 
+    &__col {
+        &-left {
+            position: relative;
+        }
+    }
+
     &__box {
         position: relative;
         left: 50px;
@@ -98,8 +98,14 @@
             top: 19%;
             left: -9%;
 
+            @media (max-width: 1420px) {
+                top: 20%;
+                left: -4%;
+            }
+
             @media (max-width: 1024px) {
-                top: 20px;
+                top: 10%;
+                left: -5%;
             }
         }
 
@@ -121,6 +127,16 @@
             height: 32px;
             left: -9%;
             bottom: 34%;
+
+            @media (max-width: 1420px) {
+                top: 54%;
+                left: -4%;
+            }
+
+            @media (max-width: 1024px) {
+                top: 45%;
+                left: -5%;
+            }
         }
     }
 
@@ -136,6 +152,16 @@
             height: 32px;
             left: -9%;
             bottom: -1%;
+
+            @media (max-width: 1420px) {
+                bottom: -1%;
+                left: -4%;
+            }
+
+            @media (max-width: 1420px) {
+                bottom: -2%;
+                left: -5%;
+            }
         }
     }
 
@@ -150,11 +176,22 @@
         border: 1px solid $Gray-10;
         filter: $box-shadow-l;
 
+        @media (max-width: 1024px) {
+            width: 345px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            gap: 16px;
+        }
+
         &__first-row {
             display: flex;
             justify-content: space-between;
             padding: 0;
             border: none;
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+            }
         }
 
         &__name-value {
@@ -174,9 +211,14 @@
             border-radius: 6px;
             background: $input;
             border: 1px solid $Gray-20;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+            }
         }
 
          &__name {
+                padding-top: 2px;
                 font-family: 'DM Sans';
                 font-weight: 400;
                 font-size: 13px;
@@ -192,6 +234,7 @@
             font-size: 22px;
             line-height: 32px;
             color: $Gray-100;
+            background-color: $input;
             border: none;
         }
 
@@ -207,6 +250,10 @@
             font-size: 22px;
             line-height: 32px;
             background: $input;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+            }
         }
 
         &__third-row {
@@ -221,7 +268,12 @@
             color: $Gray-50;
             background: $input;
             border: 1px solid $Gray-20;
+
+            @media (max-width: 1024px) {
+                width: 295px;
+            }
         }
+
 
         &__field-wrap,
         &__second-row,
