@@ -14,7 +14,7 @@
 
 .button {
 
-    &_first {
+    &_hero {
       display: flex;
       align-items: center;
       padding: 20px 40px;
@@ -53,7 +53,7 @@
       }
     }
 
-    &_second {
+    &_watch {
       display: flex;
       align-items: center;
       gap: 15px;
@@ -101,7 +101,7 @@
       }
     }
 
-    &_third {
+    &_steps {
         padding: 20px 40px;
         background: $main-color-pink;
         border-radius: 66px;
@@ -138,7 +138,6 @@
             stroke: $main-color-pink;
           }
         }
-      }
 
       &:active {
         vertical-align: middle;
@@ -160,11 +159,121 @@
             stroke: $Gray-20;
           }
         }
+        border: 2px solid  $hover-teal;
+        color: $disabled-color-pink;
+      }
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 18px;
+      }
       }
     }
 
-    &_footer {
+    &_about {
       padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background: $disabled-color-teal;
+        border: 2px solid $hover-teal;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_questions {
+      padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background: $disabled-color-teal;
+        border: 2px solid $hover-teal;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_tagline {
+      padding: 20px 40px;
+      background: $main-color-pink;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $white-color;
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+
+      @media screen and (max-width: 212px) {
+        padding: 8px 17px;
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    &_contact {
+      width: 155px;
+      height: 65px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      border: 2px solid $Gray-30;
+      border-radius: 66px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 25px;
+      color: $Gray-100;
+      background-color: $white-color;
+
+      &:hover {
+        transition: all .4s;
+        color: $hover-teal;
+        background-color: $disabled-color-teal;
+        border-color: $hover-background-teal;
+      }
+
+      @media (max-width: 1024px) {
+        width: 295px;
+    }
+    }
+
+    &_insurance {
+      position: relative;
+      padding: 20px 40px;
+      left: 53%;
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
@@ -172,6 +281,40 @@
       border-radius: 66px;
       color: $white-color;
       background-color: $main-color-pink;
+      
+      &::after {
+        content: "";
+        background-image:  url("../../img/insurance.img/insurance-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 185px;
+        height: 137px;
+        bottom: -15%;
+        right: -80%;
+      }
+
+      @media screen and (max-width: 485px) {
+        margin: 0 auto;
+        padding: 13px 20px;
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      &:hover {
+        transition: all .4s;
+        background-color: $hover-color-pink;
+      }
+
+      &:active {
+        vertical-align: middle;
+        color: $pressed-color-pink;
+      }
+
+      &:focus {
+        vertical-align: middle;
+        color: $disabled-color-pink;
+      }
     }
 }
 

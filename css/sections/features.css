@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.features {
+  padding-bottom: 120px;
+  background: #000E50;
+}
+@media screen and (max-width: 1245px) {
+  .features {
+    padding-top: 50px;
+  }
+}
+.features__title {
+  padding-top: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .features__title {
+    margin: 0;
+    padding-top: 55px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.features__subtitle {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #B5BAC1;
+}
+@media screen and (max-width: 375px) {
+  .features__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.features .features-menu {
+  width: 100%;
+  max-width: 1160px;
+  padding: 65px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 46px;
+  cursor: pointer;
+}
+.features .features-menu__link {
+  color: #B5BAC1;
+  padding: 14px 48px;
+  border: 2px solid transparent;
+  border-radius: 66px;
+}
+.features .features-menu__link_active {
+  border: 2px solid #0CA099;
+  color: #0CA099;
+}
+.features .features-menu__link:hover {
+  transition: all 0.4s;
+  color: #0EB7AE;
+}
+@media screen and (max-width: 1245px) {
+  .features .features-menu {
+    display: none;
+  }
+}
+.features .features-mobile {
+  display: none;
+}
+@media screen and (max-width: 1245px) {
+  .features .features-mobile {
+    display: flex;
+    margin: 0 16px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+.features .features-mobile__block::after {
+  content: "";
+  display: block;
+  margin: 0;
+  border: 1px solid #CED2D6;
+}
+@media screen and (max-width: 525px) {
+  .features .features-mobile__block::after {
+    margin: 0 24px;
+  }
+}
+.features .features-mobile__link {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 765px) {
+  .features .features-mobile__link {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .features .features-mobile__link {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.features .features-mobile__link_active svg {
+  transform: rotate(180deg);
+}
+.features .features-mobile__content_hidden {
+  display: none;
+}
+.features__box {
+  display: flex;
+  gap: 33px;
+}
+@media screen and (max-width: 980px) {
+  .features__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.features__box_hidden {
+  display: none;
+}
+.features__box_hidden-2 {
+  display: inline;
+}
+.features__box-left {
+  padding-top: 90px;
+}
+@media screen and (max-width: 1245px) {
+  .features__box-left {
+    padding-top: 24px;
+  }
+}
+.features__box-right {
+  max-width: 835;
+}
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .features__box-right {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 1245px) {
+  .features__box {
+    display: none;
+  }
+}
+.features__img {
+  width: 700px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .features__img {
+    width: 345px;
+  }
+}
+.features__img-mobile {
+  width: 342px;
+}
+.features__contents {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  color: #fff;
+}
+.features__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+@media screen and (max-width: 850px) {
+  .features__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.features__info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 25px;
+}
+@media screen and (max-width: 1500px) {
+  .features__info {
+    flex-direction: column;
+  }
+}
+.features__info-text {
+  max-width: 370px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+}
+.features__info-text::before {
+  content: "";
+  background-image: url("../../img/features.svg");
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  margin: 4px -30px;
+}
+
+/*# sourceMappingURL=features.css.map */

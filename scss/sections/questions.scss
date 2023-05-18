@@ -1,0 +1,145 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.questions {
+
+    &__container {
+        background: $light-gray;
+        border-radius: 12px;
+    }
+
+    &__title {
+        margin-bottom: 0;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        text-align: center;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 55px;
+            padding-bottom: 24px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        padding-bottom: 80px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        color: $Gray-80;
+
+        @media screen and (max-width: 1024px) {
+            margin: 0;
+            padding-bottom: 24px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__btn {
+        padding: 100px 0 130px 0;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .accordion {
+        max-width: 1000px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .accordion-item {
+        &::before {
+            content: "";
+            display: block;
+            margin: 0;
+            border: 1px solid $Gray-20;
+
+            @media screen and (max-width: 525px) {
+                margin: 0 24px;
+            }
+        }
+
+        &_tail {
+            &::after {
+                content: "";
+                display: block;
+                margin: 0;
+                border: 1px solid $Gray-20;
+    
+                @media screen and (max-width: 525px) {
+                    margin: 0 24px;
+                }
+            }
+        }
+
+        &_active {
+            background-color: $white-color;
+        }
+    }
+
+    .accordion-header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 32px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: $Gray-80;
+    }
+      
+    .accordion-toggle {
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        background: url("../../img/questions-img/Questions.svg") no-repeat;
+        background-size: contain;
+        transition: transform all 0.4s;
+    }
+    
+    .accordion-item.active .accordion-toggle {
+        // transform: rotate(180deg);
+        background-image: url("../../img/questions-img/questions-activ.svg");
+        width: 54px;
+        height: 54px;
+    }
+    
+    // .accordion-close {
+    //     display: inline-block;
+    //     width: 16px;
+    //     height: 16px;
+    //     background: url("") no-repeat;
+    //     background-size: contain;
+    //     // float: right;
+    // }
+    
+    .accordion-content {
+        display: none;
+        max-width: 750px;
+        padding: 0 0 32px 32px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+    }
+    
+    .accordion-item.active .accordion-content {
+        display: block;
+    }
+}

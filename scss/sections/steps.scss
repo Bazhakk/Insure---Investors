@@ -128,10 +128,9 @@
     
 
     .step {
-        padding: 0;
         width: 100%;
         display: flex;
-        padding-bottom: 100px;
+        padding: 0 0 100px 0;
         gap: 30px;
 
         @media screen and (max-width: 1230px) {
@@ -162,12 +161,30 @@
         }
 
         &__namber {
+            position: relative;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
 
             @media screen and (max-width: 380px) {
                 flex-direction: column;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 15%;
+                bottom: 5px;
+                border: 2px solid $main-color-teal;
+
+                @media screen and (max-width: 475px) {
+                    bottom: 25px;
+                }
+
+                @media screen and (max-width: 380px) {
+                    width: 23%;
+                    bottom: 5px;
+                }
             }
         
         }
@@ -191,8 +208,9 @@
         }
 
         &__subtitle {
-            padding: 5px 20px;
             max-height: 52px;
+            margin-top: 78px;
+            padding: 5px 20px;
             border: 2px solid $Gray-30;
             border-radius: 99px;
 
@@ -204,17 +222,9 @@
 
             @media screen and (max-width: 380px) {
                 max-height: 35px;
+                margin-top: 30px;
                 font-size: 26px;
                 line-height: 28px;
-            }
-        }
-
-        &__vector {
-            max-width: 70px;
-            border: 2px solid $main-color-teal;
-
-            @media screen and (max-width: 380px) {
-                margin: 0 auto;
             }
         }
 
@@ -226,8 +236,13 @@
             color: $white-color;
             
             @media screen and (max-width: 490px) {
+                margin: 0;
                 font-size: 16px;
                 line-height: 28px;
+            }
+
+            @media screen and (max-width: 380px) {
+                padding-top: 30px;
             }
         }
 
