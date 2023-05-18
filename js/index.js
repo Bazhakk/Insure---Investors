@@ -83,7 +83,7 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
-  // //QUESTIONS
+  //QUESTIONS
   $(document).ready(function() {
     $('.accordion-toggle').click(function() {
       var accordionItem = $(this).closest('.accordion-item');
@@ -105,6 +105,16 @@ jQuery(document).ready(function ( $ ) {
     //     console.log(e.target)
     // })
   });
+
+  //FOOTER
+  //Footer-mobile
+  $(document).ready(function() {
+    $('.footer-mobile__subtitle').click(function() {
+      $(this).parent('.footer-mobile__item').toggleClass('active');
+      $(this).next('.footer-mobile__content').slideToggle();
+    });
+  });
+
   
   // Slick-slider
   $('.slider-mobile').slick({

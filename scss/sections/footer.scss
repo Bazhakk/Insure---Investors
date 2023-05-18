@@ -12,6 +12,7 @@
     }
 
     &__container {
+
         @media screen and (max-width: 1024px) {
             margin: 0 auto;
         }
@@ -26,88 +27,121 @@
     }
 
     &__logo {
+        margin: 0 16px;
+        padding: 0 0 40px 0;
 
         svg {
-
             @media screen and (max-width: 1280px) {
                 max-width: 156px;
-                margin: 16px;
             }
         }
     }
 
     &__box {
         position: relative;
-
-        @media screen and (max-width: 1024px) {
-            &::before {
-                content: "";
-                width: 100%;
-                position: absolute;
-                border: 1px solid $Gray-80;
-            }
-        }
     }
 
-    &__menu {
+    .footer-menu {
         display: flex;
         margin: 0 auto;
         padding-bottom: 120px;
         gap: 190px;
 
         @media screen and (max-width: 1024px) {
-            flex-direction: column;
-            margin: 0 16px;
-            padding-bottom: 40px;
-            gap: 0;
+            display: none;
         }
-    }
 
-    &__title {
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 32px;
-        color: $white-color;
-
-        @media screen and (max-width: 1024px) {
-            font-size: 18px;
-            line-height: 28px;
+        &__title {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $white-color;
+    
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            
         }
-        
-    }
-        
-    &__subtitle {
-        padding-bottom: 32px;
-        font-family: 'GT Eesti Pro';
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
-        color: $Gray-30;
-
-        @media screen and (max-width: 1024px) {
-            padding-bottom: 20px;
-            font-size: 25px;
-            line-height: 30px;
-            position: relative;
-
-            &::after {
-                content: "";
-                background-image:  url("../../img/arrow.svg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                position: absolute;
-                width: 16px;
-                height: 10px;
-                right: 0;
-                // left: 18%;
-                top: 12%;
+            
+        &__subtitle {
+            padding-bottom: 32px;
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: $Gray-30;
+    
+            @media screen and (max-width: 1024px) {
+                padding-bottom: 20px;
+                font-size: 25px;
+                line-height: 30px;
             }
         }
     }
 
+    .footer-mobile {
+        display: none;
 
-    &__col {
+        @media screen and (max-width: 1024px) {
+            display: inline-block;
+        }
+
+        &__item {
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                margin: 0 16px;
+                border: 1px solid $Gray-80;
+            }
+        }
+
+        &__content {
+            margin: 0 16px;
+            &_hidden {
+                display: none;
+            }
+        }
+
+        &__subtitle {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin: 0 16px;
+            padding: 24px 0;
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            color: $Gray-30;
+
+                &::after {
+                    content: "";
+                    background-image:  url("../../img/arrow.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    width: 20px;
+                    height: 10px;
+                    top: 33px;
+                    right: 0;
+                }
+        }
+
+        &__title {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $white-color;
+    
+            
+        }
+    }
+
+    .footer-basement {
         display: flex;
         justify-content: space-between;
 
@@ -115,110 +149,115 @@
             margin: 0 16px;
         }
 
-        &-left {
+        &__left {
             display: flex;
             gap: 50px;
 
+            @media screen and (max-width: 1024px) {
+                padding-top: 40px;
+            }
+
             @media screen and (max-width: 410px) {
+                padding-top: 40px;
                 flex-direction: column;
                 gap: 0;
             }
         }
 
-        &-right {
+        &__right {
             display: flex;
             margin-top: -15px;
             gap: 24px;
         }
 
-        @media screen and (max-width: 1024px) {
-            flex-direction: column;
-            padding-bottom: 40px;
-        }
-    }
+        // @media screen and (max-width: 1024px) {
+        //     flex-direction: column;
+        //     padding-bottom: 40px;
+        // }
 
-    &__subtitle-other {
-        padding-bottom: 32px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        color: $Gray-30;
-
-        @media screen and (max-width: 1024px) {
+        &__subtitle-other {
+            padding-bottom: 32px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
             font-size: 14px;
             line-height: 17px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: $Gray-30;
+    
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
-    }
-
-    &__line {
-        margin: 0 auto;
-        border: 1px solid $Gray-80;
-
-        @media screen and (max-width: 1024px) {
-            margin: 0 16px;
+    
+        &__line {
+            margin: 0 auto;
+            border: 1px solid $Gray-80;
+    
+            @media screen and (max-width: 1024px) {
+                margin: 0 16px;
+            }
         }
-    }
-
-    &__text {
-        padding: 24px 0;
-        text-align: center;
-        font-family: 'DM Sans';
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 18px;
-        color: $Gray-30;
-    }
-
-    &__facebook {
-        &:hover {
     
-            svg {
-              path {
-                transition: all .4s;
-                fill: $hover-facebook;
-              }
-            }
-          }
-    }
-
-    &__instagram {
-        &:hover {
+        &__text {
+            padding: 24px 0;
+            text-align: center;
+            font-family: 'DM Sans';
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+            color: $Gray-30;
+        }
     
-            svg {
-              path {
-                transition: all .4s;
-                fill: $main-color-pink;
+        &__facebook {
+            &:hover {
+        
+                svg {
+                  path {
+                    transition: all .4s;
+                    fill: $hover-facebook;
+                  }
+                }
               }
-            }
-          }
-    }
-
-    &__youtube {
-        &:hover {
+        }
     
-            svg {
-              path {
-                transition: all .4s;
-                fill: $hover-youtube;
+        &__instagram {
+            &:hover {
+        
+                svg {
+                  path {
+                    transition: all .4s;
+                    fill: $main-color-pink;
+                  }
+                }
               }
-            }
-          }
-    }
-
-    &__in {
-        &:hover {
+        }
     
-            svg {
-              path {
-                transition: all .4s;
-                fill: $hover-facebook;
+        &__youtube {
+            &:hover {
+        
+                svg {
+                  path {
+                    transition: all .4s;
+                    fill: $hover-youtube;
+                  }
+                }
               }
-            }
-          }
+        }
+    
+        &__in {
+            &:hover {
+        
+                svg {
+                  path {
+                    transition: all .4s;
+                    fill: $hover-facebook;
+                  }
+                }
+              }
+        }
     }
 }
 

@@ -334,4 +334,21 @@
   width: 100%;
 }
 
+.footer-anima {
+  position: relative;
+}
+.footer-anima::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 0;
+  height: 2px;
+  background-color: #0EB7AE;
+  transition: width 0.4s;
+}
+.footer-anima:hover::before {
+  width: 100%;
+}
+
 /*# sourceMappingURL=commons.css.map */

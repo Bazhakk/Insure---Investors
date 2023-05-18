@@ -339,3 +339,24 @@
       }
     }
 }
+
+.footer-anima {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 0;
+    height: 2px;
+    background-color: $hover-color-teal;
+    transition: width .4s;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
