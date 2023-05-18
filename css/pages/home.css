@@ -416,23 +416,6 @@ ul {
   width: 100%;
 }
 
-.footer-anima {
-  position: relative;
-}
-.footer-anima::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 20px;
-  width: 0;
-  height: 2px;
-  background-color: #0EB7AE;
-  transition: width 0.4s;
-}
-.footer-anima:hover::before {
-  width: 100%;
-}
-
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -1586,7 +1569,9 @@ ul {
   font-weight: 700;
 }
 .footer {
+  position: relative;
   padding-top: 80px;
+  top: -56px;
   border-radius: 60px 60px 0 0;
   background-color: #0A1C33;
 }
@@ -1618,19 +1603,20 @@ ul {
     max-width: 156px;
   }
 }
-.footer__box {
-  position: relative;
-}
 .footer .footer-menu {
   display: flex;
   margin: 0 auto;
   padding-bottom: 120px;
   gap: 190px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .footer .footer-menu {
     display: none;
   }
+}
+.footer .footer-menu__box {
+  position: relative;
 }
 .footer .footer-menu__title {
   font-family: "DM Sans";
@@ -1713,9 +1699,11 @@ ul {
 .footer .footer-basement {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
   .footer .footer-basement {
+    flex-direction: column;
     margin: 0 16px;
   }
 }
@@ -1728,9 +1716,8 @@ ul {
     padding-top: 40px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 400px) {
   .footer .footer-basement__left {
-    padding-top: 40px;
     flex-direction: column;
     gap: 0;
   }
@@ -1739,6 +1726,11 @@ ul {
   display: flex;
   margin-top: -15px;
   gap: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .footer .footer-basement__right {
+    padding-bottom: 40px;
+  }
 }
 .footer .footer-basement__subtitle-other {
   padding-bottom: 32px;
@@ -2487,9 +2479,6 @@ ul {
   font-family: "DM Sans";
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
-}
-.partners {
-  padding-bottom: 130px;
 }
 @media screen and (max-width: 1024px) {
   .partners {

@@ -2,7 +2,9 @@
 @import "../base/variables";
 
 .footer {
+    position: relative;
     padding-top: 80px;
+    top: -56px;
     border-radius: 60px 60px 0 0;
     background-color: $Gray-100;
 
@@ -37,18 +39,19 @@
         }
     }
 
-    &__box {
-        position: relative;
-    }
-
     .footer-menu {
         display: flex;
         margin: 0 auto;
         padding-bottom: 120px;
         gap: 190px;
+        cursor: pointer;
 
         @media screen and (max-width: 1024px) {
             display: none;
+        }
+
+        &__box {
+            position: relative;
         }
 
         &__title {
@@ -144,8 +147,10 @@
     .footer-basement {
         display: flex;
         justify-content: space-between;
+        cursor: pointer;
 
         @media screen and (max-width: 1024px) {
+            flex-direction: column;
             margin: 0 16px;
         }
 
@@ -157,8 +162,7 @@
                 padding-top: 40px;
             }
 
-            @media screen and (max-width: 410px) {
-                padding-top: 40px;
+            @media screen and (max-width: 400px) {
                 flex-direction: column;
                 gap: 0;
             }
@@ -168,12 +172,11 @@
             display: flex;
             margin-top: -15px;
             gap: 24px;
-        }
 
-        // @media screen and (max-width: 1024px) {
-        //     flex-direction: column;
-        //     padding-bottom: 40px;
-        // }
+            @media screen and (max-width: 1024px) {
+                padding-bottom: 40px;
+            }
+        }
 
         &__subtitle-other {
             padding-bottom: 32px;
