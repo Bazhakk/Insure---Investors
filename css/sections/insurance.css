@@ -33,10 +33,10 @@
   border-radius: 60px 60px 0 0;
   background-image: url("../../img/insurance.img/insurance-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 .insurance__container {
-  position: absolute;
+  position: relative;
   padding-top: 80px;
 }
 .insurance__title {
@@ -64,14 +64,13 @@
 .insurance__title-shade {
   content: "";
   background-image: url("../../img/insurance.img/insurance-before.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   width: 605px;
   height: 380px;
   top: 41%;
   left: -29%;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .insurance__box {
   position: relative;
