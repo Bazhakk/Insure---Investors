@@ -4,12 +4,7 @@
 .contact {
     padding: 130px 0 130px 0;
 
-    @media (max-width: 1400px) {
-        // margin: 0 16px;
-    }
-
     @media (max-width: 1024px) {
-        // margin: 0 auto;
         padding-top: 60px;
     }
 
@@ -71,6 +66,10 @@
     &__box {
         position: relative;
         left: 50px;
+
+        @media (max-width: 936px) {
+            left: 34px;
+        }
     }
 
     &__address,
@@ -100,12 +99,20 @@
 
             @media (max-width: 1420px) {
                 top: 20%;
-                left: -4%;
+                left: -5%;
             }
 
             @media (max-width: 1024px) {
                 top: 10%;
                 left: -5%;
+            }
+
+            @media (max-width: 812px) {
+                left: -6%;
+            }
+
+            @media (max-width: 516px) {
+                left: -10%;
             }
         }
 
@@ -130,12 +137,20 @@
 
             @media (max-width: 1420px) {
                 top: 54%;
-                left: -4%;
+                left: -5%;
             }
 
             @media (max-width: 1024px) {
                 top: 45%;
                 left: -5%;
+            }
+
+            @media (max-width: 812px) {
+                left: -6%;
+            }
+
+            @media (max-width: 516px) {
+                left: -10%;
             }
         }
     }
@@ -155,12 +170,20 @@
 
             @media (max-width: 1420px) {
                 bottom: -1%;
-                left: -4%;
+                left: -5%;
             }
 
-            @media (max-width: 1420px) {
+            @media (max-width: 1024px) {
                 bottom: -2%;
                 left: -5%;
+            }
+
+            @media (max-width: 812px) {
+                left: -6%;
+            }
+
+            @media (max-width: 516px) {
+                left: -10%;
             }
         }
     }
@@ -177,10 +200,13 @@
         filter: $box-shadow-l;
 
         @media (max-width: 1024px) {
-            width: 345px;
-            margin: 0 auto;
+            width: 600px;
             padding: 32px 24px;
             gap: 16px;
+        }
+
+        @media (max-width: 624px) {
+            width: 345px;
         }
 
         &__first-row {
@@ -191,6 +217,7 @@
 
             @media (max-width: 1024px) {
                 flex-direction: column;
+                margin: 0 auto;
             }
         }
 
@@ -213,6 +240,10 @@
             border: 1px solid $Gray-20;
 
             @media (max-width: 1024px) {
+                width: 500px;
+            }
+
+            @media (max-width: 624px) {
                 width: 295px;
             }
         }
@@ -252,6 +283,11 @@
             background: $input;
 
             @media (max-width: 1024px) {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 624px) {
                 width: 295px;
             }
         }
@@ -270,10 +306,14 @@
             border: 1px solid $Gray-20;
 
             @media (max-width: 1024px) {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 624px) {
                 width: 295px;
             }
         }
-
 
         &__field-wrap,
         &__second-row,

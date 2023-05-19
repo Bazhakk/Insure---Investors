@@ -276,7 +276,6 @@
 .button_insurance {
   position: relative;
   padding: 20px 40px;
-  left: 53%;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
@@ -284,25 +283,6 @@
   border-radius: 66px;
   color: #fff;
   background-color: #E91E63;
-}
-.button_insurance::after {
-  content: "";
-  background-image: url("../../img/insurance.img/insurance-img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 185px;
-  height: 137px;
-  bottom: -15%;
-  right: -80%;
-}
-@media screen and (max-width: 485px) {
-  .button_insurance {
-    margin: 0 auto;
-    padding: 13px 20px;
-    font-size: 12px;
-    line-height: 15px;
-  }
 }
 .button_insurance:hover {
   transition: all 0.4s;

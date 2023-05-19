@@ -118,11 +118,6 @@
   margin: 0;
   border: 1px solid #CED2D6;
 }
-@media screen and (max-width: 525px) {
-  .features .features-mobile__block::after {
-    margin: 0 24px;
-  }
-}
 .features .features-mobile__link {
   display: flex;
   justify-content: space-between;

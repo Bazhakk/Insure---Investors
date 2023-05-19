@@ -37,15 +37,28 @@
 }
 .insurance__container {
   position: relative;
-  padding-top: 80px;
+}
+.insurance__content {
+  position: relative;
+}
+.insurance__content::before {
+  content: "";
+  background-image: url("../../img/insurance.img/insurance-before.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  top: 40%;
+  left: -2%;
+  opacity: 0.5;
 }
 .insurance__title {
   position: relative;
   max-width: 1030px;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-top: 80px;
   text-align: center;
-  left: 11rem;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
@@ -54,6 +67,8 @@
 }
 @media screen and (max-width: 1024px) {
   .insurance__title {
+    max-width: 305px;
+    padding-top: 55px;
     font-size: 40px;
     line-height: 44px;
   }
@@ -61,25 +76,34 @@
 .insurance__title-other {
   color: #00CCC2;
 }
-.insurance__title-shade {
-  content: "";
-  background-image: url("../../img/insurance.img/insurance-before.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 605px;
-  height: 380px;
-  top: 41%;
-  left: -29%;
-  opacity: 0.5;
-}
 .insurance__box {
   position: relative;
-  padding-top: 80px;
-  text-align: center;
-  left: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 7%;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__box {
+    display: inline-flex;
+  }
 }
 .insurance__img {
   max-width: 185px;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__img {
+    display: none;
+  }
+}
+.insurance__img-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__img-mobile {
+    display: inline;
+    width: 190px;
+  }
 }
 
 /*# sourceMappingURL=insurance.css.map */

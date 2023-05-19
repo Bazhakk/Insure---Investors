@@ -358,7 +358,6 @@ ul {
 .button_insurance {
   position: relative;
   padding: 20px 40px;
-  left: 53%;
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 21px;
@@ -366,25 +365,6 @@ ul {
   border-radius: 66px;
   color: #fff;
   background-color: #E91E63;
-}
-.button_insurance::after {
-  content: "";
-  background-image: url("../../img/insurance.img/insurance-img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 185px;
-  height: 137px;
-  bottom: -15%;
-  right: -80%;
-}
-@media screen and (max-width: 485px) {
-  .button_insurance {
-    margin: 0 auto;
-    padding: 13px 20px;
-    font-size: 12px;
-    line-height: 15px;
-  }
 }
 .button_insurance:hover {
   transition: all 0.4s;
@@ -1823,15 +1803,28 @@ ul {
 }
 .insurance__container {
   position: relative;
-  padding-top: 80px;
+}
+.insurance__content {
+  position: relative;
+}
+.insurance__content::before {
+  content: "";
+  background-image: url("../../img/insurance.img/insurance-before.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  top: 40%;
+  left: -2%;
+  opacity: 0.5;
 }
 .insurance__title {
   position: relative;
   max-width: 1030px;
   margin: 0 auto;
-  padding-bottom: 80px;
+  padding-top: 80px;
   text-align: center;
-  left: 11rem;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
@@ -1840,6 +1833,8 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .insurance__title {
+    max-width: 305px;
+    padding-top: 55px;
     font-size: 40px;
     line-height: 44px;
   }
@@ -1847,25 +1842,34 @@ ul {
 .insurance__title-other {
   color: #00CCC2;
 }
-.insurance__title-shade {
-  content: "";
-  background-image: url("../../img/insurance.img/insurance-before.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 605px;
-  height: 380px;
-  top: 41%;
-  left: -29%;
-  opacity: 0.5;
-}
 .insurance__box {
   position: relative;
-  padding-top: 80px;
-  text-align: center;
-  left: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 7%;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__box {
+    display: inline-flex;
+  }
 }
 .insurance__img {
   max-width: 185px;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__img {
+    display: none;
+  }
+}
+.insurance__img-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__img-mobile {
+    display: inline;
+    width: 190px;
+  }
 }
 
 @font-face {
@@ -2083,11 +2087,6 @@ ul {
   display: block;
   margin: 0;
   border: 1px solid #CED2D6;
-}
-@media screen and (max-width: 525px) {
-  .features .features-mobile__block::after {
-    margin: 0 24px;
-  }
 }
 .features .features-mobile__link {
   display: flex;
@@ -2683,6 +2682,11 @@ ul {
   position: relative;
   left: 50px;
 }
+@media (max-width: 936px) {
+  .contact__box {
+    left: 34px;
+  }
+}
 .contact__address, .contact__email, .contact__tel {
   font-family: "GT Eesti Pro";
   font-weight: 500;
@@ -2708,13 +2712,23 @@ ul {
 @media (max-width: 1420px) {
   .contact__address::before {
     top: 20%;
-    left: -4%;
+    left: -5%;
   }
 }
 @media (max-width: 1024px) {
   .contact__address::before {
     top: 10%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__address::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__address::before {
+    left: -10%;
   }
 }
 @media (max-width: 1024px) {
@@ -2739,13 +2753,23 @@ ul {
 @media (max-width: 1420px) {
   .contact__tel::before {
     top: 54%;
-    left: -4%;
+    left: -5%;
   }
 }
 @media (max-width: 1024px) {
   .contact__tel::before {
     top: 45%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__tel::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__tel::before {
+    left: -10%;
   }
 }
 .contact__email::before {
@@ -2762,13 +2786,23 @@ ul {
 @media (max-width: 1420px) {
   .contact__email::before {
     bottom: -1%;
-    left: -4%;
+    left: -5%;
   }
 }
-@media (max-width: 1420px) {
+@media (max-width: 1024px) {
   .contact__email::before {
     bottom: -2%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__email::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__email::before {
+    left: -10%;
   }
 }
 .contact .form {
@@ -2784,10 +2818,14 @@ ul {
 }
 @media (max-width: 1024px) {
   .contact .form {
-    width: 345px;
-    margin: 0 auto;
+    width: 600px;
     padding: 32px 24px;
     gap: 16px;
+  }
+}
+@media (max-width: 624px) {
+  .contact .form {
+    width: 345px;
   }
 }
 .contact .form__first-row {
@@ -2799,6 +2837,7 @@ ul {
 @media (max-width: 1024px) {
   .contact .form__first-row {
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 .contact .form__name-value {
@@ -2818,6 +2857,11 @@ ul {
   border: 1px solid #CED2D6;
 }
 @media (max-width: 1024px) {
+  .contact .form__field-wrap, .contact .form__name-value {
+    width: 500px;
+  }
+}
+@media (max-width: 624px) {
   .contact .form__field-wrap, .contact .form__name-value {
     width: 295px;
   }
@@ -2856,6 +2900,12 @@ ul {
 }
 @media (max-width: 1024px) {
   .contact .form__second-row {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 624px) {
+  .contact .form__second-row {
     width: 295px;
   }
 }
@@ -2873,6 +2923,12 @@ ul {
   border: 1px solid #CED2D6;
 }
 @media (max-width: 1024px) {
+  .contact .form__third-row {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 624px) {
   .contact .form__third-row {
     width: 295px;
   }

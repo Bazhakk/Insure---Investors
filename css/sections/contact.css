@@ -91,6 +91,11 @@
   position: relative;
   left: 50px;
 }
+@media (max-width: 936px) {
+  .contact__box {
+    left: 34px;
+  }
+}
 .contact__address, .contact__email, .contact__tel {
   font-family: "GT Eesti Pro";
   font-weight: 500;
@@ -116,13 +121,23 @@
 @media (max-width: 1420px) {
   .contact__address::before {
     top: 20%;
-    left: -4%;
+    left: -5%;
   }
 }
 @media (max-width: 1024px) {
   .contact__address::before {
     top: 10%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__address::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__address::before {
+    left: -10%;
   }
 }
 @media (max-width: 1024px) {
@@ -147,13 +162,23 @@
 @media (max-width: 1420px) {
   .contact__tel::before {
     top: 54%;
-    left: -4%;
+    left: -5%;
   }
 }
 @media (max-width: 1024px) {
   .contact__tel::before {
     top: 45%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__tel::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__tel::before {
+    left: -10%;
   }
 }
 .contact__email::before {
@@ -170,13 +195,23 @@
 @media (max-width: 1420px) {
   .contact__email::before {
     bottom: -1%;
-    left: -4%;
+    left: -5%;
   }
 }
-@media (max-width: 1420px) {
+@media (max-width: 1024px) {
   .contact__email::before {
     bottom: -2%;
     left: -5%;
+  }
+}
+@media (max-width: 812px) {
+  .contact__email::before {
+    left: -6%;
+  }
+}
+@media (max-width: 516px) {
+  .contact__email::before {
+    left: -10%;
   }
 }
 .contact .form {
@@ -192,10 +227,14 @@
 }
 @media (max-width: 1024px) {
   .contact .form {
-    width: 345px;
-    margin: 0 auto;
+    width: 600px;
     padding: 32px 24px;
     gap: 16px;
+  }
+}
+@media (max-width: 624px) {
+  .contact .form {
+    width: 345px;
   }
 }
 .contact .form__first-row {
@@ -207,6 +246,7 @@
 @media (max-width: 1024px) {
   .contact .form__first-row {
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 .contact .form__name-value {
@@ -226,6 +266,11 @@
   border: 1px solid #CED2D6;
 }
 @media (max-width: 1024px) {
+  .contact .form__field-wrap, .contact .form__name-value {
+    width: 500px;
+  }
+}
+@media (max-width: 624px) {
   .contact .form__field-wrap, .contact .form__name-value {
     width: 295px;
   }
@@ -264,6 +309,12 @@
 }
 @media (max-width: 1024px) {
   .contact .form__second-row {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 624px) {
+  .contact .form__second-row {
     width: 295px;
   }
 }
@@ -281,6 +332,12 @@
   border: 1px solid #CED2D6;
 }
 @media (max-width: 1024px) {
+  .contact .form__third-row {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 624px) {
   .contact .form__third-row {
     width: 295px;
   }
