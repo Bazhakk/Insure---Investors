@@ -302,17 +302,19 @@
                 <nav class="features-menu">
                     <span class="features-menu__link" id="features-1">Online Management</span>
                     <span class="features-menu__link" id="features-2">Coverage</span>
-                    <span class="features-menu__link" id="features-3">Flexibility</span>
+                    <span class="features-menu__link features-menu__link-other" id="features-3">Flexibility</span>
                     <span class="features-menu__link" id="features-4">Expertise</span>
                 </nav>
 
                 <div class="features-mobile">
-                    <div class="features-mobile__block" >
+                    <div class="features-mobile__block">
                         <div class="features-mobile__link" id="features-mobile-1">
                             Online Management
-                                <svg class="features-mobile__icon" id="icon" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span class="arrow">
+                                <svg  width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14 2L8 8L2 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
                                 </svg>
+                            </span>
                         </div>
                         <div class="features-mobile__content features-mobile__content_hidden" id="accordion-col-1">
                             <div class="features__box-left">
@@ -343,9 +345,14 @@
                         </div>
                     </div>
 
-                    <div class="features-mobile__block" id="features-mobile-2">
-                        <div class="features-mobile__link">
+                    <div class="features-mobile__block">
+                        <div class="features-mobile__link" id="features-mobile-2">
                             Coverage
+                            <span class="arrow">
+                                <svg  width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 2L8 8L2 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </span>
                         </div>
                         <div class="features-mobile__content features-mobile__content_hidden" id="accordion-col-1">
                             <div class="features__box-left">
@@ -376,9 +383,14 @@
                         </div>
                     </div>
 
-                    <div class="features-mobile__block" id="features-mobile-3">
-                        <div class="features-mobile__link">
+                    <div class="features-mobile__block">
+                        <div class="features-mobile__link" id="features-mobile-3">
                             Flexibility
+                            <span class="arrow">
+                                <svg  width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 2L8 8L2 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </span>
                         </div>
                         <div class="features-mobile__content features-mobile__content_hidden" id="accordion-col-1">
                             <div class="features__box-left">
@@ -409,9 +421,14 @@
                         </div>
                     </div>
 
-                    <div class="features-mobile__block features-mobile__block" id="features-mobile-4">
-                        <div class="features-mobile__link">
+                    <div class="features-mobile__block features-mobile__block">
+                        <div class="features-mobile__link" id="features-mobile-4">
                             Expertise
+                            <span class="arrow">
+                                <svg  width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 2L8 8L2 2" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </span>
                         </div>
                         <div class="features-mobile__content features-mobile__content_hidden" id="accordion-col-1">
                             <div class="features__box-left">
@@ -558,7 +575,7 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div> 
         </section>
 
         <section class="about">
@@ -718,13 +735,13 @@
                     <form class="form" id="form">
                         <fieldset class="form__first-row">
                             <div class="form__name-value">
-                                <label class="form__name" type="text">First Name</label>
-                                <input class="form__field-other" type="text" id="name" name="name" required placeholder="Toby">
+                                <label class="form__name" for="name">First Name</label>
+                                <input class="form__field-other" type="name" id="name" name="name" placeholder="Toby">
                             </div>
-                            <input class="form__field-wrap" type="text" id="name" name="name" required placeholder="Last Name">
+                            <input class="form__field-wrap" type="name" id="name" name="name" required placeholder="Last Name">
                         </fieldset>
                         <input class="form__second-row" type="email" id="email" name="email" required placeholder="Email">
-                        <textarea class="form__third-row" id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                        <textarea class="form__third-row" id="message" name="message" required placeholder="Message"></textarea>
                         <input class="button button_contact" type="submit" value="Submit">
                     </form>
                 </div>
@@ -803,7 +820,13 @@
 
                 <div class="footer-mobile">
                     <div class="footer-mobile__item">
-                        <div class="footer-mobile__subtitle">Insureinvestors</div>
+                        <div class="footer-mobile__subtitle">Insureinvestors
+                            <span class="arrow">
+                                <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7.5L6.5 2L1 7.5" stroke="#B5BAC1" stroke-width="2"/>
+                                </svg>                                    
+                            </span>
+                        </div>
                             <div class="footer-mobile__content footer-mobile__content_hidden">
                                 <p class="footer-mobile__title">Home</p>
                                 <p class="footer-mobile__title">Insurance</p>
@@ -814,7 +837,13 @@
                     </div>
 
                     <div class="footer-mobile__item">
-                        <div class="footer-mobile__subtitle">Resources</div>
+                        <div class="footer-mobile__subtitle">Resources
+                            <span class="arrow">
+                                <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7.5L6.5 2L1 7.5" stroke="#B5BAC1" stroke-width="2"/>
+                                </svg>
+                            </span>
+                        </div>
                             <div class="footer-mobile__content footer-mobile__content_hidden">
                                 <p class="footer-mobile__title">Home</p>
                                 <p class="footer-mobile__title">Insurance</p>
@@ -825,7 +854,13 @@
                     </div>
 
                     <div class="footer-mobile__item">
-                        <div class="footer-mobile__subtitle">Company</div>
+                        <div class="footer-mobile__subtitle">Company
+                            <span class="arrow">
+                                <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 7.5L6.5 2L1 7.5" stroke="#B5BAC1" stroke-width="2"/>
+                                </svg>
+                            </span>
+                        </div>
                             <div class="footer-mobile__content footer-mobile__content_hidden">
                                 <p class="footer-mobile__title">Home</p>
                                 <p class="footer-mobile__title">Insurance</p>

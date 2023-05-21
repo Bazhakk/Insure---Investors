@@ -250,10 +250,29 @@
   }
 }
 .contact .form__name-value {
+  position: relative;
   display: grid;
+  width: 374px;
+  height: 60px;
   gap: 2px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  border-radius: 6px;
+  background: #FBFCFF;
 }
-.contact .form__field-wrap, .contact .form__name-value {
+@media (max-width: 1024px) {
+  .contact .form__name-value {
+    width: 500px;
+  }
+}
+@media (max-width: 624px) {
+  .contact .form__name-value {
+    width: 295px;
+  }
+}
+.contact .form__field-wrap {
   width: 374px;
   height: 60px;
   padding-left: 16px;
@@ -266,17 +285,19 @@
   border: 1px solid #CED2D6;
 }
 @media (max-width: 1024px) {
-  .contact .form__field-wrap, .contact .form__name-value {
+  .contact .form__field-wrap {
     width: 500px;
   }
 }
 @media (max-width: 624px) {
-  .contact .form__field-wrap, .contact .form__name-value {
+  .contact .form__field-wrap {
     width: 295px;
   }
 }
 .contact .form__name {
-  padding-top: 2px;
+  position: absolute;
+  top: 2px;
+  left: 16px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 13px;
@@ -286,13 +307,19 @@
   border: none;
 }
 .contact .form__field-other {
+  padding-top: 20px;
+  padding-left: 16px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
-  color: #0A1C33;
-  background-color: #FBFCFF;
   border: none;
+  border-radius: 6px;
+  background: #FBFCFF;
+  border: 1px solid #CED2D6;
+}
+.contact .form__field-other::placeholder {
+  color: #0A1C33;
 }
 .contact .form__second-row {
   width: 788px;
@@ -342,8 +369,12 @@
     width: 295px;
   }
 }
-.contact .form__field-wrap:hover, .contact .form__second-row:hover, .contact .form__third-row:hover {
+.contact .form__field-wrap:hover, .contact .form__field-other:hover, .contact .form__second-row:hover, .contact .form__third-row:hover {
   border: 1px solid #6C7785;
+}
+.contact .form__field-wrap:focus, .contact .form__field-other:focus, .contact .form__second-row:focus, .contact .form__third-row:focus {
+  outline: none;
+  border: 2px solid #00CCC2;
 }
 
 /*# sourceMappingURL=contact.css.map */

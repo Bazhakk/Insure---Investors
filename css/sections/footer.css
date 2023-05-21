@@ -138,17 +138,6 @@
   line-height: 30px;
   color: #B5BAC1;
 }
-.footer .footer-mobile__subtitle::after {
-  content: "";
-  background-image: url("../../img/arrow.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 20px;
-  height: 10px;
-  top: 33px;
-  right: 0;
-}
 .footer .footer-mobile__title {
   font-family: "DM Sans";
   font-weight: 400;

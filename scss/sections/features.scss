@@ -65,6 +65,13 @@
                 color: $pressed-color-teal;
             }
 
+            &-other {
+                &_active {
+                    border: 2px solid $pressed-color-teal;
+                    color: $pressed-color-teal;
+                }
+            }
+
             &:hover {
                 transition: all .4s;
                 color: $hover-color-teal;
@@ -85,14 +92,6 @@
             flex-direction: column;
             cursor: pointer;
         }
-        
-        // &__icon {
-        //     &_active {
-        //         svg {
-        //             transform: rotate(180deg);
-        //         }
-        //     }
-        // }
 
         &__block {
             &::after {
@@ -123,26 +122,6 @@
                 font-size: 20px;
                 line-height: 28px;
             }
-
-            &_active {
-                svg {
-                    transform: rotate(180deg);
-                }
-            }
-    
-            // &_active {
-            //     display: flex;
-            //     // transform: rotate(180deg);
-    
-            //     &::after {
-            //         content: "";
-            //         background-image: url("../../img/fearures/arrow-after.svg");
-            //         background-repeat: no-repeat;
-            //         background-size: cover;
-            //         width: 32px;
-            //         height: 20px;
-            //     }
-            // }
         }
 
         &__content {

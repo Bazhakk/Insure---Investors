@@ -319,3 +319,13 @@
       }
     }
 }
+
+
+//Arrow 
+.arrow {
+  transition: transform 0.4s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}  
