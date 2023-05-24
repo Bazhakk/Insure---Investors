@@ -86,17 +86,13 @@ jQuery(document).ready(function ( $ ) {
       $('#accordion-1').addClass('accordion-item_active');
     });
 
-    $('.accordion-close').click(function(event) {
-      event.stopPropagation();
-      var accordionItem = $(this).closest('.accordion-item');
-      accordionItem.removeClass('active');
-      var accordionContent = accordionItem.find('.accordion-content');
-      accordionContent.slideUp();
-    });
-
-    // $('.accordion-item').on('click', function(e) {
-    //     console.log(e.target)
-    // })
+    // $('.accordion-close').click(function(event) {
+    //   event.stopPropagation();
+    //   var accordionItem = $(this).closest('.accordion-item');
+    //   accordionItem.removeClass('active');
+    //   var accordionContent = accordionItem.find('.accordion-content');
+    //   accordionContent.slideUp();
+    // });
   });
 
   //FOOTER
