@@ -65,13 +65,6 @@
                 color: $pressed-color-teal;
             }
 
-            &-other {
-                &_active {
-                    border: 2px solid $pressed-color-teal;
-                    color: $pressed-color-teal;
-                }
-            }
-
             &:hover {
                 transition: all .4s;
                 color: $hover-color-teal;
