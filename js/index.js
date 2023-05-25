@@ -85,15 +85,25 @@ jQuery(document).ready(function ( $ ) {
       accordionContent.slideToggle();
       $('#accordion-1').addClass('accordion-item_active');
     });
-
-    // $('.accordion-close').click(function(event) {
-    //   event.stopPropagation();
-    //   var accordionItem = $(this).closest('.accordion-item');
-    //   accordionItem.removeClass('active');
-    //   var accordionContent = accordionItem.find('.accordion-content');
-    //   accordionContent.slideUp();
-    // });
   });
+
+    $('.accordion-header').click(function() {
+      var content = $(this).next('.accordion-content')
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp()
+        $(this).toggleClass('accordion-header_active')
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.accordion-content').slideUp();
+        // Затем развернуть текущий элемент
+        content.slideDown()
+        $(this).toggleClass('accordion-header_active')
+      }
+    })
+  })
 
   //FOOTER
   //Footer-mobile
@@ -119,4 +129,3 @@ jQuery(document).ready(function ( $ ) {
       $(this).toggleClass("rotated");
     });
   });
-});

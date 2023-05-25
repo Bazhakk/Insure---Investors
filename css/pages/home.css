@@ -2335,7 +2335,12 @@ ul {
   line-height: 30px;
   color: #3B495C;
 }
+.questions .accordion-header_active .accordion-toggle {
+  transform: rotate(45deg);
+  transition: all 0.4s;
+}
 .questions .accordion-toggle {
+  transition: all 0.4s;
   display: inline-block;
   width: 54px;
   height: 54px;
@@ -2357,9 +2362,6 @@ ul {
   font-size: 22px;
   line-height: 32px;
   color: #0A1C33;
-}
-.questions .accordion-item.active .accordion-content {
-  display: block;
 }
 
 @font-face {

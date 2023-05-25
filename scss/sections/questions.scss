@@ -101,9 +101,17 @@
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
+
+        &_active {
+            .accordion-toggle {
+                transform: rotate(45deg);
+                transition: all .4s;
+            }
+        }
     }
       
     .accordion-toggle {
+        transition: all .4s;
         display: inline-block;
         width: 54px;
         height: 54px;
@@ -137,7 +145,7 @@
         color: $Gray-100;
     }
     
-    .accordion-item.active .accordion-content {
-        display: block;
-    }
+    // .accordion-item.active .accordion-content {
+    //     display: block;
+    // }
 }
