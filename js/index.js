@@ -78,15 +78,6 @@ jQuery(document).ready(function ( $ ) {
 
   //QUESTIONS
   $(document).ready(function() {
-    $('.accordion-toggle').click(function() {
-      var accordionItem = $(this).closest('.accordion-item');
-      accordionItem.toggleClass('active');
-      var accordionContent = accordionItem.find('.accordion-content');
-      accordionContent.slideToggle();
-      $('#accordion-1').addClass('accordion-item_active');
-    });
-  });
-
     $('.accordion-header').click(function() {
       var content = $(this).next('.accordion-content')
       
@@ -129,3 +120,4 @@ jQuery(document).ready(function ( $ ) {
       $(this).toggleClass("rotated");
     });
   });
+});
