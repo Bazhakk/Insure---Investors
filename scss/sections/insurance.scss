@@ -29,18 +29,20 @@
             height: 400px;
             top: 40%;
             left: -2%;
-            opacity: .5;
+            opacity: .2;
 
-            // @media screen and (max-width: 1024px) {
-            //     top: 62%;
-            //     left: 1%;
-            // }
+            @media screen and (max-width: 1024px) {
+                width: 500px;
+                height: 337px;
+                top: 54%;
+                left: 2%;
+            }
 
-            // @media screen and (max-width: 630px) {
-            //     width: 350px;
-            //     top: 62%;
-            //     left: 1%;
-            // }
+            @media screen and (max-width: 550px) {
+                width: 450px;
+                top: 63%;
+                left: 4%;
+            }
         }
         
     }
@@ -78,6 +80,7 @@
 
         @media screen and (max-width: 1024px) {
             display: inline-flex;
+            padding-bottom: 30px;
         }
     }
 

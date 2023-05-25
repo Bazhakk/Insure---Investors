@@ -135,5 +135,10 @@
         font-size: 22px;
         line-height: 32px;
         color: $Gray-100;
+        // background-color: $white-color;
+
+        &_active {
+            background: $white-color;
+        }
     }
 }

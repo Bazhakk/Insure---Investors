@@ -19,11 +19,6 @@ jQuery(document).ready(function ( $ ) {
     }
   });
 
-  // AOS init
-  AOS.init({
-    once: true
-  });
-
   // HOME PAGE
   // Feauters
   $(document).ready(function() {
@@ -55,17 +50,6 @@ jQuery(document).ready(function ( $ ) {
       $('#features-3').addClass('features-menu__link_active');
       $('.features__box').addClass('features__box_hidden');
       $('#features-box-3').removeClass('features__box_hidden');
-
-      // $('#features-3').click(function() {
-      //       if (!$(this).hasClass('active')) {
-      //         $('.#features-3').removeClass('active');
-      //         $(this).addClass('active');
-      //       }
-      //     });
-
-      // $('#features-3').on('click', function() {
-      //   $('.features-menu__link .features-menu__link-other').addClass('features-menu__link .features-menu__link-other_active');
-      // });
     });
 
     $('#features-4').on('click', function() {
@@ -86,12 +70,14 @@ jQuery(document).ready(function ( $ ) {
         // Если открыт, сворачиваем его
         content.slideUp()
         $(this).toggleClass('accordion-header_active')
+        $(this).toggleClass('accordion-item_active')
       } else {
         // Если закрыт, сворачиваем все активные панели
         $('.accordion-content').slideUp();
         // Затем развернуть текущий элемент
         content.slideDown()
         $(this).toggleClass('accordion-header_active')
+        $(this).toggleClass('accordion-item_active')
       }
     })
   })
@@ -116,8 +102,13 @@ jQuery(document).ready(function ( $ ) {
 
   //Arrow
   $(document).ready(function() {
-    $(".arrow").click(function() {
-      $(this).toggleClass("rotated");
+    $('.arrow').click(function() {
+      $(this).toggleClass('rotated');
     });
+  });
+
+  // AOS init
+  AOS.init({
+    once: true
   });
 });

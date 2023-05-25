@@ -51,7 +51,22 @@
   height: 400px;
   top: 40%;
   left: -2%;
-  opacity: 0.5;
+  opacity: 0.2;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__content::before {
+    width: 500px;
+    height: 337px;
+    top: 54%;
+    left: 2%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .insurance__content::before {
+    width: 450px;
+    top: 63%;
+    left: 4%;
+  }
 }
 .insurance__title {
   position: relative;
@@ -86,6 +101,7 @@
 @media screen and (max-width: 1024px) {
   .insurance__box {
     display: inline-flex;
+    padding-bottom: 30px;
   }
 }
 .insurance__img {

@@ -148,5 +148,8 @@
   line-height: 32px;
   color: #0A1C33;
 }
+.questions .accordion-content_active {
+  background: #fff;
+}
 
 /*# sourceMappingURL=questions.css.map */
