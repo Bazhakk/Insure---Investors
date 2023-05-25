@@ -96,8 +96,6 @@ jQuery(document).ready(function ( $ ) {
     })
   })
   
-  
-
   //FOOTER
   //Footer-mobile
   $(document).ready(function() {

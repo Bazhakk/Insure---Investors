@@ -121,20 +121,10 @@
     }
     
     .accordion-item.active .accordion-toggle {
-        // transform: rotate(180deg);
         background-image: url("../../img/questions-img/questions-activ.svg");
         width: 54px;
         height: 54px;
     }
-    
-    // .accordion-close {
-    //     display: inline-block;
-    //     width: 16px;
-    //     height: 16px;
-    //     background: url("") no-repeat;
-    //     background-size: contain;
-    //     // float: right;
-    // }
     
     .accordion-content {
         display: none;
@@ -146,8 +136,4 @@
         line-height: 32px;
         color: $Gray-100;
     }
-    
-    // .accordion-item.active .accordion-content {
-    //     display: block;
-    // }
 }
