@@ -64,7 +64,6 @@ jQuery(document).ready(function ( $ ) {
   $(document).ready(function() {
     $('.accordion-header').click(function() {
       var content = $(this).next('.accordion-content')
-      
       // Проверяем, открыт ли текущий элемент
       if (content.is(':visible')) {
         // Если открыт, сворачиваем его
@@ -81,7 +80,7 @@ jQuery(document).ready(function ( $ ) {
       }
     })
   })
-
+  
   //FOOTER
   //Footer-mobile
   $(document).ready(function() {

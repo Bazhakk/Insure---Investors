@@ -85,12 +85,17 @@
         }
 
         &_active {
-            background-color: $white-color;
+            .accordion-header {
+                background-color: $white-color;
+            }
+
+            .accordion-content {
+                background-color: $white-color;
+            }
         }
     }
 
     .accordion-header {
-        cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -101,13 +106,45 @@
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
+        background-color: $light-gray;
 
         &_active {
+            // max-width: 100%;
+            // background-color: $white-color;
+
             .accordion-toggle {
                 transform: rotate(45deg);
                 transition: all .4s;
             }
+
+            // .accordion-content {
+            //     max-width: 100%;
+            // }
         }
+
+        &:hover {
+            color: $Gray-100;
+        }
+
+        &:active {
+            color: $Gray-100;
+        }
+
+        &:focus {
+            color: $Gray-60;
+        }
+    }
+
+    .accordion-content {
+        display: none;
+        max-width: 794px;
+        padding: 0 0 32px 32px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+        background-color: $light-gray;
     }
       
     .accordion-toggle {
@@ -125,20 +162,36 @@
         width: 54px;
         height: 54px;
     }
-    
-    .accordion-content {
-        display: none;
-        max-width: 750px;
-        padding: 0 0 32px 32px;
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 32px;
-        color: $Gray-100;
-        // background-color: $white-color;
-
-        &_active {
-            background: $white-color;
-        }
-    }
+//////////
+    //   .accordion-header {
+    //     display: flex;
+    //     align-items: center;
+    //     cursor: pointer;
+    //     padding: 10px;
+    //     background-color: #f0f0f0;
+    //     transition: background-color 0.2s ease-in-out;
+    //   }
+      
+      
+    //   .accordion-content {
+    //     display: none;
+    //     padding: 10px;
+    //     background-color: #f0f0f0;
+    //     transition: background-color 0.2s ease-in-out;
+    //   }
+      
+    //   .accordion-item.active .accordion-header {
+    //     background-color: #c0c0c0;
+    //   }
+     
+      
+    //   .accordion-item.active .accordion-content {
+    //     display: block;
+    //     background-color: #c0c0c0;
+    //   }
+      
+    //   .accordion-item.active {
+    //     background-color: #ff8080; /* Пример фонового цвета для активного элемента */
+    //   }
+      
 }
