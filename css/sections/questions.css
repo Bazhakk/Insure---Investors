@@ -28,6 +28,11 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+@media screen and (max-width: 1550px) {
+  .questions {
+    margin: 0 16px;
+  }
+}
 .questions__container {
   background: #F7FBFD;
   border-radius: 12px;
@@ -88,21 +93,11 @@
   margin: 0;
   border: 1px solid #CED2D6;
 }
-@media screen and (max-width: 525px) {
-  .questions .accordion-item::before {
-    margin: 0 24px;
-  }
-}
 .questions .accordion-item_tail::after {
   content: "";
   display: block;
   margin: 0;
   border: 1px solid #CED2D6;
-}
-@media screen and (max-width: 525px) {
-  .questions .accordion-item_tail::after {
-    margin: 0 24px;
-  }
 }
 .questions .accordion-item_active .accordion-header {
   background-color: #fff;
@@ -136,6 +131,13 @@
 .questions .accordion-header:focus {
   color: #6C7785;
 }
+@media screen and (max-width: 1024px) {
+  .questions .accordion-header {
+    padding: 17px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .questions .accordion-content {
   display: none;
   max-width: 794px;
@@ -147,6 +149,19 @@
   color: #0A1C33;
   background-color: #F7FBFD;
 }
+@media screen and (max-width: 1024px) {
+  .questions .accordion-content {
+    max-width: 550px;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .questions .accordion-content {
+    max-width: 295px;
+  }
+}
 .questions .accordion-toggle {
   transition: all 0.4s;
   display: inline-block;
@@ -156,10 +171,22 @@
   background-size: contain;
   transition: transform all 0.4s;
 }
+@media screen and (max-width: 1024px) {
+  .questions .accordion-toggle {
+    width: 46px;
+    height: 46px;
+  }
+}
 .questions .accordion-item.active .accordion-toggle {
   background-image: url("../../img/questions-img/questions-activ.svg");
   width: 54px;
   height: 54px;
+}
+@media screen and (max-width: 1024px) {
+  .questions .accordion-item.active .accordion-toggle {
+    width: 46px;
+    height: 46px;
+  }
 }
 
 /*# sourceMappingURL=questions.css.map */

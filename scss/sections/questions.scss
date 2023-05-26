@@ -3,6 +3,10 @@
 
 .questions {
 
+    @media screen and (max-width: 1550px) {
+        margin: 0 16px;
+    }
+
     &__container {
         background: $light-gray;
         border-radius: 12px;
@@ -65,10 +69,6 @@
             display: block;
             margin: 0;
             border: 1px solid $Gray-20;
-
-            @media screen and (max-width: 525px) {
-                margin: 0 24px;
-            }
         }
 
         &_tail {
@@ -77,10 +77,6 @@
                 display: block;
                 margin: 0;
                 border: 1px solid $Gray-20;
-    
-                @media screen and (max-width: 525px) {
-                    margin: 0 24px;
-                }
             }
         }
 
@@ -133,6 +129,12 @@
         &:focus {
             color: $Gray-60;
         }
+
+        @media screen and (max-width: 1024px) {
+            padding: 17px;
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     .accordion-content {
@@ -145,6 +147,17 @@
         line-height: 32px;
         color: $Gray-100;
         background-color: $light-gray;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 550px;
+            padding: 12px 16px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media screen and (max-width: 560px) {
+            max-width: 295px;
+        }
     }
       
     .accordion-toggle {
@@ -155,43 +168,21 @@
         background: url("../../img/questions-img/Questions.svg") no-repeat;
         background-size: contain;
         transition: transform all 0.4s;
+
+        @media screen and (max-width: 1024px) {
+            width: 46px;
+            height: 46px;
+        }
     }
     
     .accordion-item.active .accordion-toggle {
         background-image: url("../../img/questions-img/questions-activ.svg");
         width: 54px;
         height: 54px;
+
+        @media screen and (max-width: 1024px) {
+            width: 46px;
+            height: 46px;
+        }
     }
-//////////
-    //   .accordion-header {
-    //     display: flex;
-    //     align-items: center;
-    //     cursor: pointer;
-    //     padding: 10px;
-    //     background-color: #f0f0f0;
-    //     transition: background-color 0.2s ease-in-out;
-    //   }
-      
-      
-    //   .accordion-content {
-    //     display: none;
-    //     padding: 10px;
-    //     background-color: #f0f0f0;
-    //     transition: background-color 0.2s ease-in-out;
-    //   }
-      
-    //   .accordion-item.active .accordion-header {
-    //     background-color: #c0c0c0;
-    //   }
-     
-      
-    //   .accordion-item.active .accordion-content {
-    //     display: block;
-    //     background-color: #c0c0c0;
-    //   }
-      
-    //   .accordion-item.active {
-    //     background-color: #ff8080; /* Пример фонового цвета для активного элемента */
-    //   }
-      
 }

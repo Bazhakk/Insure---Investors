@@ -33,7 +33,12 @@
   border-radius: 60px 60px 0 0;
   background-image: url("../../img/insurance.img/insurance-bg.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+}
+@media screen and (max-width: 564px) {
+  .insurance {
+    height: 550px;
+  }
 }
 .insurance__container {
   position: relative;
@@ -63,9 +68,16 @@
 }
 @media screen and (max-width: 550px) {
   .insurance__content::before {
-    width: 450px;
-    top: 63%;
+    width: 425px;
+    top: 57%;
     left: 4%;
+  }
+}
+@media screen and (max-width: 454px) {
+  .insurance__content::before {
+    width: 400px;
+    top: 48%;
+    left: 0%;
   }
 }
 .insurance__title {
@@ -100,7 +112,7 @@
 }
 @media screen and (max-width: 1024px) {
   .insurance__box {
-    display: inline-flex;
+    flex-direction: column-reverse;
     padding-bottom: 30px;
   }
 }
