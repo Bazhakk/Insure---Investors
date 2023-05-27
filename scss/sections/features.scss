@@ -115,6 +115,13 @@
                 font-size: 20px;
                 line-height: 28px;
             }
+
+            &_active {
+                .features-mobile__toggle {
+                    transition: transform all 0.4s;
+                    transform: rotate(-180deg);
+                }
+            }
         }
 
         &__content {
@@ -122,6 +129,15 @@
             &_hidden {
                 display: none;
             }
+        }
+
+        &__toggle {
+            transition: all .4s;
+            display: inline-block;
+            width: 17px;
+            height: 12px;
+            background: url("../../img/fearures/arrow-before.svg") no-repeat;
+            background-size: contain;
         }
     }
 

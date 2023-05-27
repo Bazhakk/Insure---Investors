@@ -79,16 +79,6 @@
                 border: 1px solid $Gray-20;
             }
         }
-
-        &_active {
-            .accordion-header {
-                background-color: $white-color;
-            }
-
-            .accordion-content {
-                background-color: $white-color;
-            }
-        }
     }
 
     .accordion-header {
@@ -102,20 +92,12 @@
         font-size: 25px;
         line-height: 30px;
         color: $Gray-80;
-        background-color: $light-gray;
 
         &_active {
-            // max-width: 100%;
-            // background-color: $white-color;
-
             .accordion-toggle {
                 transform: rotate(45deg);
                 transition: all .4s;
             }
-
-            // .accordion-content {
-            //     max-width: 100%;
-            // }
         }
 
         &:hover {
@@ -146,7 +128,6 @@
         font-size: 22px;
         line-height: 32px;
         color: $Gray-100;
-        background-color: $light-gray;
 
         @media screen and (max-width: 1024px) {
             max-width: 550px;
@@ -157,6 +138,10 @@
 
         @media screen and (max-width: 560px) {
             max-width: 295px;
+        }
+
+        &_active {
+            background-color: $white-color;
         }
     }
       
@@ -184,5 +169,5 @@
             width: 46px;
             height: 46px;
         }
-    }
+    } 
 }

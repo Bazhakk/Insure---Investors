@@ -397,14 +397,6 @@ ul {
   width: 100%;
 }
 
-.arrow {
-  transition: transform 0.4s ease;
-}
-
-.arrow.rotated {
-  transform: rotate(180deg);
-}
-
 @font-face {
   font-family: "Poller One";
   src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
@@ -672,7 +664,7 @@ ul {
   font-weight: 700;
 }
 .hero {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -721,7 +713,17 @@ ul {
 }
 @media screen and (max-width: 1290px) {
   .hero__col_right {
-    top: 68%;
+    top: 76%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .hero__col_right {
+    top: 67%;
+  }
+}
+@media screen and (max-width: 411px) {
+  .hero__col_right {
+    top: 72%;
   }
 }
 .hero__img {
@@ -1667,12 +1669,25 @@ ul {
   line-height: 30px;
   color: #B5BAC1;
 }
+.footer .footer-mobile__subtitle_active .footer-mobile__toggle {
+  transition: transform all 0.4s;
+  transform: rotate(-180deg);
+}
 .footer .footer-mobile__title {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   color: #fff;
+}
+.footer .footer-mobile__toggle {
+  transition: all 0.4s;
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background: url("../../img/footer-img/arrow.svg") no-repeat;
+  background-size: contain;
+  transition: transform all 0.4s;
 }
 .footer .footer-basement {
   display: flex;
@@ -1799,16 +1814,16 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 564px) {
-  .insurance {
-    height: 550px;
-  }
-}
 .insurance__container {
   position: relative;
 }
 .insurance__content {
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .insurance__content {
+    margin: 0 auto;
+  }
 }
 .insurance__content::before {
   content: "";
@@ -1820,27 +1835,20 @@ ul {
   height: 400px;
   top: 40%;
   left: -2%;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 @media screen and (max-width: 1024px) {
   .insurance__content::before {
-    width: 500px;
-    height: 337px;
+    max-width: 500px;
+    max-height: 337px;
     top: 54%;
     left: 2%;
   }
 }
 @media screen and (max-width: 550px) {
   .insurance__content::before {
-    width: 425px;
-    top: 57%;
-    left: 4%;
-  }
-}
-@media screen and (max-width: 454px) {
-  .insurance__content::before {
-    width: 400px;
-    top: 48%;
+    max-width: 420px;
+    top: 54%;
     left: 0%;
   }
 }
@@ -2137,8 +2145,20 @@ ul {
     line-height: 28px;
   }
 }
+.features .features-mobile__link_active .features-mobile__toggle {
+  transition: transform all 0.4s;
+  transform: rotate(-180deg);
+}
 .features .features-mobile__content_hidden {
   display: none;
+}
+.features .features-mobile__toggle {
+  transition: all 0.4s;
+  display: inline-block;
+  width: 17px;
+  height: 12px;
+  background: url("../../img/fearures/arrow-before.svg") no-repeat;
+  background-size: contain;
 }
 .features__box {
   display: flex;
@@ -2343,12 +2363,6 @@ ul {
   margin: 0;
   border: 1px solid #CED2D6;
 }
-.questions .accordion-item_active .accordion-header {
-  background-color: #fff;
-}
-.questions .accordion-item_active .accordion-content {
-  background-color: #fff;
-}
 .questions .accordion-header {
   display: flex;
   align-items: center;
@@ -2360,7 +2374,6 @@ ul {
   font-size: 25px;
   line-height: 30px;
   color: #3B495C;
-  background-color: #F7FBFD;
 }
 .questions .accordion-header_active .accordion-toggle {
   transform: rotate(45deg);
@@ -2391,7 +2404,6 @@ ul {
   font-size: 22px;
   line-height: 32px;
   color: #0A1C33;
-  background-color: #F7FBFD;
 }
 @media screen and (max-width: 1024px) {
   .questions .accordion-content {
@@ -2405,6 +2417,9 @@ ul {
   .questions .accordion-content {
     max-width: 295px;
   }
+}
+.questions .accordion-content_active {
+  background-color: #fff;
 }
 .questions .accordion-toggle {
   transition: all 0.4s;

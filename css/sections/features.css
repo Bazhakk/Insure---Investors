@@ -141,8 +141,20 @@
     line-height: 28px;
   }
 }
+.features .features-mobile__link_active .features-mobile__toggle {
+  transition: transform all 0.4s;
+  transform: rotate(-180deg);
+}
 .features .features-mobile__content_hidden {
   display: none;
+}
+.features .features-mobile__toggle {
+  transition: all 0.4s;
+  display: inline-block;
+  width: 17px;
+  height: 12px;
+  background: url("../../img/fearures/arrow-before.svg") no-repeat;
+  background-size: contain;
 }
 .features__box {
   display: flex;

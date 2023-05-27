@@ -22,15 +22,6 @@ jQuery(document).ready(function ( $ ) {
   // HOME PAGE
   // Feauters
   $(document).ready(function() {
-    $('.features-mobile__link').click(function() {
-      $(this).parent('.features-mobile__block').toggleClass('active');
-      $(this).next('.features-mobile__content').slideToggle();
-      $('#features-mobile-1').addClass('features-mobile__link_active');
-      $('#features-mobile-2').addClass('features-mobile__block_active');
-      $('#features-mobile-3').addClass('features-mobile__block_active');
-      $('#features-mobile-4').addClass('features-mobile__block_active');
-    });
-
     $('#features-1').on('click', function() {
       $('.features-menu__link').removeClass('features-menu__link_active');
       $('#features-1').addClass('features-menu__link_active');
@@ -58,35 +49,102 @@ jQuery(document).ready(function ( $ ) {
       $('.features__box').addClass('features__box_hidden');
       $('#features-box-4').removeClass('features__box_hidden');
     });
+    // Обработчик событий при клике на элемент списка
+    $(".features-menu__link").click(function() {
+      // Удаляем класс 'active' у всех элементов
+      $(".features-menu__link").removeClass("active");
+      // Добавляем класс 'active' к текущему элементу
+      $(this).addClass("active");
+    });
+  });
+
+  // Features-mobile
+  $(document).ready(function() {
+    $('.features-mobile__link').click(function() {
+      var content = $(this).next('.features-mobile__content');
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp();
+        $(this).toggleClass('features-mobile__link_active');
+        $(this).toggleClass('features-mobile__block_active');
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.features-mobile__content').slideUp();
+        
+        // Затем развернуть текущий элемент
+        content.slideDown();
+        $(this).toggleClass('features-mobile__link_active');
+        $(this).toggleClass('features-mobile__block_active');
+        $(this).find('.features-mobile__toggle').toggleClass('rotate');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.features-mobile__link').not(this).removeClass('features-mobile__link_active');
+        $('.features-mobile__block').not(accordionItem).removeClass('features-mobile__block_active');
+        $('.features-mobile__toggle').not($(this).find('.features-mobile__toggle')).removeClass('rotate');
+      }
+    });
   });
 
   //QUESTIONS
   $(document).ready(function() {
     $('.accordion-header').click(function() {
-      var content = $(this).next('.accordion-content')
+      var content = $(this).next('.accordion-content');
+      var accordionItem = $(this).closest('.accordion-item');
+      
       // Проверяем, открыт ли текущий элемент
       if (content.is(':visible')) {
         // Если открыт, сворачиваем его
-        content.slideUp()
-        $(this).toggleClass('accordion-header_active')
-        $(this).toggleClass('accordion-item_active')
+        content.slideUp();
+        accordionItem.removeClass('open').css('background-color', '#F7FBFD');
+        $(this).toggleClass('accordion-header_active');
+        $(this).toggleClass('accordion-item_active');
       } else {
         // Если закрыт, сворачиваем все активные панели
         $('.accordion-content').slideUp();
+        $('.accordion-item.open').removeClass('open').css('background-color', '#F7FBFD');
+        
         // Затем развернуть текущий элемент
-        content.slideDown()
-        $(this).toggleClass('accordion-header_active')
-        $(this).toggleClass('accordion-item_active')
+        content.slideDown();
+        accordionItem.addClass('open').css('background-color', 'white');
+        $(this).toggleClass('accordion-header_active');
+        $(this).toggleClass('accordion-item_active');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.accordion-header').not(this).removeClass('accordion-header_active');
+        $('.accordion-item').not(accordionItem).removeClass('accordion-item_active');
       }
-    })
-  })
+    });
+  });
   
   //FOOTER
   //Footer-mobile
   $(document).ready(function() {
     $('.footer-mobile__subtitle').click(function() {
-      $(this).parent('.footer-mobile__item').toggleClass('active');
-      $(this).next('.footer-mobile__content').slideToggle();
+      var content = $(this).next('.footer-mobile__content');
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp();
+        $(this).toggleClass('footer-mobile__subtitle_active');
+        $(this).toggleClass('footer-mobile__item_active');
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.footer-mobile__content').slideUp();
+        
+        // Затем развернуть текущий элемент
+        content.slideDown();
+        $(this).toggleClass('footer-mobile__subtitle_active');
+        $(this).toggleClass('footer-mobile__item_active');
+        $(this).find('.footer-mobile__toggle').toggleClass('rotate');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.footer-mobile__subtitle').not(this).removeClass('footer-mobile__subtitle_active');
+        $('.footer-mobile__item').not(accordionItem).removeClass('footer-mobile__item_active');
+        $('.footer-mobile__toggle').not($(this).find('.footer-mobile__toggle')).removeClass('rotate');
+      }
     });
   });
 
@@ -97,13 +155,6 @@ jQuery(document).ready(function ( $ ) {
     slidesToScroll: 2,
     arrows: false,
     dots: true
-  });
-
-  //Arrow
-  $(document).ready(function() {
-    $('.arrow').click(function() {
-      $(this).toggleClass('rotated');
-    });
   });
 
   // AOS init

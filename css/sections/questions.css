@@ -99,12 +99,6 @@
   margin: 0;
   border: 1px solid #CED2D6;
 }
-.questions .accordion-item_active .accordion-header {
-  background-color: #fff;
-}
-.questions .accordion-item_active .accordion-content {
-  background-color: #fff;
-}
 .questions .accordion-header {
   display: flex;
   align-items: center;
@@ -116,7 +110,6 @@
   font-size: 25px;
   line-height: 30px;
   color: #3B495C;
-  background-color: #F7FBFD;
 }
 .questions .accordion-header_active .accordion-toggle {
   transform: rotate(45deg);
@@ -147,7 +140,6 @@
   font-size: 22px;
   line-height: 32px;
   color: #0A1C33;
-  background-color: #F7FBFD;
 }
 @media screen and (max-width: 1024px) {
   .questions .accordion-content {
@@ -161,6 +153,9 @@
   .questions .accordion-content {
     max-width: 295px;
   }
+}
+.questions .accordion-content_active {
+  background-color: #fff;
 }
 .questions .accordion-toggle {
   transition: all 0.4s;

@@ -29,7 +29,7 @@
   font-weight: 700;
 }
 .hero {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +78,17 @@
 }
 @media screen and (max-width: 1290px) {
   .hero__col_right {
-    top: 68%;
+    top: 76%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .hero__col_right {
+    top: 67%;
+  }
+}
+@media screen and (max-width: 411px) {
+  .hero__col_right {
+    top: 72%;
   }
 }
 .hero__img {
