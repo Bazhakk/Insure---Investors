@@ -51,11 +51,11 @@
   color: #fff;
   background: #E91E63;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 690px) {
   .button_hero {
-    padding: 20px 40px;
-    font-size: 21px;
-    line-height: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 375px) {
@@ -145,6 +145,12 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+@media screen and (max-width: 1230px) {
+  .button_steps {
+    display: block;
+    width: 100%;
+  }
+}
 .button_specialities:hover svg {
   transition: all 0.3s;
   fill: #E91E63;
@@ -197,11 +203,11 @@
   background: #CFE9E7;
   border: 2px solid #0EB7AE;
 }
-@media screen and (max-width: 212px) {
+@media screen and (max-width: 1024px) {
   .button_about {
-    padding: 8px 17px;
-    font-size: 13px;
-    line-height: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 .button_questions {

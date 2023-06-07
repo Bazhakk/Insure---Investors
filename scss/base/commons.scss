@@ -26,10 +26,10 @@
       color: $white-color;
       background: $main-color-pink;
 
-      @media screen and (max-width: 375px) {
-        padding: 20px 40px;
-        font-size: 21px;
-        line-height: 25px;
+      @media screen and (max-width: 690px) {
+        display: block;
+        width: 100%;
+        text-align: center;
       }
 
       @media screen and (max-width: 375px) {
@@ -126,6 +126,11 @@
           vertical-align: middle;
           color: $disabled-color-pink;
         }
+
+        @media screen and (max-width: 1230px) {
+          display: block;
+          width: 100%;
+        }
     }
 
     &_specialities {
@@ -188,10 +193,10 @@
         border: 2px solid $hover-teal;
       }
 
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
-        font-size: 13px;
-        line-height: 15px;
+      @media screen and (max-width: 1024px) {
+        display: block;
+        width: 100%;
+        text-align: center;
       }
     }
 

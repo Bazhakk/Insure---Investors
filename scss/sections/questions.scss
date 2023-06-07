@@ -113,7 +113,7 @@
         }
 
         @media screen and (max-width: 1024px) {
-            padding: 17px;
+            padding: 17px 24px;
             font-size: 18px;
             line-height: 22px;
         }
@@ -130,15 +130,15 @@
         color: $Gray-100;
 
         @media screen and (max-width: 1024px) {
-            max-width: 550px;
-            padding: 12px 16px;
+            // max-width: 550px;
+            padding: 0 24px 16px 24px;
             font-size: 18px;
             line-height: 28px;
         }
 
-        @media screen and (max-width: 560px) {
-            max-width: 295px;
-        }
+        // @media screen and (max-width: 560px) {
+        //     max-width: 295px;
+        // }
 
         &_active {
             background-color: $white-color;
