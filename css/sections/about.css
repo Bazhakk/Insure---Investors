@@ -49,6 +49,7 @@
   .about__container {
     flex-direction: column-reverse;
     align-items: center;
+    padding: 25px 16px 33px 16px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -87,7 +88,6 @@
 }
 @media screen and (max-width: 1024px) {
   .about__subtitle {
-    padding: 25px 0 33px 0;
     font-size: 18px;
     line-height: 28px;
   }

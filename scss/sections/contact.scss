@@ -15,10 +15,11 @@
         margin: 0 auto;
         padding-bottom: 80px;
 
-        @media (max-width: 1420px) {
+        @media (max-width: 1024px) {
+            width: 100%;
             margin: 0 16px;
             flex-direction: column;
-            padding: 0;
+            padding-top: 60px;
         }
     }
 
@@ -42,6 +43,7 @@
         max-width: 385px;
         margin: 0;
         padding-top: 40px;
+        padding-bottom: 50px;
         font-family: 'DM Sans';
         font-weight: 400;
         font-size: 22px;
@@ -51,30 +53,21 @@
         @media (max-width: 1024px) {
             max-width: 340px;
             padding-top: 25px;
+            padding-bottom: 25px;
             font-size: 18px;
             line-height: 28px;
         }
         
     }
 
-    &__col {
-        &-left {
-            position: relative;
-        }
-    }
-
     &__box {
-        position: relative;
-        left: 50px;
-
-        @media (max-width: 936px) {
-            left: 34px;
-        }
+        padding-left: 40px;
     }
 
     &__address,
     &__email,
     &__tel {
+        position: relative;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
@@ -83,9 +76,6 @@
     }
 
     &__address {
-        margin: 0;
-        padding: 50px 0 40px 0;
-        
         &::before {
             content: "";
             background-image:  url("../../img/contact-address.svg");
@@ -94,36 +84,16 @@
             position: absolute;
             width: 32px;
             height: 32px;
-            top: 19%;
+            top: 1%;
             left: -9%;
 
-            // @media (max-width: 1420px) {
-            //     top: 20%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 1024px) {
-            //     top: 10%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 812px) {
-            //     left: -6%;
-            // }
-
-            // @media (max-width: 516px) {
-            //     left: -10%;
-            // }
-        }
-
-        @media (max-width: 1024px) {
-            padding: 25px 0;
+            @media (max-width: 1024px) {
+                left: -5%;
+            }
         }
     }
 
     &__tel {
-        padding-bottom: 40px;
-
         &::before {
             content: "";
             background-image:  url("../../img/contact-tel.svg");
@@ -133,30 +103,15 @@
             width: 32px;
             height: 32px;
             left: -9%;
-            bottom: 34%;
+            bottom: 30%;
 
-            // @media (max-width: 1420px) {
-            //     top: 54%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 1024px) {
-            //     top: 45%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 812px) {
-            //     left: -6%;
-            // }
-
-            // @media (max-width: 516px) {
-            //     left: -10%;
-            // }
+            @media (max-width: 1024px) {
+                left: -5%;
+            }
         }
     }
 
     &__email {
-
         &::before {
             content: "";
             background-image:  url("../../img/contact-email.svg");
@@ -166,29 +121,15 @@
             width: 32px;
             height: 32px;
             left: -9%;
-            bottom: -1%;
+            bottom: -4%;
 
-            // @media (max-width: 1420px) {
-            //     bottom: -1%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 1024px) {
-            //     bottom: -2%;
-            //     left: -5%;
-            // }
-
-            // @media (max-width: 812px) {
-            //     left: -6%;
-            // }
-
-            // @media (max-width: 516px) {
-            //     left: -10%;
-            // }
+            @media (max-width: 1024px) {
+                left: -5%;
+            }
         }
     }
-
     .form {
+        width: 100%;
         display: grid;
         gap: 40px;
         width: 950px;
@@ -199,53 +140,29 @@
         border: 1px solid $Gray-10;
         filter: $box-shadow-l;
 
-        @media (max-width: 1024px) {
-            width: 600px;
-            padding: 32px 24px;
-            gap: 16px;
-        }
-
-        @media (max-width: 624px) {
-            width: 345px;
-        }
-
         &__first-row {
             display: flex;
             justify-content: space-between;
             padding: 0;
             border: none;
-
-            @media (max-width: 1024px) {
-                flex-direction: column;
-                margin: 0 auto;
-            }
         }
 
-        &__name-value {
+        &__group {
             position: relative;
-            display: grid;
-            width: 374px;
-            height: 60px;
-            gap: 2px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            background: $input;
 
-            @media (max-width: 1024px) {
-                width: 500px;
-            }
-
-            @media (max-width: 624px) {
-                width: 295px;
+            &-line {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                transition: all 0.2s ease;
+                pointer-events: none;
             }
         }
 
-        &__field-wrap {
-            width: 374px;
-            height: 60px;
+        &__row,
+        &__second-row,
+        &__third-row {
             padding-left: 16px;
             font-family: 'DM Sans';
             font-weight: 400;
@@ -253,105 +170,47 @@
             line-height: 32px;
             border-radius: 6px;
             background: $input;
-            border: 1px solid $Gray-20;
-
-            @media (max-width: 1024px) {
-                width: 500px;
-            }
-
-            @media (max-width: 624px) {
-                width: 295px;
-            }
+            border: 1px solid $Gray-70;
         }
 
-        &__name {
-            position: absolute;
-            top: 2px;
-            left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 18px;
-            color: $Gray-100;
-            background: $input;
-            border: none;
-        }
-
-        &__field-other {
-            padding-top: 20px;
-            padding-left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border: none;
-            border-radius: 6px;
-            background: $input;
-            border: 1px solid $Gray-20;
-
-            &::placeholder {
-                color: $Gray-100;
-            }
+        &__row {
+            width: 374px;
+            height: 60px;
         }
 
         &__second-row {
             width: 788px;
             height: 60px;
-            padding: 14px 0 14px 16px;
-            border-radius: 6px;
-            border: 1px solid $Gray-20;
-            background: $input;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            background: $input;
-
-            @media (max-width: 1024px) {
-                width: 500px;
-                margin: 0 auto;
-            }
-
-            @media (max-width: 624px) {
-                width: 295px;
-            }
         }
 
         &__third-row {
             width: 788px;
             height: 120px;
-            padding: 14px 0 14px 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            color: $Gray-50;
-            background: $input;
-            border: 1px solid $Gray-20;
-
-            @media (max-width: 1024px) {
-                width: 500px;
-                margin: 0 auto;
-            }
-
-            @media (max-width: 624px) {
-                width: 295px;
-            }
-        }
-
-        &__field-wrap,
-        &__field-other,
-        &__second-row,
-        &__third-row {
-
-            &:hover {
-                border: 1px solid $Gray-60;
-            }
-
-            &:focus { outline: none;
-                border: 2px solid $main-color-teal; 
-            }
+            padding-top: 14px;
         }
     }
+
+   
+      
+      .form-group label {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: all 0.2s ease;
+        pointer-events: none;
+      }
+      
+      .form-group.active label {
+        transform: translateY(-100%) scale(0.8);
+      }
+      
+      .textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        resize: vertical;
+      }
+      
+      
 }

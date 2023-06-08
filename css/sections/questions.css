@@ -50,7 +50,6 @@
 }
 @media screen and (max-width: 1024px) {
   .questions__title {
-    padding-top: 55px;
     padding-bottom: 24px;
     font-size: 40px;
     line-height: 44px;
@@ -143,7 +142,7 @@
 }
 @media screen and (max-width: 1024px) {
   .questions .accordion-content {
-    padding: 0 24px 16px 24px;
+    padding: 0 40px 16px 24px;
     font-size: 18px;
     line-height: 28px;
   }

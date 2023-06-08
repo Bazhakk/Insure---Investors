@@ -7,10 +7,6 @@
     &__container {
         padding-bottom: 80px;
         text-align: center;
-
-        @media screen and (max-width: 1024px) {
-            padding-bottom: 60px;
-        }
     }
 
     &__title {

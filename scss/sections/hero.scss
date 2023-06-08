@@ -2,7 +2,7 @@
 @import "../base/variables";
 
 .hero {
-    height: 90vh;
+    height: 70vh;
     background-image: url("../../img/hero-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
@@ -49,7 +49,7 @@
           }
 
           @media screen and (max-width: 1290px) {
-            top: 76%;
+            top: 70%;
           }
 
           @media screen and (max-width: 510px) {

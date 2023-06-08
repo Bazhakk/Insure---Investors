@@ -197,6 +197,7 @@
         display: block;
         width: 100%;
         text-align: center;
+        margin-top: -32px;
       }
     }
 
@@ -218,8 +219,10 @@
         border: 2px solid $hover-teal;
       }
 
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
+      @media screen and (max-width: 1024px) {
+        display: block;
+        width: 100%;
+        margin-top: -60px;
         font-size: 13px;
         line-height: 15px;
       }
@@ -241,11 +244,15 @@
         background-color: $hover-color-pink;
       }
 
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: -32px;
         font-size: 13px;
         line-height: 15px;
-      }
+      } 
     }
 
     &_contact {
@@ -262,6 +269,7 @@
       line-height: 25px;
       color: $Gray-100;
       background-color: $white-color;
+      cursor: pointer;
 
       &:hover {
         transition: all .4s;

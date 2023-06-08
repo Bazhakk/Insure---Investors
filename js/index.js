@@ -161,4 +161,18 @@ jQuery(document).ready(function ( $ ) {
   AOS.init({
     once: true
   });
+
+  //CONTACT
+  //FORM
+  $(document).ready(function() {
+    $('.form__group .form__row').on('focus', function() {
+      $(this).parent('.form__group').addClass('active');
+    });
+  
+    $('.form__group .form__third-row').on('blur', function() {
+      if ($(this).val() === '') {
+        $(this).parent('.form__group').removeClass('active');
+      }
+    });
+  });
 });

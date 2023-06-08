@@ -724,18 +724,35 @@
                 </div>
 
                 <div class="contact__col-right">
+                    
                     <form class="form" id="form">
                         <fieldset class="form__first-row">
-                            <div class="form__name-value">
-                                <label class="form__name" for="name">First Name</label>
-                                <input class="form__field-other" type="name" id="name" name="name" placeholder="Toby">
+                            <div class="form__group">
+                                <input class="form__row" type="text" id="inputField" required placeholder="First Name">
+                                <label class="form__line" for="inputField"></label>
                             </div>
-                            <input class="form__field-wrap" type="name" id="name" name="name" required placeholder="Last Name">
+
+                            <div class="form__group">
+                                <input class="form__row" type="text" id="inputField" required placeholder="Last Name">
+                                <label for="inputField"></label>
+                            </div>
                         </fieldset>
-                        <input class="form__second-row" type="email" id="email" name="email" required placeholder="Email">
-                        <textarea class="form__third-row" id="message" name="message" required placeholder="Message"></textarea>
+
+                        <div class="form__group">
+                            <input class="form__second-row" type="text" id="inputField" required placeholder="Email">
+                            <label for="inputField"></label>
+                        </div>
+
+                        <div class="form__group">
+                            <textarea class="form__third-row" id="textareaField" required placeholder="Message"></textarea>
+                            <label for="textareaField"></label>
+                        </div>
+                        <!-- <input class="form__second-row" type="email" id="email" name="email" required placeholder="Email"> -->
+                        <!-- <textarea class="form__third-row" id="message" name="message" required placeholder="Message"></textarea> -->
                         <input class="button button_contact" type="submit" value="Submit">
                     </form>
+                    
+                      
                 </div>
             </div>
         </section> 
@@ -900,7 +917,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="your-script.js"></script>
+    <!-- <script src="your-script.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
 </body>
