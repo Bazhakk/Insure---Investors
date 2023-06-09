@@ -64,6 +64,7 @@
         color: $Gray-100;
 
         @media screen and (max-width: 1024px) {
+            padding-bottom: 32px;
             font-size: 18px;
             line-height: 28px;
         }

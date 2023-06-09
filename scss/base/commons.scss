@@ -279,8 +279,9 @@
       }
 
       @media (max-width: 1024px) {
-        width: 295px;
-    }
+        display: block;
+        width: 100%;
+      }
     }
 
     &_insurance {

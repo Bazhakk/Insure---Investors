@@ -283,7 +283,8 @@
 }
 @media (max-width: 1024px) {
   .button_contact {
-    width: 295px;
+    display: block;
+    width: 100%;
   }
 }
 .button_insurance {

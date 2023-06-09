@@ -118,6 +118,20 @@ jQuery(document).ready(function ( $ ) {
     });
   });
   
+  //CONTACT
+  //FORM
+  $(document).ready(function() {
+    $('.form-group input, .form-group textarea').on('focus', function() {
+      $(this).prev('label').addClass('active');
+    });
+  
+    $('.form-group input, .form-group textarea').on('blur', function() {
+      if ($(this).val() === '') {
+        $(this).prev('label').removeClass('active');
+      }
+    });
+  });
+
   //FOOTER
   //Footer-mobile
   $(document).ready(function() {
@@ -160,19 +174,5 @@ jQuery(document).ready(function ( $ ) {
   // AOS init
   AOS.init({
     once: true
-  });
-
-  //CONTACT
-  //FORM
-  $(document).ready(function() {
-    $('.form__group .form__row').on('focus', function() {
-      $(this).parent('.form__group').addClass('active');
-    });
-  
-    $('.form__group .form__third-row').on('blur', function() {
-      if ($(this).val() === '') {
-        $(this).parent('.form__group').removeClass('active');
-      }
-    });
   });
 });

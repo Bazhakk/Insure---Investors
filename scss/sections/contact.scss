@@ -11,15 +11,12 @@
     &__container {
         position: relative;
         display: flex;
-        gap: 30px;
-        margin: 0 auto;
-        padding-bottom: 80px;
+        // padding: 0 10px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1422px) {
             width: 100%;
             margin: 0 16px;
             flex-direction: column;
-            padding-top: 60px;
         }
     }
 
@@ -43,7 +40,7 @@
         max-width: 385px;
         margin: 0;
         padding-top: 40px;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         font-family: 'DM Sans';
         font-weight: 400;
         font-size: 22px;
@@ -61,73 +58,47 @@
     }
 
     &__box {
-        padding-left: 40px;
+        width: 100%;
     }
 
     &__address,
     &__email,
     &__tel {
+        width: 100%;
+        display: flex;
         position: relative;
+        padding-bottom: 38px;
+        gap: 24px;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
         color: $Gray-80;
-    }
 
-    &__address {
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-address.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            top: 1%;
-            left: -9%;
-
-            @media (max-width: 1024px) {
-                left: -5%;
-            }
+        @media (max-width: 1024px) {
+            padding-bottom: 24px;
+            padding-right: 16px;
         }
     }
 
-    &__tel {
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-tel.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            left: -9%;
-            bottom: 30%;
+    &__address {
+       &-icon {
+         margin-top: -5px;
+       }
+    }
 
-            @media (max-width: 1024px) {
-                left: -5%;
-            }
+    &__tel {
+        &-icon {
+         margin-top: -5px;
         }
     }
 
     &__email {
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-email.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            left: -9%;
-            bottom: -4%;
-
-            @media (max-width: 1024px) {
-                left: -5%;
-            }
+        &-icon {
+         margin-top: -5px;
         }
     }
+
     .form {
         width: 100%;
         display: grid;
@@ -140,77 +111,97 @@
         border: 1px solid $Gray-10;
         filter: $box-shadow-l;
 
+        @media (max-width: 1024px) {
+            width: 345px;
+            padding: 32px 24px;
+            gap: 16px;
+        }
+
         &__first-row {
             display: flex;
             justify-content: space-between;
             padding: 0;
             border: none;
-        }
 
-        &__group {
-            position: relative;
-
-            &-line {
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                transition: all 0.2s ease;
-                pointer-events: none;
+            @media (max-width: 1024px) {
+               flex-direction: column;
             }
         }
 
-        &__row,
-        &__second-row,
-        &__third-row {
-            padding-left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            background: $input;
-            border: 1px solid $Gray-70;
-        }
+        .form-group {
+            position: relative;
+          
+            input,
+            textarea {
+                padding-left: 11px;
+                padding-top: 16px;
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                background: $white-color;
+                border: 1px solid $Gray-20;
+                border-radius: 6px;
+            }
+    
+            &__row {
+                width: 374px;
+                height: 60px;
+            }
+    
+            &__second-row {
+                width: 788px;
+                height: 60px;
+            }
+    
+            textarea {
+                width: 788px;
+                height: 120px;
+            }
+          
+            label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform-origin: top left;
+              transition: all 0.2s ease;
+              pointer-events: none;
+              transform: translateY(50%);
+              padding-left: 16px;
+              font-family: 'DM Sans';
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 32px;
+              color: $Gray-50;
+            }
+          
+            input:focus + label,
+            textarea:focus + label,
+            input:valid + label,
+            textarea:valid + label {
+              transform: translateY(-10%) scale(0.8);
+              top: 5px;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 18px;
+            }
+    
+            &__row,
+            &__second-row,
+             textarea {
+                @media (max-width: 1024px) {
+                    width: 295px;
+                }
 
-        &__row {
-            width: 374px;
-            height: 60px;
-        }
-
-        &__second-row {
-            width: 788px;
-            height: 60px;
-        }
-
-        &__third-row {
-            width: 788px;
-            height: 120px;
-            padding-top: 14px;
-        }
+                &:hover {
+                    border: 1px solid $Gray-60;
+                }
+    
+                &:focus { outline: none;
+                    border: 2px solid $main-color-teal; 
+                }
+            }
+        } 
     }
-
-   
-      
-      .form-group label {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        transition: all 0.2s ease;
-        pointer-events: none;
-      }
-      
-      .form-group.active label {
-        transform: translateY(-100%) scale(0.8);
-      }
-      
-      .textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        resize: vertical;
-      }
-      
-      
+ 
 }
