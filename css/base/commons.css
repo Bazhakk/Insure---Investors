@@ -362,6 +362,19 @@
   vertical-align: middle;
   color: #CFE9E7;
 }
+.button_details {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .button_details {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
 .link-anima {
   position: relative;

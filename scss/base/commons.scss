@@ -370,6 +370,19 @@
         color: $disabled-color-teal;
       }
     }
+
+    &_details {
+      font-family: 'DM Sans';
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 32px;
+      color: $main-color-teal;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    }
 }
 
 //ANIMATION
