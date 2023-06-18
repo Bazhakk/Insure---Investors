@@ -2,6 +2,9 @@
 @import "../base/fonts";
 @import "../base/base";
 @import "../base/commons";
+
+//Page-1
+//Home
 @import "../sections/header.scss";
 @import "../sections/hero.scss";
 @import "../sections/steps.scss";
@@ -14,3 +17,8 @@
 @import "../sections/tagline.scss";
 @import "../sections/partners.scss";
 @import "../sections/contact.scss";
+
+//Page-2
+//Multi-family
+@import "../sections/hero-page2.scss";
+@import "../sections/menu-page2.scss";

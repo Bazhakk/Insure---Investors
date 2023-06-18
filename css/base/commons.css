@@ -311,6 +311,57 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_hero-page2 {
+  padding: 20px 60px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+@media screen and (max-width: 690px) {
+  .button_hero-page2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_hero-page2:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_hero-page2:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_hero-page2:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_item-info {
+  padding: 6px 15px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  background: #00CCC2;
+  border-radius: 66px;
+  color: #fff;
+}
+.button_item-info:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
+.button_item-info:active {
+  vertical-align: middle;
+  color: #0CA099;
+}
+.button_item-info:focus {
+  vertical-align: middle;
+  color: #CFE9E7;
+}
 
 .link-anima {
   position: relative;
