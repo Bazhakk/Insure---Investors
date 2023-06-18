@@ -313,76 +313,110 @@
   }
 
   //Page-2
-    &_hero-page2 {
-      padding: 20px 60px;
-      background: $main-color-pink;
-      border-radius: 66px;
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
+  &_hero-page2 {
+    padding: 20px 60px;
+    background: $main-color-pink;
+    border-radius: 66px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $white-color;
 
-      @media screen and (max-width: 690px) {
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-  
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
-  
-      &:active {
-        vertical-align: middle;
-        color: $pressed-color-pink;
-      }
-  
-      &:focus {
-        vertical-align: middle;
-        color: $disabled-color-pink;
-      }
+    @media screen and (max-width: 690px) {
+      display: block;
+      width: 100%;
+      text-align: center;
     }
 
-    &_item-info {
-      padding: 6px 15px;
-      font-family: 'GT Eesti Pro';
-      font-weight: 700;
-      font-size: 12px;
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+  &_item-info {
+    padding: 6px 15px;
+    font-family: 'GT Eesti Pro';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    background: $main-color-teal;
+    border-radius: 66px;
+    color: $white-color;
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-teal;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-teal;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-teal;
+    }
+  }
+
+  &_details {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $main-color-teal;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
       line-height: 24px;
-      background: $main-color-teal;
-      border-radius: 66px;
-      color: $white-color;
+  }
+  }
 
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-teal;
-      }
-  
-      &:active {
-        vertical-align: middle;
-        color: $pressed-color-teal;
-      }
-  
-      &:focus {
-        vertical-align: middle;
-        color: $disabled-color-teal;
-      }
+  &_rules {
+    padding: 20px 60px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $white-color;
+    background: $main-color-pink;
+    border-radius: 66px;
+
+    @media screen and (max-width: 690px) {
+      display: block;
+      width: 100%;
+      text-align: center;
     }
 
-    &_details {
-      font-family: 'DM Sans';
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 32px;
-      color: $main-color-teal;
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
 
-      @media screen and (max-width: 1024px) {
-        font-size: 16px;
-        line-height: 24px;
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
     }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
     }
+  }
+
+
 }
 
 //ANIMATION

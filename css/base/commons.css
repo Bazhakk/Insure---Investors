@@ -375,6 +375,35 @@
     line-height: 24px;
   }
 }
+.button_rules {
+  padding: 20px 60px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+  background: #E91E63;
+  border-radius: 66px;
+}
+@media screen and (max-width: 690px) {
+  .button_rules {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_rules:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_rules:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_rules:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
 
 .link-anima {
   position: relative;
