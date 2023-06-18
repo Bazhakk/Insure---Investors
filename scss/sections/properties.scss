@@ -1,0 +1,113 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.properties {
+    background: $blue-dark;
+
+    &__title {
+        width: 830px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+        margin: 0 auto;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $white-color;
+
+        &-other {
+            color: $main-color-teal;
+        }
+    }
+
+    &__box {
+        display: flex;
+        padding-bottom: 120px;
+        transform: translate(16%);
+        gap: 20px;
+    }
+
+    &__description {
+        width: 765px;
+        border-radius: 12px;
+        background: $blue-deep;
+
+        &-right {
+            display: flex;
+            padding: 40px;
+            gap: 50px;
+        }
+
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 235px;
+        height: 235px;
+    }
+
+    &__text {
+        width: 400px;
+        margin: 0;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $white-color;
+    }
+
+    .properties-menu {
+        max-height: 332px;
+        display: grid;
+        padding-left: 22px;
+        gap: 24px;
+
+        // &::before {
+        //     content: "";
+        //     display: inline;
+        //     position: relative;
+        //     transform: rotate(90deg);
+        //     top: 11rem;
+        //     left: -11rem;
+        //     border: 2px solid $blue-deep;
+        // }
+
+        &__link {
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            color: $Gray-30;
+
+            &_active {
+                color: $white-color;
+
+                // &::before {
+                //     content: "";
+                //     width: 54px;
+                //     display: inline;
+                //     border: 2px solid $main-color-pink;
+                // }
+            }
+        }
+    }
+
+    .menu-line {
+        width: 2px;
+        height: 355px;
+        border: 2px solid $blue-deep;
+        margin-right: 22px;
+        position: relative;
+    }
+
+    .line-segment {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: $main-color-pink;
+        transition: height 0.3s ease;
+      }
+}
