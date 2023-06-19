@@ -282,13 +282,21 @@ jQuery(document).ready(function ( $ ) {
   $(document).ready(function() {
     // Скрыть контент при загрузке страницы
     $("#hidden-content").hide();
-
     // Обработчик события клика на кнопке
     $("#toggle-button").click(function(event) {
-      event.preventDefault(); // Предотвращение прыжка страницы вверх
-
-    // Переключение видимости скрытого контента
-    $("#hidden-content").toggle();
+    event.preventDefault(); // Предотвращение прыжка страницы вверх
+    // Переключение видимости скрытого контента с анимацией
+    $("#hidden-content").slideToggle("fast");
     });
+  });
+
+  //Customer
+  //Slider
+  $('.slider-customer').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+    dots: true
   });
   });

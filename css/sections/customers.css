@@ -28,145 +28,117 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
-.types {
-  min-height: 1200px;
-  position: relative;
-  z-index: 1;
-  background-color: #000E50;
-}
-.types__container {
-  padding-top: 80px;
+.customers {
+  margin: -19rem 16px 0 16px;
+  padding-bottom: 130px;
 }
 @media screen and (max-width: 1024px) {
-  .types__container {
-    padding-top: 50px;
+  .customers {
+    margin: -30rem 16px 0 16px;
   }
 }
-.types__title {
+.customers__container {
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  background-color: red;
+  box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+}
+@media screen and (max-width: 1024px) {
+  .customers__box {
+    height: 475px;
+  }
+}
+.customers__title {
   margin-bottom: 0;
-  padding-bottom: 50px;
+  padding-top: 80px;
   text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
   line-height: 100px;
-  color: #fff;
+  color: #0A1C33;
 }
 @media screen and (max-width: 1024px) {
-  .types__title {
-    padding-bottom: 40px;
+  .customers__title {
+    padding-top: 55px;
     font-size: 40px;
     line-height: 44px;
   }
 }
-.types__box {
-  display: flex;
-  gap: 8px;
+.customers__subtitle {
+  text-align: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #3B495C;
 }
-@media screen and (max-width: 1085px) {
-  .types__box {
-    flex-direction: column;
+@media screen and (max-width: 1024px) {
+  .customers__subtitle {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
-.types .clients {
-  display: grid;
-  max-width: 100%;
-  width: 515px;
-  padding: 0;
-  gap: 8px;
+.customers .customer {
+  max-width: 1290px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 0 120px 0;
+  gap: 30px;
 }
-@media screen and (max-width: 1085px) {
-  .types .clients {
+.customers .customer__element {
+  padding: 34px 52px;
+  border-radius: 12px;
+}
+.customers .customer__img {
+  max-width: 135px;
+}
+@media screen and (max-width: 1100px) {
+  .customers .customer {
     display: none;
   }
 }
-.types .clients__item {
-  height: 80px;
-  border-radius: 8px;
-  background: #0D1958;
+.customers .slider {
+  max-width: 800px;
+  max-height: 475px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
-.types .clients__title {
-  padding-left: 40px;
-  position: relative;
-  font-family: "GT Eesti Pro";
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  color: #fff;
-}
-.types .clients__title::before {
-  content: "";
-  position: absolute;
-  display: inline;
-  width: 5px;
-  height: 5px;
-  top: 10px;
-  left: 23px;
-  border-radius: 50%;
-  background-color: #00CCC2;
-}
-.types__btn {
-  padding: 80px 0 130px 0;
-  text-align: center;
-}
-.types .mobile-box {
+.customers .slider .slider-customer {
   display: none;
 }
-@media screen and (max-width: 1085px) {
-  .types .mobile-box {
+@media screen and (max-width: 1100px) {
+  .customers .slider .slider-customer {
     display: inline;
   }
-  .types .mobile-box__clients {
-    display: grid;
-    padding: 0;
-    gap: 8px;
-  }
-  .types .mobile-box__item {
-    display: flex;
-    height: 70px;
-    align-items: center;
-    border-radius: 8px;
-    background: #0D1958;
-  }
-  .types .mobile-box__title {
-    padding-left: 40px;
-    position: relative;
-    font-family: "GT Eesti Pro";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #fff;
-  }
-  .types .mobile-box__title::before {
-    content: "";
-    position: absolute;
-    display: inline;
-    width: 5px;
-    height: 5px;
-    top: 7px;
-    left: 23px;
-    border-radius: 50%;
-    background-color: #00CCC2;
+}
+.customers .slider .slider-customer__element {
+  padding: 34px 50px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .customers .slider .slider-customer__element {
+    padding: 19px 30px;
   }
 }
-.types .mobile-box .hidden-content {
-  display: none;
+@media screen and (max-width: 260px) {
+  .customers .slider .slider-customer__element {
+    padding: 4px 12px;
+  }
 }
-.types .mobile-box .toggle-button {
-  margin: 0 16px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #00CCC2;
+@media screen and (max-width: 1024px) {
+  .customers .slider .slider-customer__img {
+    max-width: 135px;
+    margin: 0 auto;
+  }
 }
-.types .mobile-box .toggle-button::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 91px;
-  margin: 0 16px;
-  border: 2px solid #E6E8EA;
+@media screen and (max-width: 375px) {
+  .customers .slider .slider-customer__img {
+    max-width: 78px;
+  }
 }
 
-/*# sourceMappingURL=types.css.map */
+/*# sourceMappingURL=customers.css.map */
