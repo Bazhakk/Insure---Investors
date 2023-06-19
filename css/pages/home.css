@@ -486,6 +486,35 @@ ul {
   vertical-align: middle;
   color: #F8D4E0;
 }
+.button_types {
+  padding: 20px 70px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  background: #E91E63;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .button_types {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_types:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_types:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_types:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
 
 .link-anima {
   position: relative;
@@ -3945,6 +3974,173 @@ ul {
   left: -8px;
   border-radius: 50%;
   background-color: #00CCC2;
+}
+
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.types {
+  background-color: #000E50;
+}
+.types__container {
+  padding-top: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .types__container {
+    padding-top: 50px;
+  }
+}
+.types__title {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .types__title {
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.types__box {
+  display: flex;
+  gap: 8px;
+}
+@media screen and (max-width: 1085px) {
+  .types__box {
+    flex-direction: column;
+  }
+}
+.types .clients {
+  display: grid;
+  max-width: 100%;
+  width: 515px;
+  padding: 0;
+  gap: 8px;
+}
+@media screen and (max-width: 1085px) {
+  .types .clients {
+    display: none;
+  }
+}
+.types .clients__item {
+  height: 80px;
+  border-radius: 8px;
+  background: #0D1958;
+}
+.types .clients__title {
+  padding-left: 40px;
+  position: relative;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #fff;
+}
+.types .clients__title::before {
+  content: "";
+  position: absolute;
+  display: inline;
+  width: 5px;
+  height: 5px;
+  top: 10px;
+  left: 23px;
+  border-radius: 50%;
+  background-color: #00CCC2;
+}
+.types__btn {
+  padding: 80px 0 130px 0;
+  text-align: center;
+}
+.types .mobile-box {
+  display: none;
+}
+@media screen and (max-width: 1085px) {
+  .types .mobile-box {
+    display: inline;
+  }
+  .types .mobile-box__clients {
+    display: grid;
+    padding: 0;
+    gap: 8px;
+  }
+  .types .mobile-box__item {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    border-radius: 8px;
+    background: #0D1958;
+  }
+  .types .mobile-box__title {
+    padding-left: 40px;
+    position: relative;
+    font-family: "GT Eesti Pro";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+  .types .mobile-box__title::before {
+    content: "";
+    position: absolute;
+    display: inline;
+    width: 5px;
+    height: 5px;
+    top: 7px;
+    left: 23px;
+    border-radius: 50%;
+    background-color: #00CCC2;
+  }
+}
+.types .mobile-box .hidden-content {
+  display: none;
+}
+.types .mobile-box .toggle-button {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00CCC2;
+}
+.types .mobile-box .toggle-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 91px;
+  margin: 0 auto;
+  border: 2px solid #E6E8EA;
 }
 
 /*# sourceMappingURL=home.css.map */

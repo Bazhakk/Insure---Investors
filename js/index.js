@@ -277,11 +277,18 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
+  //Types
+  //Mobile-menu
+  $(document).ready(function() {
+    // Скрыть контент при загрузке страницы
+    $("#hidden-content").hide();
 
+    // Обработчик события клика на кнопке
+    $("#toggle-button").click(function(event) {
+      event.preventDefault(); // Предотвращение прыжка страницы вверх
 
-
-
-
-
-
-});
+    // Переключение видимости скрытого контента
+    $("#hidden-content").toggle();
+    });
+  });
+  });
