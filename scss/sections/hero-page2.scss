@@ -2,9 +2,9 @@
 @import "../base/variables";
 
 .hero-page2 {
-    height: 100vh;
-    padding-bottom: 32px;
-    background-image: url("../../img/hero/hero-bg.png");
+    height: 90vh;
+    // background-image: url("../../img/hero/hero-bg.png");
+    background-color: aqua;
     background-repeat: no-repeat; 
     background-size: cover;
     overflow-y: hidden;
@@ -15,9 +15,11 @@
     }
 
     &__container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding-top: 160px;
+        z-index: 1;
 
         @media screen and (max-width: 1024px) {
             flex-direction: column;
@@ -31,27 +33,28 @@
         }
 
         &_right {
-            max-width: 880px;
-            position: relative;
-            right: -1%;
+            position: absolute;
+            // top: 19%;
+            right: 0%;
             z-index: 0;
 
-            @media screen and (max-width: 1024px) {
-                top: 6rem;
-            }
+            // @media screen and (max-width: 1024px) {
+            //     top: 6rem;
+            // }
         }
     }
 
     &__img {
-        max-width: 850px;
+        width: 850px;
+        object-fit: cover;
 
-        @media screen and (max-width: 1024px) {
-            max-width: 575px;
-        }
+        // @media screen and (max-width: 1024px) {
+        //     max-width: 575px;
+        // }
 
-        @media screen and (max-width: 375px) {
-            max-width: 375px;
-        }
+        // @media screen and (max-width: 375px) {
+        //     max-width: 375px;
+        // }
     }
 
     &__title {
