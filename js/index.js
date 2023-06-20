@@ -297,6 +297,32 @@ jQuery(document).ready(function ( $ ) {
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: false,
-    dots: true
+    dots: false
+  });
+
+  $(document).ready(function() {
+    var slideWidth = $(".slider-customer__element").outerWidth();
+    var slideIndex = 0;
+
+    $("#prev-button").click(function() {
+      slideIndex--;
+      if (slideIndex < 0) {
+        slideIndex = $(".slider-customer__element").length - 1;
+      }
+      updateSliderPosition();
+    });
+
+    $("#next-button").click(function() {
+      slideIndex++;
+      if (slideIndex >= $(".slider-customer__element").length) {
+        slideIndex = 0;
+      }
+      updateSliderPosition();
+    });
+
+    function updateSliderPosition() {
+      var translateX = -slideWidth * slideIndex;
+      $(".slider-container").css("transform", "translateX(" + translateX + "px)");
+    }
   });
   });

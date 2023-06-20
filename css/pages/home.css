@@ -3050,7 +3050,7 @@ ul {
 }
 .hero-page2 {
   height: 90vh;
-  background-color: aqua;
+  background-image: url("../../img/hero/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
@@ -4011,7 +4011,7 @@ ul {
 }
 @media screen and (max-width: 1024px) {
   .types__container {
-    padding-top: 50px;
+    padding-top: 55px;
   }
 }
 .types__title {
@@ -4038,6 +4038,7 @@ ul {
 @media screen and (max-width: 1085px) {
   .types__box {
     flex-direction: column;
+    gap: 0;
   }
 }
 .types .clients {
@@ -4049,13 +4050,22 @@ ul {
 }
 @media screen and (max-width: 1085px) {
   .types .clients {
-    display: none;
+    display: grid;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 8px;
   }
 }
 .types .clients__item {
   height: 80px;
   border-radius: 8px;
   background: #0D1958;
+}
+@media screen and (max-width: 1085px) {
+  .types .clients__item {
+    height: 70px;
+  }
 }
 .types .clients__title {
   padding-left: 40px;
@@ -4077,68 +4087,25 @@ ul {
   border-radius: 50%;
   background-color: #00CCC2;
 }
+@media screen and (max-width: 1085px) {
+  .types .clients__title::before {
+    top: 7px;
+  }
+}
+@media screen and (max-width: 1085px) {
+  .types .clients__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .types__btn {
   padding: 80px 0 130px 0;
   text-align: center;
 }
-.types .mobile-box {
-  display: none;
-}
 @media screen and (max-width: 1085px) {
-  .types .mobile-box {
-    display: inline;
+  .types__btn {
+    padding-top: 40px;
   }
-  .types .mobile-box__clients {
-    display: grid;
-    padding: 0;
-    gap: 8px;
-  }
-  .types .mobile-box__item {
-    display: flex;
-    height: 70px;
-    align-items: center;
-    border-radius: 8px;
-    background: #0D1958;
-  }
-  .types .mobile-box__title {
-    padding-left: 40px;
-    position: relative;
-    font-family: "GT Eesti Pro";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #fff;
-  }
-  .types .mobile-box__title::before {
-    content: "";
-    position: absolute;
-    display: inline;
-    width: 5px;
-    height: 5px;
-    top: 7px;
-    left: 23px;
-    border-radius: 50%;
-    background-color: #00CCC2;
-  }
-}
-.types .mobile-box .hidden-content {
-  display: none;
-}
-.types .mobile-box .toggle-button {
-  margin: 0 16px;
-  font-family: "DM Sans";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #00CCC2;
-}
-.types .mobile-box .toggle-button::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 91px;
-  margin: 0 16px;
-  border: 2px solid #E6E8EA;
 }
 
 @font-face {
@@ -4175,11 +4142,16 @@ ul {
   margin: -330px 16px 0 16px;
   padding-bottom: 130px;
 }
+@media screen and (max-width: 1024px) {
+  .customers {
+    margin: -125px 16px 0 16px;
+  }
+}
 .customers__container {
   position: relative;
   z-index: 2;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: red;
   box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
 }
 @media screen and (max-width: 1024px) {
@@ -4253,30 +4225,35 @@ ul {
     display: inline;
   }
 }
-.customers .slider .slider-customer__element {
-  padding: 34px 50px;
-  border-radius: 12px;
+.customers .slider-controls {
+  text-align: center;
 }
-@media screen and (max-width: 1024px) {
-  .customers .slider .slider-customer__element {
-    padding: 19px 30px;
-  }
+.customers .prev-button,
+.customers .next-button {
+  background: transparent;
+  border: none;
 }
-@media screen and (max-width: 260px) {
-  .customers .slider .slider-customer__element {
-    padding: 4px 12px;
-  }
+.customers .slider {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
-@media screen and (max-width: 1024px) {
-  .customers .slider .slider-customer__img {
-    max-width: 135px;
-    margin: 0 auto;
-  }
+.customers .slider-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-@media screen and (max-width: 375px) {
-  .customers .slider .slider-customer__img {
-    max-width: 78px;
-  }
+.customers .slide {
+  width: 400px;
+  height: 200px;
+  flex-shrink: 0;
+}
+.customers .slider-controls {
+  margin-top: 10px;
+}
+.customers .slider-controls button {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=home.css.map */
