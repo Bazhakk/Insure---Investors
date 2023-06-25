@@ -8,10 +8,10 @@
     background-size: cover;
     overflow-y: hidden;
 
-    @media screen and (max-width: 1370px) {
-        min-height: 100vh;
-        background-image: url("../../img/hero/bg-mobile-menu.png");
-    }
+    // @media screen and (max-width: 1370px) {
+    //     min-height: 100vh;
+    //     background-image: url("../../img/hero/bg-mobile-menu.png");
+    // }
 
     &__container {
         padding-top: 195px;
