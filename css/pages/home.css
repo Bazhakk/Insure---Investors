@@ -4368,46 +4368,54 @@ ul {
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
-.management {
-  padding-top: 130px;
-  padding-bottom: 80px;
+.communication {
+  padding: 130px 0;
 }
-.management__container {
-  padding: 0;
+@media screen and (max-width: 1180px) {
+  .communication {
+    padding: 60px 0;
+  }
+}
+.communication .item {
+  display: flex;
+  margin-bottom: 80px;
+  gap: 30px;
   border: 1px solid #E6E8EA;
   border-radius: 12px;
 }
-.management__col {
-  display: flex;
-  gap: 30px;
-}
 @media screen and (max-width: 1180px) {
-  .management__col {
-    flex-direction: column;
+  .communication .item {
+    flex-direction: column-reverse;
   }
 }
+.communication .item__box-other {
+  padding-left: 80px;
+}
 @media screen and (max-width: 1180px) {
-  .management__col-right {
+  .communication .item__box {
     margin: 0 16px;
   }
 }
-.management__img {
-  width: 595px;
-  height: 800px;
+.communication .item__img {
+  max-width: 595px;
 }
-.management__services {
+@media screen and (max-width: 1180px) {
+  .communication .item__img {
+    margin: 0 auto;
+  }
+}
+.communication .item__services {
   display: flex;
   margin: 0 30px;
   gap: 50px;
 }
 @media screen and (max-width: 1180px) {
-  .management__services {
+  .communication .item__services {
     flex-direction: column;
-    padding-bottom: 50px;
     gap: 0;
   }
 }
-.management__title {
+.communication .item__title {
   margin: 0;
   padding-top: 80px;
   font-family: "GT Eesti Pro";
@@ -4417,12 +4425,13 @@ ul {
   color: #0A1C33;
 }
 @media screen and (max-width: 1024px) {
-  .management__title {
+  .communication .item__title {
+    padding-top: 40px;
     font-size: 52px;
     line-height: 54px;
   }
 }
-.management__subtitle {
+.communication .item__subtitle {
   max-width: 835px;
   padding-top: 24px;
   font-family: "DM Sans";
@@ -4432,14 +4441,15 @@ ul {
   color: #0A1C33;
 }
 @media screen and (max-width: 1024px) {
-  .management__subtitle {
+  .communication .item__subtitle {
     font-size: 18px;
     line-height: 28px;
   }
 }
-.management__text {
+.communication .item__text {
   max-width: 340px;
   position: relative;
+  padding-bottom: 30px;
   padding-left: 16px;
   font-family: "DM Sans";
   font-weight: 400;
@@ -4447,7 +4457,7 @@ ul {
   line-height: 32px;
   color: #0A1C33;
 }
-.management__text::before {
+.communication .item__text::before {
   content: "";
   position: absolute;
   background-image: url("../../img/features-page3/icon-before.svg");
@@ -4456,8 +4466,106 @@ ul {
   top: -3px;
   left: -30px;
 }
+@media screen and (max-width: 1180px) {
+  .communication .item__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.communication .item-other {
+  display: flex;
+  margin-bottom: 80px;
+  gap: 30px;
+  border: 1px solid #E6E8EA;
+  border-radius: 12px;
+}
+@media screen and (max-width: 1180px) {
+  .communication .item-other {
+    flex-direction: column;
+  }
+}
+.communication .item-other__box-other {
+  padding-left: 80px;
+}
+@media screen and (max-width: 1180px) {
+  .communication .item-other__box {
+    margin: 0 16px;
+  }
+}
+.communication .item-other__img {
+  max-width: 595px;
+}
+@media screen and (max-width: 1180px) {
+  .communication .item-other__img {
+    margin: 0 auto;
+  }
+}
+.communication .item-other__services {
+  display: flex;
+  margin: 0 30px;
+  gap: 50px;
+}
+@media screen and (max-width: 1180px) {
+  .communication .item-other__services {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.communication .item-other__title {
+  margin: 0;
+  padding-top: 80px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
 @media screen and (max-width: 1024px) {
-  .management__text {
+  .communication .item-other__title {
+    padding-top: 40px;
+    font-size: 52px;
+    line-height: 54px;
+  }
+}
+.communication .item-other__subtitle {
+  max-width: 835px;
+  padding-top: 24px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .communication .item-other__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.communication .item-other__text {
+  max-width: 340px;
+  position: relative;
+  padding-bottom: 30px;
+  padding-left: 16px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+.communication .item-other__text::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/features-page3/icon-before.svg");
+  width: 38px;
+  height: 38px;
+  top: -3px;
+  left: -30px;
+}
+@media screen and (max-width: 1180px) {
+  .communication .item-other__text {
+    max-width: 100%;
     font-size: 18px;
     line-height: 28px;
   }
