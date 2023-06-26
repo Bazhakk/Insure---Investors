@@ -1,0 +1,96 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.leaders {
+    padding: 130px 0;
+
+    &__title {
+        margin-bottom: 0;
+        padding-bottom: 50px;
+        text-align: center;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+    }
+
+    &__subtitle {
+        padding-bottom: 80px;
+        text-align: center;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+    }
+}
+
+.slider {
+
+    &__img {
+        max-width: 500px;
+    }
+
+    &__title {
+        margin: 0;
+        padding-top: 40px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 58px;
+        color: $Gray-100;
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-80;
+    }
+
+    &__text {
+        max-width: 435px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $Gray-100;
+    }
+}
+
+.slider-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__icon {
+
+    }
+
+    &__button {
+        position: relative;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $Gray-100;
+
+        // &::after {
+        //     content: "";
+        //     background-image: url(../../);
+        //     position: absolute;
+        //     width: 6px;
+        //     height: 12px;
+        // }
+    }
+}

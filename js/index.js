@@ -300,4 +300,15 @@ jQuery(document).ready(function ( $ ) {
     dots: false
   });
 
+
+  //Page-6
+  //Leaders-slider
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    dots: false
+  });
+
   });
