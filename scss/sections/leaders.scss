@@ -26,15 +26,28 @@
     }
 }
 
-.slider {
+.slider-leaders {
+    max-width: 1560px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        border: 1px solid $Gray-10;
+        box-shadow: $box-shadow-l;
+        border-radius: 12px;
+    }
+
+    &__content {
+        padding: 0 32px 40px 32px;
+    }
 
     &__img {
         max-width: 500px;
     }
 
     &__title {
-        margin: 0;
-        padding-top: 40px;
+        margin-bottom: 0;
         font-family: 'GT Eesti Pro';
         font-weight: 700;
         font-size: 54px;
@@ -71,12 +84,9 @@
         gap: 16px;
     }
 
-    &__icon {
-
-    }
-
     &__button {
         position: relative;
+        padding-right: 8px;
         letter-spacing: 0.07em;
         text-transform: uppercase;
         font-family: 'DM Sans';
@@ -85,12 +95,27 @@
         line-height: 17px;
         color: $Gray-100;
 
-        // &::after {
-        //     content: "";
-        //     background-image: url(../../);
-        //     position: absolute;
-        //     width: 6px;
-        //     height: 12px;
-        // }
+        &::after {
+            content: "";
+            background-image: url('../../img/contact-us/liders-img/arrow.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            width: 10px;
+            height: 17px;
+            top: -2px;
+            right: -10px;
+        }
+    }
+}
+
+.slider-btn {
+    padding-top: 80px;
+    text-align: center;
+
+    &__prev,
+    &__next {
+        border: none;
+        background-color: transparent;
     }
 }

@@ -303,12 +303,33 @@ jQuery(document).ready(function ( $ ) {
 
   //Page-6
   //Leaders-slider
-  $('.slider').slick({
+  $('.slider-leaders').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: false,
     dots: false
+  });
+
+  $(document).ready(function() {
+    // Установка начального слайда
+    var totalSlides = $('.slider-leaders__item').length;
+    var currentSlide = 0;
+    $('.slider-leaders__item').eq(currentSlide).show();
+  
+    // Обработчик клика на кнопку "Prev"
+    $('#prev-button').click(function() {
+      $('.slider-leaders__item').eq(currentSlide).hide();
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      $('.slider-leaders__item').eq(currentSlide).show();
+    });
+  
+    // Обработчик клика на кнопку "Next"
+    $('#next-button').click(function() {
+      $('.slider-leaders__item').eq(currentSlide).hide();
+      currentSlide = (currentSlide + 1) % totalSlides;
+      $('.slider-leaders__item').eq(currentSlide).show();
+    });
   });
 
   });
