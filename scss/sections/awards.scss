@@ -1,0 +1,57 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.awards {
+
+    &__container {
+        background-color: $blue-dark;
+    }
+
+    // &__content {
+    //     display: flex;
+    // }
+
+    &__img {
+        max-width: 200px;
+    }
+
+    &__presentation {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $white-color;
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-30;
+    }
+
+
+}
+
+.slider-awards {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+        padding: 60px 70px;
+        border-radius: 12px;
+        background-color: $white-color;
+    }
+
+    &__img {
+        width: 95px;
+        height: 115px;
+    }
+}
