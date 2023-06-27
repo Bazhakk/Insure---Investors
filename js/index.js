@@ -305,8 +305,8 @@ jQuery(document).ready(function ( $ ) {
   //Leaders-slider
   $('.slider-leaders').slick({
     infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     arrows: false,
     dots: false
   });
@@ -332,4 +332,34 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
+  //Awards-slider
+  $('.slider-awards').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrows: false,
+    dots: false
+  });
+
+  $(document).ready(function() {
+    // Установка начального слайда
+    var totalSlides = $('.slider-awards__item').length;
+    var currentSlide = 0;
+    $('.slider-awards__item').eq(currentSlide).show();
+  
+    // Обработчик клика на кнопку "Prev"
+    $('#prev-btn').click(function() {
+      $('.slider-awards__item').eq(currentSlide).fadeOut(300);
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      $('.slider-awards__item').eq(currentSlide).fadeIn(300);
+    });
+  
+    // Обработчик клика на кнопку "Next"
+    $('#next-btn').click(function() {
+      $('.slider-awards__item').eq(currentSlide).fadeOut(300);
+      currentSlide = (currentSlide + 1) % totalSlides;
+      $('.slider-awards__item').eq(currentSlide).fadeIn(300);
+    });
+  });
+  
   });

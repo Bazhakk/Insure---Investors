@@ -28,17 +28,40 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.awards {
+  padding-bottom: 130px;
+  overflow: visible;
+}
 .awards__container {
+  padding: 0;
+  border-radius: 12px;
   background-color: #000E50;
+}
+.awards__presentation {
+  position: relative;
+  padding-top: 80px;
+  text-align: center;
+  z-index: 1;
+}
+.awards__presentation::before {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height: 240px;
+  top: -50px;
+  left: 130px;
+  z-index: 3;
 }
 .awards__img {
   max-width: 200px;
 }
-.awards__presentation {
-  padding-top: 80px;
-  text-align: center;
-}
 .awards__title {
+  margin-top: 0;
+  padding-top: 60px;
+  position: relative;
   text-align: center;
   font-family: "GT Eesti Pro";
   font-weight: 700;
@@ -46,7 +69,26 @@
   line-height: 100px;
   color: #fff;
 }
+.awards__title::before {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-before.svg");
+  position: absolute;
+  width: 60px;
+  height: 140px;
+  top: 33px;
+  left: 35%;
+}
+.awards__title::after {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-after.svg");
+  position: absolute;
+  width: 60px;
+  height: 140px;
+  top: 33px;
+  right: 35%;
+}
 .awards__subtitle {
+  padding-bottom: 80px;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -55,17 +97,35 @@
 }
 
 .slider-awards {
+  max-width: 1290px;
+  width: 100%;
   display: flex;
-  gap: 30px;
-}
-.slider-awards__item {
-  padding: 60px 70px;
-  border-radius: 12px;
-  background-color: #fff;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-between;
 }
 .slider-awards__img {
+  margin: 0 auto;
   width: 95px;
   height: 115px;
+}
+.slider-awards__text {
+  text-align: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #848D99;
+}
+
+.slider-button {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.slider-button__prev, .slider-button__next {
+  background-color: transparent;
+  border: none;
 }
 
 /*# sourceMappingURL=awards.css.map */
