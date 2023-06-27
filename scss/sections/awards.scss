@@ -85,6 +85,10 @@
     padding: 0;
     justify-content: space-between;
 
+    @media (max-width: 1024px) {
+        display: none;
+     }
+
     // &__item {
     //     padding: 60px 70px;
     //     border-radius: 12px;
@@ -116,5 +120,12 @@
     &__next {
         background-color: transparent;
         border: none;
+    }
+}
+
+.slider-menu {
+    display: none;
+    @media (max-width: 1024px) {
+        display: inline;
     }
 }

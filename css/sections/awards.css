@@ -104,6 +104,11 @@
   padding: 0;
   justify-content: space-between;
 }
+@media (max-width: 1024px) {
+  .slider-awards {
+    display: none;
+  }
+}
 .slider-awards__img {
   margin: 0 auto;
   width: 95px;
@@ -126,6 +131,15 @@
 .slider-button__prev, .slider-button__next {
   background-color: transparent;
   border: none;
+}
+
+.slider-menu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .slider-menu {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=awards.css.map */

@@ -361,5 +361,15 @@ jQuery(document).ready(function ( $ ) {
       $('.slider-awards__item').eq(currentSlide).fadeIn(300);
     });
   });
+
+  //Awards-slider
+  //Slider-menu
+  $('.slider-menu').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: false,
+    dots: false
+  });
   
   });
