@@ -4,6 +4,10 @@
 .leaders {
     padding: 130px 0;
 
+    @media screen and (max-width: 1024px) {
+       padding-top: 60px;
+    }
+
     &__title {
         margin-bottom: 0;
         padding-bottom: 50px;
@@ -13,6 +17,12 @@
         font-size: 91px;
         line-height: 100px;
         color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 24px;
+            font-size: 40px;
+            line-height: 44px;
+        }
     }
 
     &__subtitle {
@@ -23,99 +33,222 @@
         font-size: 22px;
         line-height: 32px;
         color: $Gray-100;
-    }
-}
 
-.slider-leaders {
-    max-width: 1560px;
-    width: 100%;
-    display: flex;
-    gap: 30px;
-
-    &__item {
-        border: 1px solid $Gray-10;
-        box-shadow: $box-shadow-l;
-        border-radius: 12px;
-    }
-
-    &__content {
-        padding: 0 32px 40px 32px;
-    }
-
-    &__img {
-        max-width: 500px;
-    }
-
-    &__title {
-        margin-bottom: 0;
-        font-family: 'GT Eesti Pro';
-        font-weight: 700;
-        font-size: 54px;
-        line-height: 58px;
-        color: $Gray-100;
-    }
-
-    &__subtitle {
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 32px;
-        color: $Gray-80;
-    }
-
-    &__text {
-        max-width: 435px;
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        color: $Gray-100;
-    }
-}
-
-.slider-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__social {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    &__button {
-        position: relative;
-        padding-right: 8px;
-        letter-spacing: 0.07em;
-        text-transform: uppercase;
-        font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        color: $Gray-100;
-
-        &::after {
-            content: "";
-            background-image: url('../../img/contact-us/liders-img/arrow.svg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: absolute;
-            width: 10px;
-            height: 17px;
-            top: -2px;
-            right: -10px;
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 55px;
+            font-size: 18px;
+            line-height: 28px;
         }
     }
-}
 
-.slider-btn {
-    padding-top: 80px;
-    text-align: center;
-
-    &__prev,
-    &__next {
-        border: none;
-        background-color: transparent;
+    .slider-leaders {
+        max-width: 1560px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0;
+    
+        @media screen and (max-width: 1220px) {
+            display: none;
+        }
+    
+        &__content {
+            padding: 0 32px 40px 32px;
+        }
+    
+        &__img {
+            max-width: 590px;
+        }
+    
+        &__title {
+            margin-bottom: 0;
+            font-family: 'GT Eesti Pro';
+            font-weight: 700;
+            font-size: 54px;
+            line-height: 58px;
+            color: $Gray-100;
+    
+            @media screen and (max-width: 1024px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+        }
+    
+        &__subtitle {
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-80;
+    
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    
+        &__text {
+            max-width: 435px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $Gray-100;
+    
+            @media screen and (max-width: 1024px) {
+                line-height: 24px;
+            }
+        }
+    
+        .socials-network {
+            display: flex;
+            align-items: center;
+            gap: 55px;
+    
+            &__social {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        
+            &__btn {
+                padding-top: 25px;
+            }
+        
+            &__button {
+                position: relative;
+                padding-right: 8px;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+                font-family: 'DM Sans';
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: $Gray-100;
+        
+                &::after {
+                    content: "";
+                    background-image: url('../../img/contact-us/liders-img/arrow.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    width: 10px;
+                    height: 17px;
+                    top: -2px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+    
+    .slider-btn {
+        padding-top: 80px;
+        text-align: center;
+    
+        &__prev,
+        &__next {
+            border: none;
+            background-color: transparent;
+        }
+    }
+    
+    .leaders-mobile {
+        display: none;
+    
+        @media screen and (max-width: 1220px) {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 0;
+    
+            &__item {
+                border: 1px solid $Gray-10;
+                box-shadow: $box-shadow-l;
+                border-radius: 12px;
+            }
+    
+            &__content {
+                padding: 34px;
+            }
+        
+            &__img {
+                width: 100%;
+            }
+        
+            &__title {
+                margin-bottom: 0;
+                font-family: 'GT Eesti Pro';
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+                color: $Gray-100;
+            }
+        
+            &__subtitle {
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                color: $Gray-80;
+            }
+        
+            &__text {
+                max-width: 435px;
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: $Gray-100;
+            }
+    
+            .socials-network {
+                display: flex;
+                align-items: center;
+                gap: 55px;
+    
+                @media screen and (max-width: 570px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0;
+                }
+        
+                &__social {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                }
+            
+                &__btn {
+                    padding-top: 25px;
+                }
+            
+                &__button {
+                    position: relative;
+                    padding-right: 8px;
+                    letter-spacing: 0.07em;
+                    text-transform: uppercase;
+                    font-family: 'DM Sans';
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $Gray-100;
+            
+                    &::after {
+                        content: "";
+                        background-image: url('../../img/contact-us/liders-img/arrow.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        width: 10px;
+                        height: 17px;
+                        top: -2px;
+                        right: -10px;
+                    }
+                }
+            }
+        }
     }
 }

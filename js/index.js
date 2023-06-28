@@ -301,33 +301,42 @@ jQuery(document).ready(function ( $ ) {
   });
 
   //Page-6
+  // Leaders
   //Leaders-slider
-  $('.slider-leaders').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    dots: false
-  });
-
   $(document).ready(function() {
-    // Установка начального слайда
-    var totalSlides = $('.slider-leaders__item').length;
-    var currentSlide = 0;
-    $('.slider-leaders__item').eq(currentSlide).show();
-  
-    // Обработчик клика на кнопку "Prev"
-    $('#prev-button').click(function() {
-      $('.slider-leaders__item').eq(currentSlide).hide();
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      $('.slider-leaders__item').eq(currentSlide).show();
+    $('.slider-leaders').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      prevArrow: false,
+      nextArrow: false
     });
   
-    // Обработчик клика на кнопку "Next"
-    $('#next-button').click(function() {
-      $('.slider-leaders__item').eq(currentSlide).hide();
-      currentSlide = (currentSlide + 1) % totalSlides;
-      $('.slider-leaders__item').eq(currentSlide).show();
+    $('#prevButton').click(function() {
+      $('.slider-leaders').slick('slickPrev');
+    });
+  
+    $('#nextButton').click(function() {
+      $('.slider-leaders').slick('slickNext');
+    });
+  });
+
+  //Leaders-mobile
+  $(document).ready(function() {
+    $('.leaders-mobile').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: false,
+      nextArrow: false
+    });
+  
+    $('#prevButton').click(function() {
+      $('.leaders-mobile').slick('slickPrev');
+    });
+  
+    $('#nextButton').click(function() {
+      $('.leaders-mobile').slick('slickNext');
     });
   });
 
@@ -342,11 +351,11 @@ jQuery(document).ready(function ( $ ) {
       nextArrow: false
     });
   
-    $('#prevButton').click(function() {
+    $('#prev-button').click(function() {
       $('.slider').slick('slickPrev');
     });
   
-    $('#nextButton').click(function() {
+    $('#next-button').click(function() {
       $('.slider').slick('slickNext');
     });
   });
