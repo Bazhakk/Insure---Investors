@@ -32,6 +32,16 @@
   padding-bottom: 130px;
   overflow: visible;
 }
+@media screen and (max-width: 1560px) {
+  .awards {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .awards {
+    padding-bottom: 60px;
+  }
+}
 .awards__container {
   padding: 0;
   border-radius: 12px;
@@ -55,12 +65,21 @@
   left: 130px;
   z-index: 3;
 }
-.awards__img {
-  max-width: 200px;
+@media screen and (max-width: 1100px) {
+  .awards__presentation::before {
+    left: 105px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .awards__presentation::before {
+    width: 125px;
+    height: 155px;
+    top: -44px;
+  }
 }
 .awards__title {
   margin-top: 0;
-  padding-top: 60px;
+  padding-top: 80px;
   position: relative;
   text-align: center;
   font-family: "GT Eesti Pro";
@@ -69,23 +88,54 @@
   line-height: 100px;
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .awards__title {
+    padding-top: 45px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 .awards__title::before {
   content: "";
   background-image: url("../../img/contact-us/awards-img/awards-before.svg");
+  background-repeat: no-repeat;
   position: absolute;
   width: 60px;
   height: 140px;
-  top: 33px;
-  left: 35%;
+  top: 34%;
+  right: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .awards__title::before {
+    content: "";
+    background-image: url("../../img/contact-us/awards-img/awards-before__mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 40px;
+    right: 57%;
+  }
 }
 .awards__title::after {
   content: "";
   background-image: url("../../img/contact-us/awards-img/awards-after.svg");
+  background-repeat: no-repeat;
   position: absolute;
   width: 60px;
   height: 140px;
-  top: 33px;
-  right: 35%;
+  top: 34%;
+}
+@media screen and (max-width: 1024px) {
+  .awards__title::after {
+    content: "";
+    background-image: url("../../img/contact-us/awards-img/awards-after__mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 40px;
+  }
 }
 .awards__subtitle {
   padding-bottom: 80px;
@@ -95,26 +145,33 @@
   line-height: 32px;
   color: #B5BAC1;
 }
-
-.slider-awards {
+@media screen and (max-width: 1024px) {
+  .awards__subtitle {
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.awards .slider {
   max-width: 1290px;
   width: 100%;
-  display: flex;
   margin: 0 auto;
   padding: 0;
-  justify-content: space-between;
 }
-@media (max-width: 1024px) {
-  .slider-awards {
+@media screen and (max-width: 1024px) {
+  .awards .slider {
     display: none;
   }
 }
-.slider-awards__img {
+.awards .slider__item {
+  text-align: center;
+}
+.awards .slider__img {
   margin: 0 auto;
   width: 95px;
   height: 115px;
 }
-.slider-awards__text {
+.awards .slider__text {
   text-align: center;
   font-family: "DM Sans";
   font-weight: 400;
@@ -122,24 +179,61 @@
   line-height: 26px;
   color: #848D99;
 }
-
-.slider-button {
+.awards .slider-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .awards .slider-menu {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .awards .slider-menu__img {
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .awards .slider-menu__text {
+    text-align: center;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #848D99;
+  }
+}
+.awards .slider-button {
+  display: flex;
   padding-top: 80px;
   padding-bottom: 120px;
-  text-align: center;
+  justify-content: center;
+  gap: 32px;
 }
-.slider-button__prev, .slider-button__next {
+@media screen and (max-width: 1024px) {
+  .awards .slider-button {
+    display: none;
+  }
+}
+.awards .slider-button__prev, .awards .slider-button__next {
   background-color: transparent;
   border: none;
 }
-
-.slider-menu {
+.awards .mobile-button {
   display: none;
 }
-@media (max-width: 1024px) {
-  .slider-menu {
-    display: inline;
+@media screen and (max-width: 1024px) {
+  .awards .mobile-button {
+    display: flex;
+    padding-bottom: 55px;
+    justify-content: center;
+    gap: 32px;
   }
+}
+.awards .mobile-button__prev, .awards .mobile-button__next {
+  background-color: transparent;
+  border: none;
 }
 
 /*# sourceMappingURL=awards.css.map */

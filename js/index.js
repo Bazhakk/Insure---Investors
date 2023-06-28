@@ -300,7 +300,6 @@ jQuery(document).ready(function ( $ ) {
     dots: false
   });
 
-
   //Page-6
   //Leaders-slider
   $('.slider-leaders').slick({
@@ -332,44 +331,43 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
-  //Awards-slider
-  $('.slider-awards').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
-    arrows: false,
-    dots: false
-  });
-
+  //Awards
+  //Slider
   $(document).ready(function() {
-    // Установка начального слайда
-    var totalSlides = $('.slider-awards__item').length;
-    var currentSlide = 0;
-    $('.slider-awards__item').eq(currentSlide).show();
-  
-    // Обработчик клика на кнопку "Prev"
-    $('#prev-btn').click(function() {
-      $('.slider-awards__item').eq(currentSlide).fadeOut(300);
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      $('.slider-awards__item').eq(currentSlide).fadeIn(300);
+    $('.slider').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: false,
+      nextArrow: false
     });
   
-    // Обработчик клика на кнопку "Next"
-    $('#next-btn').click(function() {
-      $('.slider-awards__item').eq(currentSlide).fadeOut(300);
-      currentSlide = (currentSlide + 1) % totalSlides;
-      $('.slider-awards__item').eq(currentSlide).fadeIn(300);
+    $('#prevButton').click(function() {
+      $('.slider').slick('slickPrev');
+    });
+  
+    $('#nextButton').click(function() {
+      $('.slider').slick('slickNext');
     });
   });
 
-  //Awards-slider
-  //Slider-menu
-  $('.slider-menu').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    arrows: false,
-    dots: false
-  });
+  // Slider-menu
+  $(document).ready(function() {
+    $('.slider-menu').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      prevArrow: false,
+      nextArrow: false
+    });
   
+    $('#prev-btn').click(function() {
+      $('.slider-menu').slick('slickPrev');
+    });
+  
+    $('#next-btn').click(function() {
+      $('.slider-menu').slick('slickNext');
+    });
   });
+
+});

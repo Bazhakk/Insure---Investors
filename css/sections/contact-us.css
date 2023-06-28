@@ -32,14 +32,14 @@
   padding-bottom: 130px;
   background-color: #F7FBFD;
 }
-@media (max-width: 1024px) {
-  .contact-us {
-    padding-top: 60px;
-  }
-}
 .contact-us__container {
   position: relative;
-  padding-top: 80px;
+  padding-top: 70px;
+}
+@media (max-width: 1024px) {
+  .contact-us__container {
+    padding-top: 50px;
+  }
 }
 .contact-us__col {
   display: flex;
