@@ -8,10 +8,10 @@
     background-size: cover;
     overflow-y: hidden;
 
-    @media screen and (max-width: 1370px) {
-        min-height: 100vh;
-        background-image: url("../../img/hero/bg-mobile-menu.png");
-    }
+    // @media screen and (max-width: 1370px) {
+    //     min-height: 100vh;
+    //     background-image: url("../../img/hero/bg-mobile-menu.png");
+    // }
 
     &__container {
         position: relative;
@@ -33,7 +33,7 @@
 
         &_right {
             position: absolute;
-            // top: 19%;
+            top: 43%;
             right: 0%;
             z-index: 0;
 
@@ -44,7 +44,7 @@
     }
 
     &__img {
-        width: 850px;
+        width: 880px;
         object-fit: cover;
 
         // @media screen and (max-width: 1024px) {

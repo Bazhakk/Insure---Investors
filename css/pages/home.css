@@ -3055,12 +3055,6 @@ ul {
   background-size: cover;
   overflow-y: hidden;
 }
-@media screen and (max-width: 1370px) {
-  .hero-page2 {
-    min-height: 100vh;
-    background-image: url("../../img/hero/bg-mobile-menu.png");
-  }
-}
 .hero-page2__container {
   position: relative;
   display: flex;
@@ -3079,11 +3073,12 @@ ul {
 }
 .hero-page2__col_right {
   position: absolute;
+  top: 43%;
   right: 0%;
   z-index: 0;
 }
 .hero-page2__img {
-  width: 850px;
+  width: 880px;
   object-fit: cover;
 }
 .hero-page2__title {
@@ -3444,6 +3439,9 @@ ul {
 .properties {
   background: #000E50;
 }
+.properties__container {
+  padding-bottom: 120px;
+}
 .properties__title {
   width: 830px;
   padding-top: 80px;
@@ -3460,9 +3458,8 @@ ul {
 }
 .properties__box {
   display: flex;
-  padding-bottom: 120px;
   transform: translate(16%);
-  gap: 20px;
+  gap: 30px;
 }
 .properties__description {
   width: 765px;
@@ -3476,6 +3473,9 @@ ul {
 }
 .properties__description_hidden {
   display: none;
+}
+.properties__description_hidden-2 {
+  display: inline;
 }
 .properties__img {
   width: 235px;
@@ -3497,6 +3497,8 @@ ul {
   gap: 24px;
 }
 .properties .properties-menu__link {
+  position: relative;
+  width: 200px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 25px;
@@ -3506,20 +3508,22 @@ ul {
 .properties .properties-menu__link_active {
   color: #fff;
 }
-.properties .menu-line {
-  width: 2px;
-  height: 355px;
-  border: 2px solid #0D1958;
-  margin-right: 22px;
-  position: relative;
-}
-.properties .line-segment {
+.properties .properties-menu__link_active::before {
+  content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #E91E63;
-  transition: height 0.3s ease;
+  left: -22px;
+  width: 0px;
+  height: 55px;
+  display: inline;
+  border: 2px solid #E91E63;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
 }
 
 @font-face {

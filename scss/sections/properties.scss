@@ -4,6 +4,10 @@
 .properties {
     background: $blue-dark;
 
+    &__container {
+        padding-bottom: 120px;
+    }
+
     &__title {
         width: 830px;
         padding-top: 80px;
@@ -22,9 +26,8 @@
 
     &__box {
         display: flex;
-        padding-bottom: 120px;
         transform: translate(16%);
-        gap: 20px;
+        gap: 30px;
     }
 
     &__description {
@@ -40,6 +43,10 @@
 
         &_hidden {
             display: none;
+
+            &-2 {
+                display: inline;
+            }
         }
     }
 
@@ -64,17 +71,9 @@
         padding-left: 22px;
         gap: 24px;
 
-        // &::before {
-        //     content: "";
-        //     display: inline;
-        //     position: relative;
-        //     transform: rotate(90deg);
-        //     top: 11rem;
-        //     left: -11rem;
-        //     border: 2px solid $blue-deep;
-        // }
-
         &__link {
+            position: relative;
+            width: 200px;
             font-family: 'GT Eesti Pro';
             font-weight: 500;
             font-size: 25px;
@@ -84,30 +83,33 @@
             &_active {
                 color: $white-color;
 
-                // &::before {
-                //     content: "";
-                //     width: 54px;
-                //     display: inline;
-                //     border: 2px solid $main-color-pink;
-                // }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -22px;
+                    width: 0px;
+                    height: 55px;
+                    display: inline;
+                    border: 2px solid $main-color-pink;
+                }
             }
         }
     }
 
-    .menu-line {
-        width: 2px;
-        height: 355px;
-        border: 2px solid $blue-deep;
-        margin-right: 22px;
-        position: relative;
-    }
-
-    .line-segment {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: $main-color-pink;
-        transition: height 0.3s ease;
-      }
+    // .menu-line {
+    //     width: 2px;
+    //     height: 355px;
+    //     border: 2px solid $blue-deep;
+    //     margin-right: 22px;
+    //     position: relative;
+    // }
 }
+
+.content {
+    display: none;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  
