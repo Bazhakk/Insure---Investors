@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1260px) {
   .hero-page6__container {
     flex-direction: column;
     padding-top: 40px;
@@ -52,7 +52,7 @@
   line-height: 114px;
   color: #0A1C33;
 }
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1024px) {
   .hero-page6__title {
     padding-bottom: 24px;
     font-size: 52px;

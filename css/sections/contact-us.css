@@ -242,16 +242,16 @@
 .social__item {
   width: 370px;
   height: 80px;
-  display: flex;
-  align-items: center;
   padding: 16px;
-  gap: 24px;
   background: #fff;
   border: 1px solid #E6E8EA;
   border-radius: 666px;
   cursor: pointer;
 }
 .social__title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   font-family: "GT Eesti Pro";
   font-weight: 500;
   font-size: 36px;

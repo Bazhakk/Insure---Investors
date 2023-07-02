@@ -164,14 +164,8 @@
             margin: 0 auto;
             padding: 0;
     
-            &__item {
-                border: 1px solid $Gray-10;
-                box-shadow: $box-shadow-l;
-                border-radius: 12px;
-            }
-    
             &__content {
-                padding: 34px;
+                padding: 24px;
             }
         
             &__img {

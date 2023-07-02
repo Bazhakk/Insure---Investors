@@ -236,10 +236,7 @@
     &__item {
         width: 370px;
         height: 80px;
-        display: flex;
-        align-items: center;
         padding: 16px;
-        gap: 24px;
         background: $white-color;
         border: 1px solid $Gray-10;
         border-radius: 666px;
@@ -247,6 +244,9 @@
     }
 
     &__title {
+        display: flex;
+        align-items: center;
+        gap: 24px;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 36px;

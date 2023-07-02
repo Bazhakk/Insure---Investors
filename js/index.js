@@ -302,16 +302,48 @@ jQuery(document).ready(function ( $ ) {
 
   //Page-6
   // Leaders
-  //Leaders-slider
+  //Leaders-slider/leaders-mobile
   $(document).ready(function() {
-    $('.slider-leaders').slick({
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      prevArrow: false,
-      nextArrow: false
+    var sliderLeaders = null;
+  
+    function initSlider() {
+      if (window.innerWidth < 1220) {
+        if (sliderLeaders === null) {
+          // Инициализация слайдера для мобильной версии
+          $('.leaders-mobile').slick({
+            // настройки для мобильной версии
+          });
+        }
+      } else {
+        if (sliderLeaders) {
+          sliderLeaders.slick('unslick');
+          sliderLeaders = null;
+        }
+        // Инициализация слайдера для десктопной версии
+        $('.slider-leaders').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          prevArrow: false,
+          nextArrow: false
+        });
+      }
+    }
+  
+    // Инициализация слайдера при загрузке страницы
+    initSlider();
+  
+    // Повторная инициализация слайдера при изменении размера окна
+    $(window).on('resize', function() {
+      initSlider();
     });
   
+    // Повторная инициализация слайдера при изменении ориентации устройства (для мобильных устройств)
+    $(window).on('orientationchange', function() {
+      initSlider();
+    });
+
+
     $('#prevButton').click(function() {
       $('.slider-leaders').slick('slickPrev');
     });
@@ -319,18 +351,8 @@ jQuery(document).ready(function ( $ ) {
     $('#nextButton').click(function() {
       $('.slider-leaders').slick('slickNext');
     });
-  });
 
-  //Leaders-mobile
-  $(document).ready(function() {
-    $('.leaders-mobile').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      prevArrow: false,
-      nextArrow: false
-    });
-  
+    
     $('#prevButton').click(function() {
       $('.leaders-mobile').slick('slickPrev');
     });
@@ -345,8 +367,8 @@ jQuery(document).ready(function ( $ ) {
   $(document).ready(function() {
     $('.slider').slick({
       infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 5,
+      slidesToScroll: 5,
       prevArrow: false,
       nextArrow: false
     });
