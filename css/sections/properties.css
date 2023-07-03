@@ -29,14 +29,15 @@
   font-weight: 700;
 }
 .properties {
+  padding-bottom: 130px;
   background: #000E50;
 }
 .properties__container {
+  padding-top: 80px;
   padding-bottom: 120px;
 }
 .properties__title {
   width: 830px;
-  padding-top: 80px;
   padding-bottom: 90px;
   margin: 0 auto;
   font-family: "GT Eesti Pro";
@@ -48,30 +49,31 @@
 .properties__title-other {
   color: #00CCC2;
 }
-.properties__box {
+.properties__block {
   display: flex;
-  transform: translate(16%);
-  gap: 30px;
 }
-.properties__description {
+.properties__box {
   width: 765px;
-  border-radius: 12px;
   background: #0D1958;
+  box-shadow: 0 10 32 0 rgba(12, 37, 70, 0.08);
+  border-radius: 12px;
 }
-.properties__description-right {
+.properties__box_hidden {
+  display: none;
+}
+.properties__box_hidden-1 {
+  display: inline;
+}
+.properties__box_active {
+  display: block;
+}
+.properties__shell {
   display: flex;
   padding: 40px;
   gap: 50px;
 }
-.properties__description_hidden {
-  display: none;
-}
-.properties__description_hidden-2 {
-  display: inline;
-}
 .properties__img {
-  width: 235px;
-  height: 235px;
+  max-width: 235px;
 }
 .properties__text {
   width: 400px;
@@ -83,10 +85,19 @@
   color: #fff;
 }
 .properties .properties-menu {
-  max-height: 332px;
+  max-height: 335px;
   display: grid;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 20px;
   padding-left: 22px;
   gap: 24px;
+}
+.properties .properties-menu::before {
+  content: "";
+  position: absolute;
+  height: 358px;
+  border: 2px solid #0D1958;
 }
 .properties .properties-menu__link {
   position: relative;
@@ -103,19 +114,12 @@
 .properties .properties-menu__link_active::before {
   content: "";
   position: absolute;
-  left: -22px;
+  display: inline;
   width: 0px;
   height: 55px;
-  display: inline;
+  top: -20px;
+  left: -22px;
   border: 2px solid #E91E63;
-}
-
-.content {
-  display: none;
-}
-
-.content.active {
-  display: block;
 }
 
 /*# sourceMappingURL=properties.css.map */

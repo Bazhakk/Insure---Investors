@@ -1,16 +1,17 @@
 @import "../base/fonts";
 @import "../base/variables";
-
+  
 .properties {
+    padding-bottom: 130px;
     background: $blue-dark;
 
     &__container {
+        padding-top: 80px;
         padding-bottom: 120px;
     }
 
     &__title {
         width: 830px;
-        padding-top: 80px;
         padding-bottom: 90px;
         margin: 0 auto;
         font-family: 'GT Eesti Pro';
@@ -24,35 +25,37 @@
         }
     }
 
-    &__box {
+    &__block {
         display: flex;
-        transform: translate(16%);
-        gap: 30px;
     }
 
-    &__description {
+    &__box {
         width: 765px;
-        border-radius: 12px;
         background: $blue-deep;
-
-        &-right {
-            display: flex;
-            padding: 40px;
-            gap: 50px;
-        }
+        box-shadow: $box-shadow-m;
+        border-radius: 12px;
 
         &_hidden {
             display: none;
 
-            &-2 {
+            &-1 {
                 display: inline;
             }
         }
+
+        &_active {
+            display: block;
+        }
+    }
+
+    &__shell {
+        display: flex;
+        padding: 40px;
+        gap: 50px;
     }
 
     &__img {
-        width: 235px;
-        height: 235px;
+        max-width: 235px;
     }
 
     &__text {
@@ -66,10 +69,20 @@
     }
 
     .properties-menu {
-        max-height: 332px;
+        max-height: 335px;
         display: grid;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 20px;
         padding-left: 22px;
         gap: 24px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 358px;
+            border: 2px solid $blue-deep;
+        }
 
         &__link {
             position: relative;
@@ -86,30 +99,15 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    left: -22px;
+                    display: inline;
                     width: 0px;
                     height: 55px;
-                    display: inline;
+                    top: -20px;
+                    left: -22px;
                     border: 2px solid $main-color-pink;
                 }
             }
         }
+                
     }
-
-    // .menu-line {
-    //     width: 2px;
-    //     height: 355px;
-    //     border: 2px solid $blue-deep;
-    //     margin-right: 22px;
-    //     position: relative;
-    // }
 }
-
-.content {
-    display: none;
-  }
-  
-  .content.active {
-    display: block;
-  }
-  

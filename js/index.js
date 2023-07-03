@@ -319,47 +319,50 @@ jQuery(document).ready(function ( $ ) {
   });
 
 // properties
+$(document).ready(function() {
 $('#properties-1').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-1').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-1').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-1').removeClass('properties-box_hidden');
 });
 
 $('#properties-2').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-2').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-2').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-2').removeClass('properties-box_hidden');
 });
 
 $('#properties-3').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-3').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-3').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-3').removeClass('properties-box_hidden');
 });
 
 $('#properties-4').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-4').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-4').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-4').removeClass('properties-box_hidden');
 });
 
 $('#properties-5').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-5').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-5').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-5').removeClass('properties-box_hidden');
 });
 
 $('#properties-6').on('click', function() {
-  $('.properties-menu__link').removeClass('properties-menu__link_active');
-  $('#properties-6').addClass('properties-menu__link_active');
-  $('.properties__description').addClass('properties__description_hidden');
-  $('#properties-description-1').removeClass('properties-description_hidden');
+$('.properties-menu__link').removeClass('properties-menu__link_active');
+$('#properties-6').addClass('properties-menu__link_active');
+$('.properties__box').addClass('properties__box_hidden');
+$('#properties-box-6').removeClass('properties-box_hidden');
 });
+
+
 // Обработчик событий при клике на элемент списка
 $(".properties-menu__link").click(function() {
   // Удаляем класс 'active' у всех элементов
@@ -367,6 +370,10 @@ $(".properties-menu__link").click(function() {
   // Добавляем класс 'active' к текущему элементу
   $(this).addClass("active");
 });
+});
+
+
+
 
   
 });
