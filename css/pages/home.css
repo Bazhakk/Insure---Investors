@@ -5415,7 +5415,7 @@ ul {
 }
 @media screen and (max-width: 1100px) {
   .awards__presentation::before {
-    left: 105px;
+    left: 90px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -5423,6 +5423,7 @@ ul {
     width: 125px;
     height: 155px;
     top: -44px;
+    left: 110px;
   }
 }
 .awards__title {
@@ -5452,6 +5453,17 @@ ul {
   height: 140px;
   top: 34%;
   right: 60%;
+  left: 35%;
+}
+@media screen and (max-width: 1295px) {
+  .awards__title::before {
+    left: 32%;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .awards__title::before {
+    left: 30%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .awards__title::before {
@@ -5462,7 +5474,27 @@ ul {
     width: 25px;
     height: 60px;
     top: 40px;
-    right: 57%;
+    left: 38%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 775px) {
+  .awards__title::before {
+    left: 36%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 640px) {
+  .awards__title::before {
+    left: 30%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 520px) {
+  .awards__title::before {
+    left: 25%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 426px) {
+  .awards__title::before {
+    left: 20%;
   }
 }
 .awards__title::after {
@@ -5473,6 +5505,17 @@ ul {
   width: 60px;
   height: 140px;
   top: 34%;
+  right: 35%;
+}
+@media screen and (max-width: 1295px) {
+  .awards__title::after {
+    right: 32%;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .awards__title::after {
+    right: 30%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .awards__title::after {
@@ -5483,6 +5526,27 @@ ul {
     width: 25px;
     height: 60px;
     top: 40px;
+    right: 38%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 775px) {
+  .awards__title::after {
+    right: 36%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 640px) {
+  .awards__title::after {
+    right: 30%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 520px) {
+  .awards__title::after {
+    right: 25%;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 426px) {
+  .awards__title::after {
+    right: 20%;
   }
 }
 .awards__subtitle {
@@ -5500,25 +5564,16 @@ ul {
     line-height: 26px;
   }
 }
-.awards .slider {
-  max-width: 1290px;
-  width: 100%;
-  padding: 0;
-}
 @media screen and (max-width: 1024px) {
-  .awards .slider {
+  .awards .slider-awards {
     display: none;
   }
 }
-.awards .slider__item {
-  text-align: center;
-}
-.awards .slider__img {
+.awards .slider-awards__img {
   margin: 0 auto;
   width: 95px;
-  height: 115px;
 }
-.awards .slider__text {
+.awards .slider-awards__text {
   text-align: center;
   font-family: "DM Sans";
   font-weight: 400;
@@ -5526,23 +5581,20 @@ ul {
   line-height: 26px;
   color: #848D99;
 }
-.awards .slider-menu {
+.awards .awards-mobile {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .awards .slider-menu {
-    max-width: 600px;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 40px;
+  .awards .awards-mobile {
+    display: inline;
   }
-  .awards .slider-menu__img {
+  .awards .awards-mobile__img {
     width: 80px;
-    height: 100px;
     margin: 0 auto;
   }
-  .awards .slider-menu__text {
+  .awards .awards-mobile__text {
+    max-width: 140px;
+    margin: 0 auto;
     text-align: center;
     font-family: "DM Sans";
     font-weight: 400;
@@ -5558,29 +5610,15 @@ ul {
   justify-content: center;
   gap: 32px;
 }
-@media screen and (max-width: 1024px) {
-  .awards .slider-button {
-    display: none;
-  }
-}
 .awards .slider-button__prev, .awards .slider-button__next {
   background-color: transparent;
   border: none;
 }
-.awards .mobile-button {
-  display: none;
-}
 @media screen and (max-width: 1024px) {
-  .awards .mobile-button {
-    display: flex;
+  .awards .slider-button {
+    padding-top: 40px;
     padding-bottom: 55px;
-    justify-content: center;
-    gap: 32px;
   }
-}
-.awards .mobile-button__prev, .awards .mobile-button__next {
-  background-color: transparent;
-  border: none;
 }
 
 @font-face {

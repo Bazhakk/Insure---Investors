@@ -319,30 +319,29 @@ jQuery(document).ready(function ( $ ) {
     });
   });
   
-
   //Awards
-  //Slider
+  //Slider-awards
   $(document).ready(function() {
-    $('.slider').slick({
+    $('.slider-awards').slick({
       infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToShow: 4,
+      slidesToScroll: 1,
       prevArrow: false,
       nextArrow: false
     });
   
     $('#prev-button').click(function() {
-      $('.slider').slick('slickPrev');
+      $('.slider-awards').slick('slickPrev');
     });
   
     $('#next-button').click(function() {
-      $('.slider').slick('slickNext');
+      $('.slider-awards').slick('slickNext');
     });
   });
 
   // Slider-menu
   $(document).ready(function() {
-    $('.slider-menu').slick({
+    $('.awards-mobile').slick({
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -350,12 +349,12 @@ jQuery(document).ready(function ( $ ) {
       nextArrow: false
     });
   
-    $('#prev-btn').click(function() {
-      $('.slider-menu').slick('slickPrev');
+    $('#prev-button').click(function() {
+      $('.awards-mobile').slick('slickPrev');
     });
   
-    $('#next-btn').click(function() {
-      $('.slider-menu').slick('slickNext');
+    $('#next-button').click(function() {
+      $('.awards-mobile').slick('slickNext');
     });
   });
 });

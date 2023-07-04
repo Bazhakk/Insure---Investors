@@ -38,13 +38,14 @@
             z-index: 3;
 
             @media screen and (max-width: 1100px) {
-                left: 105px;
+                left: 90px;
             }
 
             @media screen and (max-width: 1024px) {
                 width: 125px;
                 height: 155px;
                 top: -44px;
+                left: 110px;
             }
         }
     }
@@ -75,15 +76,15 @@
             height: 140px;
             top: 34%;
             right: 60%;
-            // left: 36%;
+            left: 35%;
 
-            // @media screen and (max-width: 1370px) {
-            //     right: 62%;
-            // }
+            @media screen and (max-width: 1295px) {
+                left: 32%;
+            }
 
-            // @media screen and (max-width: 1225px) {
-            //     right: 63%;
-            // }
+            @media screen and (max-width: 1095px) {
+                left: 30%;
+            }
 
             @media screen and (max-width: 1024px) {
                 content: "";
@@ -93,12 +94,24 @@
                 width: 25px;
                 height: 60px;
                 top: 40px;
-                right: 57%;
-            }
+                left: 38%;
 
-            // @media screen and (max-width: 880px) {
-            //     right: 59%;
-            // }
+                @media screen and (max-width: 775px) {
+                    left: 36%;
+                }
+
+                @media screen and (max-width: 640px) {
+                    left: 30%;
+                }
+
+                @media screen and (max-width: 520px) {
+                    left: 25%;
+                }
+
+                @media screen and (max-width: 426px) {
+                    left: 20%;
+                }
+            }
         }
 
         &::after {
@@ -109,6 +122,15 @@
             width: 60px;
             height: 140px;
             top: 34%;
+            right: 35%;
+
+            @media screen and (max-width: 1295px) {
+                right: 32%;
+            }
+
+            @media screen and (max-width: 1095px) {
+                right: 30%;
+            }
 
             @media screen and (max-width: 1024px) {
                 content: "";
@@ -118,6 +140,23 @@
                 width: 25px;
                 height: 60px;
                 top: 40px;
+                right: 38%;
+
+                @media screen and (max-width: 775px) {
+                    right: 36%;
+                }
+
+                @media screen and (max-width: 640px) {
+                    right: 30%;
+                }
+
+                @media screen and (max-width: 520px) {
+                    right: 25%;
+                }
+
+                @media screen and (max-width: 426px) {
+                    right: 20%;
+                }
             }
         }
     }
@@ -137,23 +176,15 @@
         }
     }
 
-    .slider {
-        max-width: 1290px;
-        width: 100%;
-        padding: 0;
+    .slider-awards {
 
         @media screen and (max-width: 1024px) {
             display: none;
         }
 
-        &__item {
-            text-align: center;
-        }
-
         &__img {
             margin: 0 auto;
             width: 95px;
-            height: 115px;
         }
 
         &__text {
@@ -166,23 +197,20 @@
         }
     }
 
-    .slider-menu {
+    .awards-mobile {
         display: none;
 
         @media screen and (max-width: 1024px) {
-            max-width: 600px;
-            display: flex;
-            margin: 0 auto;
-            padding-top: 32px;
-            padding-bottom: 40px;
+            display: inline;
 
             &__img {
                 width: 80px;
-                height: 100px;
                 margin: 0 auto;
             }
 
             &__text {
+                max-width: 140px;
+                margin: 0 auto;
                 text-align: center;
                 font-family: 'DM Sans';
                 font-weight: 400;
@@ -200,32 +228,16 @@
         padding-bottom: 120px;
         justify-content: center;
         gap: 32px;
-
-        @media screen and (max-width: 1024px) {
-            display: none;
-        }
     
         &__prev,
         &__next {
             background-color: transparent;
             border: none;
         }
-    }
-
-    .mobile-button {
-        display: none;
 
         @media screen and (max-width: 1024px) {
-            display: flex;
+            padding-top: 40px;
             padding-bottom: 55px;
-            justify-content: center;
-            gap: 32px;
-        }
-    
-        &__prev,
-        &__next {
-            background-color: transparent;
-            border: none;
         }
     }
 }
