@@ -29,11 +29,14 @@
   font-weight: 700;
 }
 .hero-page3 {
-  height: 90vh;
-  background-image: url("../../img/hero/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 70vh;
+  background: #F7FBFD;
   overflow-y: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .hero-page3 {
+    height: 30vh;
+  }
 }
 .hero-page3__container {
   padding-top: 195px;
@@ -44,6 +47,7 @@
   .hero-page3__container {
     flex-direction: column;
     padding-top: 40px;
+    padding-bottom: 60px;
   }
 }
 .hero-page3__title {

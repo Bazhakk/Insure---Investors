@@ -148,9 +148,9 @@
 .communication .item-other__box-other {
   padding-left: 80px;
 }
-@media screen and (max-width: 1180px) {
-  .communication .item-other__box {
-    margin: 0 16px;
+@media screen and (max-width: 1024px) {
+  .communication .item-other__box-other {
+    padding-left: 16px;
   }
 }
 .communication .item-other__img {
