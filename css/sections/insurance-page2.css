@@ -1,0 +1,411 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.insurance-page2 {
+  padding: 130px 0;
+}
+@media screen and (max-width: 1024px) {
+  .insurance-page2 {
+    padding: 60px 0;
+  }
+}
+.insurance-page2__title {
+  max-width: 765px;
+  margin: 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+.insurance-page2__title_other {
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .insurance-page2__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.insurance-page2__text {
+  max-width: 765px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .insurance-page2__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.insurance-page2__top {
+  display: flex;
+  padding-bottom: 130px;
+  gap: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .insurance-page2__top {
+    flex-direction: column;
+    padding-bottom: 60px;
+    gap: 0;
+  }
+}
+
+.rules {
+  padding-bottom: 100px;
+}
+.rules__title {
+  margin: 0;
+  padding-bottom: 48px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__title {
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.rules__col {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .rules__col {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.rules__left, .rules__right {
+  display: grid;
+  gap: 30px;
+}
+.rules__item {
+  max-width: 765px;
+  padding: 80px 50px;
+  background: #fff;
+  border: 1px solid #E6E8EA;
+  box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+  border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .rules__item {
+    max-width: 100%;
+    padding: 40px 24px;
+  }
+}
+.rules__subtitle {
+  position: relative;
+  margin: 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__subtitle {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+.rules__subtitle::before {
+  content: "";
+  position: absolute;
+  display: inline;
+  height: 44px;
+  top: -10px;
+  left: -50px;
+  border: 3px solid #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .rules__subtitle::before {
+    left: -23px;
+  }
+}
+.rules__text {
+  max-width: 670px;
+  padding-top: 24px;
+  margin: 0;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.rules__btn {
+  padding-top: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .rules__btn {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .stages__container {
+    padding-top: 60px;
+  }
+}
+.stages__title {
+  margin-bottom: 0;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+.stages__title-other {
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .stages__title {
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.stages__box {
+  display: flex;
+  justify-content: space-between;
+}
+.stages__box-left {
+  max-width: 740px;
+}
+.stages__box-right {
+  max-width: 765px;
+  display: grid;
+  padding-bottom: 90px;
+  gap: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .stages__box-right {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .stages__box {
+    max-width: 100%;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .stages__box {
+    padding-bottom: 16px;
+  }
+}
+.stages__subtitle {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle {
+    margin-bottom: 0;
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+.stages__subtitle-1 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-1::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/1..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 70px;
+  height: 114px;
+  top: -6rem;
+  left: -2px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-1::before {
+    width: 43px;
+    height: 55px;
+    top: -3rem;
+    left: -2px;
+  }
+}
+.stages__subtitle-2 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-2::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/2..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 101px;
+  height: 105px;
+  top: -23%;
+  left: 0px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-2::before {
+    width: 55px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-3 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-3::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/3..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 109px;
+  height: 107px;
+  top: -9%;
+  left: 1px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-3::before {
+    width: 60px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-4 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-4::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/4..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 105px;
+  height: 100px;
+  top: -11%;
+  left: 1px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-4::before {
+    width: 63px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-5 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-5::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/5..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 93px;
+  height: 97px;
+  top: -27%;
+  left: -2px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-5::before {
+    width: 60px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .stages__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.stages__text-other {
+  position: relative;
+}
+.stages__text-other::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 12px;
+  left: -8px;
+  border-radius: 50%;
+  background-color: #00CCC2;
+}
+
+/*# sourceMappingURL=insurance-page2.css.map */

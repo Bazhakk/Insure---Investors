@@ -51,11 +51,11 @@
   color: #fff;
   background: #E91E63;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 690px) {
   .button_hero {
-    padding: 20px 40px;
-    font-size: 21px;
-    line-height: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 375px) {
@@ -145,6 +145,12 @@
   vertical-align: middle;
   color: #F8D4E0;
 }
+@media screen and (max-width: 1230px) {
+  .button_steps {
+    display: block;
+    width: 100%;
+  }
+}
 .button_specialities:hover svg {
   transition: all 0.3s;
   fill: #E91E63;
@@ -197,11 +203,12 @@
   background: #CFE9E7;
   border: 2px solid #0EB7AE;
 }
-@media screen and (max-width: 212px) {
+@media screen and (max-width: 1024px) {
   .button_about {
-    padding: 8px 17px;
-    font-size: 13px;
-    line-height: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -32px;
   }
 }
 .button_questions {
@@ -220,9 +227,11 @@
   background: #CFE9E7;
   border: 2px solid #0EB7AE;
 }
-@media screen and (max-width: 212px) {
+@media screen and (max-width: 1024px) {
   .button_questions {
-    padding: 8px 17px;
+    display: block;
+    width: 100%;
+    margin-top: -60px;
     font-size: 13px;
     line-height: 15px;
   }
@@ -241,9 +250,12 @@
   transition: all 0.4s;
   background-color: #D81859;
 }
-@media screen and (max-width: 212px) {
+@media screen and (max-width: 1024px) {
   .button_tagline {
-    padding: 8px 17px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -32px;
     font-size: 13px;
     line-height: 15px;
   }
@@ -261,6 +273,7 @@
   line-height: 25px;
   color: #0A1C33;
   background-color: #fff;
+  cursor: pointer;
 }
 .button_contact:hover {
   transition: all 0.4s;
@@ -270,7 +283,8 @@
 }
 @media (max-width: 1024px) {
   .button_contact {
-    width: 295px;
+    display: block;
+    width: 100%;
   }
 }
 .button_insurance {
@@ -294,6 +308,128 @@
   color: #B4174C;
 }
 .button_insurance:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_hero-page2 {
+  padding: 20px 60px;
+  background: #E91E63;
+  border-radius: 66px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .button_hero-page2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_hero-page2:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_hero-page2:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_hero-page2:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_item-info {
+  padding: 6px 15px;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  background: #00CCC2;
+  border-radius: 66px;
+  color: #fff;
+}
+.button_item-info:hover {
+  transition: all 0.4s;
+  background-color: #0EB7AE;
+}
+.button_item-info:active {
+  vertical-align: middle;
+  color: #0CA099;
+}
+.button_item-info:focus {
+  vertical-align: middle;
+  color: #CFE9E7;
+}
+.button_details {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .button_details {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.button_rules {
+  padding: 20px 60px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #fff;
+  background: #E91E63;
+  border-radius: 66px;
+}
+@media screen and (max-width: 690px) {
+  .button_rules {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_rules:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_rules:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_rules:focus {
+  vertical-align: middle;
+  color: #F8D4E0;
+}
+.button_types {
+  padding: 20px 70px;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  border-radius: 66px;
+  background: #E91E63;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .button_types {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.button_types:hover {
+  transition: all 0.4s;
+  background-color: #D81859;
+}
+.button_types:active {
+  vertical-align: middle;
+  color: #B4174C;
+}
+.button_types:focus {
   vertical-align: middle;
   color: #F8D4E0;
 }

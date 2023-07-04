@@ -35,11 +35,6 @@
   padding-bottom: 80px;
   text-align: center;
 }
-@media screen and (max-width: 1024px) {
-  .tagline__container {
-    padding-bottom: 60px;
-  }
-}
 .tagline__title {
   margin: 0;
   padding-bottom: 48px;

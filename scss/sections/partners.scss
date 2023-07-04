@@ -3,10 +3,6 @@
 
 .partners {
 
-    @media screen and (max-width: 1024px) {
-        padding-bottom: 60px;
-    }
-
     &__box {
         background-color: $blue-dark;
         border-radius: 12px;
@@ -22,7 +18,6 @@
         color: $white-color;
 
         @media screen and (max-width: 1024px) {
-            padding-top: 55px;
             font-size: 40px;
             line-height: 44px;
         }

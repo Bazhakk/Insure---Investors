@@ -2,7 +2,7 @@
 @import "../base/variables";
 
 .contact {
-    padding: 130px 0 130px 0;
+    padding: 130px 0;
 
     @media (max-width: 1024px) {
         padding-top: 60px;
@@ -11,14 +11,11 @@
     &__container {
         position: relative;
         display: flex;
-        gap: 30px;
-        margin: 0 auto;
-        padding-bottom: 80px;
 
-        @media (max-width: 1420px) {
+        @media (max-width: 1422px) {
+            width: 100%;
             margin: 0 16px;
             flex-direction: column;
-            padding: 0;
         }
     }
 
@@ -42,6 +39,7 @@
         max-width: 385px;
         margin: 0;
         padding-top: 40px;
+        padding-bottom: 40px;
         font-family: 'DM Sans';
         font-weight: 400;
         font-size: 22px;
@@ -51,144 +49,57 @@
         @media (max-width: 1024px) {
             max-width: 340px;
             padding-top: 25px;
+            padding-bottom: 25px;
             font-size: 18px;
             line-height: 28px;
         }
         
     }
 
-    &__col {
-        &-left {
-            position: relative;
-        }
-    }
-
     &__box {
-        position: relative;
-        left: 50px;
-
-        @media (max-width: 936px) {
-            left: 34px;
-        }
+        width: 100%;
     }
 
     &__address,
     &__email,
     &__tel {
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-bottom: 38px;
+        gap: 24px;
         font-family: 'GT Eesti Pro';
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
         color: $Gray-80;
+
+        @media (max-width: 1024px) {
+            padding-bottom: 24px;
+            padding-right: 16px;
+        }
     }
 
     &__address {
-        margin: 0;
-        padding: 50px 0 40px 0;
-        
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-address.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            top: 19%;
-            left: -9%;
-
-            @media (max-width: 1420px) {
-                top: 20%;
-                left: -5%;
-            }
-
-            @media (max-width: 1024px) {
-                top: 10%;
-                left: -5%;
-            }
-
-            @media (max-width: 812px) {
-                left: -6%;
-            }
-
-            @media (max-width: 516px) {
-                left: -10%;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            padding: 25px 0;
-        }
+       &-icon {
+         margin-top: -5px;
+       }
     }
 
     &__tel {
-        padding-bottom: 40px;
-
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-tel.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            left: -9%;
-            bottom: 34%;
-
-            @media (max-width: 1420px) {
-                top: 54%;
-                left: -5%;
-            }
-
-            @media (max-width: 1024px) {
-                top: 45%;
-                left: -5%;
-            }
-
-            @media (max-width: 812px) {
-                left: -6%;
-            }
-
-            @media (max-width: 516px) {
-                left: -10%;
-            }
+        &-icon {
+         margin-top: -5px;
         }
     }
 
     &__email {
-
-        &::before {
-            content: "";
-            background-image:  url("../../img/contact-email.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            left: -9%;
-            bottom: -1%;
-
-            @media (max-width: 1420px) {
-                bottom: -1%;
-                left: -5%;
-            }
-
-            @media (max-width: 1024px) {
-                bottom: -2%;
-                left: -5%;
-            }
-
-            @media (max-width: 812px) {
-                left: -6%;
-            }
-
-            @media (max-width: 516px) {
-                left: -10%;
-            }
+        &-icon {
+         margin-top: -5px;
         }
     }
 
     .form {
+        width: 100%;
         display: grid;
         gap: 40px;
         width: 950px;
@@ -200,13 +111,9 @@
         filter: $box-shadow-l;
 
         @media (max-width: 1024px) {
-            width: 600px;
+            width: 345px;
             padding: 32px 24px;
             gap: 16px;
-        }
-
-        @media (max-width: 624px) {
-            width: 345px;
         }
 
         &__first-row {
@@ -216,142 +123,84 @@
             border: none;
 
             @media (max-width: 1024px) {
-                flex-direction: column;
-                margin: 0 auto;
+               flex-direction: column;
             }
         }
 
-        &__name-value {
+        .form-group {
             position: relative;
-            display: grid;
-            width: 374px;
-            height: 60px;
-            gap: 2px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            background: $input;
-
-            @media (max-width: 1024px) {
-                width: 500px;
+          
+            input,
+            textarea {
+                padding-left: 11px;
+                padding-top: 16px;
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                background: $white-color;
+                border: 1px solid $Gray-20;
+                border-radius: 6px;
             }
-
-            @media (max-width: 624px) {
-                width: 295px;
+    
+            &__row {
+                width: 374px;
+                height: 60px;
             }
-        }
-
-        &__field-wrap {
-            width: 374px;
-            height: 60px;
-            padding-left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            background: $input;
-            border: 1px solid $Gray-20;
-
-            @media (max-width: 1024px) {
-                width: 500px;
+    
+            &__second-row {
+                width: 788px;
+                height: 60px;
             }
-
-            @media (max-width: 624px) {
-                width: 295px;
+    
+            textarea {
+                width: 788px;
+                height: 120px;
             }
-        }
-
-        &__name {
-            position: absolute;
-            top: 2px;
-            left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 18px;
-            color: $Gray-100;
-            background: $input;
-            border: none;
-        }
-
-        &__field-other {
-            padding-top: 20px;
-            padding-left: 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border: none;
-            border-radius: 6px;
-            background: $input;
-            border: 1px solid $Gray-20;
-
-            &::placeholder {
-                color: $Gray-100;
+          
+            label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform-origin: top left;
+              transition: all 0.2s ease;
+              pointer-events: none;
+              transform: translateY(50%);
+              padding-left: 16px;
+              font-family: 'DM Sans';
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 32px;
+              color: $Gray-50;
             }
-        }
-
-        &__second-row {
-            width: 788px;
-            height: 60px;
-            padding: 14px 0 14px 16px;
-            border-radius: 6px;
-            border: 1px solid $Gray-20;
-            background: $input;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            background: $input;
-
-            @media (max-width: 1024px) {
-                width: 500px;
-                margin: 0 auto;
+          
+            input:focus + label,
+            textarea:focus + label,
+            input:valid + label,
+            textarea:valid + label {
+              transform: translateY(-10%) scale(0.8);
+              top: 5px;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 18px;
             }
+    
+            &__row,
+            &__second-row,
+             textarea {
+                @media (max-width: 1024px) {
+                    width: 295px;
+                }
 
-            @media (max-width: 624px) {
-                width: 295px;
+                &:hover {
+                    border: 1px solid $Gray-60;
+                }
+    
+                &:focus { outline: none;
+                    border: 2px solid $main-color-teal; 
+                }
             }
-        }
-
-        &__third-row {
-            width: 788px;
-            height: 120px;
-            padding: 14px 0 14px 16px;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 6px;
-            color: $Gray-50;
-            background: $input;
-            border: 1px solid $Gray-20;
-
-            @media (max-width: 1024px) {
-                width: 500px;
-                margin: 0 auto;
-            }
-
-            @media (max-width: 624px) {
-                width: 295px;
-            }
-        }
-
-        &__field-wrap,
-        &__field-other,
-        &__second-row,
-        &__third-row {
-
-            &:hover {
-                border: 1px solid $Gray-60;
-            }
-
-            &:focus { outline: none;
-                border: 2px solid $main-color-teal; 
-            }
-        }
+        } 
     }
+ 
 }

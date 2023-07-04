@@ -1,0 +1,102 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+// .rules {
+//     padding-bottom: 100px;
+
+//     &__title {
+//         margin: 0;
+//         padding-bottom: 48px;
+//         text-align: center;
+//         font-family: 'GT Eesti Pro';
+//         font-weight: 700;
+//         font-size: 91px;
+//         line-height: 100px;
+//         color: $Gray-100;
+
+//         @media screen and (max-width: 1024px) {
+//             padding-bottom: 40px;
+//             font-size: 40px;
+//             line-height: 44px;
+//         }
+//     }
+
+//     &__col {
+//         display: flex;
+//         gap: 30px;
+
+//         @media screen and (max-width: 1024px) {
+//             flex-direction: column;
+//             gap: 16px;
+//         }
+//     }
+
+//     &__left,
+//     &__right {
+//         display: grid;
+//         gap: 30px
+//     }
+
+//     &__item {
+//         max-width: 765px;
+//         padding: 80px 50px;
+//         background: $white-color;
+//         border: 1px solid $Gray-10;
+//         box-shadow: $box-shadow-l;
+//         border-radius: 12px;
+
+//         @media screen and (max-width: 1024px) {
+//             padding: 40px 24px;
+//         }
+//     }
+
+//     &__subtitle {
+//         position: relative;
+//         margin: 0;
+//         font-family: 'GT Eesti Pro';
+//         font-weight: 700;
+//         font-size: 42px;
+//         line-height: 44px;
+//         color: $Gray-100;
+
+//         @media screen and (max-width: 1024px) {
+//             font-size: 26px;
+//             line-height: 28px;
+//         }
+
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             display: inline;
+//             height: 44px;
+//             top: -10px;
+//             left: -50px;
+//             border: 3px solid $main-color-teal;
+
+//             @media screen and (max-width: 1024px) {
+//                 left: -23px;
+//             }
+//         }
+//     }
+
+//     &__text {
+//         max-width: 670px;
+//         padding-top: 24px;
+//         margin: 0;
+//         font-family: 'DM Sans';
+//         font-weight: 400;
+//         font-size: 22px;
+//         line-height: 32px;
+//         color: $Gray-100;
+
+//         @media screen and (max-width: 1024px) {
+//             font-size: 18px;
+//             line-height: 28px;
+//         }
+//     }
+
+//     &__btn {
+//         padding-top: 100px;
+//         text-align: center;
+//     }
+// }

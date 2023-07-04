@@ -1,0 +1,30 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.menu-page2 {
+   padding: 32px;
+
+   .menu-tab {
+        display: flex;
+        padding: 0;
+        gap: 32px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+
+        &__link {
+            color: $Gray-30;
+
+            &_active {
+                padding: 8px 24px;
+                background: $Gray-100;
+                border-radius: 66px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+   }
+}

@@ -1,0 +1,110 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.customers {
+    margin: -330px 16px 0 16px;
+    padding-bottom: 130px;
+
+    @media screen and (max-width: 1024px) {
+        margin: -125px 16px 0 16px;
+        padding-bottom: 60px;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 2;
+        border-radius: 12px;
+        background-color: $white-color;
+        box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+    }
+
+    &__title {
+        margin-bottom: 0;
+        padding-top: 80px;
+        text-align: center;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 55px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-80;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    .customer {
+        max-width: 1290px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 0 120px 0;
+        gap: 30px;
+
+        &__element {
+            padding: 34px 52px;
+            border-radius: 12px;
+        }
+
+        &__img {
+            max-width: 135px;
+        }
+
+        @media screen and (max-width: 1100px) {
+            display: none;
+        }
+    }
+
+    .slider-buttons {
+        display: none;
+
+        @media screen and (max-width: 1100px) {
+            display: flex;
+            padding-top: 60px;
+            padding-bottom: 55px;
+            justify-content: center;
+            gap: 32px;
+
+            .prev-button,
+            .next-button {
+                background: transparent;
+                border: none;
+            }
+        }
+    }
+
+    .customer-slider {
+        display: none;
+
+        @media screen and (max-width: 1100px) {
+            display: inline;
+
+            &__element {
+                padding-top: 50px;
+                padding-bottom: 60px;
+            }
+
+            &__img {
+                max-width: 80px;
+                margin: 0 auto;
+            }
+        }
+    } 
+}
+

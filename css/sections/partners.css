@@ -28,11 +28,6 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
-@media screen and (max-width: 1024px) {
-  .partners {
-    padding-bottom: 60px;
-  }
-}
 .partners__box {
   background-color: #000E50;
   border-radius: 12px;
@@ -48,7 +43,6 @@
 }
 @media screen and (max-width: 1024px) {
   .partners__title {
-    padding-top: 55px;
     font-size: 40px;
     line-height: 44px;
   }

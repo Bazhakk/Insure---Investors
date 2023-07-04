@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Poller One";
+  src: url("../../fonts/PollerOne-Regular.eot") format("embedded-opentype"), url("../../fonts/PollerOne-Regular.svg") format("svg"), url("../../fonts/PollerOne-Regular.woff") format("woff"), url("../../fonts/PollerOne-Regular.woff2"), url("../../fonts/PollerOne-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaymedium.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaymedium.svg") format("svg"), url("../../fonts/gteestiprodisplaymedium.woff") format("woff"), url("../../fonts/gteestiprodisplaymedium.woff2") format("woff2"), url("../../fonts/gteestiprodisplaymedium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GT Eesti Pro";
+  src: url("../../fonts/gteestiprodisplaybold.eot") format("embedded-opentype"), url("../../fonts/gteestiprodisplaybold.svg") format("svg"), url("../../fonts/gteestiprodisplaybold.woff") format("woff"), url("../../fonts/gteestiprodisplaybold.woff2") format("woff2"), url("../../fonts/gteestiprodisplaybold.otf") format("otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Regular.eot") format("embedded-opentype"), url("../../fonts/DMSans-Regular.svg") format("svg"), url("../../fonts/DMSans-Regular.woff") format("woff"), url("../../fonts/DMSans-Regular.woff2") format("woff2"), url("../../fonts/DMSans-Regular.otf") format("otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Medium.eot") format("embedded-opentype"), url("../../fonts/DMSans-Medium.svg") format("svg"), url("../../fonts/DMSans-Medium.woff") format("woff"), url("../../fonts/DMSans-Medium.woff2") format("woff2"), url("../../fonts/DMSans-Medium.otf") format("otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
+  font-weight: 700;
+}
+.awards {
+  padding-bottom: 130px;
+  overflow: visible;
+}
+@media screen and (max-width: 1560px) {
+  .awards {
+    margin: 0 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .awards {
+    padding-bottom: 60px;
+  }
+}
+.awards__container {
+  padding: 0;
+  border-radius: 12px;
+  background-color: #000E50;
+}
+.awards__presentation {
+  position: relative;
+  padding-top: 80px;
+  text-align: center;
+  z-index: 1;
+}
+.awards__presentation::before {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 200px;
+  height: 240px;
+  top: -50px;
+  left: 130px;
+  z-index: 3;
+}
+@media screen and (max-width: 1100px) {
+  .awards__presentation::before {
+    left: 105px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .awards__presentation::before {
+    width: 125px;
+    height: 155px;
+    top: -44px;
+  }
+}
+.awards__title {
+  margin-top: 0;
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .awards__title {
+    padding-top: 45px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.awards__title::before {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-before.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 140px;
+  top: 34%;
+  right: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .awards__title::before {
+    content: "";
+    background-image: url("../../img/contact-us/awards-img/awards-before__mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 40px;
+    right: 57%;
+  }
+}
+.awards__title::after {
+  content: "";
+  background-image: url("../../img/contact-us/awards-img/awards-after.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 60px;
+  height: 140px;
+  top: 34%;
+}
+@media screen and (max-width: 1024px) {
+  .awards__title::after {
+    content: "";
+    background-image: url("../../img/contact-us/awards-img/awards-after__mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 60px;
+    top: 40px;
+  }
+}
+.awards__subtitle {
+  padding-bottom: 80px;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #B5BAC1;
+}
+@media screen and (max-width: 1024px) {
+  .awards__subtitle {
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.awards .slider {
+  max-width: 1290px;
+  width: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  .awards .slider {
+    display: none;
+  }
+}
+.awards .slider__item {
+  text-align: center;
+}
+.awards .slider__img {
+  margin: 0 auto;
+  width: 95px;
+  height: 115px;
+}
+.awards .slider__text {
+  text-align: center;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #848D99;
+}
+.awards .slider-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .awards .slider-menu {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .awards .slider-menu__img {
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .awards .slider-menu__text {
+    text-align: center;
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #848D99;
+  }
+}
+.awards .slider-button {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  justify-content: center;
+  gap: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .awards .slider-button {
+    display: none;
+  }
+}
+.awards .slider-button__prev, .awards .slider-button__next {
+  background-color: transparent;
+  border: none;
+}
+.awards .mobile-button {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .awards .mobile-button {
+    display: flex;
+    padding-bottom: 55px;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+.awards .mobile-button__prev, .awards .mobile-button__next {
+  background-color: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=awards.css.map */

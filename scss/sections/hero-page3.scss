@@ -1,0 +1,57 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.hero-page3 {
+    height: 90vh;
+    background-image: url("../../img/hero/hero-bg.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow-y: hidden;
+
+    // @media screen and (max-width: 1370px) {
+    //     min-height: 100vh;
+    //     background-image: url("../../img/hero/bg-mobile-menu.png");
+    // }
+
+    &__container {
+        padding-top: 195px;
+        padding-bottom: 130px;
+        text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 0;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 103px;
+        line-height: 114px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 52px;
+            line-height: 54px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 0;
+        padding-top: 50px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 24px;
+            padding-bottom: 40px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}

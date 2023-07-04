@@ -28,6 +28,14 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.questions {
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .questions {
+    padding-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .questions {
     margin: 0 16px;
@@ -50,7 +58,6 @@
 }
 @media screen and (max-width: 1024px) {
   .questions__title {
-    padding-top: 55px;
     padding-bottom: 24px;
     font-size: 40px;
     line-height: 44px;
@@ -126,7 +133,7 @@
 }
 @media screen and (max-width: 1024px) {
   .questions .accordion-header {
-    padding: 17px;
+    padding: 17px 24px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -143,15 +150,9 @@
 }
 @media screen and (max-width: 1024px) {
   .questions .accordion-content {
-    max-width: 550px;
-    padding: 12px 16px;
+    padding: 0 40px 16px 24px;
     font-size: 18px;
     line-height: 28px;
-  }
-}
-@media screen and (max-width: 560px) {
-  .questions .accordion-content {
-    max-width: 295px;
   }
 }
 .questions .accordion-content_active {

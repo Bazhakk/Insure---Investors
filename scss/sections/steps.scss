@@ -11,6 +11,10 @@
         @media screen and (max-width: 1280px) {
             z-index: 0;
         }
+
+        @media screen and (max-width: 1230px) {
+            padding: 0 16px;
+        }
     }
 
     &__block {
@@ -146,6 +150,10 @@
             border-radius: 12px;
             background: $step-namber;
 
+            @media screen and (max-width: 1230px) {
+                width: 100%;
+            }
+
             @media screen and (max-width: 490px) {
                 padding: 0 25px;
             }
@@ -154,9 +162,8 @@
         &__point {
             max-width: 500px;
 
-            @media screen and (max-width: 375px) {
-                max-width: 345px;
-                margin: 0 auto;
+            @media screen and (max-width: 1230px) {
+                max-width: 100%;
             }
         }
 
@@ -280,8 +287,8 @@
         text-align: center;
         margin-bottom: 120px;
 
-        @media screen and (max-width: 490px) {
-            margin-bottom: 55px;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 80px;
         }
     }
 }

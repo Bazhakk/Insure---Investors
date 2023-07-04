@@ -13,274 +13,104 @@
 }
 
 .button {
+//Page-1
+  &_hero {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    border-radius: 66px;
+    color: $white-color;
+    background: $main-color-pink;
 
-    &_hero {
-      display: flex;
-      align-items: center;
-      padding: 20px 40px;
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      border-radius: 66px;
-      color: $white-color;
-      background: $main-color-pink;
-
-      @media screen and (max-width: 375px) {
-        padding: 20px 40px;
-        font-size: 21px;
-        line-height: 25px;
-      }
-
-      @media screen and (max-width: 375px) {
-        font-size: 16px;
-        line-height: 15px;
-      }
-
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
-
-      &:active {
-        vertical-align: middle;
-        color: $pressed-color-pink;
-      }
-
-      &:focus {
-        vertical-align: middle;
-        color: $disabled-color-pink;
-      }
+    @media screen and (max-width: 690px) {
+      display: block;
+      width: 100%;
+      text-align: center;
     }
 
-    &_watch {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      z-index: 0;
-        
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      text-align: right;
-      color: $Gray-100;
+    @media screen and (max-width: 375px) {
+      font-size: 16px;
+      line-height: 15px;
+    }
 
-      &:hover {
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+  &_watch {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 0;
+      
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: right;
+    color: $Gray-100;
+
+    &:hover {
+      transition: all .4s;
+      color: $hover-teal;
+
+      svg {
         transition: all .4s;
-        color: $hover-teal;
-
-        svg {
+        fill: $hover-btn-teal;
+        path {
+          transition: all .2s;
+          stroke: $hover-background-teal;
+          fill: $hover-background-teal;
+        }
+        circle {
           transition: all .4s;
-          fill: $hover-btn-teal;
-          path {
-            transition: all .2s;
-            stroke: $hover-background-teal;
-            fill: $hover-background-teal;
-          }
-          circle {
-            transition: all .4s;
-            stroke: $hover-background-teal;
-          }
+          stroke: $hover-background-teal;
         }
-      }
-
-      @media screen and (max-width: 375px) {
-        font-size: 21px;
-        line-height: 25px;
-      }
-
-      @media screen and (max-width: 300px) {
-        font-size: 15px;
-        line-height: 20px;
-      }
-
-      @media screen and (max-width: 250px) {
-        margin: 0 auto;
-        flex-direction: column;
       }
     }
 
-    &_steps {
-        padding: 20px 40px;
-        background: $main-color-pink;
-        border-radius: 66px;
-  
-        font-family: 'DM Sans';
-        font-weight: 700;
-        font-size: 21px;
-        line-height: 25px;
-        color: $white-color;
-  
-        &:hover {
-          transition: all .4s;
-          background-color: $hover-color-pink;
-        }
-  
-        &:active {
-          vertical-align: middle;
-          color: $pressed-color-pink;
-        }
-  
-        &:focus {
-          vertical-align: middle;
-          color: $disabled-color-pink;
-        }
-    }
-
-    &_specialities {
-      &:hover {
-        svg {
-          transition: all .3s;
-          fill: $main-color-pink;
-          circle {
-            transition: all .3s;
-            stroke: $main-color-pink;
-          }
-        }
-
-      &:active {
-        vertical-align: middle;
-        color: $pressed-color-pink;
-      }
-
-      &:focus {
-        vertical-align: middle;
-        svg {
-          transition: all .4s;
-          fill: $white-color;
-          path {
-            transition: all .2s;
-            stroke: $Gray-20;
-            fill: $Gray-20;
-          }
-          circle {
-            transition: all .4s;
-            stroke: $Gray-20;
-          }
-        }
-        border: 2px solid  $hover-teal;
-        color: $disabled-color-pink;
-      }
-
-      @media screen and (max-width: 1024px) {
-        font-size: 12px;
-        line-height: 18px;
-      }
-      }
-    }
-
-    &_about {
-      padding: 20px 40px;
-      border: 2px solid $Gray-30;
-      border-radius: 66px;
-
-      font-family: 'DM Sans';
-      font-weight: 700;
+    @media screen and (max-width: 375px) {
       font-size: 21px;
       line-height: 25px;
-      color: $Gray-100;
-
-      &:hover {
-        transition: all .4s;
-        color: $hover-teal;
-        background: $disabled-color-teal;
-        border: 2px solid $hover-teal;
-      }
-
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
-        font-size: 13px;
-        line-height: 15px;
-      }
     }
 
-    &_questions {
-      padding: 20px 40px;
-      border: 2px solid $Gray-30;
-      border-radius: 66px;
-
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $Gray-100;
-
-      &:hover {
-        transition: all .4s;
-        color: $hover-teal;
-        background: $disabled-color-teal;
-        border: 2px solid $hover-teal;
-      }
-
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
-        font-size: 13px;
-        line-height: 15px;
-      }
+    @media screen and (max-width: 300px) {
+      font-size: 15px;
+      line-height: 20px;
     }
 
-    &_tagline {
-      padding: 20px 40px;
-      background: $main-color-pink;
-      border-radius: 66px;
-
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      color: $white-color;
-
-      &:hover {
-        transition: all .4s;
-        background-color: $hover-color-pink;
-      }
-
-      @media screen and (max-width: 212px) {
-        padding: 8px 17px;
-        font-size: 13px;
-        line-height: 15px;
-      }
-    }
-
-    &_contact {
-      width: 155px;
-      height: 65px;
+    @media screen and (max-width: 250px) {
       margin: 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  &_steps {
       padding: 20px 40px;
-      border: 2px solid $Gray-30;
+      background: $main-color-pink;
       border-radius: 66px;
 
       font-family: 'DM Sans';
       font-weight: 700;
       font-size: 21px;
       line-height: 25px;
-      color: $Gray-100;
-      background-color: $white-color;
-
-      &:hover {
-        transition: all .4s;
-        color: $hover-teal;
-        background-color: $disabled-color-teal;
-        border-color: $hover-background-teal;
-      }
-
-      @media (max-width: 1024px) {
-        width: 295px;
-    }
-    }
-
-    &_insurance {
-      position: relative;
-      padding: 20px 40px;
-      font-family: 'DM Sans';
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 25px;
-      border-radius: 66px;
-      border: none;
       color: $white-color;
-      background-color: $main-color-pink;
 
       &:hover {
         transition: all .4s;
@@ -296,7 +126,329 @@
         vertical-align: middle;
         color: $disabled-color-pink;
       }
+
+      @media screen and (max-width: 1230px) {
+        display: block;
+        width: 100%;
+      }
+  }
+
+  &_specialities {
+    &:hover {
+      svg {
+        transition: all .3s;
+        fill: $main-color-pink;
+        circle {
+          transition: all .3s;
+          stroke: $main-color-pink;
+        }
+      }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
     }
+
+    &:focus {
+      vertical-align: middle;
+      svg {
+        transition: all .4s;
+        fill: $white-color;
+        path {
+          transition: all .2s;
+          stroke: $Gray-20;
+          fill: $Gray-20;
+        }
+        circle {
+          transition: all .4s;
+          stroke: $Gray-20;
+        }
+      }
+      border: 2px solid  $hover-teal;
+      color: $disabled-color-pink;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    }
+  }
+
+  &_about {
+    padding: 20px 40px;
+    border: 2px solid $Gray-30;
+    border-radius: 66px;
+
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $Gray-100;
+
+    &:hover {
+      transition: all .4s;
+      color: $hover-teal;
+      background: $disabled-color-teal;
+      border: 2px solid $hover-teal;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: -32px;
+    }
+  }
+
+  &_questions {
+    padding: 20px 40px;
+    border: 2px solid $Gray-30;
+    border-radius: 66px;
+
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $Gray-100;
+
+    &:hover {
+      transition: all .4s;
+      color: $hover-teal;
+      background: $disabled-color-teal;
+      border: 2px solid $hover-teal;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      margin-top: -60px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  &_tagline {
+    padding: 20px 40px;
+    background: $main-color-pink;
+    border-radius: 66px;
+
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $white-color;
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: -32px;
+      font-size: 13px;
+      line-height: 15px;
+    } 
+  }
+
+  &_contact {
+    width: 155px;
+    height: 65px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border: 2px solid $Gray-30;
+    border-radius: 66px;
+
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $Gray-100;
+    background-color: $white-color;
+    cursor: pointer;
+
+    &:hover {
+      transition: all .4s;
+      color: $hover-teal;
+      background-color: $disabled-color-teal;
+      border-color: $hover-background-teal;
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &_insurance {
+    position: relative;
+    padding: 20px 40px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    border-radius: 66px;
+    border: none;
+    color: $white-color;
+    background-color: $main-color-pink;
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+  //Page-2
+  &_hero-page2 {
+    padding: 20px 60px;
+    background: $main-color-pink;
+    border-radius: 66px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $white-color;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+  &_item-info {
+    padding: 6px 15px;
+    font-family: 'GT Eesti Pro';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    background: $main-color-teal;
+    border-radius: 66px;
+    color: $white-color;
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-teal;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-teal;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-teal;
+    }
+  }
+
+  &_details {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $main-color-teal;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 24px;
+  }
+  }
+
+  &_rules {
+    padding: 20px 60px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: $white-color;
+    background: $main-color-pink;
+    border-radius: 66px;
+
+    @media screen and (max-width: 690px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+  &_types {
+    padding: 20px 70px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    border-radius: 66px;
+    background: $main-color-pink;
+    color: $white-color;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      transition: all .4s;
+      background-color: $hover-color-pink;
+    }
+
+    &:active {
+      vertical-align: middle;
+      color: $pressed-color-pink;
+    }
+
+    &:focus {
+      vertical-align: middle;
+      color: $disabled-color-pink;
+    }
+  }
+
+
 }
 
 //ANIMATION

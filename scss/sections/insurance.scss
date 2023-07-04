@@ -7,10 +7,6 @@
     background-image: url("../../img/insurance.img/insurance-bg.png");
     background-repeat: no-repeat; 
     background-size: cover;
-    
-    // @media screen and (max-width: 564px) {
-    //     height: 550px;
-    // }
 
     &__container {
         position: relative;
@@ -29,7 +25,9 @@
             background-size: contain;
             background-repeat: no-repeat;
             position: absolute;
-            width: 570px;
+            max-width: 570px;
+            display: block;
+            width: 100%;
             height: 400px;
             top: 40%;
             left: -2%;
@@ -44,15 +42,9 @@
 
             @media screen and (max-width: 550px) {
                 max-width: 420px;
-                top: 54%;
+                top: 57%;
                 left: 0%;
             }
-
-            // @media screen and (max-width: 454px) {
-            //     width: 350px;
-            //     // top: 48%;
-            //     left: 0%;
-            // }
         }
     }
 

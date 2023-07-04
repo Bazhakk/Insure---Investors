@@ -6,7 +6,7 @@
     background: $blue-dark;
 
     @media screen and (max-width: 1245px) {
-        padding-top: 50px;
+        padding-top: 60px;
     }
 
     &__title {
@@ -91,7 +91,7 @@
                 content: "";
                 display: block;
                 margin: 0;
-                border: 1px solid $Gray-20;
+                border: 1px solid $Gray-70;
             }
         }
 

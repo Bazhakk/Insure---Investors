@@ -49,14 +49,21 @@
   .about__container {
     flex-direction: column-reverse;
     align-items: center;
+    padding: 25px 16px 33px 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__col_left {
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {
   .about__col_right {
-    padding-top: 60px;
+    display: none;
   }
 }
 .about__title {
+  margin: 0;
   font-family: "GT Eesti Pro";
   font-weight: 700;
   font-size: 91px;
@@ -65,13 +72,14 @@
 }
 @media screen and (max-width: 1024px) {
   .about__title {
+    padding-bottom: 24px;
     font-size: 40px;
     line-height: 44px;
   }
 }
 .about__subtitle {
   max-width: 617px;
-  padding-bottom: 80px;
+  padding: 50px 0 80px 0;
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 22px;
@@ -80,7 +88,7 @@
 }
 @media screen and (max-width: 1024px) {
   .about__subtitle {
-    padding-bottom: 33px;
+    padding-bottom: 32px;
     font-size: 18px;
     line-height: 28px;
   }
@@ -91,6 +99,14 @@
 @media screen and (max-width: 375px) {
   .about__btn {
     text-align: center;
+  }
+}
+.about .about-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .about .about-mobile {
+    display: inline;
   }
 }
 
