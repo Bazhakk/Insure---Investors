@@ -192,8 +192,57 @@ jQuery(document).ready(function ( $ ) {
 
   //PAGE-2
   //Properties
-  
+  $(document).ready(function() {
+    // По умолчанию показываем первый контент
+    var firstLink = $('nav ul li:first-child a');
+    var defaultTarget = firstLink.data('target');
+    $('#' + defaultTarget).addClass('active');
+    firstLink.addClass('active');
 
+    // Обработчик события клика на ссылки меню
+    $('nav ul li a').click(function(e) {
+      e.preventDefault();
+      var target = $(this).data('target');
+      
+      // Удаляем класс 'active' у всех элементов контента и ссылок
+      $('.content').removeClass('active');
+      $('nav ul li a').removeClass('active');
+      
+      // Добавляем класс 'active' для выбранного контента и ссылки
+      $('#' + target).addClass('active');
+      $(this).addClass('active');
+    });
+  });
+
+  //Mobile-properties
+  $(document).ready(function() {
+    $('.mobile-properties__link').click(function() {
+      var content = $(this).next('.mobile-properties__content');
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.mobile-properties__content').slideUp();
+        
+        // Затем развернуть текущий элемент
+        content.slideDown();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+        $(this).find('.mobile-properties__toggle').toggleClass('rotate');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.mobile-properties__link').not(this).removeClass('mobile-properties__link_active');
+        $('.mobile-properties__block').not(accordionItem).removeClass('mobile-properties__block_active');
+        $('.mobile-properties__toggle').not($(this).find('.mobile-properties__toggle')).removeClass('rotate');
+      }
+    });
+  });
+  
   //Types
   //Mobile-menu
   $(document).ready(function() {
@@ -318,62 +367,4 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
-// properties
-$(document).ready(function() {
-$('#properties-1').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-1').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-1').removeClass('properties-box_hidden');
-});
-
-$('#properties-2').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-2').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-2').removeClass('properties-box_hidden');
-});
-
-$('#properties-3').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-3').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-3').removeClass('properties-box_hidden');
-});
-
-$('#properties-4').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-4').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-4').removeClass('properties-box_hidden');
-});
-
-$('#properties-5').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-5').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-5').removeClass('properties-box_hidden');
-});
-
-$('#properties-6').on('click', function() {
-$('.properties-menu__link').removeClass('properties-menu__link_active');
-$('#properties-6').addClass('properties-menu__link_active');
-$('.properties__box').addClass('properties__box_hidden');
-$('#properties-box-6').removeClass('properties-box_hidden');
-});
-
-
-// Обработчик событий при клике на элемент списка
-$(".properties-menu__link").click(function() {
-  // Удаляем класс 'active' у всех элементов
-  $(".properties-menu__link").removeClass("active");
-  // Добавляем класс 'active' к текущему элементу
-  $(this).addClass("active");
-});
-});
-
-
-
-
-  
 });

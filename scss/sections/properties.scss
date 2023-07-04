@@ -5,13 +5,22 @@
     padding-bottom: 130px;
     background: $blue-dark;
 
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 60px;
+    }
+
     &__container {
         padding-top: 80px;
         padding-bottom: 120px;
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 55px;
+            padding-bottom: 60px;
+        }
     }
 
     &__title {
-        width: 830px;
+        max-width: 830px;
         padding-bottom: 90px;
         margin: 0 auto;
         font-family: 'GT Eesti Pro';
@@ -23,91 +32,173 @@
         &-other {
             color: $main-color-teal;
         }
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 40px;
+            text-align: center;
+            font-size: 40px;
+            line-height: 44px;
+        }
     }
 
     &__block {
         display: flex;
-    }
+        justify-content: center;
 
-    &__box {
-        width: 765px;
-        background: $blue-deep;
-        box-shadow: $box-shadow-m;
-        border-radius: 12px;
-
-        &_hidden {
+        @media screen and (max-width: 1024px) {
             display: none;
-
-            &-1 {
-                display: inline;
-            }
-        }
-
-        &_active {
-            display: block;
         }
     }
 
-    &__shell {
-        display: flex;
-        padding: 40px;
-        gap: 50px;
-    }
-
-    &__img {
-        max-width: 235px;
-    }
-
-    &__text {
-        width: 400px;
-        margin: 0;
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        color: $white-color;
-    }
-
-    .properties-menu {
+    .content-menu {
         max-height: 335px;
-        display: grid;
         position: relative;
-        margin: 0 auto;
-        padding-top: 20px;
-        padding-left: 22px;
-        gap: 24px;
 
         &::before {
             content: "";
             position: absolute;
-            height: 358px;
+            height: 360px;
             border: 2px solid $blue-deep;
+        }
+
+        &__item {
+            width: 275px;
+            display: grid;
+            padding-top: 4px;
+            padding-left: 22px;
+            gap: 24px;
         }
 
         &__link {
             position: relative;
-            width: 200px;
             font-family: 'GT Eesti Pro';
             font-weight: 500;
             font-size: 25px;
             line-height: 30px;
             color: $Gray-30;
+        }
+    }
 
-            &_active {
-                color: $white-color;
+    .content {
+        display: none;
+        width: 765px;
+        background: $blue-deep;
+        box-shadow: $box-shadow-m;
+        border-radius: 12px;
+    
+        &__shell {
+            display: flex;
+            padding: 40px;
+            gap: 50px;
+        }
+    
+        &__img {
+            max-width: 235px;
+        }
+    
+        &__text {
+            width: 400px;
+            margin: 0;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: $white-color;
+        }
+    }
 
-                &::before {
+    nav ul li a.active {
+        color: $white-color;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline;
+            width: 0px;
+            height: 55px;
+            top: -20px;
+            left: -22px;
+            border: 2px solid $main-color-pink;
+        }
+    }
+
+    .content.active {
+    display: block;
+    }
+
+    .mobile-properties {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+           display: inline;
+           margin: 0 16px;
+           cursor: pointer;
+
+           &__block {
+
+            &::before {
+                content: "";
+                display: block;
+                margin: 0;
+                border: 1px solid $Gray-70;
+            }
+
+            &-other {
+                &::after {
                     content: "";
-                    position: absolute;
-                    display: inline;
-                    width: 0px;
-                    height: 55px;
-                    top: -20px;
-                    left: -22px;
-                    border: 2px solid $main-color-pink;
+                    display: block;
+                    margin: 0;
+                    border: 1px solid $Gray-70;
                 }
             }
+           }
+
+            &__link {
+                display: flex;
+                justify-content: space-between;
+                padding: 24px 0;
+                font-family: 'GT Eesti Pro';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: $Gray-30;
+
+                &_active {
+                    color: $white-color;
+                    
+                    .mobile-properties__toggle {
+                        transition: transform all 0.4s;
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+
+            &__content {
+                display: none;
+                width: 100%;
+            }
+
+            &__img {
+                max-width: 345px;
+            }
+    
+            &__text {
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $white-color;
+            }
+
+            &__toggle {
+                transition: all .4s;
+                display: inline-block;
+                width: 17px;
+                height: 12px;
+                background: url("../../img/multiFam/properties/arrow-before.svg") no-repeat;
+                background-size: contain;
+            }
         }
-                
     }
 }
+  
