@@ -116,6 +116,7 @@
 }
 .properties .content__img {
   max-width: 235px;
+  max-height: 235px;
 }
 .properties .content__text {
   width: 400px;
