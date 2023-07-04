@@ -1,223 +1,223 @@
 @import "../base/fonts";
 @import "../base/variables";
 
-.stages {
+// .stages {
 
-    &__title {
-        margin-bottom: 0;
-        padding-bottom: 80px;
-        text-align: center;
-        font-family: 'GT Eesti Pro';
-        font-weight: 700;
-        font-size: 91px;
-        line-height: 100px;
-        color: $Gray-100;
+//     &__title {
+//         margin-bottom: 0;
+//         padding-bottom: 80px;
+//         text-align: center;
+//         font-family: 'GT Eesti Pro';
+//         font-weight: 700;
+//         font-size: 91px;
+//         line-height: 100px;
+//         color: $Gray-100;
 
-        &-other {
-            color: $main-color-teal;
-        }
+//         &-other {
+//             color: $main-color-teal;
+//         }
 
-        @media screen and (max-width: 1024px) {
-            padding-bottom: 24px;
-            font-size: 40px;
-            line-height: 44px;
-        }
-    }
+//         @media screen and (max-width: 1024px) {
+//             padding-bottom: 24px;
+//             font-size: 40px;
+//             line-height: 44px;
+//         }
+//     }
 
-    &__box {
-        display: flex;
-        justify-content: space-between;
+//     &__box {
+//         display: flex;
+//         justify-content: space-between;
 
-        &-left {
-            max-width: 740px;
-        }
+//         &-left {
+//             max-width: 740px;
+//         }
 
-        &-right {
-            max-width: 765px;
-            display: grid;
-            padding-bottom: 90px;
-            gap: 24px;
+//         &-right {
+//             max-width: 765px;
+//             display: grid;
+//             padding-bottom: 90px;
+//             gap: 24px;
 
-            @media screen and (max-width: 1024px) {
-                padding-bottom: 50px;
-            }
-        }
+//             @media screen and (max-width: 1024px) {
+//                 padding-bottom: 50px;
+//             }
+//         }
 
-        @media screen and (max-width: 1216px) {
-            flex-direction: column;
-        }
-    }
+//         @media screen and (max-width: 1216px) {
+//             flex-direction: column;
+//         }
+//     }
 
-    &__subtitle {
-        font-family: 'GT Eesti Pro';
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 44px;
-        color: $Gray-100;
+//     &__subtitle {
+//         font-family: 'GT Eesti Pro';
+//         font-weight: 700;
+//         font-size: 42px;
+//         line-height: 44px;
+//         color: $Gray-100;
 
-        @media screen and (max-width: 1024px) {
-            font-size: 26px;
-            line-height: 28px;
-        }
+//         @media screen and (max-width: 1024px) {
+//             font-size: 26px;
+//             line-height: 28px;
+//         }
 
-        &-1 {
-            position: relative;
-            z-index: 0;
+//         &-1 {
+//             position: relative;
+//             z-index: 0;
 
-            &::before {
-                content: "";
-                background-image: url("../../img/multiFam/stages/1..svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                display: inline;
-                width: 70px;
-                height: 114px;
-                top: -6rem;
-                left: -2px;
-                z-index: -1;
+//             &::before {
+//                 content: "";
+//                 background-image: url("../../img/multiFam/stages/1..svg");
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 position: absolute;
+//                 display: inline;
+//                 width: 70px;
+//                 height: 114px;
+//                 top: -6rem;
+//                 left: -2px;
+//                 z-index: -1;
 
-                @media screen and (max-width: 1024px) {
-                    width: 37px;
-                    height: 55px;
-                    top: -3rem;
-                    left: -2px;
-                }
-            }
-        }
+//                 @media screen and (max-width: 1024px) {
+//                     width: 37px;
+//                     height: 55px;
+//                     top: -3rem;
+//                     left: -2px;
+//                 }
+//             }
+//         }
 
-        &-2 {
-            position: relative;
-            z-index: 0;
+//         &-2 {
+//             position: relative;
+//             z-index: 0;
 
-            &::before {
-                content: "";
-                background-image: url("../../img/multiFam/stages/2..svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                display: inline;
-                width: 101px;
-                height: 105px;
-                top: -23%;
-                left: 0px;
-                z-index: -1;
+//             &::before {
+//                 content: "";
+//                 background-image: url("../../img/multiFam/stages/2..svg");
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 position: absolute;
+//                 display: inline;
+//                 width: 101px;
+//                 height: 105px;
+//                 top: -23%;
+//                 left: 0px;
+//                 z-index: -1;
 
-                @media screen and (max-width: 1024px) {
-                    width: 37px;
-                    height: 55px;
-                    top: -3rem;
-                    left: 4px;
-                }
-            }
-        }
+//                 @media screen and (max-width: 1024px) {
+//                     width: 37px;
+//                     height: 55px;
+//                     top: -3rem;
+//                     left: 4px;
+//                 }
+//             }
+//         }
 
-        &-3 {
-            position: relative;
-            z-index: 0;
+//         &-3 {
+//             position: relative;
+//             z-index: 0;
 
-            &::before {
-                content: "";
-                background-image: url("../../img/multiFam/stages/3..svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                display: inline;
-                width: 109px;
-                height: 107px;
-                top: -9%;
-                left: 1px;
-                z-index: -1;
+//             &::before {
+//                 content: "";
+//                 background-image: url("../../img/multiFam/stages/3..svg");
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 position: absolute;
+//                 display: inline;
+//                 width: 109px;
+//                 height: 107px;
+//                 top: -9%;
+//                 left: 1px;
+//                 z-index: -1;
 
-                @media screen and (max-width: 1024px) {
-                    width: 37px;
-                    height: 55px;
-                    top: -3rem;
-                    left: 4px;
-                }
-            }
-        }
+//                 @media screen and (max-width: 1024px) {
+//                     width: 37px;
+//                     height: 55px;
+//                     top: -3rem;
+//                     left: 4px;
+//                 }
+//             }
+//         }
 
-        &-4 {
-            position: relative;
-            z-index: 0;
+//         &-4 {
+//             position: relative;
+//             z-index: 0;
 
-            &::before {
-                content: "";
-                background-image: url("../../img/multiFam/stages/4..svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                display: inline;
-                width: 105px;
-                height: 100px;
-                top: -11%;
-                left: 1px;
-                z-index: -1;
+//             &::before {
+//                 content: "";
+//                 background-image: url("../../img/multiFam/stages/4..svg");
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 position: absolute;
+//                 display: inline;
+//                 width: 105px;
+//                 height: 100px;
+//                 top: -11%;
+//                 left: 1px;
+//                 z-index: -1;
 
-                @media screen and (max-width: 1024px) {
-                    width: 37px;
-                    height: 55px;
-                    top: -3rem;
-                    left: 4px;
-                }
-            }
-        }
+//                 @media screen and (max-width: 1024px) {
+//                     width: 37px;
+//                     height: 55px;
+//                     top: -3rem;
+//                     left: 4px;
+//                 }
+//             }
+//         }
 
-        &-5 {
-            position: relative;
-            z-index: 0;
+//         &-5 {
+//             position: relative;
+//             z-index: 0;
 
-            &::before {
-                content: "";
-                background-image: url("../../img/multiFam/stages/5..svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: absolute;
-                display: inline;
-                width: 93px;
-                height: 97px;
-                top: -27%;
-                left: -2px;
-                z-index: -1;
+//             &::before {
+//                 content: "";
+//                 background-image: url("../../img/multiFam/stages/5..svg");
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 position: absolute;
+//                 display: inline;
+//                 width: 93px;
+//                 height: 97px;
+//                 top: -27%;
+//                 left: -2px;
+//                 z-index: -1;
 
-                @media screen and (max-width: 1024px) {
-                    width: 37px;
-                    height: 55px;
-                    top: -3rem;
-                    left: 4px;
-                }
-            }
-        }
-    }
+//                 @media screen and (max-width: 1024px) {
+//                     width: 37px;
+//                     height: 55px;
+//                     top: -3rem;
+//                     left: 4px;
+//                 }
+//             }
+//         }
+//     }
 
-    &__text {
-        font-family: 'DM Sans';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 32px;
-        color: $Gray-100;
+//     &__text {
+//         font-family: 'DM Sans';
+//         font-weight: 400;
+//         font-size: 22px;
+//         line-height: 32px;
+//         color: $Gray-100;
 
-        @media screen and (max-width: 1024px) {
-            margin: 0;
-            font-size: 18px;
-            line-height: 28px;
-        }
+//         @media screen and (max-width: 1024px) {
+//             margin: 0;
+//             font-size: 18px;
+//             line-height: 28px;
+//         }
 
-        &-other {
-            position: relative;
+//         &-other {
+//             position: relative;
 
-            &::before {
-                content: "";
-                display: inline;
-                position: absolute;
-                width: 5px;
-                height: 5px;
-                top: 12px;
-                left: -8px;
-                border-radius: 50%;
-                background-color: $main-color-teal;
-            }
-        }
-    }
-}
+//             &::before {
+//                 content: "";
+//                 display: inline;
+//                 position: absolute;
+//                 width: 5px;
+//                 height: 5px;
+//                 top: 12px;
+//                 left: -8px;
+//                 border-radius: 50%;
+//                 background-color: $main-color-teal;
+//             }
+//         }
+//     }
+// }
