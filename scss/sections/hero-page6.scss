@@ -1,0 +1,52 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.hero-page6 {
+    background-color: $light-gray;
+    
+    &__container {
+        display: flex;
+        padding-top: 190px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1260px) {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        padding-bottom: 50px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 103px;
+        line-height: 114px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 24px;
+            font-size: 52px;
+            line-height: 55px;
+        }
+    }
+
+    &__subtitle {
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-100;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &__img {
+        max-width: 740px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,286 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.contact-us {
+    padding-bottom: 130px;
+    background-color: $light-gray;
+
+    &__container {
+        position: relative;
+        padding-top: 70px;
+
+        @media (max-width: 1024px) {
+            padding-top: 50px;
+        }
+    }
+
+    &__col {
+        display: flex;
+
+        @media (max-width: 1422px) {
+            width: 100%;
+            margin: 0 16px;
+            flex-direction: column;
+        }
+
+        &-left {
+            @media (max-width: 1422px) {
+                display: none;
+            } 
+        }
+    }
+
+    &__title {
+        max-width: 580px;
+        margin: 0;
+        font-family: 'GT Eesti Pro';
+        font-weight: 700;
+        font-size: 91px;
+        line-height: 100px;
+        color: $Gray-100;
+
+        @media (max-width: 1024px) {
+            max-width: 345px;
+            font-size: 40px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 385px;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: $Gray-80;
+
+        @media (max-width: 1024px) {
+            max-width: 340px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        
+    }
+
+    &__box {
+        width: 100%;
+    }
+
+    &__address,
+    &__email,
+    &__tel {
+        width: 100%;
+        display: flex;
+        position: relative;
+        padding-bottom: 38px;
+        gap: 24px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: $Gray-80;
+
+        @media (max-width: 1024px) {
+            padding-bottom: 24px;
+            padding-right: 16px;
+        }
+    }
+
+    &__address {
+       &-icon {
+         margin-top: -5px;
+       }
+    }
+
+    &__tel {
+        &-icon {
+         margin-top: -5px;
+        }
+    }
+
+    &__email {
+        &-icon {
+         margin-top: -5px;
+        }
+    }
+
+    &__mobile-menu {
+        display: none;
+
+        @media (max-width: 1422px) {
+            display: inline;
+        }
+    }
+
+    .form {
+        width: 100%;
+        display: grid;
+        gap: 40px;
+        width: 950px;
+        height: 585px;
+        padding: 80px;
+        border-radius: 12px;
+        background: $white-color;
+        border: 1px solid $Gray-10;
+        filter: $box-shadow-l;
+
+        @media (max-width: 1024px) {
+            width: 345px;
+            padding: 32px 24px;
+            gap: 16px;
+        }
+
+        &__first-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            border: none;
+
+            @media (max-width: 1024px) {
+               flex-direction: column;
+            }
+        }
+
+        .form-group {
+            position: relative;
+          
+            input,
+            textarea {
+                padding-left: 11px;
+                padding-top: 16px;
+                font-family: 'DM Sans';
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                background: $white-color;
+                border: 1px solid $Gray-20;
+                border-radius: 6px;
+            }
+    
+            &__row {
+                width: 374px;
+                height: 60px;
+            }
+    
+            &__second-row {
+                width: 788px;
+                height: 60px;
+            }
+    
+            textarea {
+                width: 788px;
+                height: 120px;
+            }
+          
+            label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform-origin: top left;
+              transition: all 0.2s ease;
+              pointer-events: none;
+              transform: translateY(50%);
+              padding-left: 16px;
+              font-family: 'DM Sans';
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 32px;
+              color: $Gray-50;
+            }
+          
+            input:focus + label,
+            textarea:focus + label,
+            input:valid + label,
+            textarea:valid + label {
+              transform: translateY(-10%) scale(0.8);
+              top: 5px;
+              font-weight: 500;
+              font-size: 13px;
+              line-height: 18px;
+            }
+    
+            &__row,
+            &__second-row,
+             textarea {
+                @media (max-width: 1024px) {
+                    width: 295px;
+                }
+
+                &:hover {
+                    border: 1px solid $Gray-60;
+                }
+    
+                &:focus { outline: none;
+                    border: 2px solid $main-color-teal; 
+                }
+            }
+        } 
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    @media (max-width: 1422px) {
+        display: none;
+    }
+
+    &__item {
+        width: 370px;
+        height: 80px;
+        padding: 16px;
+        background: $white-color;
+        border: 1px solid $Gray-10;
+        border-radius: 666px;
+        cursor: pointer;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-family: 'GT Eesti Pro';
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        color: $Gray-100;
+
+        @media (max-width: 1024px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+}
+
+.social-mobile {
+    display: none;
+
+    @media (max-width: 1422px) {
+        display: inline;
+
+        &__top,
+        &__bottom {
+            display: flex;
+            gap: 45px;
+        }
+
+        &__bottom {
+            padding-bottom: 50px;
+        }
+
+       &__item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+       }
+    } 
+}

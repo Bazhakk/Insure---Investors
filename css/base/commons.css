@@ -321,7 +321,7 @@
   line-height: 25px;
   color: #fff;
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1024px) {
   .button_hero-page2 {
     display: block;
     width: 100%;

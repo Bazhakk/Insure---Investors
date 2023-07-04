@@ -122,13 +122,13 @@
     <main class="multiFam">
         <section class="hero-page2">
             <div class="hero-page2__container container">
-                <div class="hero-page2__col hero-page2__col_left">
+                <div class="hero-page2__col-left">
                     <h1 class="hero-page2__title">Multi family program</h1>
                     <p class="hero-page2__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
                     <a href="#" title="Button" class="button button_hero-page2">Get Coverage</a>
                 </div>
 
-                <div class="hero-page2__col hero-page2__col_right">
+                <div class="hero-page2__col-right">
                     <img src="img/multiFam/hero/hero.png" alt="Hero" class="hero-page2__img"/>
 
                     <div class="item-info">
@@ -148,22 +148,30 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
 
         <section class="menu-page2">
             <div class="menu-page2__container container">
-                <nav class="menu-tab">
-                    <span class="menu-tab__link" id="menu-tab-1">Details</span>
-                    <span class="menu-tab__link" id="menu-tab-2">Types properties</span>
-                    <span class="menu-tab__link" id="menu-tab-3">Text</span>
-                    <span class="menu-tab__link" id="menu-tab-4">Types of customers</span>
-                    <span class="menu-tab__link" id="menu-tab-5">FAQ</span>
-                </nav>
+                <nav>
+                    <ul class="menu-tab">
+                      <!-- <li><a class="menu-tab__link active"  id="menu-tab-1" href="#menu-tab-1">Details</a></li>
+                      <li><a class="menu-tab__link" id="menu-tab-2"  href="#menu-tab-2">Types properties</a></li>
+                      <li><a class="menu-tab__link" href="#menu-tab-3">Text</a></li>
+                      <li><a class="menu-tab__link" href="#menu-tab-4">Types of customers</a></li>
+                      <li><a class="menu-tab__link" href="#menu-tab-5">FAQ</a></li> -->
+                      <span class="menu-tab__link">Details</span>
+                      <span class="menu-tab__link">Types properties</span>
+                      <span class="menu-tab__link">Text</span>
+                      <span class="menu-tab__link">Types of customers</span>
+                      <span class="menu-tab__link">FAQ</span>
+                    </ul>
+                  </nav>
             </div>
         </section>
 
-        <!-- <section class="details">
+        <section class="details">
             <div class="details__container container">
                 <div class="details__box">
                     <h2 class="details__title">Details</h2>
@@ -174,88 +182,152 @@
                     </div>
                 </div>
                 <h1 class="details__head">Infographic</h1>
+                </div>
             </div>
         </section>
 
         <section class="properties">
             <div class="properties__container container">
                 <h2 class="properties__title">Types of <span class="properties__title-other">multifamily</span> properties we insure</h2>
-
-                <div class="properties__box">
-
-                    <div class="menu-line">
-                        <div class="line-segment"></div>
-                        <nav class="properties-menu">
-                            <span class="properties-menu__link properties-menu__link_active" id="properties-menu-1">Apartments</span>
-                            <span class="properties-menu__link" id="properties-menu-2">Duplexes</span>
-                            <span class="properties-menu__link" id="properties-menu-3">Triplexes</span>
-                            <span class="properties-menu__link" id="properties-menu-4">Large apartment complexes</span>
-                            <span class="properties-menu__link" id="properties-menu-5">Condos</span>
-                            <span class="properties-menu__link" id="properties-menu-6">Townhomes</span>
-                        </nav>
-                      </div>
+                
+               <div class="properties__block">
+                  <nav class="content-menu">
+                    <ul class="content-menu__item">
+                        <li><a href="#" data-target="content1" class="content-menu__link">Apartments</a></li>
+                        <li><a href="#" data-target="content2" class="content-menu__link">Duplexes</a></li>
+                        <li><a href="#" data-target="content3" class="content-menu__link">Triplexes</a></li>
+                        <li><a href="#" data-target="content4" class="content-menu__link">Large apartment complexes</a></li>
+                        <li><a href="#" data-target="content5" class="content-menu__link">Condos</a></li>
+                        <li><a href="#" data-target="content6" class="content-menu__link">Townhomes</a></li>
+                    </ul>
+                  </nav>
+                  
+                  <div id="content1" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">A apartments building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                  </div>
+                  
+                  <div id="content2" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                  </div>
+                  
+                  <div id="content3" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">A triplexes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                  </div>
     
-                    <div class="properties__description properties__description_hidden" id="properties-description-1">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
+                  <div id="content4" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">Large building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
                     </div>
-
-                    <div class="properties__description properties__description_hidden" id="properties-description-2">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
+                  </div>
+    
+                  <div id="content5" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">A condos building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
                     </div>
-
-                    <div class="properties__description properties__description_hidden" id="properties-description-3">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
+                  </div>
+    
+                  <div id="content6" class="content">
+                    <div class="content__shell">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="content__img"/>
+                        <p class="content__text">A townhomes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
                     </div>
+                  </div>
+               </div>
+            
+               <div class="mobile-properties">
+                <div class="mobile-properties__block">
 
-                    <div class="properties__description properties__description_hidden" id="properties-description-4">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
+                    <div class="mobile-properties__link" id="mobile-properties-1">
+                        Apartments
+                        <span class="mobile-properties__toggle"></span>
                     </div>
-
-                    <div class="properties__description properties__description_hidden" id="properties-description-5">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
-                    </div>
-
-                    <div class="properties__description properties__description_hidden" id="properties-description-6">
-                        <div class="properties__description-right">
-                            <img src="img/multiFam/properties/description.png" alt="Properties" class="properties__img"/>
-                            <p class="properties__text">A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
-                        </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-1">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">A apartments building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
                     </div>
                 </div>
 
-            </div>
-        </section> -->
+                <div class="mobile-properties__block">
+                    <div class="mobile-properties__link" id="mobile-properties-2">
+                        Duplexes
+                        <span class="mobile-properties__toggle"></span>
+                    </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-2">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">A duplexes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                </div>
 
-        <!-- <section class="insurance-page2">
+                <div class="mobile-properties__block">
+                    <div class="mobile-properties__link" id="mobile-properties-3">
+                        Triplexes
+                        <span class="mobile-properties__toggle"></span>
+                    </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-3">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">A triplexes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                </div>
+
+                <div class="mobile-properties__block">
+                    <div class="mobile-properties__link" id="mobile-properties-4">
+                        Large apartment complexes
+                        <span class="mobile-properties__toggle"></span>
+                    </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-4">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">Large apartment complexes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                </div>
+
+                <div class="mobile-properties__block">
+                    <div class="mobile-properties__link" id="mobile-properties-5">
+                        Condos
+                        <span class="mobile-properties__toggle"></span>
+                    </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-5">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">A condos building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                </div>
+
+                <div class="mobile-properties__block mobile-properties__block-other">
+                    <div class="mobile-properties__link" id="mobile-properties-6">
+                        Townhomes
+                        <span class="mobile-properties__toggle"></span>
+                    </div>
+                    <div class="mobile-properties__content mobile-properties_hidden" id="mobile-content-6">
+                        <img src="img/multiFam/properties/description.png" alt="content" class="mobile-properties__img"/>
+                        <p class="mobile-properties__text">A townhomes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+
+        <section class="insurance-page2" id="menu-tab-3">
             <div class="insurance-page2__container container">
-                <h2 class="insurance-page2__title">Do I need <span class="insurance-page2__title_other">multi-family</span> insurance?</h2>
-
-                <div class="insurance-page2__description">
-                    <p class="insurance-page2__text">Standard homeowners insurance won’t cover your rental activities or related risks. If you want protection from the financial impact of property damage and liability, you need landlord insurance.</p>
-                    <p class="insurance-page2__text">Whether you’re actually required to buy landlord insurance will depend on a couple of things. The first is where your property is located. Local and state rules for landlords vary, so review the laws in your area.</p>
-                    <p class="insurance-page2__text">The second is whether you have a mortgage. Most lenders have insurance requirements, so if you took out a loan for your property, you’ll probably need to maintain coverage.</p>
-                    <p class="insurance-page2__text">Regardless of whether coverage is required, purchasing landlord insurance is a smart way to protect yourself and your investment.</p>
+                <div class="insurance-page2__top">
+                    <h2 class="insurance-page2__title">Do I need <span class="insurance-page2__title_other">multi-family</span> insurance?</h2>
+                    <div class="insurance-page2__description">
+                        <p class="insurance-page2__text">Standard homeowners insurance won’t cover your rental activities or related risks. If you want protection from the financial impact of property damage and liability, you need landlord insurance.</p>
+                        <p class="insurance-page2__text">Whether you’re actually required to buy landlord insurance will depend on a couple of things. The first is where your property is located. Local and state rules for landlords vary, so review the laws in your area.</p>
+                        <p class="insurance-page2__text">The second is whether you have a mortgage. Most lenders have insurance requirements, so if you took out a loan for your property, you’ll probably need to maintain coverage.</p>
+                        <p class="insurance-page2__text">Regardless of whether coverage is required, purchasing landlord insurance is a smart way to protect yourself and your investment.</p>
+                    </div>
                 </div>
-            </div>
-        </section> -->
 
-        <!-- <section class="rules">
-            <div class="rules__container container">
                 <h2 class="rules__title">Additional coverages</h2>
 
                 <div class="rules__col">
@@ -287,11 +359,7 @@
                 <div class="rules__btn">
                     <a href="#" title="Button" class="button button_rules">Get Coverage</a>
                 </div>
-            </div>
-        </section> -->
 
-        <!-- <section class="stages">
-            <div class="stages__container container">
                 <h2 class="stages__title">What to consider when <span class="stages__title-other">buying multifamily</span> property</h2>
             
                 <div class="stages__box">
@@ -350,10 +418,13 @@
                     </div>
                 </div>
 
-            </div>
-        </section> -->
 
-        <section class="types">
+
+
+            </div>
+        </section>
+
+        <section class="types" id="menu-tab-3">
             <div class="types__container container">
                 <h2 class="types__title">Types of customers</h2>
 
@@ -413,71 +484,13 @@
                     </ul>
                 </div>
 
-                <div class="mobile-box">
-                    <ul class="mobile-box__clients">
-                        <li class="mobile-box__item">
-                            <p class="mobile-box__title">Property managers</p>
-                        </li>
-
-                        <li class="mobile-box__item">
-                            <p class="mobile-box__title">Real estate investors</p>
-                        </li>
-
-                        <li class="mobile-box__item">
-                            <p class="mobile-box__title">Portfolio managers</p>
-                        </li>
-
-                        <li class="mobile-box__item">
-                            <p class="mobile-box__title">Private money lenders</p>
-                        </li>
-                    </ul>
-                    <a href="#" title="Button" class="toggle-button" id="toggle-button">LOAD MORE</a>
-                    <div id="hidden-content" class="hidden-content">
-                        <ul class="mobile-box__clients">
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Real estate developers</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Asset managers</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Private equity firms</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Real estate agents </p>
-                            </li>
-                        </ul>
-    
-                        <ul class="mobile-box__clients">
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Wholesalers</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Single family investors</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Multifamily investors</p>
-                            </li>
-    
-                            <li class="mobile-box__item">
-                                <p class="mobile-box__title">Banks forced placed policies </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
                 <div class="types__btn">
                     <a href="#" title="Button" class="button button_types">Get Started</a>
                 </div>
             </div>
         </section>
 
-        <section class="customers">
+        <section class="customers" id="menu-tab-4">
             <div class="customers__container container">
                 <div class="customers__box">
                     <h2 class="customers__title">Our customers</h2>
@@ -504,34 +517,42 @@
                             <img src="img/multiFam/customers/customers-img.png" alt="customer" class="customer__img"/>
                         </li>
                     </ul>
-
-                    <div class="slider">
-                        <ul class="slider-customer">
-                            <li class="slider-customer__element">
-                                <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="slider-customer__img"/>
-                            </li>
-
-                            <li class="slider-customer__element">
-                                <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="slider-customer__img"/>
-                            </li>
-
-                            <li class="slider-customer__element">
-                                <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="slider-customer__img"/>
-                            </li>
-
-                            <li class="slider-customer__element">
-                                <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="slider-customer__img"/>
-                            </li>
-
-                            <li class="slider-customer__element">
-                                <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="slider-customer__img"/>
-                            </li>
-                        </ul>
-                    </div>
-                    
                 </div>
+
+                <div class="customer-slider">
+                    <div class="customer-slider__element">
+                        <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="customer-slider__img"/>
+                    </div>
+
+                    <div class="customer-slider__element">
+                        <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="customer-slider__img"/>
+                    </div>
+
+                    <div class="customer-slider__element">
+                        <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="customer-slider__img"/>
+                    </div>
+
+                    <div class="customer-slider__element">
+                        <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="customer-slider__img"/>
+                    </div>
+
+                    <div class="customer-slider__element">
+                        <img src="img/multiFam/customers/customers-img.png" alt="Slider" class="customer-slider__img"/>
+                    </div>
+                </div>
+
+                <div class="slider-buttons">
+                    <button class="prev-button" id="prev-button">
+                        <img src="img/multiFam/customers/prev-button.svg" alt="Button" class="prev-button__img"/>
+                    </button>
+                    <button class="next-button" id="next-button">
+                        <img src="img/multiFam/customers/next-button.svg" alt="Button" class="next-button__img"/>
+                    </button>
+                </div>
+                  
             </div>
         </section>
+
     </main>
 
     <script src="js/jquery.min.js"></script>

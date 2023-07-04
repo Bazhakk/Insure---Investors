@@ -33,6 +33,7 @@
 }
 .menu-page2 .menu-tab {
   display: flex;
+  padding: 0;
   gap: 32px;
   font-family: "GT Eesti Pro";
   font-weight: 500;

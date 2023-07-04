@@ -123,7 +123,7 @@
   border-radius: 12px;
   background: #fff;
   border: 1px solid #E6E8EA;
-  filter: drop-shadow(0px 18px 60px rgba(10, 28, 51, 0.05));
+  filter: 0px 18px 60px rgba(10, 28, 51, 0.05);
 }
 @media (max-width: 1024px) {
   .contact .form {

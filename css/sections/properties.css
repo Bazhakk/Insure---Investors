@@ -29,11 +29,26 @@
   font-weight: 700;
 }
 .properties {
+  padding-bottom: 130px;
   background: #000E50;
 }
-.properties__title {
-  width: 830px;
+@media screen and (max-width: 1024px) {
+  .properties {
+    padding-bottom: 60px;
+  }
+}
+.properties__container {
   padding-top: 80px;
+  padding-bottom: 120px;
+}
+@media screen and (max-width: 1024px) {
+  .properties__container {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+}
+.properties__title {
+  max-width: 830px;
   padding-bottom: 90px;
   margin: 0 auto;
   font-family: "GT Eesti Pro";
@@ -45,30 +60,65 @@
 .properties__title-other {
   color: #00CCC2;
 }
-.properties__box {
+@media screen and (max-width: 1024px) {
+  .properties__title {
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.properties__block {
   display: flex;
-  padding-bottom: 120px;
-  transform: translate(16%);
-  gap: 20px;
+  justify-content: center;
 }
-.properties__description {
+@media screen and (max-width: 1024px) {
+  .properties__block {
+    display: none;
+  }
+}
+.properties .content-menu {
+  max-height: 335px;
+  position: relative;
+}
+.properties .content-menu::before {
+  content: "";
+  position: absolute;
+  height: 360px;
+  border: 2px solid #0D1958;
+}
+.properties .content-menu__item {
+  width: 275px;
+  display: grid;
+  padding-top: 4px;
+  padding-left: 22px;
+  gap: 24px;
+}
+.properties .content-menu__link {
+  position: relative;
+  font-family: "GT Eesti Pro";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #B5BAC1;
+}
+.properties .content {
+  display: none;
   width: 765px;
-  border-radius: 12px;
   background: #0D1958;
+  box-shadow: 0 10 32 0 rgba(12, 37, 70, 0.08);
+  border-radius: 12px;
 }
-.properties__description-right {
+.properties .content__shell {
   display: flex;
   padding: 40px;
   gap: 50px;
 }
-.properties__description_hidden {
-  display: none;
+.properties .content__img {
+  max-width: 235px;
+  max-height: 235px;
 }
-.properties__img {
-  width: 235px;
-  height: 235px;
-}
-.properties__text {
+.properties .content__text {
   width: 400px;
   margin: 0;
   font-family: "DM Sans";
@@ -77,36 +127,82 @@
   line-height: 26px;
   color: #fff;
 }
-.properties .properties-menu {
-  max-height: 332px;
-  display: grid;
-  padding-left: 22px;
-  gap: 24px;
-}
-.properties .properties-menu__link {
-  font-family: "GT Eesti Pro";
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  color: #B5BAC1;
-}
-.properties .properties-menu__link_active {
+.properties nav ul li a.active {
   color: #fff;
 }
-.properties .menu-line {
-  width: 2px;
-  height: 355px;
-  border: 2px solid #0D1958;
-  margin-right: 22px;
-  position: relative;
-}
-.properties .line-segment {
+.properties nav ul li a.active::before {
+  content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #E91E63;
-  transition: height 0.3s ease;
+  display: inline;
+  width: 0px;
+  height: 55px;
+  top: -20px;
+  left: -22px;
+  border: 2px solid #E91E63;
+}
+.properties .content.active {
+  display: block;
+}
+.properties .mobile-properties {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .properties .mobile-properties {
+    display: inline;
+    margin: 0 16px;
+    cursor: pointer;
+  }
+  .properties .mobile-properties__block::before {
+    content: "";
+    display: block;
+    margin: 0;
+    border: 1px solid #536070;
+  }
+  .properties .mobile-properties__block-other::after {
+    content: "";
+    display: block;
+    margin: 0;
+    border: 1px solid #536070;
+  }
+  .properties .mobile-properties__link {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    font-family: "GT Eesti Pro";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B5BAC1;
+  }
+  .properties .mobile-properties__link_active {
+    color: #fff;
+  }
+  .properties .mobile-properties__link_active .mobile-properties__toggle {
+    transition: transform all 0.4s;
+    transform: rotate(-180deg);
+  }
+  .properties .mobile-properties__content {
+    display: none;
+    width: 100%;
+  }
+  .properties .mobile-properties__img {
+    max-width: 345px;
+  }
+  .properties .mobile-properties__text {
+    font-family: "DM Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+  .properties .mobile-properties__toggle {
+    transition: all 0.4s;
+    display: inline-block;
+    width: 17px;
+    height: 12px;
+    background: url("../../img/multiFam/properties/arrow-before.svg") no-repeat;
+    background-size: contain;
+  }
 }
 
 /*# sourceMappingURL=properties.css.map */

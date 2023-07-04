@@ -28,6 +28,14 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.questions {
+  padding-bottom: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .questions {
+    padding-bottom: 60px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .questions {
     margin: 0 16px;

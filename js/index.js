@@ -49,6 +49,20 @@ jQuery(document).ready(function ( $ ) {
       $('.features__box').addClass('features__box_hidden');
       $('#features-box-4').removeClass('features__box_hidden');
     });
+
+    $('#features-5').on('click', function() {
+      $('.features-menu__link').removeClass('features-menu__link_active');
+      $('#features-5').addClass('features-menu__link_active');
+      $('.features__box').addClass('features__box_hidden');
+      $('#features-box-5').removeClass('features__box_hidden');
+    });
+
+    $('#features-6').on('click', function() {
+      $('.features-menu__link').removeClass('features-menu__link_active');
+      $('#features-6').addClass('features-menu__link_active');
+      $('.features__box').addClass('features__box_hidden');
+      $('#features-box-6').removeClass('features__box_hidden');
+    });
     // Обработчик событий при клике на элемент списка
     $(".features-menu__link").click(function() {
       // Удаляем класс 'active' у всех элементов
@@ -179,104 +193,56 @@ jQuery(document).ready(function ( $ ) {
   //PAGE-2
   //Properties
   $(document).ready(function() {
-    $('#properties-menu-1').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-1').addClass('properties-menu__link_active');
-      $('.properties__description').addClass('properties__description_hidden');
-      $('#properties-descripcion-1').removeClass('properties__description_hidden');
+    // По умолчанию показываем первый контент
+    var firstLink = $('nav ul li:first-child a');
+    var defaultTarget = firstLink.data('target');
+    $('#' + defaultTarget).addClass('active');
+    firstLink.addClass('active');
+
+    // Обработчик события клика на ссылки меню
+    $('nav ul li a').click(function(e) {
+      e.preventDefault();
+      var target = $(this).data('target');
+      
+      // Удаляем класс 'active' у всех элементов контента и ссылок
+      $('.content').removeClass('active');
+      $('nav ul li a').removeClass('active');
+      
+      // Добавляем класс 'active' для выбранного контента и ссылки
+      $('#' + target).addClass('active');
+      $(this).addClass('active');
     });
-
-    $('#properties-menu-2').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-2').addClass('properties-menu__link_active');
-      $('.properties__box').addClass('properties__box_hidden');
-      $('#properties-box-2').removeClass('properties__box_hidden');
-    });
-
-    $('#properties-menu-3').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-3').addClass('properties-menu__link_active');
-      $('.properties__box').addClass('properties__box_hidden');
-      $('#properties-box-3').removeClass('properties__box_hidden');
-    });
-
-    $('#properties-menu-4').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-4').addClass('properties-menu__link_active');
-      $('.properties__box').addClass('properties__box_hidden');
-      $('#properties-box-4').removeClass('properties__box_hidden');
-    });
-
-    $('#properties-menu-5').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-5').addClass('properties-menu__link_active');
-      $('.properties__box').addClass('properties__box_hidden');
-      $('#properties-box-5').removeClass('properties__box_hidden');
-    });
-
-    $('#properties-menu-6').on('click', function() {
-      $('.properties-menu__link').removeClass('properties-menu__link_active');
-      $('#properties-menu-6').addClass('properties-menu__link_active');
-      $('.properties__box').addClass('properties__box_hidden');
-      $('#properties-box-6').removeClass('properties__box_hidden');
-    });
-
-    // Обработчик событий при клике на элемент списка
-    $(".properties-menu__link").click(function() {
-      // Удаляем класс 'active' у всех элементов
-      $(".properties-menu_link").removeClass("active");
-      // Добавляем класс 'active' к текущему элементу
-      $(this).addClass("active");
-    });
-
-    // Получить ссылки на элементы меню и линию
-    var propertiesMenuLink = $(".properties-menu__link");
-    var menuLine = $(".menu-line");
-    var lineSegment = $(".line-segment");
-
-    // Функция для обработки события клика на элементе меню
-      propertiesMenuLink.click(function() {
-      propertiesMenuLink.removeClass("active"); // Удалить класс "active" у всех элементов меню
-      $(this).addClass("active"); // Добавить класс "active" к текущему элементу
-
-      // Получить высоту текущего элемента меню
-      var targetHeight = $(this).outerHeight();
-      // Получить позицию текущего элемента меню относительно родительской линии
-      var targetOffset = $(this).position().top;
-
-      // Установить высоту и позицию участка линии
-      lineSegment.css({
-        height: targetHeight,
-        top: targetOffset
-      });
   });
 
-
-
+  //Mobile-properties
   $(document).ready(function() {
-    // // Получить ссылки на элементы меню и линию
-    // var menuItems = $(".menu-item");
-    // var menuLine = $(".menu-line");
-    // var lineSegment = $(".line-segment");
-
-    // // Функция для обработки события клика на элементе меню
-    // menuItems.click(function() {
-    //   menuItems.removeClass("active"); // Удалить класс "active" у всех элементов меню
-    //   $(this).addClass("active"); // Добавить класс "active" к текущему элементу
-
-    //   // Получить высоту текущего элемента меню
-    //   var targetHeight = $(this).outerHeight();
-    //   // Получить позицию текущего элемента меню относительно родительской линии
-    //   var targetOffset = $(this).position().top;
-
-    //   // Установить высоту и позицию участка линии
-    //   lineSegment.css({
-    //     height: targetHeight,
-    //     top: targetOffset
-    //   });
+    $('.mobile-properties__link').click(function() {
+      var content = $(this).next('.mobile-properties__content');
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.mobile-properties__content').slideUp();
+        
+        // Затем развернуть текущий элемент
+        content.slideDown();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+        $(this).find('.mobile-properties__toggle').toggleClass('rotate');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.mobile-properties__link').not(this).removeClass('mobile-properties__link_active');
+        $('.mobile-properties__block').not(accordionItem).removeClass('mobile-properties__block_active');
+        $('.mobile-properties__toggle').not($(this).find('.mobile-properties__toggle')).removeClass('rotate');
+      }
     });
   });
-
+  
   //Types
   //Mobile-menu
   $(document).ready(function() {
@@ -292,11 +258,127 @@ jQuery(document).ready(function ( $ ) {
 
   //Customer
   //Slider
-  $('.slider-customer').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    arrows: false,
-    dots: true
+
+  //Page-6
+  // Leaders
+  //Leaders-slider/leaders-mobile
+  $(document).ready(function() {
+    var sliderLeaders = null;
+  
+    function initSlider() {
+      if (window.innerWidth < 1220) {
+        if (sliderLeaders === null) {
+          // Инициализация слайдера для мобильной версии
+          $('.leaders-mobile').slick({
+            // настройки для мобильной версии
+          });
+        }
+      } else {
+        if (sliderLeaders) {
+          sliderLeaders.slick('unslick');
+          sliderLeaders = null;
+        }
+        // Инициализация слайдера для десктопной версии
+        $('.slider-leaders').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          prevArrow: false,
+          nextArrow: false
+        });
+      }
+    }
+  
+    // Инициализация слайдера при загрузке страницы
+    initSlider();
+  
+    // Повторная инициализация слайдера при изменении размера окна
+    $(window).on('resize', function() {
+      initSlider();
+    });
+  
+    // Повторная инициализация слайдера при изменении ориентации устройства (для мобильных устройств)
+    $(window).on('orientationchange', function() {
+      initSlider();
+    });
+
+
+    $('#prevButton').click(function() {
+      $('.slider-leaders').slick('slickPrev');
+    });
+  
+    $('#nextButton').click(function() {
+      $('.slider-leaders').slick('slickNext');
+    });
+
+    
+    $('#prevButton').click(function() {
+      $('.leaders-mobile').slick('slickPrev');
+    });
+  
+    $('#nextButton').click(function() {
+      $('.leaders-mobile').slick('slickNext');
+    });
   });
+
+  //Awards
+  //Slider
+  $(document).ready(function() {
+    $('.slider').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      prevArrow: false,
+      nextArrow: false
+    });
+  
+    $('#prev-button').click(function() {
+      $('.slider').slick('slickPrev');
+    });
+  
+    $('#next-button').click(function() {
+      $('.slider').slick('slickNext');
+    });
   });
+
+  // Slider-menu
+  $(document).ready(function() {
+    $('.slider-menu').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      prevArrow: false,
+      nextArrow: false
+    });
+  
+    $('#prev-btn').click(function() {
+      $('.slider-menu').slick('slickPrev');
+    });
+  
+    $('#next-btn').click(function() {
+      $('.slider-menu').slick('slickNext');
+    });
+  });
+
+
+  $(document).ready(function() {
+    $('.customer-slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: false,
+      dots: false
+    });
+  
+    $('.prev-button').click(function() {
+      $('.customer-slider').slick('slickPrev');
+    });
+  
+    $('.next-button').click(function() {
+      $('.customer-slider').slick('slickNext');
+    });
+  });
+  
+  
+
+});

@@ -1,0 +1,155 @@
+@import "../base/fonts";
+@import "../base/variables";
+
+.service {
+    padding-top: 75px;
+    padding-bottom: 180px;
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 60px;
+      padding-bottom: 120px;
+    }
+
+    .service-section {
+        max-width: 765px;
+        display: grid;
+        margin: 0 auto;
+
+        font-family: "GT Eesti Pro";
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        &__item {
+            padding-top: 80px;
+
+            @media screen and (max-width: 1024px) {
+                padding-top: 60px;
+            }
+        }
+
+        &__title {
+            margin: 0;
+            padding-bottom: 24px;
+            font-family: 'GT Eesti Pro';
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 46px;
+            color: $Gray-100;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+    
+        &__subtitle {
+            position: relative;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-100;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            &_first {
+                margin-left: -35px;
+
+                @media screen and (max-width: 1024px) {
+                    margin-left: -19px;
+                }
+            }
+
+            &_second {
+                &::before {
+                    content: "a.";
+                    position: absolute;
+                    top: 0;
+                    left: -36px;
+
+                    @media screen and (max-width: 1024px) {
+                       left: -25px;
+                    }
+                }
+            }
+
+            &_third {
+                &::before {
+                    content: "b.";
+                    position: absolute;
+                    top: 0;
+                    left: -36px;
+
+                    @media screen and (max-width: 1024px) {
+                        left: -25px;
+                    }
+                }
+            }
+
+            &_fourth {
+                &::before {
+                    content: "a.";
+                    position: absolute;
+                    top: 0;
+                    left: -36px;
+
+                    @media screen and (max-width: 1024px) {
+                        left: -25px;
+                    }
+                }
+            }
+
+            &_fifth {
+                &::before {
+                    content: "b.";
+                    position: absolute;
+                    top: 0;
+                    left: -36px;
+
+                    @media screen and (max-width: 1024px) {
+                        left: -25px;
+                    }
+                }
+            }
+        }
+    
+        &__link {
+            color: $main-color-teal;
+        }
+    
+        &__text {
+            position: relative;
+            margin-left: 16px;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 32px;
+            color: $Gray-100;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 13px;
+                left: -13px;
+                border-radius: 50%;
+                background-color: $main-color-teal;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+}
