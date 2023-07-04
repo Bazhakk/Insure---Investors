@@ -41,26 +41,29 @@
         }
     }
 
-    .slider-leaders {
-        max-width: 1560px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0;
-    
-        @media screen and (max-width: 1220px) {
+    .leaders-slider {
+        @media screen and (max-width: 1080px) {
             display: none;
         }
-    
+
+        &__item {
+            width: 500px;
+        }
+
         &__content {
-            padding: 0 32px 40px 32px;
+            width: 501px;
+            margin: 0 auto;
+            padding: 0 16px 40px 20px;
+            border: 1px solid $Gray-10;
+            box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+            border-radius: 0 0 12px 12px;
         }
-    
+
         &__img {
-            max-width: 590px;
+            max-width: 500px;
+            margin: 0 auto;
         }
-    
+
         &__title {
             margin-bottom: 0;
             font-family: 'GT Eesti Pro';
@@ -68,26 +71,16 @@
             font-size: 54px;
             line-height: 58px;
             color: $Gray-100;
-    
-            @media screen and (max-width: 1024px) {
-                font-size: 32px;
-                line-height: 38px;
-            }
         }
-    
+
         &__subtitle {
             font-family: 'DM Sans';
             font-weight: 400;
             font-size: 22px;
             line-height: 32px;
             color: $Gray-80;
-    
-            @media screen and (max-width: 1024px) {
-                font-size: 18px;
-                line-height: 28px;
-            }
         }
-    
+
         &__text {
             max-width: 435px;
             font-family: 'DM Sans';
@@ -95,17 +88,12 @@
             font-size: 18px;
             line-height: 26px;
             color: $Gray-100;
-    
-            @media screen and (max-width: 1024px) {
-                line-height: 24px;
-            }
         }
-    
+
         .socials-network {
             display: flex;
-            align-items: center;
             gap: 55px;
-    
+
             &__social {
                 display: flex;
                 align-items: center;
@@ -141,35 +129,25 @@
             }
         }
     }
-    
-    .slider-btn {
-        padding-top: 80px;
-        text-align: center;
-    
-        &__prev,
-        &__next {
-            border: none;
-            background-color: transparent;
-        }
-    }
-    
+
     .leaders-mobile {
         display: none;
     
-        @media screen and (max-width: 1220px) {
-            max-width: 500px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            padding: 0;
+        @media screen and (max-width: 1080px) {
+            display: inline;
     
             &__content {
+                width: 345px;
+                margin: 0 auto;
                 padding: 24px;
+                border: 1px solid $Gray-10;
+                box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+                border-radius: 0 0 12px 12px;
             }
         
             &__img {
-                width: 100%;
+                width: 345px;
+                margin: 0 auto;
             }
         
             &__title {
@@ -199,15 +177,9 @@
             }
     
             .socials-network {
-                display: flex;
-                align-items: center;
-                gap: 55px;
-    
-                @media screen and (max-width: 570px) {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    gap: 0;
-                }
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
         
                 &__social {
                     display: flex;
@@ -243,6 +215,21 @@
                     }
                 }
             }
+        }
+    }
+
+    .slider-btn {
+        padding-top: 80px;
+        text-align: center;
+    
+        &__prev,
+        &__next {
+            border: none;
+            background-color: transparent;
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding-top: 40px;
         }
     }
 }

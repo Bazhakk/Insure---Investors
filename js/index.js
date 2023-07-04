@@ -277,67 +277,48 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
-  //Page-6
-  // Leaders
-  //Leaders-slider/leaders-mobile
+  //Contact-us Page-6
+  //Leaders
+  // Leaders-slider
   $(document).ready(function() {
-    var sliderLeaders = null;
-  
-    function initSlider() {
-      if (window.innerWidth < 1220) {
-        if (sliderLeaders === null) {
-          // Инициализация слайдера для мобильной версии
-          $('.leaders-mobile').slick({
-            // настройки для мобильной версии
-          });
-        }
-      } else {
-        if (sliderLeaders) {
-          sliderLeaders.slick('unslick');
-          sliderLeaders = null;
-        }
-        // Инициализация слайдера для десктопной версии
-        $('.slider-leaders').slick({
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          prevArrow: false,
-          nextArrow: false
-        });
-      }
-    }
-  
-    // Инициализация слайдера при загрузке страницы
-    initSlider();
-  
-    // Повторная инициализация слайдера при изменении размера окна
-    $(window).on('resize', function() {
-      initSlider();
-    });
-  
-    // Повторная инициализация слайдера при изменении ориентации устройства (для мобильных устройств)
-    $(window).on('orientationchange', function() {
-      initSlider();
-    });
 
-
-    $('#prevButton').click(function() {
-      $('.slider-leaders').slick('slickPrev');
+    $('.leaders-slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false
     });
   
-    $('#nextButton').click(function() {
-      $('.slider-leaders').slick('slickNext');
+    $('.slider-btn__prev').click(function() {
+      $('.leaders-slider').slick('slickPrev');
     });
+  
+    $('.slider-btn__next').click(function() {
+      $('.leaders-slider').slick('slickNext');
+    });
+  });
 
-    
-    $('#prevButton').click(function() {
+  //Leaders-mobile
+  $(document).ready(function() {
+
+    $('.leaders-mobile').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false
+    });
+  
+    $('.slider-btn__prev').click(function() {
       $('.leaders-mobile').slick('slickPrev');
     });
   
-    $('#nextButton').click(function() {
+    $('.slider-btn__next').click(function() {
       $('.leaders-mobile').slick('slickNext');
     });
   });
+  
 
   //Awards
   //Slider
