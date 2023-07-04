@@ -4279,6 +4279,7 @@ ul {
 @media screen and (max-width: 1024px) {
   .customers {
     margin: -125px 16px 0 16px;
+    padding-bottom: 60px;
   }
 }
 .customers__container {
@@ -4361,11 +4362,7 @@ ul {
 }
 @media screen and (max-width: 1100px) {
   .customers .customer-slider {
-    max-width: 800px;
-    max-height: 475px;
-    margin: 0 auto;
     display: inline;
-    width: 100%;
   }
   .customers .customer-slider__element {
     padding-top: 50px;
@@ -4373,6 +4370,7 @@ ul {
   }
   .customers .customer-slider__img {
     max-width: 80px;
+    margin: 0 auto;
   }
 }
 

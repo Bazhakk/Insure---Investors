@@ -7,6 +7,7 @@
 
     @media screen and (max-width: 1024px) {
         margin: -125px 16px 0 16px;
+        padding-bottom: 60px;
     }
 
     &__container {
@@ -14,7 +15,6 @@
         z-index: 2;
         border-radius: 12px;
         background-color: $white-color;
-        // background-color: red;
         box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
     }
 
@@ -93,11 +93,7 @@
         display: none;
 
         @media screen and (max-width: 1100px) {
-            max-width: 800px;
-            max-height: 475px;
-            margin: 0 auto;
             display: inline;
-            width: 100%;
 
             &__element {
                 padding-top: 50px;
@@ -106,8 +102,7 @@
 
             &__img {
                 max-width: 80px;
-                // width: 100%;
-                // height: auto;
+                margin: 0 auto;
             }
         }
     } 
