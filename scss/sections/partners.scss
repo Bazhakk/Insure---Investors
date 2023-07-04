@@ -4,6 +4,7 @@
 .partners {
 
     &__box {
+        padding-bottom: 100px;
         background-color: $blue-dark;
         border-radius: 12px;
     }
@@ -69,42 +70,20 @@
         }
     }
 
-    //SLIDER
-    .slider {
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 60px;
+    .partners-slider {
+        display: none;
 
-        .slider-mobile {
-            display: none;
-
-            @media screen and (max-width: 1100px) {
-                display: inline;
-            }
+        @media screen and (max-width: 1100px) {
+            display: inline;
 
             &__element {
-                padding: 34px 50px;
-                border-radius: 12px;
-
-                @media screen and (max-width: 1024px) {
-                    padding: 19px 30px;
-                }
-
-                @media screen and (max-width: 260px) {
-                    padding: 4px 12px;
-                }
+                padding-top: 50px;
+                // padding-bottom: 100px;
             }
-        
-            &__img {
-                @media screen and (max-width: 1024px) {
-                    max-width: 135px;
-                    margin: 0 auto;
-                }
 
-                @media screen and (max-width: 375px) {
-                    max-width: 78px;
-                }
+            &__img {
+                max-width: 80px;
+                margin: 0 auto;
             }
         }
     }

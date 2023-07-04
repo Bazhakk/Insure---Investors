@@ -131,6 +131,16 @@ jQuery(document).ready(function ( $ ) {
       }
     });
   });
+
+  //Partners
+  // Slick-slider
+  $('.partners-slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: true,
+    dots: true
+  });
   
   //CONTACT
   //FORM
@@ -174,15 +184,6 @@ jQuery(document).ready(function ( $ ) {
         $('.footer-mobile__toggle').not($(this).find('.footer-mobile__toggle')).removeClass('rotate');
       }
     });
-  });
-
-  // Slick-slider
-  $('.slider-mobile').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    arrows: false,
-    dots: true
   });
 
   // AOS init
@@ -258,6 +259,23 @@ jQuery(document).ready(function ( $ ) {
 
   //Customer
   //Slider
+  $(document).ready(function() {
+    $('.customer-slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      arrows: false,
+      dots: false
+    });
+  
+    $('.prev-button').click(function() {
+      $('.customer-slider').slick('slickPrev');
+    });
+  
+    $('.next-button').click(function() {
+      $('.customer-slider').slick('slickNext');
+    });
+  });
 
   //Page-6
   // Leaders
@@ -359,26 +377,4 @@ jQuery(document).ready(function ( $ ) {
       $('.slider-menu').slick('slickNext');
     });
   });
-
-
-  $(document).ready(function() {
-    $('.customer-slider').slick({
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      arrows: false,
-      dots: false
-    });
-  
-    $('.prev-button').click(function() {
-      $('.customer-slider').slick('slickPrev');
-    });
-  
-    $('.next-button').click(function() {
-      $('.customer-slider').slick('slickNext');
-    });
-  });
-  
-  
-
 });
