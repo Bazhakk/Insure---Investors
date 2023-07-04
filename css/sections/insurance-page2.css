@@ -36,16 +36,6 @@
     padding: 60px 0;
   }
 }
-.insurance-page2__container {
-  display: flex;
-  gap: 30px;
-}
-@media screen and (max-width: 1024px) {
-  .insurance-page2__container {
-    flex-direction: column;
-    gap: 16px;
-  }
-}
 .insurance-page2__title {
   max-width: 765px;
   margin: 0;
@@ -76,6 +66,121 @@
   .insurance-page2__text {
     font-size: 18px;
     line-height: 28px;
+  }
+}
+.insurance-page2__top {
+  display: flex;
+  padding-bottom: 130px;
+  gap: 30px;
+}
+@media screen and (max-width: 1280px) {
+  .insurance-page2__top {
+    flex-direction: column;
+    padding-bottom: 60px;
+    gap: 0;
+  }
+}
+
+.rules {
+  padding-bottom: 100px;
+}
+.rules__title {
+  margin: 0;
+  padding-bottom: 48px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__title {
+    padding-bottom: 40px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.rules__col {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .rules__col {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.rules__left, .rules__right {
+  display: grid;
+  gap: 30px;
+}
+.rules__item {
+  max-width: 765px;
+  padding: 80px 50px;
+  background: #fff;
+  border: 1px solid #E6E8EA;
+  box-shadow: 0px 18px 60px rgba(10, 28, 51, 0.05);
+  border-radius: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .rules__item {
+    max-width: 100%;
+    padding: 40px 24px;
+  }
+}
+.rules__subtitle {
+  position: relative;
+  margin: 0;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__subtitle {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+.rules__subtitle::before {
+  content: "";
+  position: absolute;
+  display: inline;
+  height: 44px;
+  top: -10px;
+  left: -50px;
+  border: 3px solid #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .rules__subtitle::before {
+    left: -23px;
+  }
+}
+.rules__text {
+  max-width: 670px;
+  padding-top: 24px;
+  margin: 0;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .rules__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.rules__btn {
+  padding-top: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .rules__btn {
+    padding-top: 40px;
   }
 }
 
