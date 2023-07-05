@@ -2,9 +2,14 @@
 @import "../base/variables";
 
 .menu-page2 {
-   padding: 32px;
-
-   .menu-tab {
+    padding: 32px;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+    // background-color: #fff;
+    // z-index: 9999;
+ 
+    .menu-tab {
         display: flex;
         padding: 0;
         gap: 32px;
@@ -12,19 +17,25 @@
         font-weight: 500;
         font-size: 25px;
         line-height: 30px;
-
+ 
         &__link {
             color: $Gray-30;
 
-            &_active {
-                padding: 8px 24px;
-                background: $Gray-100;
-                border-radius: 66px;
+            &:hover {
+                transition: all .4s;
+                color: $Gray-100;
             }
         }
-
-        @media screen and (max-width: 1024px) {
-            display: none;
+ 
+        .active {
+            padding: 8px 24px;
+            background: $Gray-100;
+            color: $white-color;
+            border-radius: 66px;
         }
-   }
-}
+ 
+         @media screen and (max-width: 1024px) {
+            display: none;
+         }
+    }
+ }

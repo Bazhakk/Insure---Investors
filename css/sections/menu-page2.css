@@ -43,9 +43,14 @@
 .menu-page2 .menu-tab__link {
   color: #B5BAC1;
 }
-.menu-page2 .menu-tab__link_active {
+.menu-page2 .menu-tab__link:hover {
+  transition: all 0.4s;
+  color: #0A1C33;
+}
+.menu-page2 .menu-tab .active {
   padding: 8px 24px;
   background: #0A1C33;
+  color: #fff;
   border-radius: 66px;
 }
 @media screen and (max-width: 1024px) {

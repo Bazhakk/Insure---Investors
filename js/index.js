@@ -193,25 +193,54 @@ jQuery(document).ready(function ( $ ) {
 
   //PAGE-2
   //Properties
-  $(document).ready(function() {
-    // По умолчанию показываем первый контент
-    var firstLink = $('nav ul li:first-child a');
-    var defaultTarget = firstLink.data('target');
-    $('#' + defaultTarget).addClass('active');
-    firstLink.addClass('active');
+  // $(document).ready(function() {
+  //   // По умолчанию показываем первый контент
+  //   var firstLink = $('nav ul li:first-child a');
+  //   var defaultTarget = firstLink.data('target');
+  //   $('#' + defaultTarget).addClass('active');
+  //   firstLink.addClass('active');
 
-    // Обработчик события клика на ссылки меню
-    $('nav ul li a').click(function(e) {
-      e.preventDefault();
-      var target = $(this).data('target');
+  //   // Обработчик события клика на ссылки меню
+  //   $('nav ul li a').click(function(e) {
+  //     e.preventDefault();
+  //     var target = $(this).data('target');
       
-      // Удаляем класс 'active' у всех элементов контента и ссылок
-      $('.content').removeClass('active');
-      $('nav ul li a').removeClass('active');
+  //     // Удаляем класс 'active' у всех элементов контента и ссылок
+  //     $('.content').removeClass('active');
+  //     $('nav ul li a').removeClass('active');
       
-      // Добавляем класс 'active' для выбранного контента и ссылки
-      $('#' + target).addClass('active');
-      $(this).addClass('active');
+  //     // Добавляем класс 'active' для выбранного контента и ссылки
+  //     $('#' + target).addClass('active');
+  //     $(this).addClass('active');
+  //   });
+  // });
+
+  //Mobile-properties
+  $(document).ready(function() {
+    $('.mobile-properties__link').click(function() {
+      var content = $(this).next('.mobile-properties__content');
+      
+      // Проверяем, открыт ли текущий элемент
+      if (content.is(':visible')) {
+        // Если открыт, сворачиваем его
+        content.slideUp();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+      } else {
+        // Если закрыт, сворачиваем все активные панели
+        $('.mobile-properties__content').slideUp();
+        
+        // Затем развернуть текущий элемент
+        content.slideDown();
+        $(this).toggleClass('mobile-properties__link_active');
+        $(this).toggleClass('mobile-properties__block_active');
+        $(this).find('.mobile-properties__toggle').toggleClass('rotate');
+        
+        // Сбрасываем состояние иконки предыдущего элемента
+        $('.mobile-properties__link').not(this).removeClass('mobile-properties__link_active');
+        $('.mobile-properties__block').not(accordionItem).removeClass('mobile-properties__block_active');
+        $('.mobile-properties__toggle').not($(this).find('.mobile-properties__toggle')).removeClass('rotate');
+      }
     });
   });
 
@@ -357,4 +386,73 @@ jQuery(document).ready(function ( $ ) {
       $('.awards-mobile').slick('slickNext');
     });
   });
+
+  //Menu-page2
+  //Menu-tab
+  $(document).ready(function() {
+    $('.menu-tab__link').click(function(e) {
+      e.preventDefault(); // Предотвращаем переход по умолчанию
+  
+      $('.menu-tab__link').removeClass('active'); // Удаляем класс 'active' у всех ссылок в меню
+      $(this).addClass('active'); // Добавляем класс 'active' к текущей ссылке
+    });
+
+  // Получаем все ссылки в меню
+  const menuLinks = document.querySelectorAll('a[href^="#"]');
+
+  // Добавляем обработчик события на каждую ссылку
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Предотвращаем переход по умолчанию
+
+      // Удаляем класс 'active' у всех ссылок
+      menuLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Получаем идентификатор якоря из атрибута href ссылки
+      const targetId = link.getAttribute('href').substring(1);
+
+      // Находим соответствующую секцию по идентификатору
+      const targetSection = document.getElementById(targetId);
+
+      // Проверяем, существует ли такая секция
+      if (targetSection) {
+        // Добавляем класс 'active' к текущей ссылке
+        link.classList.add('active');
+
+        // Выполняем прокрутку к секции
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });    
+  });
+  });
+
+// 
+  $(document).ready(function() {
+  // По умолчанию показываем первый элемент меню и его контент
+  var firstLink = $('.menu a:first');
+  var defaultTarget = firstLink.attr('href');
+  $(defaultTarget).addClass('active');
+  firstLink.addClass('active');
+
+  // Обработчик события клика на ссылки меню
+  $('.menu a').click(function(e) {
+    e.preventDefault();
+
+    // Получаем идентификатор якоря из атрибута href ссылки
+    var target = $(this).attr('href');
+
+    // Удаляем класс 'active' у всех элементов контента и ссылок
+    $('.content').removeClass('active');
+    $('.menu a').removeClass('active');
+
+    // Добавляем класс 'active' для выбранного контента и ссылки
+    $(target).addClass('active');
+    $(this).addClass('active');
+  });
+});
+
+  
+  
 });

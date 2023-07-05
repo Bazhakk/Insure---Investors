@@ -1,6 +1,6 @@
 @import "../base/fonts";
 @import "../base/variables";
-  
+
 .properties {
     padding-bottom: 130px;
     background: $blue-dark;
@@ -50,156 +50,179 @@
         }
     }
 
-    .content-menu {
-        max-height: 335px;
-        position: relative;
+    // .content-menu {
+    //     max-height: 335px;
+    //     position: relative;
 
-        &::before {
-            content: "";
-            position: absolute;
-            height: 360px;
-            border: 2px solid $blue-deep;
-        }
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         height: 360px;
+    //         border: 2px solid $blue-deep;
+    //     }
 
-        &__item {
-            width: 275px;
-            display: grid;
-            padding-top: 4px;
-            padding-left: 22px;
-            gap: 24px;
-        }
+    //     &__item {
+    //         width: 275px;
+    //         display: grid;
+    //         padding-top: 4px;
+    //         padding-left: 22px;
+    //         gap: 24px;
+    //     }
 
-        &__link {
-            position: relative;
-            font-family: 'GT Eesti Pro';
-            font-weight: 500;
-            font-size: 25px;
-            line-height: 30px;
-            color: $Gray-30;
-        }
-    }
+    //     &__link {
+    //         position: relative;
+    //         font-family: 'GT Eesti Pro';
+    //         font-weight: 500;
+    //         font-size: 25px;
+    //         line-height: 30px;
+    //         color: $Gray-30;
+    //     }
+    // }
 
-    .content {
-        display: none;
-        width: 765px;
-        background: $blue-deep;
-        box-shadow: $box-shadow-m;
-        border-radius: 12px;
+    // .content {
+    //     display: none;
+    //     width: 765px;
+    //     background: $blue-deep;
+    //     box-shadow: $box-shadow-m;
+    //     border-radius: 12px;
     
-        &__shell {
-            display: flex;
-            padding: 40px;
-            gap: 50px;
-        }
+    //     &__shell {
+    //         display: flex;
+    //         padding: 40px;
+    //         gap: 50px;
+    //     }
     
-        &__img {
-            max-width: 235px;
-            max-height: 235px;
-        }
+    //     &__img {
+    //         max-width: 235px;
+    //         max-height: 235px;
+    //     }
     
-        &__text {
-            width: 400px;
-            margin: 0;
-            font-family: 'DM Sans';
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 26px;
-            color: $white-color;
-        }
-    }
+    //     &__text {
+    //         width: 400px;
+    //         margin: 0;
+    //         font-family: 'DM Sans';
+    //         font-weight: 400;
+    //         font-size: 18px;
+    //         line-height: 26px;
+    //         color: $white-color;
+    //     }
+    // }
 
-    nav ul li a.active {
-        color: $white-color;
+    // nav ul li a.active {
+    //     color: $white-color;
 
-        &::before {
-            content: "";
-            position: absolute;
-            display: inline;
-            width: 0px;
-            height: 55px;
-            top: -20px;
-            left: -22px;
-            border: 2px solid $main-color-pink;
-        }
-    }
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         display: inline;
+    //         width: 0px;
+    //         height: 55px;
+    //         top: -20px;
+    //         left: -22px;
+    //         border: 2px solid $main-color-pink;
+    //     }
+    // }
 
-    .content.active {
-    display: block;
-    }
+    // .content.active {
+    //     display: block;
+    // }
 
-    .mobile-properties {
-        display: none;
+    // .mobile-properties {
+    //     display: none;
 
-        @media screen and (max-width: 1024px) {
-           display: inline;
-           margin: 0 16px;
-           cursor: pointer;
+    //     @media screen and (max-width: 1024px) {
+    //        display: inline;
+    //        margin: 0 16px;
+    //        cursor: pointer;
 
-           &__block {
+    //        &__block {
 
-            &::before {
-                content: "";
-                display: block;
-                margin: 0;
-                border: 1px solid $Gray-70;
-            }
+    //         &::before {
+    //             content: "";
+    //             display: block;
+    //             margin: 0;
+    //             border: 1px solid $Gray-70;
+    //         }
 
-            &-other {
-                &::after {
-                    content: "";
-                    display: block;
-                    margin: 0;
-                    border: 1px solid $Gray-70;
-                }
-            }
-           }
+    //         &-other {
+    //             &::after {
+    //                 content: "";
+    //                 display: block;
+    //                 margin: 0;
+    //                 border: 1px solid $Gray-70;
+    //             }
+    //         }
+    //        }
 
-            &__link {
-                display: flex;
-                justify-content: space-between;
-                padding: 24px 0;
-                font-family: 'GT Eesti Pro';
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: $Gray-30;
+    //         &__link {
+    //             display: flex;
+    //             justify-content: space-between;
+    //             padding: 24px 0;
+    //             font-family: 'GT Eesti Pro';
+    //             font-weight: 500;
+    //             font-size: 18px;
+    //             line-height: 22px;
+    //             color: $Gray-30;
 
-                &_active {
-                    color: $white-color;
+    //             &_active {
+    //                 color: $white-color;
                     
-                    .mobile-properties__toggle {
-                        transition: transform all 0.4s;
-                        transform: rotate(-180deg);
-                    }
-                }
-            }
+    //                 .mobile-properties__toggle {
+    //                     transition: transform all 0.4s;
+    //                     transform: rotate(-180deg);
+    //                 }
+    //             }
+    //         }
 
-            &__content {
-                display: none;
-                width: 100%;
-            }
+    //         &__content {
+    //             display: none;
+    //             width: 100%;
+    //         }
 
-            &__img {
-                max-width: 345px;
-            }
+    //         &__img {
+    //             max-width: 345px;
+    //         }
     
-            &__text {
-                font-family: 'DM Sans';
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                color: $white-color;
-            }
+    //         &__text {
+    //             font-family: 'DM Sans';
+    //             font-weight: 400;
+    //             font-size: 16px;
+    //             line-height: 24px;
+    //             color: $white-color;
+    //         }
 
-            &__toggle {
-                transition: all .4s;
-                display: inline-block;
-                width: 17px;
-                height: 12px;
-                background: url("../../img/multiFam/properties/arrow-before.svg") no-repeat;
-                background-size: contain;
-            }
-        }
-    }
+    //         &__toggle {
+    //             transition: all .4s;
+    //             display: inline-block;
+    //             width: 17px;
+    //             height: 12px;
+    //             background: url("../../img/multiFam/properties/arrow-before.svg") no-repeat;
+    //             background-size: contain;
+    //         }
+    //     }
+    // }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .menu li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .content {
+        display: none;
+      }
+      
+      .content.active {
+        display: block;
+      }
+      
+      
+      
+      
 }
   

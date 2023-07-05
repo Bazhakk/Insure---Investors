@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container container">
             <a href="index.html" title="Logo" class="header__logo">
                 <svg width="139" height="42" viewBox="0 0 139 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +120,7 @@
     </header>
 
     <main class="multiFam">
-        <section class="hero-page2">
+        <section class="hero-page2" id="hero-page2">
             <div class="hero-page2__container container">
                 <div class="hero-page2__col-left">
                     <h1 class="hero-page2__title">Multi family program</h1>
@@ -156,22 +156,17 @@
             <div class="menu-page2__container container">
                 <nav>
                     <ul class="menu-tab">
-                      <!-- <li><a class="menu-tab__link active"  id="menu-tab-1" href="#menu-tab-1">Details</a></li>
-                      <li><a class="menu-tab__link" id="menu-tab-2"  href="#menu-tab-2">Types properties</a></li>
-                      <li><a class="menu-tab__link" href="#menu-tab-3">Text</a></li>
-                      <li><a class="menu-tab__link" href="#menu-tab-4">Types of customers</a></li>
-                      <li><a class="menu-tab__link" href="#menu-tab-5">FAQ</a></li> -->
-                      <span class="menu-tab__link">Details</span>
-                      <span class="menu-tab__link">Types properties</span>
-                      <span class="menu-tab__link">Text</span>
-                      <span class="menu-tab__link">Types of customers</span>
-                      <span class="menu-tab__link">FAQ</span>
+                      <li><a class="menu-tab__link" href="#details">Details</a></li>
+                      <li><a class="menu-tab__link" href="#properties">Types properties</a></li>
+                      <li><a class="menu-tab__link" href="#insurance-page2">Text</a></li>
+                      <li><a class="menu-tab__link" href="#types">Types of customers</a></li>
+                      <li><a class="menu-tab__link" href="#questions">FAQ</a></li>
                     </ul>
                   </nav>
             </div>
         </section>
 
-        <section class="details">
+        <section class="details" id="details">
             <div class="details__container container">
                 <div class="details__box">
                     <h2 class="details__title">Details</h2>
@@ -186,11 +181,11 @@
             </div>
         </section>
 
-        <section class="properties">
+        <section class="properties" id="properties">
             <div class="properties__container container">
                 <h2 class="properties__title">Types of <span class="properties__title-other">multifamily</span> properties we insure</h2>
                 
-               <div class="properties__block">
+               <!-- <div class="properties__block">
                   <nav class="content-menu">
                     <ul class="content-menu__item">
                         <li><a href="#" data-target="content1" class="content-menu__link">Apartments</a></li>
@@ -312,11 +307,35 @@
                         <p class="mobile-properties__text">A townhomes building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs apartment sits atop the first-floor dwelling. If the two units are side-by-side, a common wall separates the abodes from one another. In that scenario, the dividing wall is usually where the stairs are in each unit, assuming it's two floors. A duplex building is one structure featuring two separate units. If the units are on top of each other, the floor of the upstairs.</p>
                     </div>
                 </div>
-               </div>
+               </div> -->
+               <div class="menu">
+                <ul>
+                  <li><a href="#section1">Apartments</a></li>
+                  <li><a href="#section2">Duplexes</a></li>
+                  <li><a href="#section3">Triplexes</a></li>
+                </ul>
+              </div>
+              
+              <div id="section1" class="content active">
+                Содержимое секции 1
+              </div>
+              
+              <div id="section2" class="content">
+                Содержимое секции 2
+              </div>
+              
+              <div id="section3" class="content">
+                Содержимое секции 3
+              </div>
+              
+              
+              
+              
+              
             </div>
         </section>
 
-        <section class="insurance-page2" id="menu-tab-3">
+        <section class="insurance-page2" id="insurance-page2">
             <div class="insurance-page2__container container">
                 <div class="insurance-page2__top">
                     <h2 class="insurance-page2__title">Do I need <span class="insurance-page2__title_other">multi-family</span> insurance?</h2>
@@ -424,7 +443,7 @@
             </div>
         </section>
 
-        <section class="types" id="menu-tab-3">
+        <section class="types" id="types">
             <div class="types__container container">
                 <h2 class="types__title">Types of customers</h2>
 
@@ -490,7 +509,7 @@
             </div>
         </section>
 
-        <section class="customers" id="menu-tab-4">
+        <section class="customers" id="customers">
             <div class="customers__container container">
                 <div class="customers__box">
                     <h2 class="customers__title">Our customers</h2>
@@ -553,7 +572,7 @@
             </div>
         </section>
 
-        <section class="questions">
+        <section class="questions" id="questions">
             <div class="questions__container container">
                 <h2 class="questions__title">Frequently asked questions</h2>
                 <p class="questions__subtitle">Have a question? We've got you covered.</p>
