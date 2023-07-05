@@ -16,11 +16,17 @@
         &__link {
             color: $Gray-30;
 
-            &_active {
-                padding: 8px 24px;
-                background: $Gray-100;
-                border-radius: 66px;
+            &:hover {
+                transition: all .4s;
+                color: $Gray-100;
             }
+        }
+
+        .active {
+            padding: 8px 24px;
+            background: $Gray-100;
+            color: $white-color;
+            border-radius: 66px;
         }
 
         @media screen and (max-width: 1024px) {

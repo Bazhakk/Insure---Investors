@@ -71,6 +71,10 @@
         width: 1617px;
         object-fit: cover;
 
+        @media screen and (max-width: 1290px) {
+            width: 1510px;
+        }
+
         @media screen and (max-width: 760px) {
             width: 1200px;
             padding-top: 80px;

@@ -186,35 +186,71 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
-  // AOS init
-  AOS.init({
-    once: true
-  });
-
   //PAGE-2
-  //Properties
+  //Menu-page2
+  //Menu-tab
   $(document).ready(function() {
-    // По умолчанию показываем первый контент
-    var firstLink = $('nav ul li:first-child a');
-    var defaultTarget = firstLink.data('target');
-    $('#' + defaultTarget).addClass('active');
-    firstLink.addClass('active');
+    $('.menu-tab__link').click(function(e) {
+      e.preventDefault(); // Предотвращаем переход по умолчанию
+  
+      $('.menu-tab__link').removeClass('active'); // Удаляем класс 'active' у всех ссылок в меню
+      $(this).addClass('active'); // Добавляем класс 'active' к текущей ссылке
+    });
 
-    // Обработчик события клика на ссылки меню
-    $('nav ul li a').click(function(e) {
-      e.preventDefault();
-      var target = $(this).data('target');
-      
-      // Удаляем класс 'active' у всех элементов контента и ссылок
-      $('.content').removeClass('active');
-      $('nav ul li a').removeClass('active');
-      
-      // Добавляем класс 'active' для выбранного контента и ссылки
-      $('#' + target).addClass('active');
-      $(this).addClass('active');
+  // Получаем все ссылки в меню
+  const menuLinks = document.querySelectorAll('a[href^="#"]');
+
+  // Добавляем обработчик события на каждую ссылку
+  menuLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Предотвращаем переход по умолчанию
+
+      // Удаляем класс 'active' у всех ссылок
+      menuLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Получаем идентификатор якоря из атрибута href ссылки
+      const targetId = link.getAttribute('href').substring(1);
+
+      // Находим соответствующую секцию по идентификатору
+      const targetSection = document.getElementById(targetId);
+
+      // Проверяем, существует ли такая секция
+      if (targetSection) {
+        // Добавляем класс 'active' к текущей ссылке
+        link.classList.add('active');
+
+        // Выполняем прокрутку к секции
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
     });
   });
+  });
 
+  //Properties
+  // $(document).ready(function() {
+  //   // По умолчанию показываем первый контент
+  //   var firstLink = $('nav ul li:first-child a');
+  //   var defaultTarget = firstLink.data('target');
+  //   $('#' + defaultTarget).addClass('active');
+  //   firstLink.addClass('active');
+
+  //   // Обработчик события клика на ссылки меню
+  //   $('nav ul li a').click(function(e) {
+  //     e.preventDefault();
+  //     var target = $(this).data('target');
+      
+  //     // Удаляем класс 'active' у всех элементов контента и ссылок
+  //     $('.content').removeClass('active');
+  //     $('nav ul li a').removeClass('active');
+      
+  //     // Добавляем класс 'active' для выбранного контента и ссылки
+  //     $('#' + target).addClass('active');
+  //     $(this).addClass('active');
+  //   });
+  // });
+  
   //Mobile-properties
   $(document).ready(function() {
     $('.mobile-properties__link').click(function() {
@@ -356,5 +392,10 @@ jQuery(document).ready(function ( $ ) {
     $('#next-button').click(function() {
       $('.awards-mobile').slick('slickNext');
     });
+  });
+
+  // AOS init
+  AOS.init({
+    once: true
   });
 });

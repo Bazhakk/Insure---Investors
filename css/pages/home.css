@@ -872,6 +872,11 @@ ul {
   width: 1617px;
   object-fit: cover;
 }
+@media screen and (max-width: 1290px) {
+  .hero__img {
+    width: 1510px;
+  }
+}
 @media screen and (max-width: 760px) {
   .hero__img {
     width: 1200px;
@@ -2438,14 +2443,6 @@ ul {
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
-.questions {
-  padding-bottom: 130px;
-}
-@media screen and (max-width: 1024px) {
-  .questions {
-    padding-bottom: 60px;
-  }
-}
 @media screen and (max-width: 1550px) {
   .questions {
     margin: 0 16px;
@@ -2627,6 +2624,11 @@ ul {
 }
 .tagline {
   padding-top: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .tagline {
+    padding-top: 60px;
+  }
 }
 .tagline__container {
   padding-bottom: 80px;
@@ -3254,9 +3256,14 @@ ul {
 .menu-page2 .menu-tab__link {
   color: #B5BAC1;
 }
-.menu-page2 .menu-tab__link_active {
+.menu-page2 .menu-tab__link:hover {
+  transition: all 0.4s;
+  color: #0A1C33;
+}
+.menu-page2 .menu-tab .active {
   padding: 8px 24px;
   background: #0A1C33;
+  color: #fff;
   border-radius: 66px;
 }
 @media screen and (max-width: 1024px) {
