@@ -186,57 +186,30 @@ jQuery(document).ready(function ( $ ) {
     });
   });
 
+  // AOS init
+  AOS.init({
+    once: true
+  });
+
   //PAGE-2
   //Menu-page2
   //Menu-tab
-   $(document).ready(function() {
-    // Получаем все ссылки в меню
-    const menuLinks = document.querySelectorAll('.menu-tab__link');
+  $(document).ready(function() {
+    // По умолчанию активируем первую ячейку
+    $('.menu-tab__link:first').addClass('active');
   
-    // По умолчанию активируем первую ссылку и соответствующую секцию
-    const firstLink = menuLinks[0];
-    const firstTargetId = firstLink.getAttribute('href').substring(1);
-    const firstTargetSection = document.getElementById(firstTargetId);
-    if (firstLink && firstTargetSection) {
-      firstLink.classList.add('active');
-      firstTargetSection.classList.add('active');
-    }
+    $('.menu-tab__link').click(function() {
+      // Проверяем, является ли текущая ячейка уже активной
+      if (!$(this).hasClass('active')) {
+        // Удаляем класс 'active' у всех ячеек
+        $('.menu-tab__link').removeClass('active');
   
-    // Добавляем обработчик события на каждую ссылку
-    menuLinks.forEach((link, index) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault(); // Предотвращаем переход по умолчанию
-  
-        // Удаляем класс 'active' у всех ссылок
-        menuLinks.forEach(link => {
-          link.classList.remove('active');
-        });
-  
-        // Получаем идентификатор якоря из атрибута href ссылки
-        const targetId = link.getAttribute('href').substring(1);
-  
-        // Находим соответствующую секцию по идентификатору
-        const targetSection = document.getElementById(targetId);
-  
-        // Проверяем, существует ли такая секция
-        if (targetSection) {
-          // Добавляем класс 'active' к текущей ссылке
-          link.classList.add('active');
-  
-          // Удаляем класс 'active' у всех ссылок, кроме текущей
-          menuLinks.forEach((menuLink, menuIndex) => {
-            if (menuIndex !== index) {
-              menuLink.classList.remove('active');
-            }
-          });
-  
-          // Выполняем прокрутку к секции
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
+        // Добавляем класс 'active' только к текущей ячейке
+        $(this).addClass('active');
+      }
     });
   });
-
+  
   //Properties
   $(document).ready(function() {
   // По умолчанию показываем первый элемент меню и его контент
@@ -403,10 +376,5 @@ jQuery(document).ready(function ( $ ) {
     $('#next-button').click(function() {
       $('.awards-mobile').slick('slickNext');
     });
-  });
-
-  // AOS init
-  AOS.init({
-    once: true
   });
 });

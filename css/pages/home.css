@@ -3820,7 +3820,13 @@ ul {
 }
 .rules__btn {
   padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .rules__btn {
+    padding-bottom: 60px;
+  }
 }
 
 @font-face {
