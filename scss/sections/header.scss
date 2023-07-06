@@ -91,39 +91,40 @@
     }
 
     &__left-sign {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        @media screen and (max-width: 1280px) {
-          display: none;
-        }
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
     
 
     &__right-button {
-            padding: 13px 40px;
-            font-family: 'DM Sans';
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            border-radius: 66px;
-            color: $white-color;
-            background: $main-color-teal;
-    
-            &:hover {
-                transition: all .4s;
-                background-color: $hover-color-teal;
-            }
+        padding: 13px 40px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 66px;
+        color: $white-color;
+        background: $main-color-teal;
 
-            &:active {
-                vertical-align: middle;
-                color: $pressed-color-teal;
-              }
-        
-              &:focus {
-                vertical-align: middle;
-                color: $disabled-color-teal;
-              }
+        &:hover {
+            transition: all .4s;
+            background-color: $hover-color-teal;
+        }
+
+        &:active {
+            vertical-align: middle;
+            color: $pressed-color-teal;
+        }
+    
+        &:focus {
+            vertical-align: middle;
+            color: $disabled-color-teal;
+        }
 
         @media screen and (max-width: 1280px) {
             display: none;

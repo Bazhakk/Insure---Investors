@@ -35,7 +35,7 @@
 @media screen and (max-width: 1024px) {
   .service {
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
 }
 .service .service-section {
@@ -54,11 +54,11 @@
   }
 }
 .service .service-section__item {
-  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media screen and (max-width: 1024px) {
   .service .service-section__item {
-    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .service .service-section__title {

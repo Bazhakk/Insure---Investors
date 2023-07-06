@@ -7,7 +7,7 @@
 
     @media screen and (max-width: 1024px) {
       padding-top: 60px;
-      padding-bottom: 120px;
+      padding-bottom: 60px;
     }
 
     .service-section {
@@ -26,10 +26,10 @@
         }
 
         &__item {
-            padding-top: 80px;
+            padding-bottom: 80px;
 
             @media screen and (max-width: 1024px) {
-                padding-top: 60px;
+                padding-bottom: 60px;
             }
         }
 

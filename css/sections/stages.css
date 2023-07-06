@@ -28,5 +28,214 @@
   src: url("../../fonts/DMSans-Bold.eot") format("embedded-opentype"), url("../../fonts/DMSans-Bold.svg") format("svg"), url("../../fonts/DMSans-Bold.woff") format("woff"), url("../../fonts/DMSans-Bold.woff2"), url("../../fonts/DMSans-Bold.otf") format("otf");
   font-weight: 700;
 }
+.stages__title {
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  text-align: center;
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 91px;
+  line-height: 100px;
+  color: #0A1C33;
+}
+.stages__title-other {
+  color: #00CCC2;
+}
+@media screen and (max-width: 1024px) {
+  .stages__title {
+    padding-bottom: 24px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.stages__box {
+  display: flex;
+  justify-content: space-between;
+}
+.stages__box-left {
+  max-width: 740px;
+}
+.stages__box-right {
+  max-width: 765px;
+  display: grid;
+  padding-bottom: 90px;
+  gap: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .stages__box-right {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1216px) {
+  .stages__box {
+    flex-direction: column;
+  }
+}
+.stages__subtitle {
+  font-family: "GT Eesti Pro";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+.stages__subtitle-1 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-1::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/1..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 70px;
+  height: 114px;
+  top: -6rem;
+  left: -2px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-1::before {
+    width: 37px;
+    height: 55px;
+    top: -3rem;
+    left: -2px;
+  }
+}
+.stages__subtitle-2 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-2::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/2..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 101px;
+  height: 105px;
+  top: -23%;
+  left: 0px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-2::before {
+    width: 37px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-3 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-3::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/3..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 109px;
+  height: 107px;
+  top: -9%;
+  left: 1px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-3::before {
+    width: 37px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-4 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-4::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/4..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 105px;
+  height: 100px;
+  top: -11%;
+  left: 1px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-4::before {
+    width: 37px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__subtitle-5 {
+  position: relative;
+  z-index: 0;
+}
+.stages__subtitle-5::before {
+  content: "";
+  background-image: url("../../img/multiFam/stages/5..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: inline;
+  width: 93px;
+  height: 97px;
+  top: -27%;
+  left: -2px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .stages__subtitle-5::before {
+    width: 37px;
+    height: 55px;
+    top: -3rem;
+    left: 4px;
+  }
+}
+.stages__text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0A1C33;
+}
+@media screen and (max-width: 1024px) {
+  .stages__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+.stages__text-other {
+  position: relative;
+}
+.stages__text-other::before {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 12px;
+  left: -8px;
+  border-radius: 50%;
+  background-color: #00CCC2;
+}
 
 /*# sourceMappingURL=stages.css.map */
